@@ -10,12 +10,12 @@
 
 
 /*Mobile Resolutions*/
-@media only screen and (max-device-width: 831px) /*831*/
+@media only screen and (max-device-width: 851px) /*831*/
 {
     
     body
 	{
-        background-image: url(B1.jpg);
+        background-image: url(Black2.svg);
         background-repeat: repeat;
     }
 
@@ -368,7 +368,7 @@
     
     body
 	{
-        background-image: url(B1.jpg);
+        background-image: url(Black2.svg);
         background-repeat: repeat;
     }
 
@@ -385,7 +385,7 @@
     {
         background-image: url(B1.jpg); 
         background-position-y: 450px;
-        background-position-x: -280px;
+        background-position-x: 400px;
 
         background-color: red;
         
@@ -395,7 +395,7 @@
         left: 0.2px;    
         
         padding-top: 115px;
-        padding-left: 1022px;
+        padding-left: 1519px;
 
     }
 
@@ -405,7 +405,7 @@
 
         color: silver;
 
-        left: 50px;
+        left: 100px;
         top: -10px;
 
         font-size: 40px; 
@@ -431,7 +431,7 @@
 
         /* background-color: gray; */
 
-        left: 100px;
+        left: 335px;
         top: 115px;
 
         padding-top: 1930px;
@@ -694,13 +694,13 @@
     {
         position: absolute;
 
-        right: 111px;
+        right: 90px;
         top: 430px;
     } 
 
     .Image11
     {
-        height: 400px;
+        height: 430px;
         transition: 0.6s ease;
     }
 
@@ -717,7 +717,7 @@
     
     body
 	{
-        background-image: url(B1.jpg);
+        background-image: url(Black2.svg);
         background-repeat: repeat;
     }
 
@@ -1066,7 +1066,7 @@
     
     body
 	{
-        background-image: url(B1.jpg);
+        background-image: url(Black2.svg);
         background-repeat: repeat;
     }
 
@@ -1416,7 +1416,7 @@
     
     body
 	{
-        background-image: url(B1.jpg);
+        background-image: url(Black2.svg);
         background-repeat: repeat;
     }
 
@@ -1766,7 +1766,7 @@
     
     body
 	{
-        background-image: url(B1.jpg);
+        background-image: url(Black2.svg);
         background-repeat: repeat;
     }
 
