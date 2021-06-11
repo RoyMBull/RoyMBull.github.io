@@ -15,7 +15,7 @@
 	
 	body
 	{
-        background-image: url(B1.jpg);
+        background-image: url(Black2.svg);
         background-repeat: repeat;
     }
 
@@ -30,32 +30,37 @@
 
     #MenuBar
     {
-        background-image: url(B1.jpg); 
-        background-position-y: 450px;
-        background-position-x: -270px;
+        background-image: url(p1.gif); 
+        background-position-y: 820px;
+        background-position-x: -200px;
 
-        background-color: red;
+        background-color: black;
         
 
         position: absolute;
         top: 0.3px;
         left: 0.2px;    
         
-        padding-top: 115px;
-        padding-left: 829px;
+        padding-top: 753px;
+        padding-left: 1351.5px; /*Originally 1518.5*/
 
     }
 
     #FutabWebsHeader
     {
         position: absolute;
+        background-color: rgba(0, 0, 0, 0.800);
 
-        color: silver;
+        padding-left: 645.5px;
 
-        left: 90px;
-        top: -10px;
+        padding-top: 753.5px;
 
-        font-size: 40px; 
+        color: rgba(0, 0, 0, 0);
+
+        left: 654.5px; /* Originally 804.5*/
+        top: 0px;
+
+        font-size: 0px; 
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         transition: 0.6s ease;
 
@@ -63,8 +68,13 @@
 
     #FutabWebsHeader:hover
     {
-        color: silver;
-        font-size: 41px;
+        color: rgba(0, 0, 0, 0);
+        font-size: 0px;
+    }
+
+    .AboutMeText
+    {
+        position: absolute;
     }
 
 
@@ -73,2003 +83,18 @@
 
         position: absolute;
 
-        background-image: url(RB.jpg);
-        background-size: 150px;
-        background-repeat: no-repeat;
-
-        left: 340px;
-        top: -110px;
-
-        cursor: pointer;
-        height: 150px;
-        width: 150px;
-        margin: 0 2px;
-        background-color: silver;
-        border-radius: 50%;
-        display: inline-block;
-        transition: 0.1s ease;
-    }
-
-    .FutabaLogo:hover
-    {
-        height: 160px;
-        width: 160px;
-        background-position-x: 0px;
-        background-size: 160px;
-        background-image: url(RB2.jpg);
-        background-size: 300px;
-        background-position-x: -70px;
-    }
-
-    /* Main center text field */  
-    #CenterTextBox
-    {
-        position: absolute;
-        
-        background-color: rgba(0, 0, 0, 0.900);
-
-        /* background-color: gray; */
-
-        left: 0px;
-        top: 115px;
-
-        padding-top: 967px;
-        padding-left: 830px;
-
-	/* border-style: dashed;*/ 
-        
-    }
-
-    #ProgrammingResources
-    {
-        position: absolute;
-
-        color: silver;
-
-        /* font-weight: bold; */
-
-        top: 40px;
-        right: 260px;
-
-        font-size: 25px;
-        font-weight: bold;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        transition: 0.6s ease;
-        
-    }
-
-    #ProgrammingResources:hover
-    {
-        color: silver;
-        font-size: 26px;
-    }
-    
-    #ProgrammingResourcesLine
-    {
-        position: absolute;
-
-        color: silver;
-
-        top: 50px;
-        right: 175px;
-
-        font-size: 25px;
-        font-weight: bold;
-    }
-
-    #Cpp
-    {
-        position: absolute;
-
-        right: 590px;
-        top: 130px;
-    }
-
-    #CppTitle
-    {
-        position: absolute;
-
-        color: silver;
-
-        top: 90px;
-        left: 37px;
-
-        font-size: 21px;
-        font-weight: bold;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        transition: 0.6s ease;
-    }
-
-    #CppTitle:hover
-    {
-        color: silver;
-        font-size: 22px;
-    }
-
-    .CppPic
-    {
-        height: 150px;
-        transition: 0.6s ease;
-    }
-    .CppPic:hover 
-    {
-        height: 160px;
-    }
-
-    
-    #Python3
-    {
-        position: absolute;
-
-        border-style: dashed;
-
-        right: 10px;
-        top: 130px;
-    }
-
-    #PythonTitle
-    {
-        position: absolute;
-
-        color: silver;
-
-        top: 90px;
-        left: 585px;
-        
-        font-size: 21px;
-        font-weight: bold;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        transition: 0.6s ease;
-    }
-    #PythonTitle:hover
-    {
-        color: silver;
-        font-size: 22px;
-    }
-
-    .PythonPic
-    {
-        height: 130px;
-        transition: 0.6s ease;
-    }
-    .PythonPic:hover 
-    {
-        height: 140px;
-    }
-
-    #Linux
-    {
-        position: absolute;
-
-        height: 10px;
-
-        right: 285px;
-        top: 120px;
-
-
-    }
-
-    .LinuxPic
-    {
-        height: 130px;
-        transition: 0.6s ease;
-    }
-    .LinuxPic:hover 
-    {
-        height: 140px;
-    }
-
-
-    #LinuxTitle
-    {
-        position: absolute;
-
-        color: silver;
-
-        top: 90px;
-        left: 325px;
-
-        font-size: 21px;
-        font-weight: bold;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        transition:  0.6s ease;
-
-    }
-
-    #LinuxTitle:hover
-    {
-        color: silver;
-        font-size: 22px;
-    }
-    
-    #BundleDescription
-    {
-        position: absolute;
-        
-        background-color: black;
-
-        color: silver;
-
-        right: 10px;
-        top: 290px;
-
-        text-align: center;
-
-        padding-left: 10px;
-
-        font-size: 23px;
-        font-weight: bold;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-        transition: 0.6s ease;
-    }
-
-    #BundleDescription:hover
-    {
-        color: silver;
-        font-size: 23.4px;
-    }
-
-
-
-
-    #CyberResources
-    {
-        position: absolute;
-
-        color: silver;
-
-        top: 470px;
-        right: 250px;
-
-        font-size: 25px;
-        font-weight: bold;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        transition: 0.6s ease;
-    }
-
-    #CyberResources:hover
-    {
-        color: silver;
-        font-size: 26px;
-    }
-    
-    #CyberResourcesLine
-    {
-        position: absolute;
-
-        color: silver;
-
-        top: 480px;
-        right: 175px;
-
-        font-size: 25px;
-        font-weight: bold;
-    }
-
-    #GrayHatCpp
-    {
-        position: absolute;
-
-        right: 545px;
-        top: 565px;
-    }
-
-    #GrayHatCppTitle
-    {
-        position: absolute;
-
-        color: silver;
-
-        top: 530px;
-        left: 53px;
-
-        font-size: 21px;
-        font-weight: bold;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        transition: 0.6s ease;
-    }
-
-    #GrayHatCppTitle:hover
-    {
-        color: silver;
-        font-size: 22px;
-    }
-
-    .GrayCppPic
-    {
-        height: 140px; 
-        transition: 0.6s ease;
-    }
-    .GrayCppPic:hover 
-    {
-        height: 150px;
-    }
-
-    
-    #GrayHatPython3
-    {
-        position: absolute;
-
-        right: 10px;
-        top: 565px;
-    }
-
-    #GrayHatPython3Title
-    {
-        position: absolute;
-
-        color: silver;
-
-        top: 530px;
-        left: 605px;
-
-        font-size: 21px;
-        font-weight: bold;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        transition: 0.6s ease;
-    }
-
-    #GrayHatPython3Title:hover
-    {
-        color: silver;
-        font-size: 22px;
-    }
-
-    .BlackHatPython
-    {
-        height: 170px;
-        transition: 0.6s ease;
-    }
-    
-    .BlackHatPython:hover
-    {
-        height: 180px;
-    }
-
-
-    #KaliLinux
-    {
-        position: absolute;
-
-        right: 270px;
-        top: 565px;
-    }
-
-    #KaliLinuxTitle
-    {
-        position: absolute;
-
-        color: silver;
-
-        top: 530px;
-        left: 328px;
-
-        font-size: 21px;
-        font-weight: bold;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        transition: 0.6s ease;
-    }
-
-    #KaliLinuxTitle:hover
-    {
-        color: silver;
-        font-size: 22px;
-    }
-
-    .MasterBundle
-    {
-        height: 140px;
-        transition: 0.6s ease;
-    }
-    
-    .MasterBundle:hover
-    {
-        height: 150px;
-    }
-
-    #BundleDescription2
-    {
-        position: absolute;
-
-        background-color: black;
-
-        color: silver;
-
-        right: 10px;
-        top: 760px;
-
-        text-align: center;
-
-        padding-left: 10px;
-
-        font-size: 23px;
-        font-weight: bold;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        transition: 0.6s ease;
-    }
-
-    #BundleDescription2:hover
-    {
-        color: silver;
-        font-size: 23.4px;
-    }
-
-
-    /* News and Updates Section */  
-    #LeftTextBox
-    {
-        position: absolute;
-
-        background-color: rgba(0, 0, 0, 0.900);
-
-        
-        left: -1px;
-        top: 2042px;
-
-        padding-top: 967px;
-        padding-left: 527px;
-        padding-right: 304px;
-
-	    /* border-style: dashed;*/
-
-    }
-
-    #News
-    {
-        position: absolute;
-
-        color: silver;
-
-        top: 10px;
-        left: 210px;
-
-        font-size: 25px;
-        font-weight: bold;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        transition: 0.6s ease;
-    }
-
-    #News:hover
-    {
-        color: silver;
-        font-size: 26px;
-    }
-    
-    #NewsLine
-    {
-        position: absolute;
-
-        color: silver;
-
-        top: 20px;
-        right: 220px;
-
-        font-size: 25px;
-        font-weight: bold;
-    }
-
-    /* Slideshow container  https://www.w3schools.com/howto/howto_js_slideshow.asp */
-
-    #SocialMediaBorder
-    {
-        position: absolute;
-
-        color: silver;
-
-        font-size: 25px;
-        font-weight: bold;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-        right: 350px;
-        bottom: 885px;
-
-        transition: 0.6s ease;
-
-        padding-left: 1px;
-    }
-
-    #SocialMediaBorder:hover
-    {
-        color: silver;
-        font-size: 26px;;
-    }
-
-    * {box-sizing:border-box}
-    #SocialMediaContainer 
-    {
-        max-width: 1000px;
-        position: absolute;
-        margin: auto;
-    }
-    
-    .SocialMedia
-    {
-        /*display: none;*/
-
-        position: absolute;
-
-        top: -880px;
-        right: -55px;
-
-        
-    }
-
-    .SocialImages
-    {
-        height: 200px;
-        width: 356px;
-
-        transition: 0.6s ease;
-
-    }
-
-    .SocialImages:hover
-    {
-        height: 210px;
-        width: 366px;
-
-    }
-
-    .SocialImages2
-    {
-        height: 200px;
-        width: 356px;
-
-        transition: 0.6s ease;
-
-    }
-
-    .SocialImages2:hover
-    {
-        height: 210px;
-        width: 366px;
-
-    }
-
-    .SocialImages3
-    {
-        height: 200px;
-        width: 356px;
-
-        transition: 0.6s ease;
-
-    }
-
-    .SocialImages3:hover
-    {
-        height: 210px;
-        width: 366px;
-
-    }
-
-    .SocialImages4
-    {
-        height: 200px;
-        width: 356px;
-
-        transition: 0.6s ease;
-
-    }
-
-    .SocialImages4:hover
-    {
-        height: 210px;
-        width: 366px;
-
-    }
-
-    .SocialImages5
-    {
-        height: 200px;
-        width: 356px;
-
-        transition: 0.6s ease;
-
-    }
-
-    .SocialImages5:hover
-    {
-        height: 210px;
-        width: 366px;
-
-    }
-    
-
-
-    /* Fading animation for the images */
-    .News 
-    {
-        -webkit-animation-name: News;
-        -webkit-animation-duration: 1.5s;
-        animation-name: News;
-        animation-duration: 1.5s;
-    }
-  
-    @-webkit-keyframes News 
-    {
-        from {opacity: .4}
-        to {opacity: 1}
-    }
-  
-    @keyframes News 
-    {
-        from {opacity: .4}
-        to {opacity: 1}
-    }
-
-    /* Scroll Buttons */
-
-    .Next /*THis is actually the left arrow */
-    {
-        position: absolute;
-        cursor: pointer;
-
-        top: -800px;
-        right: -110px;
-
-        color: silver;
-        font-size: 25px;
-
-        transition:  0.6s ease;
-        border-radius: 0 3px 3px 0;
-    }
-
-
-    .Prev
-    {
-        position: absolute;
-
-        cursor: pointer;
-
-        color: silver;
-        font-size: 25px;
-
-        top: -800px;
-        right: 350px;
-
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-    }
-
-    .Prev:hover, .Next:hover
-    {
-        color: silver;
-        font-size: 35px;
-    }
-
-    .Dot1
-    {   
-
-        position: absolute;
-
-        bottom: 650px;
-        right: 120px;
-
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color:silver;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .Dot1:hover, .Dot2:hover, .Dot3:hover, .Dot4:hover, .Dot5:hover
-    {
-        background-color: grey;
-        height: 19px;
-        width: 19px;
-    }
-
-    .Dot2
-    {   
-
-        position: absolute;
-
-        bottom: 650px;
-        right: 180px;
-
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: silver;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .Dot3
-    {   
-
-        position: absolute;
-
-        bottom: 650px;
-        right: 60px;
-
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: silver;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .Dot4
-    {   
-
-        position: absolute;
-
-        bottom: 650px;
-        right: 150px;
-
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: silver;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .Dot5
-    {   
-
-        position: absolute;
-
-        bottom: 650px;
-        right: 90px;
-
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: silver;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .Tool1
-    {
-        position: absolute;
-        background-color: black;
-
-        color: silver;
-        font-size: 25px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: bold;
-        
-        text-align: center;
-        top: 240px;
-
-        transition: 0.6s ease;
-    }
-
-    .Tool1:hover
-    {
-        color: silver;
-        font-size: 27.5px;
-    }
-
-    .Tool2
-    {
-        position: absolute;
-        background-color: black;
-
-        color: silver;
-        font-size: 25px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: bold;
-        
-        text-align: center;
-        top: 240px;
-
-        transition: 0.6s ease;
-    }
-
-    .Tool2:hover
-    {
-        color: silver;
-        font-size: 27.5px;
-    }
-
-    .Tool3
-    {
-        position: absolute;
-        background-color: black;
-
-        color: silver;
-        font-size: 25px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: bold;
-        
-        text-align: center;
-        top: 240px;
-
-        transition: 0.6s ease;
-    }
-
-    .Tool3:hover
-    {
-        color: silver;
-        font-size: 27.5px;
-    }
-
-    .Tool4
-    {
-        position: absolute;
-        background-color: black;
-
-        color: silver;
-        font-size: 25px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: bold;
-        
-        text-align: center;
-        top: 240px;
-
-        transition: 0.6s ease;
-    }
-
-    .Tool4:hover
-    {
-        color: silver;
-        font-size: 27.5px;
-    }
-
-    .Tool5
-    {
-        position: absolute;
-        background-color: black;
-
-        color: silver;
-        font-size: 25px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: bold;
-        
-        text-align: center;
-        top: 240px;
-
-        transition: 0.6s ease;
-    }
-
-    .Tool5:hover
-    {
-        color: silver;
-        font-size: 27.5px;
-    }
-
-    /* logos */
-
-    .PatreonLogo
-    {   
-
-        position: absolute;
-
-        background-image: url(GitHubLogo.jpg);
-        
-        background-size: 75px;
-        background-repeat: no-repeat;
-        background-position-x: -10px;
-        background-position-y: -10px;
-
-        left: 752px;
-        top: 60px;
-
-        cursor: pointer;
-        height: 50px;
-        width: 50px;
-        margin: 0 2px;
-        background-color: silver;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-        
-    }
-
-    .PatreonLogoHover
-    {   
-
-        position: absolute;
-        
-        background-size: 75px;
-        background-repeat: no-repeat;
-        background-position-x: -10px;
+        background-image: url(P10.gif);
         background-position-y: 0px;
-
-        left: 752px;
-        top: 60px;
-
-        cursor: pointer;
-        height: 50px;
-        width: 50px;
-        margin: 0 2px;
-        
-        border-radius: 50%;
-        display: inline-block;
-        transition:  0.6s ease;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1px;
-        font-weight: bold;
-        
-        
-    }
-
-    .PatreonLogoHover:hover
-    {
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        font-size: 15px;
-
-    }
-
-    .TwitterLogo
-    {   
-
-        position: absolute;
-
-        background-image: url(LinkeDinLogo.png);
-        
-        background-size: 50px;
-        background-repeat: no-repeat;
-        background-position-x: 0px;
-        background-position-y: 0px;
-
-        left: 752px;
-        top: 130px;
-
-        cursor: pointer;
-        height: 50px;
-        width: 50px;
-        margin: 0 2px;
-        background-color: silver;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .TwitterLogoHover
-    {   
-
-        position: absolute;
-        
-        background-size: 75px;
-        background-repeat: no-repeat;
-        background-position-x: -10px;
-        background-position-y: 0px;
-
-        left: 752px;
-        top: 130px;
-
-        cursor: pointer;
-        height: 50px;
-        width: 50px;
-        margin: 0 2px;
-        
-        border-radius: 50%;
-        display: inline-block;
-        transition:  0.6s ease;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1px;
-        font-weight: bold;
-        
-        
-    }
-
-    .TwitterLogoHover:hover
-    {
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        font-size: 15px;
-
-    }
-
-    .InstagramLogo
-    {   
-
-        position: absolute;
-
-        background-image: url(Biologo.jpg);
-        
-        background-size: 100px;
-        background-repeat: no-repeat;
-        background-position-x: -25px;
-        background-position-y: -24px;
-
-        left: 752px;
-        top: 200px;
-
-        cursor: pointer;
-        height: 50px;
-        width: 50px;
-        margin: 0 2px;
-        background-color: silver;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .InstagramLogoHover
-    {   
-
-        position: absolute;
-        
-        background-size: 75px;
-        background-repeat: no-repeat;
-        background-position-x: -10px;
-        background-position-y: 0px;
-
-        left: 752px;
-        top: 200px;
-
-        cursor: pointer;
-        height: 50px;
-        width: 50px;
-        margin: 0 2px;
-        
-        border-radius: 50%;
-        display: inline-block;
-        transition:  0.6s ease;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1px;
-        font-weight: bold;
-        
-        
-    }
-
-    .InstagramLogoHover:hover
-    {
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        font-size: 15px;
-
-    }
-
-    .KofiLogo
-    {   
-
-        position: absolute;
-
-        background-image: url(Capture\ the\ Flag.jpg);
-        
-        background-size: 63px;
-        background-repeat: no-repeat;
-        background-position-x: -3.5px;
-        background-position-y: 0px;
-
-        left: 752px;
-        top: 270px;
-
-        cursor: pointer;
-        height: 50px;
-        width: 50px;
-        margin: 0 2px;
-        background-color: silver;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .KofiLogoHover
-    {   
-
-        position: absolute;
-        
-        background-size: 75px;
-        background-repeat: no-repeat;
-        background-position-x: -10px;
-        background-position-y: 0px;
-
-        left: 752px;
-        top: 270px;
-
-        cursor: pointer;
-        height: 50px;
-        width: 50px;
-        margin: 0 2px;
-        
-        border-radius: 50%;
-        display: inline-block;
-        transition:  0.6s ease;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1px;
-        font-weight: bold;
-        
-        
-    }
-
-    .KofiLogoHover:hover
-    {
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        font-size: 15px;
-
-    }
-
-    .WorkShop
-    {   
-
-        position: absolute;
-
-        background-image: url(Bash\ Logo.jpg);
-        
-        background-size: 125px;
-        background-repeat: no-repeat;
-        background-position-x: -37px;
-        background-position-y: -10px;
-
-        left: 752px;
-        top: 400px;
-
-        cursor: pointer;
-        height: 50px;
-        width: 50px;
-        margin: 0 2px;
-        background-color: silver;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-        
-    }
-
-    .WorkShopHover
-    {   
-
-        position: absolute;
-        
-        background-size: 75px;
-        background-repeat: no-repeat;
-        background-position-x: -10px;
-        background-position-y: 0px;
-
-        left: 752px;
-        top: 400px;
-
-        cursor: pointer;
-        height: 50px;
-        width: 50px;
-        margin: 0 2px;
-        
-        border-radius: 50%;
-        display: inline-block;
-        transition:  0.6s ease;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1px;
-        font-weight: bold;
-        
-        
-    }
-
-    .WorkShopHover:hover
-    {
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        font-size: 15px;
-
-    }
-
-
-
-    .Prototypez
-    {   
-
-        position: absolute;
-
-        background-image: url(Python.jpg);
-        
-        background-size: 170px;
-        background-repeat: no-repeat;
-        background-position-x: -60px;
-        background-position-y: -18px;
-
-        left: 752px;
-        top: 470px;
-
-        cursor: pointer;
-        height: 50px;
-        width: 50px;
-        margin: 0 2px;
-        background-color: silver;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .PrototypezHover
-    {   
-
-        position: absolute;
-        
-        background-size: 75px;
-        background-repeat: no-repeat;
-        background-position-x: -10px;
-        background-position-y: 0px;
-
-        left: 752px;
-        top: 470px;
-
-        cursor: pointer;
-        height: 50px;
-        width: 50px;
-        margin: 0 2px;
-        
-        border-radius: 50%;
-        display: inline-block;
-        transition:  0.6s ease;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1px;
-        font-weight: bold;
-        
-        
-    }
-
-    .PrototypezHover:hover
-    {
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        font-size: 15px;
-
-    }
-
-
-    .About
-    {   
-
-        position: absolute;
-
-        background-image: url(C\ logo.png);
-        
-        background-size: 70px;
-        background-repeat: no-repeat;
-        background-position-x: -11px;
-        background-position-y: -2px;
-
-        left: 752px;
-        top: 540px;
-
-        cursor: pointer;
-        height: 50px;
-        width: 50px;
-        margin: 0 2px;
-        background-color: silver;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .AboutHover
-    {   
-
-        position: absolute;
-        
-        background-size: 75px;
-        background-repeat: no-repeat;
-        background-position-x: -10px;
-        background-position-y: 0px;
-
-        left: 752px;
-        top: 540px;
-
-        cursor: pointer;
-        height: 50px;
-        width: 50px;
-        margin: 0 2px;
-        
-        border-radius: 50%;
-        display: inline-block;
-        transition:  0.6s ease;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1px;
-        font-weight: bold;
-        
-        
-    }
-
-    .AboutHover:hover
-    {
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        font-size: 15px;
-
-    }
-
-
-    .Contact
-    {   
-
-        position: absolute;
-
-        background-image: url(Cpp\ logo.png);
-        
-        background-size: 55px;
-        background-repeat: no-repeat;
-        background-position-x: -2px;
-        background-position-y: -3px;
-
-        left: 752px;
-        top: 610px;
-
-        cursor: pointer;
-        height: 50px;
-        width: 50px;
-        margin: 0 2px;
-        background-color: silver;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .ContactHover
-    {   
-
-        position: absolute;
-        
-        background-size: 75px;
-        background-repeat: no-repeat;
-        background-position-x: -10px;
-        background-position-y: 0px;
-
-        left: 752px;
-        top: 610px;
-
-        cursor: pointer;
-        height: 50px;
-        width: 50px;
-        margin: 0 2px;
-        
-        border-radius: 50%;
-        display: inline-block;
-        transition:  0.6s ease;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1px;
-        font-weight: bold;
-        
-        
-    }
-
-    .ContactHover:hover
-    {
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        font-size: 15px;
-
-    }
-
-
-    /* Slideshow container PART 2  https://www.w3schools.com/howto/howto_js_slideshow.asp */
-
-    #HighlightsBorder
-    {
-        position: absolute;
-
-        color: silver;
-
-        font-size: 25px;
-        font-weight: bold;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-        right: 325px;
-        bottom: 390px;
-
-        padding-left: 0px;
-        
-        transition: 0.6s ease;
-    }
-
-    #HighlightsBorder:hover
-    {
-        color: silver;
-        font-size: 26px;
-    }
-
-    * {box-sizing:border-box}
-    #HighlightsContainer 
-    {
-        max-width: 1000px;
-        position: absolute;
-        margin: auto;
-    }
-    
-    .Highlights
-    {
-        /*display: none;*/
-
-        position: absolute;
-
-        top: -330px;
-        right: -55px;
-
-    }
-
-    .HighlightsImages
-    {
-        height: 200px;
-        width: 356px;
-
-        transition: 0.6s ease;
-
-    }
-
-    .HighlightsImages:hover
-    {
-        height: 210px;
-        width: 366px;
-
-    }
-
-    .HighlightsImages2
-    {
-        height: 200px;
-        width: 356px;
-
-        transition: 0.6s ease;
-
-    }
-
-    .HighlightsImages2:hover
-    {
-        height: 210px;
-        width: 366px;
-
-    }
-
-    .HighlightsImages3
-    {
-        height: 200px;
-        width: 356px;
-
-        transition: 0.6s ease;
-
-    }
-
-    .HighlightsImages3:hover
-    {
-        height: 210px;
-        width: 366px;
-
-    }
-
-    .HighlightsImages4
-    {
-        height: 200px;
-        width: 356px;
-
-        transition: 0.6s ease;
-
-    }
-
-    .HighlightsImages4:hover
-    {
-        height: 210px;
-        width: 366px;
-
-    }
-
-    .HighlightsImages5
-    {
-        height: 200px;
-        width: 356px;
-
-        transition: 0.6s ease;
-
-    }
-
-    .HighlightsImages5:hover
-    {
-        height: 210px;
-        width: 366px;
-
-    }
-
-    /* Fading animation for the images */
-    .Section 
-    {
-        -webkit-animation-name: News;
-        -webkit-animation-duration: 1.5s;
-        animation-name: News;
-        animation-duration: 1.5s;
-    }
-  
-    @-webkit-keyframes News 
-    {
-        from {opacity: .4}
-        to {opacity: 1}
-    }
-  
-    @keyframes News 
-    {
-        from {opacity: .4}
-        to {opacity: 1}
-    }
-
-    /* Scroll Buttons */
-
-    .Next2
-    {
-        position: absolute;
-        cursor: pointer;
-
-        top: -250px;
-        right: -110px;
-
-        color: silver;
-        font-size: 25px;
-
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-    }
-
-    .Prev2
-    {
-        position: absolute;
-
-        cursor: pointer;
-
-        color: silver;
-        font-size: 25px;
-
-        top: -250px;
-        right: 350px;
-
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-    }
-
-    .Prev2:hover, .Next2:hover
-    {
-        color: silver;
-        font-size: 35px;
-    }
-
-    .Dot11
-    {   
-
-        position: absolute;
-
-        bottom: 100px;
-        right: 120px;
-
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color:silver;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .Dot11:hover, .Dot22:hover, .Dot33:hover, .Dot44:hover, .Dot55:hover
-    {
-        background-color: gray;
-        height: 19px;
-        width: 19px;
-    }
-
-    .Dot22
-    {   
-
-        position: absolute;
-
-        bottom: 100px;
-        right: 180px;
-
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: silver;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .Dot33
-    {   
-
-        position: absolute;
-
-        bottom: 100px;
-        right: 60px;
-
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: silver;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .Dot44
-    {   
-
-        position: absolute;
-
-        bottom: 100px;
-        right: 150px;
-
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: silver;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .Dot55
-    {   
-
-        position: absolute;
-
-        bottom: 100px;
-        right: 90px;
-
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: silver;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-
-    /* Comming Soon Section */  
-    #RightTextBox
-    {
-        position: absolute;
-        
-        background-color: rgba(0,0,0,0.918);
-
-        left: 0px;
-        top: 1075px;
-
-        padding-top: 967px;
-        padding-left: 778px;
-        padding-right: 52px;
-	
-	/* border-style: dashed; */
-        
-    }
-
-    #CommingSoon
-    {
-        position: absolute;
-
-        color: silver;
-
-        top: 10px;
-        right: 275px;
-
-        font-size: 25px;
-        font-weight: bold;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        transition: 0.6s ease;
-    }
-
-    #CommingSoon:hover
-    {
-        color: silver;
-        font-size: 26px;
-    }
-    
-    #CommingSoonLine
-    {
-        position: absolute;
-
-        color: silver;
-
-        top: 20px;
-        right: 255px;
-
-        font-size: 25px;
-        font-weight: bold;
-    }
-
-    #DroneBullet
-    {
-        position: absolute;      
-
-        right: 10px;
-        top: 80px;
-    }
-
-    #CyberBullet
-    {
-        position: absolute;
-
-        right: 10px;
-        top: 280px;
-    }
-
-    #PETBullet
-    {
-        position: absolute;
-
-        right: 10px;
-        top: 480px;
-    }
-
-    
-    .Next3 /*THis is actually the left arrow */
-    {
-        position: absolute;
-        cursor: pointer;
-
-        top: 10px;
-        right: 190px;
-
-        color: silver;
-        font-size: 25px;
-
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-    }
-
-    .Prev3
-    {
-        position: absolute;
-
-        cursor: pointer;
-
-        color: silver;
-        font-size: 25px;
-
-        top: 10px;
-        right: 625px;
-
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-    }
-
-    .Prev3:hover, .Next3:hover
-    {
-        background-color: silver;
-    }
-
-
-
-    * {box-sizing:border-box}
-    #ProductionTextContainer 
-    {
-        max-width: 1000px;
-        position: absolute;
-        margin: auto;
-
-        
-    }
-
-    .ProductionImage
-    {
-        position: absolute;
-
-        bottom: 700px;
-        right: 195px;
-
-    }
-
-    .PI
-    {
-        height: 200px;
-        width: 435px;
-        transition: 0.6s ease;
-    }
-
-    .PI:hover
-    {
-        height: 210px;
-        width: 445px;
-    }
-
-    .PI2
-    {
-        height: 200px;
-        width: 435px;
-        transition: 0.6s ease;
-    }
-
-    .PI2:hover
-    {
-        height: 210px;
-        width: 445px;
-    }
-
-    .PI3
-    {
-        height: 200px;
-        width: 435px;
-        transition: 0.6s ease;
-    }
-
-    .PI3:hover
-    {
-        height: 210px;
-        width: 445px;
-    }
-
-    .PI4
-    {
-        height: 200px;
-        left: 300px;
-        transition: 0.6s ease;
-    }
-
-    .PI4:hover
-    {
-        height: 220px;
-        left: 300px;
-    }
-
-    .PI5
-    {
-        height: 200px;
-        left: 300px;
-        transition: 0.6s ease;
-    }
-
-    .PI5:hover
-    {
-        height: 220px;
-        left: 300px;
-    }
-
-    .PI6
-    {
-        height: 200px;
-        left: 300px;
-
-        transition: 0.6s ease;
-    }
-
-    .PI6:hover
-    {
-        height: 220px;
-        left: 300px;
-    }
-    
-    
-    .ProductionText
-    {
-        /*display: none;*/
-
-        position: absolute;
-
-        background-color: black;
-
-        top: 310px;
-
-        right: 0px;
-        padding-right: 0px;
-        padding-bottom: 10px;
-
-        color: silver;
-        font-size: 25px;
-        text-align: center;
-        font-weight: bold;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-
-        display: show;
-
-        transition: 0.6s ease;
-        
-    }
-
-    .ProductionText:hover
-    {
-        color: silver; /* Use green to indicate a product is out */
-        font-size: 25.5px;
-    }
-
-    /* Fading animation for the images */
-    .Information 
-    {
-        -webkit-animation-name: Information;
-        -webkit-animation-duration: 1.5s;
-        animation-name: Information;
-        animation-duration: 1.5s;
-    }
-  
-    @-webkit-keyframes Information 
-    {
-        from {opacity: .4}
-        to {opacity: 1}
-    }
-  
-    @keyframes Information 
-    {
-        from {opacity: .4}
-        to {opacity: 1}
-    }
-
-	
-}
-
-/*Tablet Resolutions*/
-@media only screen and (min-width: 831px)
-{
-	
-	body
-	{
-        background-image: url(B1.jpg);
-        background-repeat: repeat;
-    }
-
-    .wrapper
-	{
-		background-color: clear;
-		margin-right: auto;
-		margin-left: auto;
-		width: 100%;
-
-    }
-
-    #MenuBar
-    {
-        background-image: url(B1.jpg); 
-        background-position-y: 450px;
         background-position-x: -50px;
-
-        background-color: red;
-        
-
-        position: absolute;
-        top: 0.3px;
-        left: 0.2px;    
-        
-        padding-top: 115px;
-        padding-left: 1041.5px;
-
-    }
-
-    #FutabWebsHeader
-    {
-        position: absolute;
-
-        color: silver;
-
-        left: 90px;
-        top: -10px;
-
-        font-size: 40px; 
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        transition: 0.6s ease;
-
-    }
-
-    #FutabWebsHeader:hover
-    {
-        color: silver;
-        font-size: 41px;
-    }
-
-
-    .FutabaLogo
-    {   
-
-        position: absolute;
-
-        background-image: url(RB.jpg);
-        background-size: 150px;
+        background-size: 380px;
         background-repeat: no-repeat;
 
-        left: 450px;
-        top: -110px;
+        left: 830px;
+        top: 40px;
 
         cursor: pointer;
-        height: 150px;
-        width: 150px;
+        height: 250px;
+        width: 250px;
         margin: 0 2px;
         background-color: silver;
         border-radius: 50%;
@@ -2079,14 +104,152 @@
 
     .FutabaLogo:hover
     {
-        height: 160px;
-        width: 160px;
+        height: 260px;
+        width: 260px;
         background-position-x: 0px;
-        background-size: 160px;
-        background-image: url(RB2.jpg);
-        background-size: 300px;
-        background-position-x: -70px;
+        background-size: 380px;
+        background-image: url(P9.gif);
+        background-position-x: -50px;
+        background-position-y: 0px;
     }
+
+    .NameHeader
+    {
+        position: absolute;
+        
+        color: silver;
+        font-size: 35px;
+
+        bottom: 370px;
+        right: 303px;
+
+        transition: 0.6s ease;
+    }
+
+    .ShortBioHeader
+    {
+        position: absolute;
+
+        color: silver;
+        font-size: 30px;
+
+        text-align: center;
+
+        bottom: 300px;
+        right: 110px;
+
+        transition: 0.6s ease;
+    }
+
+    .LongBioHeader
+    {
+        position: absolute;
+
+        cursor: pointer;
+
+        border-style: solid;
+        border-radius: 5%;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+        color: silver;
+        font-size: 30px;
+
+        text-align: center;
+
+        bottom: 150px;
+        right: 331px;
+
+        transition: 0.6s ease;
+
+        
+    }
+
+    .LongBioHeader:hover
+    {
+        background-color: silver;
+        color: black;
+        
+    }
+
+    .Skills
+    {
+        position: absolute;
+
+        cursor: pointer;
+
+        border-style: solid;
+        border-radius: 5%;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+        color: silver;
+        font-size: 30px;
+
+        text-align: center;
+
+        bottom: 80px;
+        right: 345px;
+
+        transition: 0.6s ease;
+
+        
+    }
+
+    .Skills:hover
+    {
+        background-color: silver;
+        color: black;
+        
+    }
+
+    .CoverLetter
+    {
+        position: absolute;
+
+        cursor: pointer;
+
+        border-style: solid;
+        border-radius: 5%;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+        color: silver;
+        font-size: 30px;
+
+        text-align: center;
+
+        bottom: 10px;
+        right: 303px;
+
+        transition: 0.6s ease;
+
+        
+    }
+
+    .CoverLetter:hover
+    {
+        background-color: silver;
+        color: black;
+        
+    }
+
+
+    .NameHeader:hover 
+    {
+        color: white;
+        font-size: 36px;
+    }
+
+    .ShortBioHeader:hover
+    {
+        color: white;
+        font-size: 30.5px;
+    }
+
 
     /* Main center text field */  
     #CenterTextBox
@@ -2097,8 +260,8 @@
 
         /* background-color: gray; */
 
-        left: 0px;
-        top: 115px;
+        left: 160px;
+        top: 755px;
 
         padding-top: 967px;
         padding-left: 1041.6px;
@@ -2269,7 +432,6 @@
         font-size: 22px;
     }
 
-    
     #BundleDescription
     {
         position: absolute;
@@ -2492,8 +654,8 @@
         background-color: rgba(0, 0, 0, 0.900);
 
         
-        left: -1px;
-        top: 2041px;
+        left: 160px;
+        top: 2558px;
 
         padding-top: 967px;
         padding-left: 738.6px;
@@ -2757,7 +919,7 @@
         position: absolute;
 
         bottom: 650px;
-        right: 280px;
+        right: 260px;
 
         cursor: pointer;
         height: 15px;
@@ -2775,7 +937,7 @@
         position: absolute;
 
         bottom: 650px;
-        right: 120px;
+        right: 140px;
 
         cursor: pointer;
         height: 15px;
@@ -2793,7 +955,7 @@
         position: absolute;
 
         bottom: 650px;
-        right: 240px;
+        right: 230px;
 
         cursor: pointer;
         height: 15px;
@@ -2811,7 +973,7 @@
         position: absolute;
 
         bottom: 650px;
-        right: 160px;
+        right: 170px;
 
         cursor: pointer;
         height: 15px;
@@ -2842,7 +1004,7 @@
     .Tool1:hover
     {
         color: silver;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
 
     .Tool2
@@ -2864,7 +1026,7 @@
     .Tool2:hover
     {
         color: silver;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
 
     .Tool3
@@ -2886,7 +1048,7 @@
     .Tool3:hover
     {
         color: silver;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
 
     .Tool4
@@ -2908,7 +1070,7 @@
     .Tool4:hover
     {
         color: silver;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
 
     .Tool5
@@ -2930,7 +1092,7 @@
     .Tool5:hover
     {
         color: silver;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
 
     /* logos */
@@ -2947,14 +1109,14 @@
         background-position-x: -10px;
         background-position-y: -10px;
 
-        left: 800px;
-        top: 60px;
+        left: 862px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -2971,8 +1133,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 800px;
-        top: 60px;
+        left: 862px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -3009,14 +1171,14 @@
         background-position-x: 0px;
         background-position-y: 0px;
 
-        left: 800px;
-        top: 130px;
+        left: 932px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -3032,8 +1194,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 800px;
-        top: 130px;
+        left: 932px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -3070,14 +1232,14 @@
         background-position-x: -25px;
         background-position-y: -24px;
 
-        left: 800px;
-        top: 200px;
+        left: 1002px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -3093,8 +1255,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 800px;
-        top: 200px;
+        left: 1002px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -3131,14 +1293,14 @@
         background-position-x: -3.5px;
         background-position-y: 0px;
 
-        left: 800px;
-        top: 270px;
+        left: 500px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -3154,8 +1316,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 800px;
-        top: 270px;
+        left: 500px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -3192,14 +1354,14 @@
         background-position-x: -37px;
         background-position-y: -10px;
 
-        left: 800px;
-        top: 400px;
+        left: 570px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -3216,8 +1378,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 800px;
-        top: 400px;
+        left: 570px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -3256,14 +1418,14 @@
         background-position-x: -60px;
         background-position-y: -18px;
 
-        left: 800px;
-        top: 470px;
+        left: 430px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -3279,8 +1441,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 800px;
-        top: 470px;
+        left: 430px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -3318,14 +1480,14 @@
         background-position-x: -11px;
         background-position-y: -2px;
 
-        left: 800px;
-        top: 540px;
+        left: 640px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -3341,8 +1503,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 800px;
-        top: 540px;
+        left: 640px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -3380,14 +1542,14 @@
         background-position-x: -2px;
         background-position-y: -3px;
 
-        left: 800px;
-        top: 610px;
+        left: 360px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -3403,8 +1565,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 800px;
-        top: 610px;
+        left: 360px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -3646,7 +1808,7 @@
         position: absolute;
 
         bottom: 100px;
-        right: 280px;
+        right: 260px;
 
         cursor: pointer;
         height: 15px;
@@ -3664,7 +1826,7 @@
         position: absolute;
 
         bottom: 100px;
-        right: 120px;
+        right: 140px;
 
         cursor: pointer;
         height: 15px;
@@ -3682,7 +1844,7 @@
         position: absolute;
 
         bottom: 100px;
-        right: 240px;
+        right: 230px;
 
         cursor: pointer;
         height: 15px;
@@ -3700,7 +1862,7 @@
         position: absolute;
 
         bottom: 100px;
-        right: 160px;
+        right: 170px;
 
         cursor: pointer;
         height: 15px;
@@ -3720,10 +1882,10 @@
         
         background-color: rgba(0,0,0,0.918);
 
-        left: 0px;
-        top: 1075px;
+        left: 160px;
+        top: 1722px;
 
-        padding-top: 967px;
+        padding-top: 837px;
         padding-left: 989.5px;
         padding-right: 52px;
 	
@@ -3842,7 +2004,2144 @@
     {
         position: absolute;
 
-        bottom: 700px;
+        bottom: 550px;
+        right: 315px;
+
+    }
+
+    .PI
+    {
+        height: 200px;
+        width: 435px;
+        transition: 0.6s ease;
+    }
+
+    .PI:hover
+    {
+        height: 210px;
+        width: 445px;
+    }
+
+    .PI2
+    {
+        height: 200px;
+        width: 435px;
+        transition: 0.6s ease;
+    }
+
+    .PI2:hover
+    {
+        height: 210px;
+        width: 445px;
+    }
+
+    .PI3
+    {
+        height: 200px;
+        width: 435px;
+        transition: 0.6s ease;
+    }
+
+    .PI3:hover
+    {
+        height: 210px;
+        width: 445px;
+    }
+
+    .PI4
+    {
+        height: 200px;
+        left: 300px;
+        transition: 0.6s ease;
+    }
+
+    .PI4:hover
+    {
+        height: 220px;
+        left: 300px;
+    }
+
+    .PI5
+    {
+        height: 200px;
+        left: 300px;
+        transition: 0.6s ease;
+    }
+
+    .PI5:hover
+    {
+        height: 220px;
+        left: 300px;
+    }
+
+    .PI6
+    {
+        height: 200px;
+        left: 300px;
+
+        transition: 0.6s ease;
+    }
+
+    .PI6:hover
+    {
+        height: 220px;
+        left: 300px;
+    }
+    
+    
+    .ProductionText
+    {
+        /*display: none;*/
+
+        position: absolute;
+
+        background-color: black;
+
+        top: 310px;
+
+        right: 0px;
+        padding-right: 0px;
+        padding-bottom: 10px;
+
+        color: silver;
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+        display: show;
+
+        transition: 0.6s ease;
+        
+    }
+
+    .ProductionText:hover
+    {
+        color: silver; /* Use green to indicate a product is out */
+        font-size: 25.5px;
+    }
+
+    /* Fading animation for the images */
+    .Information 
+    {
+        -webkit-animation-name: Information;
+        -webkit-animation-duration: 1.5s;
+        animation-name: Information;
+        animation-duration: 1.5s;
+    }
+  
+    @-webkit-keyframes Information 
+    {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+  
+    @keyframes Information 
+    {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+
+	
+}
+
+/*Tablet Resolutions*/
+@media only screen and (min-width: 831px)
+{
+	
+	body
+	{
+        background-image: url(Black2.svg);
+        background-repeat: repeat;
+    }
+
+    .wrapper
+	{
+		background-color: clear;
+		margin-right: auto;
+		margin-left: auto;
+		width: 100%;
+
+    }
+
+    #MenuBar
+    {
+        background-image: url(p1.gif); 
+        background-position-y: 820px;
+        background-position-x: -50px;
+
+        background-color: black;
+        
+
+        position: absolute;
+        top: 0.3px;
+        left: 0.2px;    
+        
+        padding-top: 753px;
+        padding-left: 1518.5px;
+
+    }
+
+    #FutabWebsHeader
+    {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.800);
+
+        padding-left: 645.5px;
+
+        padding-top: 753.5px;
+
+        color: rgba(0, 0, 0, 0);
+
+        left: 804.5px;
+        top: 0px;
+
+        font-size: 0px; 
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        transition: 0.6s ease;
+
+    }
+
+    #FutabWebsHeader:hover
+    {
+        color: rgba(0, 0, 0, 0);
+        font-size: 0px;
+    }
+
+    .AboutMeText
+    {
+        position: absolute;
+    }
+
+
+    .FutabaLogo
+    {   
+
+        position: absolute;
+
+        background-image: url(P10.gif);
+        background-position-y: 0px;
+        background-position-x: -50px;
+        background-size: 380px;
+        background-repeat: no-repeat;
+
+        left: 1000px;
+        top: 40px;
+
+        cursor: pointer;
+        height: 250px;
+        width: 250px;
+        margin: 0 2px;
+        background-color: silver;
+        border-radius: 50%;
+        display: inline-block;
+        transition: 0.1s ease;
+    }
+
+    .FutabaLogo:hover
+    {
+        height: 260px;
+        width: 260px;
+        background-position-x: 0px;
+        background-size: 380px;
+        background-image: url(P9.gif);
+        background-position-x: -50px;
+        background-position-y: 0px;
+    }
+
+    .NameHeader
+    {
+        position: absolute;
+        
+        color: silver;
+        font-size: 35px;
+
+        bottom: 370px;
+        right: 303px;
+
+        transition: 0.6s ease;
+    }
+
+    .ShortBioHeader
+    {
+        position: absolute;
+
+        color: silver;
+        font-size: 30px;
+
+        text-align: center;
+
+        bottom: 300px;
+        right: 110px;
+
+        transition: 0.6s ease;
+    }
+
+    .LongBioHeader
+    {
+        position: absolute;
+
+        cursor: pointer;
+
+        border-style: solid;
+        border-radius: 5%;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+        color: silver;
+        font-size: 30px;
+
+        text-align: center;
+
+        bottom: 150px;
+        right: 331px;
+
+        transition: 0.6s ease;
+
+        
+    }
+
+    .LongBioHeader:hover
+    {
+        background-color: silver;
+        color: black;
+        
+    }
+
+    .Skills
+    {
+        position: absolute;
+
+        cursor: pointer;
+
+        border-style: solid;
+        border-radius: 5%;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+        color: silver;
+        font-size: 30px;
+
+        text-align: center;
+
+        bottom: 80px;
+        right: 345px;
+
+        transition: 0.6s ease;
+
+        
+    }
+
+    .Skills:hover
+    {
+        background-color: silver;
+        color: black;
+        
+    }
+
+    .CoverLetter
+    {
+        position: absolute;
+
+        cursor: pointer;
+
+        border-style: solid;
+        border-radius: 5%;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+        color: silver;
+        font-size: 30px;
+
+        text-align: center;
+
+        bottom: 10px;
+        right: 303px;
+
+        transition: 0.6s ease;
+
+        
+    }
+
+    .CoverLetter:hover
+    {
+        background-color: silver;
+        color: black;
+        
+    }
+
+
+    .NameHeader:hover 
+    {
+        color: white;
+        font-size: 36px;
+    }
+
+    .ShortBioHeader:hover
+    {
+        color: white;
+        font-size: 30.5px;
+    }
+
+
+    /* Main center text field */  
+    #CenterTextBox
+    {
+        position: absolute;
+        
+        background-color: rgba(0, 0, 0, 0.900);
+
+        /* background-color: gray; */
+
+        left: 235px;
+        top: 755px;
+
+        padding-top: 967px;
+        padding-left: 1041.6px;
+
+	/* border-style: dashed;*/ 
+        
+    }
+
+    #ProgrammingResources
+    {
+        position: absolute;
+
+        color: silver;
+
+        /* font-weight: bold; */
+
+        top: 40px;
+        right: 375px;
+
+        font-size: 25px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        transition: 0.6s ease;
+        
+    }
+
+    #ProgrammingResources:hover
+    {
+        color: silver;
+        font-size: 26px;
+    }
+    
+    #ProgrammingResourcesLine
+    {
+        position: absolute;
+
+        color: silver;
+
+        top: 50px;
+        right: 300px;
+
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    #Cpp
+    {
+        position: absolute;
+
+        right: 720px;
+        top: 130px;
+    }
+
+    #CppTitle
+    {
+        position: absolute;
+
+        color: silver;
+
+        top: 90px;
+        left: 120px;
+
+        font-size: 21px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        transition: 0.6s ease;
+    }
+
+    #CppTitle:hover
+    {
+        color: silver;
+        font-size: 22px;
+    }
+
+    .CppPic
+    {
+        height: 150px;
+        transition: 0.6s ease;
+    }
+    .CppPic:hover 
+    {
+        height: 160px;
+    }
+
+    
+    #Python3
+    {
+        position: absolute;
+
+        border-style: dashed;
+
+        right: 70px;
+        top: 130px;
+    }
+
+    #PythonTitle
+    {
+        position: absolute;
+
+        color: silver;
+
+        top: 90px;
+        left: 735px;
+        
+        font-size: 21px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        transition: 0.6s ease;
+    }
+    #PythonTitle:hover
+    {
+        color: silver;
+        font-size: 22px;
+    }
+
+    .PythonPic
+    {
+        height: 130px;
+        transition: 0.6s ease;
+    }
+    .PythonPic:hover 
+    {
+        height: 140px;
+    }
+
+    #Linux
+    {
+        position: absolute;
+
+        height: 10px;
+
+        right: 385px;
+        top: 120px;
+
+
+    }
+
+    .LinuxPic
+    {
+        height: 130px;
+        transition: 0.6s ease;
+    }
+    .LinuxPic:hover 
+    {
+        height: 140px;
+    }
+
+
+    #LinuxTitle
+    {
+        position: absolute;
+
+        color: silver;
+
+        top: 90px;
+        left: 435px;
+
+        font-size: 21px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        transition:  0.6s ease;
+
+    }
+
+    #LinuxTitle:hover
+    {
+        color: silver;
+        font-size: 22px;
+    }
+
+    #BundleDescription
+    {
+        position: absolute;
+        
+        background-color: black;
+
+        color: silver;
+
+        right: 10px;
+        top: 290px;
+
+        text-align: center;
+
+        padding-left: 10px;
+
+        font-size: 23px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        transition: 0.6s ease;
+    }
+
+    #BundleDescription:hover
+    {
+        color: silver;
+        font-size: 23.4px;
+    }
+
+
+
+
+    #CyberResources
+    {
+        position: absolute;
+
+        color: silver;
+
+        top: 470px;
+        right: 375px;
+
+        font-size: 25px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        transition: 0.6s ease;
+    }
+
+    #CyberResources:hover
+    {
+        color: silver;
+        font-size: 26px;
+    }
+    
+    #CyberResourcesLine
+    {
+        position: absolute;
+
+        color: silver;
+
+        top: 480px;
+        right: 300px;
+
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    #GrayHatCpp
+    {
+        position: absolute;
+
+        right: 700px;
+        top: 565px;
+    }
+
+    #GrayHatCppTitle
+    {
+        position: absolute;
+
+        color: silver;
+
+        top: 530px;
+        left: 120px;
+
+        font-size: 21px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        transition: 0.6s ease;
+    }
+
+    #GrayHatCppTitle:hover
+    {
+        color: silver;
+        font-size: 22px;
+    }
+
+    .GrayCppPic
+    {
+        height: 150px; 
+        transition: 0.6s ease;
+    }
+    .GrayCppPic:hover 
+    {
+        height: 160px;
+    }
+
+    
+    #GrayHatPython3
+    {
+        position: absolute;
+
+        right: 90px;
+        top: 565px;
+    }
+
+    #GrayHatPython3Title
+    {
+        position: absolute;
+
+        color: silver;
+
+        top: 530px;
+        left: 745px;
+
+        font-size: 21px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        transition: 0.6s ease;
+    }
+
+    #GrayHatPython3Title:hover
+    {
+        color: silver;
+        font-size: 22px;
+    }
+
+    .BlackHatPython
+    {
+        height: 170px;
+        transition: 0.6s ease;
+    }
+    
+    .BlackHatPython:hover
+    {
+        height: 180px;
+    }
+
+
+    #KaliLinux
+    {
+        position: absolute;
+
+        right: 375px;
+        top: 565px;
+    }
+
+    #KaliLinuxTitle
+    {
+        position: absolute;
+
+        color: silver;
+
+        top: 530px;
+        left: 425px;
+
+        font-size: 21px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        transition: 0.6s ease;
+    }
+
+    #KaliLinuxTitle:hover
+    {
+        color: silver;
+        font-size: 22px;
+    }
+
+    .MasterBundle
+    {
+        height: 150px;
+        transition: 0.6s ease;
+    }
+    
+    .MasterBundle:hover
+    {
+        height: 160px;
+    }
+
+    #BundleDescription2
+    {
+        position: absolute;
+
+        background-color: black;
+
+        color: silver;
+
+        right: 10px;
+        top: 760px;
+
+        text-align: center;
+
+        padding-left: 10px;
+
+        font-size: 23px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        transition: 0.6s ease;
+    }
+
+    #BundleDescription2:hover
+    {
+        color: silver;
+        font-size: 23.4px;
+    }
+
+
+    /* News and Updates Section */  
+    #LeftTextBox
+    {
+        position: absolute;
+
+        background-color: rgba(0, 0, 0, 0.900);
+
+        
+        left: 235px;
+        top: 2558px;
+
+        padding-top: 967px;
+        padding-left: 738.6px;
+        padding-right: 304px;
+
+	    /* border-style: dashed;*/
+
+    }
+
+    #News
+    {
+        position: absolute;
+
+        color: silver;
+
+        top: 10px;
+        left: 330px;
+
+        font-size: 25px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        transition: 0.6s ease;
+    }
+
+    #News:hover
+    {
+        color: silver;
+        font-size: 26px;
+    }
+    
+    #NewsLine
+    {
+        position: absolute;
+
+        color: silver;
+
+        top: 20px;
+        right: 315px;
+
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    /* Slideshow container  https://www.w3schools.com/howto/howto_js_slideshow.asp */
+
+    #SocialMediaBorder
+    {
+        position: absolute;
+
+        color: silver;
+
+        font-size: 25px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        right: 415px;
+        bottom: 885px;
+
+        transition: 0.6s ease;
+
+        padding-left: 1px;
+    }
+
+    #SocialMediaBorder:hover
+    {
+        color: silver;
+        font-size: 26px;;
+    }
+
+    * {box-sizing:border-box}
+    #SocialMediaContainer 
+    {
+        max-width: 1000px;
+        position: absolute;
+        margin: auto;
+    }
+    
+    .SocialMedia
+    {
+        /*display: none;*/
+
+        position: absolute;
+
+        top: -880px;
+        right: 35px;
+
+        
+    }
+
+    .SocialImages
+    {
+        height: 200px;
+        width: 356px;
+
+        transition: 0.6s ease;
+
+    }
+
+    .SocialImages:hover
+    {
+        height: 210px;
+        width: 366px;
+
+    }
+
+    .SocialImages2
+    {
+        height: 200px;
+        width: 356px;
+
+        transition: 0.6s ease;
+
+    }
+
+    .SocialImages2:hover
+    {
+        height: 210px;
+        width: 366px;
+
+    }
+
+    .SocialImages3
+    {
+        height: 200px;
+        width: 356px;
+
+        transition: 0.6s ease;
+
+    }
+
+    .SocialImages3:hover
+    {
+        height: 210px;
+        width: 366px;
+
+    }
+
+    .SocialImages4
+    {
+        height: 200px;
+        width: 356px;
+
+        transition: 0.6s ease;
+
+    }
+
+    .SocialImages4:hover
+    {
+        height: 210px;
+        width: 366px;
+
+    }
+
+    .SocialImages5
+    {
+        height: 200px;
+        width: 356px;
+
+        transition: 0.6s ease;
+
+    }
+
+    .SocialImages5:hover
+    {
+        height: 210px;
+        width: 366px;
+
+    }
+    
+
+
+    /* Fading animation for the images */
+    .News 
+    {
+        -webkit-animation-name: News;
+        -webkit-animation-duration: 1.5s;
+        animation-name: News;
+        animation-duration: 1.5s;
+    }
+  
+    @-webkit-keyframes News 
+    {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+  
+    @keyframes News 
+    {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+
+    /* Scroll Buttons */
+
+    .Next /*THis is actually the left arrow */
+    {
+        position: absolute;
+        cursor: pointer;
+
+        top: -800px;
+        right: -5px;
+
+        color: silver;
+        font-size: 25px;
+
+        transition:  0.6s ease;
+        border-radius: 0 3px 3px 0;
+    }
+
+
+    .Prev
+    {
+        position: absolute;
+
+        cursor: pointer;
+
+        color: silver;
+        font-size: 25px;
+
+        top: -800px;
+        right: 430px;
+
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .Prev:hover, .Next:hover
+    {
+        color: silver;
+        font-size: 35px;
+    }
+
+    .Dot1
+    {   
+
+        position: absolute;
+
+        bottom: 650px;
+        right: 200px;
+
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color:silver;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .Dot1:hover, .Dot2:hover, .Dot3:hover, .Dot4:hover, .Dot5:hover
+    {
+        background-color: gray;
+        height: 19px;
+        width: 19px;
+    }
+
+    .Dot2
+    {   
+
+        position: absolute;
+
+        bottom: 650px;
+        right: 260px;
+
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: silver;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .Dot3
+    {   
+
+        position: absolute;
+
+        bottom: 650px;
+        right: 140px;
+
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: silver;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .Dot4
+    {   
+
+        position: absolute;
+
+        bottom: 650px;
+        right: 230px;
+
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: silver;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .Dot5
+    {   
+
+        position: absolute;
+
+        bottom: 650px;
+        right: 170px;
+
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: silver;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .Tool1
+    {
+        position: absolute;
+        background-color: black;
+
+        color: silver;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        
+        text-align: center;
+        top: 240px;
+
+        transition: 0.6s ease;
+    }
+
+    .Tool1:hover
+    {
+        color: silver;
+        font-size: 25.5px;
+    }
+
+    .Tool2
+    {
+        position: absolute;
+        background-color: black;
+
+        color: silver;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        
+        text-align: center;
+        top: 240px;
+
+        transition: 0.6s ease;
+    }
+
+    .Tool2:hover
+    {
+        color: silver;
+        font-size: 25.5px;
+    }
+
+    .Tool3
+    {
+        position: absolute;
+        background-color: black;
+
+        color: silver;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        
+        text-align: center;
+        top: 240px;
+
+        transition: 0.6s ease;
+    }
+
+    .Tool3:hover
+    {
+        color: silver;
+        font-size: 25.5px;
+    }
+
+    .Tool4
+    {
+        position: absolute;
+        background-color: black;
+
+        color: silver;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        
+        text-align: center;
+        top: 240px;
+
+        transition: 0.6s ease;
+    }
+
+    .Tool4:hover
+    {
+        color: silver;
+        font-size: 25.5px;
+    }
+
+    .Tool5
+    {
+        position: absolute;
+        background-color: black;
+
+        color: silver;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        
+        text-align: center;
+        top: 240px;
+
+        transition: 0.6s ease;
+    }
+
+    .Tool5:hover
+    {
+        color: silver;
+        font-size: 25.5px;
+    }
+
+    /* logos */
+
+    .PatreonLogo
+    {   
+
+        position: absolute;
+
+        background-image: url(GitHubLogo.jpg);
+        
+        background-size: 75px;
+        background-repeat: no-repeat;
+        background-position-x: -10px;
+        background-position-y: -10px;
+
+        left: 1030px;
+        top: 450px;
+
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        margin: 0 2px;
+        background-color: black;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        
+    }
+
+    .PatreonLogoHover
+    {   
+
+        position: absolute;
+        
+        background-size: 75px;
+        background-repeat: no-repeat;
+        background-position-x: -10px;
+        background-position-y: 0px;
+
+        left: 1030px;
+        top: 450px;
+
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        margin: 0 2px;
+        
+        border-radius: 50%;
+        display: inline-block;
+        transition:  0.6s ease;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1px;
+        font-weight: bold;
+        
+        
+    }
+
+    .PatreonLogoHover:hover
+    {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 15px;
+
+    }
+
+    .TwitterLogo
+    {   
+
+        position: absolute;
+
+        background-image: url(LinkeDinLogo.png);
+        
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position-x: 0px;
+        background-position-y: 0px;
+
+        left: 1100px;
+        top: 450px;
+
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        margin: 0 2px;
+        background-color: black;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .TwitterLogoHover
+    {   
+
+        position: absolute;
+        
+        background-size: 75px;
+        background-repeat: no-repeat;
+        background-position-x: -10px;
+        background-position-y: 0px;
+
+        left: 1100px;
+        top: 450px;
+
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        margin: 0 2px;
+        
+        border-radius: 50%;
+        display: inline-block;
+        transition:  0.6s ease;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1px;
+        font-weight: bold;
+        
+        
+    }
+
+    .TwitterLogoHover:hover
+    {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 15px;
+
+    }
+
+    .InstagramLogo
+    {   
+
+        position: absolute;
+
+        background-image: url(Biologo.jpg);
+        
+        background-size: 100px;
+        background-repeat: no-repeat;
+        background-position-x: -25px;
+        background-position-y: -24px;
+
+        left: 1170px;
+        top: 450px;
+
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        margin: 0 2px;
+        background-color: black;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .InstagramLogoHover
+    {   
+
+        position: absolute;
+        
+        background-size: 75px;
+        background-repeat: no-repeat;
+        background-position-x: -10px;
+        background-position-y: 0px;
+
+        left: 1170px;
+        top: 450px;
+
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        margin: 0 2px;
+        
+        border-radius: 50%;
+        display: inline-block;
+        transition:  0.6s ease;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1px;
+        font-weight: bold;
+        
+        
+    }
+
+    .InstagramLogoHover:hover
+    {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 15px;
+
+    }
+
+    .KofiLogo
+    {   
+
+        position: absolute;
+
+        background-image: url(Capture\ the\ Flag.jpg);
+        
+        background-size: 63px;
+        background-repeat: no-repeat;
+        background-position-x: -3.5px;
+        background-position-y: 0px;
+
+        left: 500px;
+        top: 450px;
+
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        margin: 0 2px;
+        background-color: black;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .KofiLogoHover
+    {   
+
+        position: absolute;
+        
+        background-size: 75px;
+        background-repeat: no-repeat;
+        background-position-x: -10px;
+        background-position-y: 0px;
+
+        left: 500px;
+        top: 450px;
+
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        margin: 0 2px;
+        
+        border-radius: 50%;
+        display: inline-block;
+        transition:  0.6s ease;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1px;
+        font-weight: bold;
+        
+        
+    }
+
+    .KofiLogoHover:hover
+    {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 15px;
+
+    }
+
+    .WorkShop
+    {   
+
+        position: absolute;
+
+        background-image: url(Bash\ Logo.jpg);
+        
+        background-size: 125px;
+        background-repeat: no-repeat;
+        background-position-x: -37px;
+        background-position-y: -10px;
+
+        left: 570px;
+        top: 450px;
+
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        margin: 0 2px;
+        background-color: black;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        
+    }
+
+    .WorkShopHover
+    {   
+
+        position: absolute;
+        
+        background-size: 75px;
+        background-repeat: no-repeat;
+        background-position-x: -10px;
+        background-position-y: 0px;
+
+        left: 570px;
+        top: 450px;
+
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        margin: 0 2px;
+        
+        border-radius: 50%;
+        display: inline-block;
+        transition:  0.6s ease;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1px;
+        font-weight: bold;
+        
+        
+    }
+
+    .WorkShopHover:hover
+    {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 15px;
+
+    }
+
+
+
+    .Prototypez
+    {   
+
+        position: absolute;
+
+        background-image: url(Python.jpg);
+        
+        background-size: 170px;
+        background-repeat: no-repeat;
+        background-position-x: -60px;
+        background-position-y: -18px;
+
+        left: 430px;
+        top: 450px;
+
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        margin: 0 2px;
+        background-color: black;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .PrototypezHover
+    {   
+
+        position: absolute;
+        
+        background-size: 75px;
+        background-repeat: no-repeat;
+        background-position-x: -10px;
+        background-position-y: 0px;
+
+        left: 430px;
+        top: 450px;
+
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        margin: 0 2px;
+        
+        border-radius: 50%;
+        display: inline-block;
+        transition:  0.6s ease;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1px;
+        font-weight: bold;
+        
+        
+    }
+
+    .PrototypezHover:hover
+    {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 15px;
+
+    }
+
+
+    .About
+    {   
+
+        position: absolute;
+
+        background-image: url(C\ logo.png);
+        
+        background-size: 70px;
+        background-repeat: no-repeat;
+        background-position-x: -11px;
+        background-position-y: -2px;
+
+        left: 640px;
+        top: 450px;
+
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        margin: 0 2px;
+        background-color: black;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .AboutHover
+    {   
+
+        position: absolute;
+        
+        background-size: 75px;
+        background-repeat: no-repeat;
+        background-position-x: -10px;
+        background-position-y: 0px;
+
+        left: 640px;
+        top: 450px;
+
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        margin: 0 2px;
+        
+        border-radius: 50%;
+        display: inline-block;
+        transition:  0.6s ease;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1px;
+        font-weight: bold;
+        
+        
+    }
+
+    .AboutHover:hover
+    {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 15px;
+
+    }
+
+
+    .Contact
+    {   
+
+        position: absolute;
+
+        background-image: url(Cpp\ logo.png);
+        
+        background-size: 55px;
+        background-repeat: no-repeat;
+        background-position-x: -2px;
+        background-position-y: -3px;
+
+        left: 360px;
+        top: 450px;
+
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        margin: 0 2px;
+        background-color: black;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .ContactHover
+    {   
+
+        position: absolute;
+        
+        background-size: 75px;
+        background-repeat: no-repeat;
+        background-position-x: -10px;
+        background-position-y: 0px;
+
+        left: 360px;
+        top: 450px;
+
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        margin: 0 2px;
+        
+        border-radius: 50%;
+        display: inline-block;
+        transition:  0.6s ease;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1px;
+        font-weight: bold;
+        
+        
+    }
+
+    .ContactHover:hover
+    {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 15px;
+
+    }
+
+
+    /* Slideshow container PART 2  https://www.w3schools.com/howto/howto_js_slideshow.asp */
+
+    #HighlightsBorder
+    {
+        position: absolute;
+
+        color: silver;
+
+        font-size: 25px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        right: 415px;
+        bottom: 390px;
+
+        padding-left: 0px;
+        
+        transition: 0.6s ease;
+    }
+
+    #HighlightsBorder:hover
+    {
+        color: silver;
+        font-size: 26px;
+    }
+
+    * {box-sizing:border-box}
+    #HighlightsContainer 
+    {
+        max-width: 1000px;
+        position: absolute;
+        margin: auto;
+    }
+    
+    .Highlights
+    {
+        /*display: none;*/
+
+        position: absolute;
+
+        top: -330px;
+        right: 35px;
+
+    }
+
+    .HighlightsImages
+    {
+        height: 200px;
+        width: 356px;
+
+        transition: 0.6s ease;
+
+    }
+
+    .HighlightsImages:hover
+    {
+        height: 210px;
+        width: 366px;
+
+    }
+
+    .HighlightsImages2
+    {
+        height: 200px;
+        width: 356px;
+
+        transition: 0.6s ease;
+
+    }
+
+    .HighlightsImages2:hover
+    {
+        height: 210px;
+        width: 366px;
+
+    }
+
+    .HighlightsImages3
+    {
+        height: 200px;
+        width: 356px;
+
+        transition: 0.6s ease;
+
+    }
+
+    .HighlightsImages3:hover
+    {
+        height: 210px;
+        width: 366px;
+
+    }
+
+    .HighlightsImages4
+    {
+        height: 200px;
+        width: 356px;
+
+        transition: 0.6s ease;
+
+    }
+
+    .HighlightsImages4:hover
+    {
+        height: 210px;
+        width: 366px;
+
+    }
+
+    .HighlightsImages5
+    {
+        height: 200px;
+        width: 356px;
+
+        transition: 0.6s ease;
+
+    }
+
+    .HighlightsImages5:hover
+    {
+        height: 210px;
+        width: 366px;
+
+    }
+
+    /* Fading animation for the images */
+    .Section 
+    {
+        -webkit-animation-name: News;
+        -webkit-animation-duration: 1.5s;
+        animation-name: News;
+        animation-duration: 1.5s;
+    }
+  
+    @-webkit-keyframes News 
+    {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+  
+    @keyframes News 
+    {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+
+    /* Scroll Buttons */
+
+    .Next2
+    {
+        position: absolute;
+        cursor: pointer;
+
+        top: -250px;
+        right: -5px;
+
+        color: silver;
+        font-size: 25px;
+
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .Prev2
+    {
+        position: absolute;
+
+        cursor: pointer;
+
+        color: silver;
+        font-size: 25px;
+
+        top: -250px;
+        right: 430px;
+
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .Prev2:hover, .Next2:hover
+    {
+        color: silver;
+        font-size: 35px;
+    }
+
+    .Dot11
+    {   
+
+        position: absolute;
+
+        bottom: 100px;
+        right: 200px;
+
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color:silver;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .Dot11:hover, .Dot22:hover, .Dot33:hover, .Dot44:hover, .Dot55:hover
+    {
+        background-color: gray;
+        height: 19px;
+        width: 19px;
+    }
+
+    .Dot22
+    {   
+
+        position: absolute;
+
+        bottom: 100px;
+        right: 260px;
+
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: silver;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .Dot33
+    {   
+
+        position: absolute;
+
+        bottom: 100px;
+        right: 140px;
+
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: silver;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .Dot44
+    {   
+
+        position: absolute;
+
+        bottom: 100px;
+        right: 230px;
+
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: silver;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .Dot55
+    {   
+
+        position: absolute;
+
+        bottom: 100px;
+        right: 170px;
+
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: silver;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+
+    /* Comming Soon Section */  
+    #RightTextBox
+    {
+        position: absolute;
+        
+        background-color: rgba(0,0,0,0.918);
+
+        left: 235px;
+        top: 1722px;
+
+        padding-top: 837px;
+        padding-left: 989.5px;
+        padding-right: 52px;
+	
+	/* border-style: dashed; */
+        
+    }
+
+    #CommingSoon
+    {
+        position: absolute;
+
+        color: silver;
+
+        top: 10px;
+        right: 395px;
+
+        font-size: 25px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        transition: 0.6s ease;
+    }
+
+    #CommingSoon:hover
+    {
+        color: silver;
+        font-size: 26px;
+    }
+    
+    #CommingSoonLine
+    {
+        position: absolute;
+
+        color: silver;
+
+        top: 20px;
+        right: 375px;
+
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    #DroneBullet
+    {
+        position: absolute;      
+
+        right: 10px;
+        top: 80px;
+    }
+
+    #CyberBullet
+    {
+        position: absolute;
+
+        right: 10px;
+        top: 280px;
+    }
+
+    #PETBullet
+    {
+        position: absolute;
+
+        right: 10px;
+        top: 480px;
+    }
+
+    
+    .Next3 /*THis is actually the left arrow */
+    {
+        position: absolute;
+        cursor: pointer;
+
+        top: 10px;
+        right: 340px;
+
+        color: silver;
+        font-size: 25px;
+
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .Prev3
+    {
+        position: absolute;
+
+        cursor: pointer;
+
+        color: silver;
+        font-size: 25px;
+
+        top: 10px;
+        right: 725px;
+
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .Prev3:hover, .Next3:hover
+    {
+        background-color: silver;
+    }
+
+
+
+    * {box-sizing:border-box}
+    #ProductionTextContainer 
+    {
+        max-width: 1000px;
+        position: absolute;
+        margin: auto;
+
+        
+    }
+
+    .ProductionImage
+    {
+        position: absolute;
+
+        bottom: 550px;
         right: 315px;
 
     }
@@ -3987,10 +4286,10 @@
 /*Laptops Resolutions*/
 @media only screen and (min-width: 1280px)
 {
-    
-    body
+	
+	body
 	{
-        background-image: url(B1.jpg);
+        background-image: url(Black2.svg);
         background-repeat: repeat;
     }
 
@@ -4005,32 +4304,37 @@
 
     #MenuBar
     {
-        background-image: url(B1.jpg); 
-        background-position-y: 450px;
-        background-position-x: 400px;
+        background-image: url(p1.gif); 
+        background-position-y: 820px;
+        background-position-x: -50px;
 
-        background-color: red;
+        background-color: black;
         
 
         position: absolute;
         top: 0.3px;
         left: 0.2px;    
         
-        padding-top: 115px;
-        padding-left: 1519px;
+        padding-top: 753px;
+        padding-left: 1518.5px;
 
     }
 
     #FutabWebsHeader
     {
         position: absolute;
+        background-color: rgba(0, 0, 0, 0.800);
 
-        color: silver;
+        padding-left: 645.5px;
 
-        left: 100px;
-        top: -10px;
+        padding-top: 753.5px;
 
-        font-size: 40px; 
+        color: rgba(0, 0, 0, 0);
+
+        left: 804.5px;
+        top: 0px;
+
+        font-size: 0px; 
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         transition: 0.6s ease;
 
@@ -4038,8 +4342,13 @@
 
     #FutabWebsHeader:hover
     {
-        color: silver;
-        font-size: 41px;
+        color: rgba(0, 0, 0, 0);
+        font-size: 0px;
+    }
+
+    .AboutMeText
+    {
+        position: absolute;
     }
 
 
@@ -4048,18 +4357,20 @@
 
         position: absolute;
 
-        background-image: url(RB.jpg);
-        background-size: 150px;
+        background-image: url(P10.gif);
+        background-position-y: 0px;
+        background-position-x: -50px;
+        background-size: 380px;
         background-repeat: no-repeat;
 
-        left: 245px;
-        top: -113px;
+        left: 1000px;
+        top: 40px;
 
         cursor: pointer;
-        height: 150px;
-        width: 150px;
+        height: 250px;
+        width: 250px;
         margin: 0 2px;
-        background-color: purple;
+        background-color: silver;
         border-radius: 50%;
         display: inline-block;
         transition: 0.1s ease;
@@ -4067,13 +4378,152 @@
 
     .FutabaLogo:hover
     {
-        height: 160px;
-        width: 160px;
+        height: 260px;
+        width: 260px;
         background-position-x: 0px;
-        background-size: 160px;
-        background-image: url(RB2.jpg);
+        background-size: 380px;
+        background-image: url(P9.gif);
+        background-position-x: -50px;
+        background-position-y: 0px;
+    }
+
+    .NameHeader
+    {
+        position: absolute;
+        
+        color: silver;
+        font-size: 35px;
+
+        bottom: 370px;
+        right: 303px;
+
+        transition: 0.6s ease;
+    }
+
+    .ShortBioHeader
+    {
+        position: absolute;
+
+        color: silver;
+        font-size: 30px;
+
+        text-align: center;
+
+        bottom: 300px;
+        right: 110px;
+
+        transition: 0.6s ease;
+    }
+
+    .LongBioHeader
+    {
+        position: absolute;
+
+        cursor: pointer;
+
+        border-style: solid;
+        border-radius: 5%;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+        color: silver;
+        font-size: 30px;
+
+        text-align: center;
+
+        bottom: 150px;
+        right: 331px;
+
+        transition: 0.6s ease;
+
         
     }
+
+    .LongBioHeader:hover
+    {
+        background-color: silver;
+        color: black;
+        
+    }
+
+    .Skills
+    {
+        position: absolute;
+
+        cursor: pointer;
+
+        border-style: solid;
+        border-radius: 5%;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+        color: silver;
+        font-size: 30px;
+
+        text-align: center;
+
+        bottom: 80px;
+        right: 345px;
+
+        transition: 0.6s ease;
+
+        
+    }
+
+    .Skills:hover
+    {
+        background-color: silver;
+        color: black;
+        
+    }
+
+    .CoverLetter
+    {
+        position: absolute;
+
+        cursor: pointer;
+
+        border-style: solid;
+        border-radius: 5%;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+        color: silver;
+        font-size: 30px;
+
+        text-align: center;
+
+        bottom: 10px;
+        right: 303px;
+
+        transition: 0.6s ease;
+
+        
+    }
+
+    .CoverLetter:hover
+    {
+        background-color: silver;
+        color: black;
+        
+    }
+
+
+    .NameHeader:hover 
+    {
+        color: white;
+        font-size: 36px;
+    }
+
+    .ShortBioHeader:hover
+    {
+        color: white;
+        font-size: 30.5px;
+    }
+
 
     /* Main center text field */  
     #CenterTextBox
@@ -4084,11 +4534,11 @@
 
         /* background-color: gray; */
 
-        left: 455px;
-        top: 115px;
+        left: 235px;
+        top: 755px;
 
         padding-top: 967px;
-        padding-left: 628px;
+        padding-left: 1041.6px;
 
 	/* border-style: dashed;*/ 
         
@@ -4103,9 +4553,9 @@
         /* font-weight: bold; */
 
         top: 40px;
-        right: 170px;
+        right: 375px;
 
-        font-size: 23px;
+        font-size: 25px;
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         transition: 0.6s ease;
@@ -4115,7 +4565,7 @@
     #ProgrammingResources:hover
     {
         color: silver;
-        font-size: 24px;
+        font-size: 26px;
     }
     
     #ProgrammingResourcesLine
@@ -4125,7 +4575,7 @@
         color: silver;
 
         top: 50px;
-        right: 80px;
+        right: 300px;
 
         font-size: 25px;
         font-weight: bold;
@@ -4135,7 +4585,7 @@
     {
         position: absolute;
 
-        right: 435px;
+        right: 720px;
         top: 130px;
     }
 
@@ -4146,9 +4596,9 @@
         color: silver;
 
         top: 90px;
-        left: 20px;
+        left: 120px;
 
-        font-size: 16px;
+        font-size: 21px;
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         transition: 0.6s ease;
@@ -4157,17 +4607,17 @@
     #CppTitle:hover
     {
         color: silver;
-        font-size: 17px;
+        font-size: 22px;
     }
 
     .CppPic
     {
-        height: 130px;
+        height: 150px;
         transition: 0.6s ease;
     }
     .CppPic:hover 
     {
-        height: 140px;
+        height: 160px;
     }
 
     
@@ -4177,7 +4627,7 @@
 
         border-style: dashed;
 
-        right: 10px;
+        right: 70px;
         top: 130px;
     }
 
@@ -4188,9 +4638,9 @@
         color: silver;
 
         top: 90px;
-        left: 485px;
+        left: 735px;
         
-        font-size: 16px;
+        font-size: 21px;
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         transition: 0.6s ease;
@@ -4198,17 +4648,17 @@
     #PythonTitle:hover
     {
         color: silver;
-        font-size: 17px;
+        font-size: 22px;
     }
 
     .PythonPic
     {
-        height: 100px;
+        height: 130px;
         transition: 0.6s ease;
     }
     .PythonPic:hover 
     {
-        height: 110px;
+        height: 140px;
     }
 
     #Linux
@@ -4217,20 +4667,20 @@
 
         height: 10px;
 
-        right: 225px;
-        top: 130px;
+        right: 385px;
+        top: 120px;
 
 
     }
 
     .LinuxPic
     {
-        height: 90px;
+        height: 130px;
         transition: 0.6s ease;
     }
     .LinuxPic:hover 
     {
-        height: 100px;
+        height: 140px;
     }
 
 
@@ -4241,9 +4691,9 @@
         color: silver;
 
         top: 90px;
-        left: 245px;
+        left: 435px;
 
-        font-size: 16px;
+        font-size: 21px;
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         transition:  0.6s ease;
@@ -4253,10 +4703,9 @@
     #LinuxTitle:hover
     {
         color: silver;
-        font-size: 17px;
+        font-size: 22px;
     }
 
-    
     #BundleDescription
     {
         position: absolute;
@@ -4272,7 +4721,7 @@
 
         padding-left: 10px;
 
-        font-size: 19px;
+        font-size: 23px;
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
@@ -4282,7 +4731,7 @@
     #BundleDescription:hover
     {
         color: silver;
-        font-size: 19.3px;
+        font-size: 23.4px;
     }
 
 
@@ -4294,9 +4743,10 @@
 
         color: silver;
 
-        right: 170px;
+        top: 470px;
+        right: 375px;
 
-        font-size: 23px;
+        font-size: 25px;
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         transition: 0.6s ease;
@@ -4305,7 +4755,7 @@
     #CyberResources:hover
     {
         color: silver;
-        font-size: 24px;
+        font-size: 26px;
     }
     
     #CyberResourcesLine
@@ -4315,7 +4765,7 @@
         color: silver;
 
         top: 480px;
-        right: 80px;
+        right: 300px;
 
         font-size: 25px;
         font-weight: bold;
@@ -4325,7 +4775,7 @@
     {
         position: absolute;
 
-        right: 430px;
+        right: 700px;
         top: 565px;
     }
 
@@ -4336,9 +4786,9 @@
         color: silver;
 
         top: 530px;
-        left: 38px;
+        left: 120px;
 
-        font-size: 16px;
+        font-size: 21px;
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         transition: 0.6s ease;
@@ -4347,17 +4797,17 @@
     #GrayHatCppTitle:hover
     {
         color: silver;
-        font-size: 17px;
+        font-size: 22px;
     }
 
     .GrayCppPic
     {
-        height: 100px; 
+        height: 150px; 
         transition: 0.6s ease;
     }
     .GrayCppPic:hover 
     {
-        height: 110px;
+        height: 160px;
     }
 
     
@@ -4365,7 +4815,7 @@
     {
         position: absolute;
 
-        right: 10px;
+        right: 90px;
         top: 565px;
     }
 
@@ -4376,9 +4826,9 @@
         color: silver;
 
         top: 530px;
-        left: 460px;
+        left: 745px;
 
-        font-size: 16px;
+        font-size: 21px;
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         transition: 0.6s ease;
@@ -4387,18 +4837,18 @@
     #GrayHatPython3Title:hover
     {
         color: silver;
-        font-size: 17px;
+        font-size: 22px;
     }
 
     .BlackHatPython
     {
-        height: 130px;
+        height: 170px;
         transition: 0.6s ease;
     }
     
     .BlackHatPython:hover
     {
-        height: 140px;
+        height: 180px;
     }
 
 
@@ -4406,7 +4856,7 @@
     {
         position: absolute;
 
-        right: 215px;
+        right: 375px;
         top: 565px;
     }
 
@@ -4417,9 +4867,9 @@
         color: silver;
 
         top: 530px;
-        left: 248px;
+        left: 425px;
 
-        font-size: 16px;
+        font-size: 21px;
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         transition: 0.6s ease;
@@ -4428,18 +4878,18 @@
     #KaliLinuxTitle:hover
     {
         color: silver;
-        font-size: 17px;
+        font-size: 22px;
     }
 
     .MasterBundle
     {
-        height: 100px;
+        height: 150px;
         transition: 0.6s ease;
     }
     
     .MasterBundle:hover
     {
-        height: 110px;
+        height: 160px;
     }
 
     #BundleDescription2
@@ -4451,13 +4901,13 @@
         color: silver;
 
         right: 10px;
-        top: 720px;
+        top: 760px;
 
         text-align: center;
 
         padding-left: 10px;
 
-        font-size: 19px;
+        font-size: 23px;
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         transition: 0.6s ease;
@@ -4466,7 +4916,7 @@
     #BundleDescription2:hover
     {
         color: silver;
-        font-size: 19.4px;
+        font-size: 23.4px;
     }
 
 
@@ -4478,11 +4928,12 @@
         background-color: rgba(0, 0, 0, 0.900);
 
         
-        left: -1px;
-        top: 115px;
+        left: 235px;
+        top: 2558px;
 
         padding-top: 967px;
-        padding-left: 152px;
+        padding-left: 738.6px;
+        padding-right: 304px;
 
 	    /* border-style: dashed;*/
 
@@ -4495,9 +4946,9 @@
         color: silver;
 
         top: 10px;
-        left: 60px;
+        left: 330px;
 
-        font-size: 20px;
+        font-size: 25px;
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         transition: 0.6s ease;
@@ -4506,7 +4957,7 @@
     #News:hover
     {
         color: silver;
-        font-size: 21px;
+        font-size: 26px;
     }
     
     #NewsLine
@@ -4516,7 +4967,7 @@
         color: silver;
 
         top: 20px;
-        right: 40px;
+        right: 315px;
 
         font-size: 25px;
         font-weight: bold;
@@ -4530,11 +4981,11 @@
 
         color: silver;
 
-        font-size: 20px;
+        font-size: 25px;
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-        right: 180px;
+        right: 415px;
         bottom: 885px;
 
         transition: 0.6s ease;
@@ -4545,7 +4996,7 @@
     #SocialMediaBorder:hover
     {
         color: silver;
-        font-size: 21px;;
+        font-size: 26px;;
     }
 
     * {box-sizing:border-box}
@@ -4563,14 +5014,14 @@
         position: absolute;
 
         top: -880px;
-        right: -215px;
+        right: 35px;
 
         
     }
 
     .SocialImages
     {
-        height: 180px;
+        height: 200px;
         width: 356px;
 
         transition: 0.6s ease;
@@ -4579,14 +5030,14 @@
 
     .SocialImages:hover
     {
-        height: 190px;
+        height: 210px;
         width: 366px;
 
     }
 
     .SocialImages2
     {
-        height: 180px;
+        height: 200px;
         width: 356px;
 
         transition: 0.6s ease;
@@ -4595,14 +5046,14 @@
 
     .SocialImages2:hover
     {
-        height: 190px;
+        height: 210px;
         width: 366px;
 
     }
 
     .SocialImages3
     {
-        height: 180px;
+        height: 200px;
         width: 356px;
 
         transition: 0.6s ease;
@@ -4611,14 +5062,14 @@
 
     .SocialImages3:hover
     {
-        height: 190px;
+        height: 210px;
         width: 366px;
 
     }
 
     .SocialImages4
     {
-        height: 180px;
+        height: 200px;
         width: 356px;
 
         transition: 0.6s ease;
@@ -4627,14 +5078,14 @@
 
     .SocialImages4:hover
     {
-        height: 190px;
+        height: 210px;
         width: 366px;
 
     }
 
     .SocialImages5
     {
-        height: 180px;
+        height: 200px;
         width: 356px;
 
         transition: 0.6s ease;
@@ -4643,7 +5094,7 @@
 
     .SocialImages5:hover
     {
-        height: 190px;
+        height: 210px;
         width: 366px;
 
     }
@@ -4678,8 +5129,8 @@
         position: absolute;
         cursor: pointer;
 
-        top: -920px;
-        right: -210px;
+        top: -800px;
+        right: -5px;
 
         color: silver;
         font-size: 25px;
@@ -4698,8 +5149,8 @@
         color: silver;
         font-size: 25px;
 
-        top: -920px;
-        right: 120px;
+        top: -800px;
+        right: 430px;
 
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
@@ -4708,7 +5159,7 @@
     .Prev:hover, .Next:hover
     {
         color: silver;
-        font-size: 26px;
+        font-size: 35px;
     }
 
     .Dot1
@@ -4716,8 +5167,8 @@
 
         position: absolute;
 
-        bottom: 670px;
-        right: -40px;
+        bottom: 650px;
+        right: 200px;
 
         cursor: pointer;
         height: 15px;
@@ -4741,8 +5192,8 @@
 
         position: absolute;
 
-        bottom: 670px;
-        right: 20px;
+        bottom: 650px;
+        right: 260px;
 
         cursor: pointer;
         height: 15px;
@@ -4759,8 +5210,8 @@
 
         position: absolute;
 
-        bottom: 670px;
-        right: -100px;
+        bottom: 650px;
+        right: 140px;
 
         cursor: pointer;
         height: 15px;
@@ -4777,8 +5228,8 @@
 
         position: absolute;
 
-        bottom: 670px;
-        right: -10px;
+        bottom: 650px;
+        right: 230px;
 
         cursor: pointer;
         height: 15px;
@@ -4795,8 +5246,8 @@
 
         position: absolute;
 
-        bottom: 670px;
-        right: -70px;
+        bottom: 650px;
+        right: 170px;
 
         cursor: pointer;
         height: 15px;
@@ -4827,7 +5278,7 @@
     .Tool1:hover
     {
         color: silver;
-        font-size: 25.4px;
+        font-size: 25.5px;
     }
 
     .Tool2
@@ -4849,7 +5300,7 @@
     .Tool2:hover
     {
         color: silver;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
 
     .Tool3
@@ -4871,7 +5322,7 @@
     .Tool3:hover
     {
         color: silver;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
 
     .Tool4
@@ -4893,7 +5344,7 @@
     .Tool4:hover
     {
         color: silver;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
 
     .Tool5
@@ -4915,7 +5366,7 @@
     .Tool5:hover
     {
         color: silver;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
 
     /* logos */
@@ -4932,14 +5383,14 @@
         background-position-x: -10px;
         background-position-y: -10px;
 
-        left: 382px;
-        top: 60px;
+        left: 1030px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -4956,8 +5407,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 382px;
-        top: 60px;
+        left: 1030px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -4994,14 +5445,14 @@
         background-position-x: 0px;
         background-position-y: 0px;
 
-        left: 382px;
-        top: 130px;
+        left: 1100px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -5017,8 +5468,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 382px;
-        top: 130px;
+        left: 1100px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -5055,14 +5506,14 @@
         background-position-x: -25px;
         background-position-y: -24px;
 
-        left: 382px;
-        top: 200px;
+        left: 1170px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -5078,8 +5529,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 382px;
-        top: 200px;
+        left: 1170px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -5116,14 +5567,14 @@
         background-position-x: -3.5px;
         background-position-y: 0px;
 
-        left: 382px;
-        top: 270px;
+        left: 500px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -5139,8 +5590,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 382px;
-        top: 270px;
+        left: 500px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -5177,14 +5628,14 @@
         background-position-x: -37px;
         background-position-y: -10px;
 
-        left: 382px;
-        top: 400px;
+        left: 570px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -5201,8 +5652,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 382px;
-        top: 400px;
+        left: 570px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -5241,14 +5692,14 @@
         background-position-x: -60px;
         background-position-y: -18px;
 
-        left: 382px;
-        top: 470px;
+        left: 430px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -5264,8 +5715,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 382px;
-        top: 470px;
+        left: 430px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -5303,14 +5754,14 @@
         background-position-x: -11px;
         background-position-y: -2px;
 
-        left: 382px;
-        top: 540px;
+        left: 640px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -5326,8 +5777,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 382px;
-        top: 540px;
+        left: 640px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -5365,14 +5816,14 @@
         background-position-x: -2px;
         background-position-y: -3px;
 
-        left: 382px;
-        top: 610px;
+        left: 360px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -5388,8 +5839,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 382px;
-        top: 610px;
+        left: 360px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -5423,12 +5874,12 @@
 
         color: silver;
 
-        font-size: 20px;
+        font-size: 25px;
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-        right: 180px;
-        bottom: 340px;
+        right: 415px;
+        bottom: 390px;
 
         padding-left: 0px;
         
@@ -5438,7 +5889,7 @@
     #HighlightsBorder:hover
     {
         color: silver;
-        font-size: 21px;
+        font-size: 26px;
     }
 
     * {box-sizing:border-box}
@@ -5456,13 +5907,13 @@
         position: absolute;
 
         top: -330px;
-        right: -215px;
+        right: 35px;
 
     }
 
     .HighlightsImages
     {
-        height: 180px;
+        height: 200px;
         width: 356px;
 
         transition: 0.6s ease;
@@ -5471,14 +5922,14 @@
 
     .HighlightsImages:hover
     {
-        height: 190px;
+        height: 210px;
         width: 366px;
 
     }
 
     .HighlightsImages2
     {
-        height: 180px;
+        height: 200px;
         width: 356px;
 
         transition: 0.6s ease;
@@ -5487,14 +5938,14 @@
 
     .HighlightsImages2:hover
     {
-        height: 190px;
+        height: 210px;
         width: 366px;
 
     }
 
     .HighlightsImages3
     {
-        height: 180px;
+        height: 200px;
         width: 356px;
 
         transition: 0.6s ease;
@@ -5503,14 +5954,14 @@
 
     .HighlightsImages3:hover
     {
-        height: 190px;
+        height: 210px;
         width: 366px;
 
     }
 
     .HighlightsImages4
     {
-        height: 180px;
+        height: 200px;
         width: 356px;
 
         transition: 0.6s ease;
@@ -5519,14 +5970,14 @@
 
     .HighlightsImages4:hover
     {
-        height: 190px;
+        height: 210px;
         width: 366px;
 
     }
 
     .HighlightsImages5
     {
-        height: 180px;
+        height: 200px;
         width: 356px;
 
         transition: 0.6s ease;
@@ -5535,7 +5986,7 @@
 
     .HighlightsImages5:hover
     {
-        height: 190px;
+        height: 210px;
         width: 366px;
 
     }
@@ -5568,8 +6019,8 @@
         position: absolute;
         cursor: pointer;
 
-        top: -370px;
-        right: -210px;
+        top: -250px;
+        right: -5px;
 
         color: silver;
         font-size: 25px;
@@ -5587,8 +6038,8 @@
         color: silver;
         font-size: 25px;
 
-        top: -370px;
-        right: 120px;
+        top: -250px;
+        right: 430px;
 
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
@@ -5597,7 +6048,7 @@
     .Prev2:hover, .Next2:hover
     {
         color: silver;
-        font-size: 26px;
+        font-size: 35px;
     }
 
     .Dot11
@@ -5605,8 +6056,8 @@
 
         position: absolute;
 
-        bottom: 120px;
-        right: -40px;
+        bottom: 100px;
+        right: 200px;
 
         cursor: pointer;
         height: 15px;
@@ -5630,8 +6081,8 @@
 
         position: absolute;
 
-        bottom: 120px;
-        right: 20px;
+        bottom: 100px;
+        right: 260px;
 
         cursor: pointer;
         height: 15px;
@@ -5648,8 +6099,8 @@
 
         position: absolute;
 
-        bottom: 120px;
-        right: -100px;
+        bottom: 100px;
+        right: 140px;
 
         cursor: pointer;
         height: 15px;
@@ -5666,8 +6117,8 @@
 
         position: absolute;
 
-        bottom: 120px;
-        right: -10px;
+        bottom: 100px;
+        right: 230px;
 
         cursor: pointer;
         height: 15px;
@@ -5684,8 +6135,8 @@
 
         position: absolute;
 
-        bottom: 120px;
-        right: -70px;
+        bottom: 100px;
+        right: 170px;
 
         cursor: pointer;
         height: 15px;
@@ -5705,11 +6156,12 @@
         
         background-color: rgba(0,0,0,0.918);
 
-        left: 1083px;
-        top: 115px;
+        left: 235px;
+        top: 1722px;
 
-        padding-top: 967px;
-        padding-left: 384px;
+        padding-top: 837px;
+        padding-left: 989.5px;
+        padding-right: 52px;
 	
 	/* border-style: dashed; */
         
@@ -5722,9 +6174,9 @@
         color: silver;
 
         top: 10px;
-        right: 110px;
+        right: 395px;
 
-        font-size: 20px;
+        font-size: 25px;
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         transition: 0.6s ease;
@@ -5733,7 +6185,7 @@
     #CommingSoon:hover
     {
         color: silver;
-        font-size: 21px;
+        font-size: 26px;
     }
     
     #CommingSoonLine
@@ -5743,7 +6195,7 @@
         color: silver;
 
         top: 20px;
-        right: 58px;
+        right: 375px;
 
         font-size: 25px;
         font-weight: bold;
@@ -5780,10 +6232,10 @@
         cursor: pointer;
 
         top: 10px;
-        right: 50px;
+        right: 340px;
 
         color: silver;
-        font-size: 23px;
+        font-size: 25px;
 
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
@@ -5796,10 +6248,10 @@
         cursor: pointer;
 
         color: silver;
-        font-size: 23px;
+        font-size: 25px;
 
         top: 10px;
-        right: 380px;
+        right: 725px;
 
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
@@ -5807,7 +6259,7 @@
 
     .Prev3:hover, .Next3:hover
     {
-        background-color: gray;
+        background-color: silver;
     }
 
 
@@ -5826,48 +6278,48 @@
     {
         position: absolute;
 
-        bottom: 700px;
-        right: 30px;
+        bottom: 550px;
+        right: 315px;
 
     }
 
     .PI
     {
-        height: 160px;
-        width: 365px;
+        height: 200px;
+        width: 435px;
         transition: 0.6s ease;
     }
 
     .PI:hover
     {
-        height: 170px;
-        width: 375px;
+        height: 210px;
+        width: 445px;
     }
 
     .PI2
     {
-        height: 160px;
-        width: 365px;
+        height: 200px;
+        width: 435px;
         transition: 0.6s ease;
     }
 
     .PI2:hover
     {
-        height: 170px;
-        width: 375px;
+        height: 210px;
+        width: 445px;
     }
 
     .PI3
     {
-        height: 160px;
-        width: 365px;
+        height: 200px;
+        width: 435px;
         transition: 0.6s ease;
     }
 
     .PI3:hover
     {
-        height: 170px;
-        width: 375px;
+        height: 210px;
+        width: 445px;
     }
 
     .PI4
@@ -5926,7 +6378,7 @@
         padding-bottom: 10px;
 
         color: silver;
-        font-size: 18px;
+        font-size: 25px;
         text-align: center;
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -5941,7 +6393,7 @@
     .ProductionText:hover
     {
         color: silver; /* Use green to indicate a product is out */
-        font-size: 18.5px;
+        font-size: 25.5px;
     }
 
     /* Fading animation for the images */
@@ -5965,16 +6417,16 @@
         to {opacity: 1}
     }
 
-
+	
 }
 
 /*DeskTop Resolutions*/
 @media only screen and (min-width: 1920px)
 {
-    
-    body
+	
+	body
 	{
-        background-image: url(B1.jpg);
+        background-image: url(Black2.svg);
         background-repeat: repeat;
     }
 
@@ -5989,32 +6441,39 @@
 
     #MenuBar
     {
-        background-image: url(B1.jpg); 
-        background-position-y: 450px;
-        background-position-x: 450px;
+        background-image: url(p1.gif); 
+        background-position-y: 1120px;
+        background-position-x: -50px;
 
-        background-color: red;
+        background-size: 2000px;
+
+        background-color: black;
         
 
         position: absolute;
         top: 0.3px;
         left: 0.2px;    
         
-        padding-top: 115px;
-        padding-left: 1919px;
+        padding-top: 1080px;
+        padding-left: 1919.5px;
 
     }
 
     #FutabWebsHeader
     {
         position: absolute;
+        background-color: rgba(0, 0, 0, 0.800);
 
-        color: silver;
+        padding-left: 829.5px;
 
-        left: 1590px;
-        top: -10px;
+        padding-top: 1080px;
 
-        font-size: 40px; 
+        color: rgba(0, 0, 0, 0);
+
+        left: 1090.5px;
+        top: 0px;
+
+        font-size: 0px; 
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         transition: 0.6s ease;
 
@@ -6022,8 +6481,13 @@
 
     #FutabWebsHeader:hover
     {
-        color: silver;
-        font-size: 41px;
+        color: rgba(0, 0, 0, 0);
+        font-size: 0px;
+    }
+
+    .AboutMeText
+    {
+        position: absolute;
     }
 
 
@@ -6032,18 +6496,20 @@
 
         position: absolute;
 
-        background-image: url(RB.jpg);
-        background-size: 150px;
+        background-image: url(P10.gif);
+        background-position-y: 0px;
+        background-position-x: -50px;
+        background-size: 380px;
         background-repeat: no-repeat;
 
-        left: 345px;
-        top: -113px;
+        left: 1400px;
+        top: 140px;
 
         cursor: pointer;
-        height: 150px;
-        width: 150px;
+        height: 250px;
+        width: 250px;
         margin: 0 2px;
-        background-color: purple;
+        background-color: silver;
         border-radius: 50%;
         display: inline-block;
         transition: 0.1s ease;
@@ -6051,13 +6517,152 @@
 
     .FutabaLogo:hover
     {
-        height: 160px;
-        width: 160px;
+        height: 260px;
+        width: 260px;
         background-position-x: 0px;
-        background-size: 160px;
-        background-image: url(RB2.jpg);
+        background-size: 380px;
+        background-image: url(P9.gif);
+        background-position-x: -50px;
+        background-position-y: 0px;
+    }
+
+    .NameHeader
+    {
+        position: absolute;
+        
+        color: silver;
+        font-size: 35px;
+
+        bottom: 570px;
+        right: 303px;
+
+        transition: 0.6s ease;
+    }
+
+    .ShortBioHeader
+    {
+        position: absolute;
+
+        color: silver;
+        font-size: 30px;
+
+        text-align: center;
+
+        bottom: 470px;
+        right: 110px;
+
+        transition: 0.6s ease;
+    }
+
+    .LongBioHeader
+    {
+        position: absolute;
+
+        cursor: pointer;
+
+        border-style: solid;
+        border-radius: 5%;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+        color: silver;
+        font-size: 30px;
+
+        text-align: center;
+
+        bottom: 320px;
+        right: 331px;
+
+        transition: 0.6s ease;
+
         
     }
+
+    .LongBioHeader:hover
+    {
+        background-color: silver;
+        color: black;
+        
+    }
+
+    .Skills
+    {
+        position: absolute;
+
+        cursor: pointer;
+
+        border-style: solid;
+        border-radius: 5%;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+        color: silver;
+        font-size: 30px;
+
+        text-align: center;
+
+        bottom: 270px;
+        right: 345px;
+
+        transition: 0.6s ease;
+
+        
+    }
+
+    .Skills:hover
+    {
+        background-color: silver;
+        color: black;
+        
+    }
+
+    .CoverLetter
+    {
+        position: absolute;
+
+        cursor: pointer;
+
+        border-style: solid;
+        border-radius: 5%;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+        color: silver;
+        font-size: 30px;
+
+        text-align: center;
+
+        bottom: 220px;
+        right: 303px;
+
+        transition: 0.6s ease;
+
+        
+    }
+
+    .CoverLetter:hover
+    {
+        background-color: silver;
+        color: black;
+        
+    }
+
+
+    .NameHeader:hover 
+    {
+        color: white;
+        font-size: 36px;
+    }
+
+    .ShortBioHeader:hover
+    {
+        color: white;
+        font-size: 30.5px;
+    }
+
 
     /* Main center text field */  
     #CenterTextBox
@@ -6068,11 +6673,11 @@
 
         /* background-color: gray; */
 
-        left: 525px;
-        top: 115px;
+        left: 435px;
+        top: 1080px;
 
         padding-top: 967px;
-        padding-left: 828px;
+        padding-left: 1041.6px;
 
 	/* border-style: dashed;*/ 
         
@@ -6087,7 +6692,7 @@
         /* font-weight: bold; */
 
         top: 40px;
-        right: 260px;
+        right: 395px;
 
         font-size: 25px;
         font-weight: bold;
@@ -6109,7 +6714,7 @@
         color: silver;
 
         top: 50px;
-        right: 175px;
+        right: 300px;
 
         font-size: 25px;
         font-weight: bold;
@@ -6119,7 +6724,7 @@
     {
         position: absolute;
 
-        right: 590px;
+        right: 720px;
         top: 130px;
     }
 
@@ -6130,7 +6735,7 @@
         color: silver;
 
         top: 90px;
-        left: 37px;
+        left: 130px;
 
         font-size: 21px;
         font-weight: bold;
@@ -6161,7 +6766,7 @@
 
         border-style: dashed;
 
-        right: 10px;
+        right: 70px;
         top: 130px;
     }
 
@@ -6172,7 +6777,7 @@
         color: silver;
 
         top: 90px;
-        left: 585px;
+        left: 745px;
         
         font-size: 21px;
         font-weight: bold;
@@ -6201,7 +6806,7 @@
 
         height: 10px;
 
-        right: 285px;
+        right: 385px;
         top: 120px;
 
 
@@ -6225,7 +6830,7 @@
         color: silver;
 
         top: 90px;
-        left: 325px;
+        left: 445px;
 
         font-size: 21px;
         font-weight: bold;
@@ -6240,7 +6845,6 @@
         font-size: 22px;
     }
 
-    
     #BundleDescription
     {
         position: absolute;
@@ -6266,7 +6870,7 @@
     #BundleDescription:hover
     {
         color: silver;
-        font-size: 23.3px;
+        font-size: 23.4px;
     }
 
 
@@ -6279,7 +6883,7 @@
         color: silver;
 
         top: 470px;
-        right: 250px;
+        right: 375px;
 
         font-size: 25px;
         font-weight: bold;
@@ -6300,7 +6904,7 @@
         color: silver;
 
         top: 480px;
-        right: 175px;
+        right: 300px;
 
         font-size: 25px;
         font-weight: bold;
@@ -6310,7 +6914,7 @@
     {
         position: absolute;
 
-        right: 545px;
+        right: 700px;
         top: 565px;
     }
 
@@ -6321,7 +6925,7 @@
         color: silver;
 
         top: 530px;
-        left: 53px;
+        left: 125px;
 
         font-size: 21px;
         font-weight: bold;
@@ -6337,12 +6941,12 @@
 
     .GrayCppPic
     {
-        height: 140px; 
+        height: 150px; 
         transition: 0.6s ease;
     }
     .GrayCppPic:hover 
     {
-        height: 150px;
+        height: 160px;
     }
 
     
@@ -6350,7 +6954,7 @@
     {
         position: absolute;
 
-        right: 10px;
+        right: 90px;
         top: 565px;
     }
 
@@ -6361,7 +6965,7 @@
         color: silver;
 
         top: 530px;
-        left: 605px;
+        left: 755px;
 
         font-size: 21px;
         font-weight: bold;
@@ -6391,7 +6995,7 @@
     {
         position: absolute;
 
-        right: 270px;
+        right: 375px;
         top: 565px;
     }
 
@@ -6402,7 +7006,7 @@
         color: silver;
 
         top: 530px;
-        left: 328px;
+        left: 445px;
 
         font-size: 21px;
         font-weight: bold;
@@ -6418,13 +7022,13 @@
 
     .MasterBundle
     {
-        height: 140px;
+        height: 150px;
         transition: 0.6s ease;
     }
     
     .MasterBundle:hover
     {
-        height: 150px;
+        height: 160px;
     }
 
     #BundleDescription2
@@ -6463,11 +7067,12 @@
         background-color: rgba(0, 0, 0, 0.900);
 
         
-        left: -1px;
-        top: 115px;
+        left: 435px;
+        top: 2882px;
 
         padding-top: 967px;
-        padding-left: 226px;
+        padding-left: 738.6px;
+        padding-right: 304px;
 
 	    /* border-style: dashed;*/
 
@@ -6480,7 +7085,7 @@
         color: silver;
 
         top: 10px;
-        left: 30px;
+        left: 370px;
 
         font-size: 25px;
         font-weight: bold;
@@ -6501,7 +7106,7 @@
         color: silver;
 
         top: 20px;
-        right: 100px;
+        right: 315px;
 
         font-size: 25px;
         font-weight: bold;
@@ -6519,7 +7124,7 @@
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-        right: 200px;
+        right: 425px;
         bottom: 885px;
 
         transition: 0.6s ease;
@@ -6548,7 +7153,7 @@
         position: absolute;
 
         top: -880px;
-        right: -175px;
+        right: 35px;
 
         
     }
@@ -6664,7 +7269,7 @@
         cursor: pointer;
 
         top: -800px;
-        right: -210px;
+        right: -5px;
 
         color: silver;
         font-size: 25px;
@@ -6684,7 +7289,7 @@
         font-size: 25px;
 
         top: -800px;
-        right: 200px;
+        right: 430px;
 
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
@@ -6702,7 +7307,7 @@
         position: absolute;
 
         bottom: 650px;
-        right: -5px;
+        right: 200px;
 
         cursor: pointer;
         height: 15px;
@@ -6727,7 +7332,7 @@
         position: absolute;
 
         bottom: 650px;
-        right: 55px;
+        right: 260px;
 
         cursor: pointer;
         height: 15px;
@@ -6745,7 +7350,7 @@
         position: absolute;
 
         bottom: 650px;
-        right: -65px;
+        right: 140px;
 
         cursor: pointer;
         height: 15px;
@@ -6763,7 +7368,7 @@
         position: absolute;
 
         bottom: 650px;
-        right: 25px;
+        right: 230px;
 
         cursor: pointer;
         height: 15px;
@@ -6781,7 +7386,7 @@
         position: absolute;
 
         bottom: 650px;
-        right: -35px;
+        right: 170px;
 
         cursor: pointer;
         height: 15px;
@@ -6812,7 +7417,7 @@
     .Tool1:hover
     {
         color: silver;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
 
     .Tool2
@@ -6834,7 +7439,7 @@
     .Tool2:hover
     {
         color: silver;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
 
     .Tool3
@@ -6856,7 +7461,7 @@
     .Tool3:hover
     {
         color: silver;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
 
     .Tool4
@@ -6878,7 +7483,7 @@
     .Tool4:hover
     {
         color: silver;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
 
     .Tool5
@@ -6900,7 +7505,7 @@
     .Tool5:hover
     {
         color: silver;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
 
     /* logos */
@@ -6917,14 +7522,14 @@
         background-position-x: -10px;
         background-position-y: -10px;
 
-        left: 452px;
-        top: 60px;
+        left: 1430px;
+        top: 610px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -6941,8 +7546,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 452px;
-        top: 60px;
+        left: 1430px;
+        top: 610px;
 
         cursor: pointer;
         height: 50px;
@@ -6979,14 +7584,14 @@
         background-position-x: 0px;
         background-position-y: 0px;
 
-        left: 452px;
-        top: 130px;
+        left: 1500px;
+        top: 610px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -7002,8 +7607,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 452px;
-        top: 130px;
+        left: 1500px;
+        top: 610px;
 
         cursor: pointer;
         height: 50px;
@@ -7040,14 +7645,14 @@
         background-position-x: -25px;
         background-position-y: -24px;
 
-        left: 452px;
-        top: 200px;
+        left: 1570px;
+        top: 610px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -7063,8 +7668,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 452px;
-        top: 200px;
+        left: 1570px;
+        top: 610px;
 
         cursor: pointer;
         height: 50px;
@@ -7099,16 +7704,16 @@
         background-size: 63px;
         background-repeat: no-repeat;
         background-position-x: -3.5px;
-        background-position-y: -0px;
+        background-position-y: 0px;
 
-        left: 452px;
-        top: 270px;
+        left: 500px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -7124,8 +7729,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 452px;
-        top: 270px;
+        left: 500px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -7162,14 +7767,14 @@
         background-position-x: -37px;
         background-position-y: -10px;
 
-        left: 452px;
-        top: 400px;
+        left: 570px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -7186,8 +7791,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 452px;
-        top: 400px;
+        left: 570px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -7226,14 +7831,14 @@
         background-position-x: -60px;
         background-position-y: -18px;
 
-        left: 452px;
-        top: 470px;
+        left: 430px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -7249,8 +7854,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 452px;
-        top: 470px;
+        left: 430px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -7288,14 +7893,14 @@
         background-position-x: -11px;
         background-position-y: -2px;
 
-        left: 452px;
-        top: 540px;
+        left: 640px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -7311,8 +7916,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 452px;
-        top: 540px;
+        left: 640px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -7350,14 +7955,14 @@
         background-position-x: -2px;
         background-position-y: -3px;
 
-        left: 452px;
-        top: 610px;
+        left: 360px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -7373,8 +7978,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 452px;
-        top: 610px;
+        left: 360px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -7412,8 +8017,8 @@
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-        right: 195px;
-        bottom: 340px;
+        right: 425px;
+        bottom: 390px;
 
         padding-left: 0px;
         
@@ -7441,7 +8046,7 @@
         position: absolute;
 
         top: -330px;
-        right: -175px;
+        right: 35px;
 
     }
 
@@ -7554,7 +8159,7 @@
         cursor: pointer;
 
         top: -250px;
-        right: -210px;
+        right: -5px;
 
         color: silver;
         font-size: 25px;
@@ -7573,7 +8178,7 @@
         font-size: 25px;
 
         top: -250px;
-        right: 200px;
+        right: 430px;
 
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
@@ -7591,7 +8196,7 @@
         position: absolute;
 
         bottom: 100px;
-        right: -5px;
+        right: 200px;
 
         cursor: pointer;
         height: 15px;
@@ -7616,7 +8221,7 @@
         position: absolute;
 
         bottom: 100px;
-        right: 55px;
+        right: 260px;
 
         cursor: pointer;
         height: 15px;
@@ -7634,7 +8239,7 @@
         position: absolute;
 
         bottom: 100px;
-        right: -65px;
+        right: 140px;
 
         cursor: pointer;
         height: 15px;
@@ -7652,7 +8257,7 @@
         position: absolute;
 
         bottom: 100px;
-        right: 25px;
+        right: 230px;
 
         cursor: pointer;
         height: 15px;
@@ -7670,7 +8275,7 @@
         position: absolute;
 
         bottom: 100px;
-        right: -35px;
+        right: 170px;
 
         cursor: pointer;
         height: 15px;
@@ -7690,11 +8295,12 @@
         
         background-color: rgba(0,0,0,0.918);
 
-        left: 1343px;
-        top: 115px;
+        left: 435px;
+        top: 2046px;
 
-        padding-top: 967px;
-        padding-left: 524px;
+        padding-top: 837px;
+        padding-left: 989.5px;
+        padding-right: 52px;
 	
 	/* border-style: dashed; */
         
@@ -7707,7 +8313,7 @@
         color: silver;
 
         top: 10px;
-        right: 150px;
+        right: 428px;
 
         font-size: 25px;
         font-weight: bold;
@@ -7728,7 +8334,7 @@
         color: silver;
 
         top: 20px;
-        right: 128px;
+        right: 375px;
 
         font-size: 25px;
         font-weight: bold;
@@ -7765,7 +8371,7 @@
         cursor: pointer;
 
         top: 10px;
-        right: 70px;
+        right: 340px;
 
         color: silver;
         font-size: 25px;
@@ -7784,7 +8390,7 @@
         font-size: 25px;
 
         top: 10px;
-        right: 495px;
+        right: 725px;
 
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
@@ -7792,7 +8398,7 @@
 
     .Prev3:hover, .Next3:hover
     {
-        background-color: gray;
+        background-color: silver;
     }
 
 
@@ -7811,8 +8417,8 @@
     {
         position: absolute;
 
-        bottom: 700px;
-        right: 70px;
+        bottom: 550px;
+        right: 315px;
 
     }
 
@@ -7950,15 +8556,16 @@
         to {opacity: 1}
     }
 
-
+	
 }
 
+/*1440P Resolutions*/
 @media only screen and (min-width: 1948px)
 {
-    
-    body
+	
+	body
 	{
-        background-image: url(B1.jpg);
+        background-image: url(Black2.svg);
         background-repeat: repeat;
     }
 
@@ -7973,32 +8580,39 @@
 
     #MenuBar
     {
-        background-image: url(B1.jpg); 
-        background-position-y: 450px;
-        background-position-x: 1250px;
+        background-image: url(p1.gif); 
+        background-position-y: 1500px;
+        background-position-x: 0px;
 
-        background-color: red;
+        background-size: 2500px;
+
+        background-color: black;
         
 
         position: absolute;
         top: 0.3px;
         left: 0.2px;    
         
-        padding-top: 115px;
-        padding-left: 2559px;
+        padding-top: 1440px;
+        padding-left: 2559.5px;
 
     }
 
     #FutabWebsHeader
     {
         position: absolute;
+        background-color: rgba(0, 0, 0, 0.800);
 
-        color: silver;
+        padding-left: 1074.5px;
 
-        left: 1590px;
-        top: -10px;
+        padding-top: 1440px;
 
-        font-size: 40px; 
+        color: rgba(0, 0, 0, 0);
+
+        left: 1425.5px;
+        top: 0px;
+
+        font-size: 0px; 
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         transition: 0.6s ease;
 
@@ -8006,27 +8620,35 @@
 
     #FutabWebsHeader:hover
     {
-        color: violet;
-        font-size: 41px;
+        color: rgba(0, 0, 0, 0);
+        font-size: 0px;
     }
+
+    .AboutMeText
+    {
+        position: absolute;
+    }
+
 
     .FutabaLogo
     {   
 
         position: absolute;
 
-        background-image: url(RB.jpg);
-        background-size: 150px;
+        background-image: url(P10.gif);
+        background-position-y: 0px;
+        background-position-x: -50px;
+        background-size: 380px;
         background-repeat: no-repeat;
 
-        left: 345px;
-        top: -113px;
+        left: 1830px;
+        top: 300px;
 
         cursor: pointer;
-        height: 150px;
-        width: 150px;
+        height: 250px;
+        width: 250px;
         margin: 0 2px;
-        background-color: purple;
+        background-color: silver;
         border-radius: 50%;
         display: inline-block;
         transition: 0.1s ease;
@@ -8034,13 +8656,152 @@
 
     .FutabaLogo:hover
     {
-        height: 160px;
-        width: 160px;
+        height: 260px;
+        width: 260px;
         background-position-x: 0px;
-        background-size: 160px;
-        background-image: url(RB2.jpg);
+        background-size: 380px;
+        background-image: url(P9.gif);
+        background-position-x: -50px;
+        background-position-y: 0px;
+    }
+
+    .NameHeader
+    {
+        position: absolute;
+        
+        color: silver;
+        font-size: 35px;
+
+        bottom: 790px;
+        right: 513px;
+
+        transition: 0.6s ease;
+    }
+
+    .ShortBioHeader
+    {
+        position: absolute;
+
+        color: silver;
+        font-size: 30px;
+
+        text-align: center;
+
+        bottom: 690px;
+        right: 320px;
+
+        transition: 0.6s ease;
+    }
+
+    .LongBioHeader
+    {
+        position: absolute;
+
+        cursor: pointer;
+
+        border-style: solid;
+        border-radius: 5%;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+        color: silver;
+        font-size: 30px;
+
+        text-align: center;
+
+        bottom: 500px;
+        right: 539px;
+
+        transition: 0.6s ease;
+
         
     }
+
+    .LongBioHeader:hover
+    {
+        background-color: silver;
+        color: black;
+        
+    }
+
+    .Skills
+    {
+        position: absolute;
+
+        cursor: pointer;
+
+        border-style: solid;
+        border-radius: 5%;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+        color: silver;
+        font-size: 30px;
+
+        text-align: center;
+
+        bottom: 440px;
+        right: 553px;
+
+        transition: 0.6s ease;
+
+        
+    }
+
+    .Skills:hover
+    {
+        background-color: silver;
+        color: black;
+        
+    }
+
+    .CoverLetter
+    {
+        position: absolute;
+
+        cursor: pointer;
+
+        border-style: solid;
+        border-radius: 5%;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+        color: silver;
+        font-size: 30px;
+
+        text-align: center;
+
+        bottom: 380px;
+        right: 512px;
+
+        transition: 0.6s ease;
+
+        
+    }
+
+    .CoverLetter:hover
+    {
+        background-color: silver;
+        color: black;
+        
+    }
+
+
+    .NameHeader:hover 
+    {
+        color: white;
+        font-size: 36px;
+    }
+
+    .ShortBioHeader:hover
+    {
+        color: white;
+        font-size: 30.5px;
+    }
+
 
     /* Main center text field */  
     #CenterTextBox
@@ -8051,11 +8812,11 @@
 
         /* background-color: gray; */
 
-        left: 830px;
-        top: 115px;
+        left: 755px;
+        top: 1440px;
 
-        padding-top: 1325px;
-        padding-left: 828px;
+        padding-top: 967px;
+        padding-left: 1041.6px;
 
 	/* border-style: dashed;*/ 
         
@@ -8070,7 +8831,7 @@
         /* font-weight: bold; */
 
         top: 40px;
-        right: 260px;
+        right: 375px;
 
         font-size: 25px;
         font-weight: bold;
@@ -8092,7 +8853,7 @@
         color: silver;
 
         top: 50px;
-        right: 175px;
+        right: 300px;
 
         font-size: 25px;
         font-weight: bold;
@@ -8102,7 +8863,7 @@
     {
         position: absolute;
 
-        right: 590px;
+        right: 720px;
         top: 130px;
     }
 
@@ -8113,7 +8874,7 @@
         color: silver;
 
         top: 90px;
-        left: 37px;
+        left: 120px;
 
         font-size: 21px;
         font-weight: bold;
@@ -8144,7 +8905,7 @@
 
         border-style: dashed;
 
-        right: 10px;
+        right: 70px;
         top: 130px;
     }
 
@@ -8155,7 +8916,7 @@
         color: silver;
 
         top: 90px;
-        left: 585px;
+        left: 735px;
         
         font-size: 21px;
         font-weight: bold;
@@ -8184,7 +8945,7 @@
 
         height: 10px;
 
-        right: 285px;
+        right: 385px;
         top: 120px;
 
 
@@ -8208,7 +8969,7 @@
         color: silver;
 
         top: 90px;
-        left: 325px;
+        left: 435px;
 
         font-size: 21px;
         font-weight: bold;
@@ -8223,8 +8984,6 @@
         font-size: 22px;
     }
 
-
-    
     #BundleDescription
     {
         position: absolute;
@@ -8263,7 +9022,7 @@
         color: silver;
 
         top: 470px;
-        right: 250px;
+        right: 375px;
 
         font-size: 25px;
         font-weight: bold;
@@ -8284,7 +9043,7 @@
         color: silver;
 
         top: 480px;
-        right: 175px;
+        right: 300px;
 
         font-size: 25px;
         font-weight: bold;
@@ -8294,7 +9053,7 @@
     {
         position: absolute;
 
-        right: 545px;
+        right: 700px;
         top: 565px;
     }
 
@@ -8305,7 +9064,7 @@
         color: silver;
 
         top: 530px;
-        left: 53px;
+        left: 120px;
 
         font-size: 21px;
         font-weight: bold;
@@ -8321,12 +9080,12 @@
 
     .GrayCppPic
     {
-        height: 140px; 
+        height: 150px; 
         transition: 0.6s ease;
     }
     .GrayCppPic:hover 
     {
-        height: 150px;
+        height: 160px;
     }
 
     
@@ -8334,7 +9093,7 @@
     {
         position: absolute;
 
-        right: 10px;
+        right: 90px;
         top: 565px;
     }
 
@@ -8345,7 +9104,7 @@
         color: silver;
 
         top: 530px;
-        left: 605px;
+        left: 745px;
 
         font-size: 21px;
         font-weight: bold;
@@ -8375,7 +9134,7 @@
     {
         position: absolute;
 
-        right: 270px;
+        right: 375px;
         top: 565px;
     }
 
@@ -8386,7 +9145,7 @@
         color: silver;
 
         top: 530px;
-        left: 328px;
+        left: 425px;
 
         font-size: 21px;
         font-weight: bold;
@@ -8402,13 +9161,13 @@
 
     .MasterBundle
     {
-        height: 140px;
+        height: 150px;
         transition: 0.6s ease;
     }
     
     .MasterBundle:hover
     {
-        height: 150px;
+        height: 160px;
     }
 
     #BundleDescription2
@@ -8447,11 +9206,12 @@
         background-color: rgba(0, 0, 0, 0.900);
 
         
-        left: -1px;
-        top: 115px;
+        left: 755px;
+        top: 3242.7px;
 
-        padding-top: 1325px;
-        padding-left: 528px;
+        padding-top: 967px;
+        padding-left: 738.6px;
+        padding-right: 304px;
 
 	    /* border-style: dashed;*/
 
@@ -8463,8 +9223,8 @@
 
         color: silver;
 
-        top: 50px;
-        left: 180px;
+        top: 10px;
+        left: 330px;
 
         font-size: 25px;
         font-weight: bold;
@@ -8484,8 +9244,8 @@
 
         color: silver;
 
-        top: 60px;
-        right: 255px;
+        top: 20px;
+        right: 315px;
 
         font-size: 25px;
         font-weight: bold;
@@ -8503,8 +9263,8 @@
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-        right: 380px;
-        bottom: 1190px;
+        right: 415px;
+        bottom: 885px;
 
         transition: 0.6s ease;
 
@@ -8531,16 +9291,16 @@
 
         position: absolute;
 
-        top: -1180px;
-        right: -95px;
+        top: -880px;
+        right: 35px;
 
         
     }
 
     .SocialImages
     {
-        height: 350px;
-        width: 496px;
+        height: 200px;
+        width: 356px;
 
         transition: 0.6s ease;
 
@@ -8548,15 +9308,15 @@
 
     .SocialImages:hover
     {
-        height: 360px;
-        width: 506px;
+        height: 210px;
+        width: 366px;
 
     }
 
     .SocialImages2
     {
-        height: 350px;
-        width: 496px;
+        height: 200px;
+        width: 356px;
 
         transition: 0.6s ease;
 
@@ -8564,15 +9324,15 @@
 
     .SocialImages2:hover
     {
-        height: 360px;
-        width: 506px;
+        height: 210px;
+        width: 366px;
 
     }
 
     .SocialImages3
     {
-        height: 350px;
-        width: 496px;
+        height: 200px;
+        width: 356px;
 
         transition: 0.6s ease;
 
@@ -8580,15 +9340,15 @@
 
     .SocialImages3:hover
     {
-        height: 360px;
-        width: 506px;
+        height: 210px;
+        width: 366px;
 
     }
 
     .SocialImages4
     {
-        height: 350px;
-        width: 496px;
+        height: 200px;
+        width: 356px;
 
         transition: 0.6s ease;
 
@@ -8596,15 +9356,15 @@
 
     .SocialImages4:hover
     {
-        height: 360px;
-        width: 506px;
+        height: 210px;
+        width: 366px;
 
     }
 
     .SocialImages5
     {
-        height: 350px;
-        width: 496px;
+        height: 200px;
+        width: 356px;
 
         transition: 0.6s ease;
 
@@ -8612,8 +9372,8 @@
 
     .SocialImages5:hover
     {
-        height: 360px;
-        width: 506px;
+        height: 210px;
+        width: 366px;
 
     }
     
@@ -8647,11 +9407,11 @@
         position: absolute;
         cursor: pointer;
 
-        top: -1050px;
-        right: -160px;
+        top: -800px;
+        right: -5px;
 
         color: silver;
-        font-size: 45px;
+        font-size: 25px;
 
         transition:  0.6s ease;
         border-radius: 0 3px 3px 0;
@@ -8665,10 +9425,10 @@
         cursor: pointer;
 
         color: silver;
-        font-size: 45px;
+        font-size: 25px;
 
-        top: -1050px;
-        right: 450px;
+        top: -800px;
+        right: 430px;
 
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
@@ -8677,7 +9437,7 @@
     .Prev:hover, .Next:hover
     {
         color: silver;
-        font-size: 55px;
+        font-size: 35px;
     }
 
     .Dot1
@@ -8685,8 +9445,8 @@
 
         position: absolute;
 
-        bottom: 790px;
-        right: 150px;
+        bottom: 650px;
+        right: 200px;
 
         cursor: pointer;
         height: 15px;
@@ -8710,8 +9470,8 @@
 
         position: absolute;
 
-        bottom: 790px;
-        right: 210px;
+        bottom: 650px;
+        right: 260px;
 
         cursor: pointer;
         height: 15px;
@@ -8728,8 +9488,8 @@
 
         position: absolute;
 
-        bottom: 790px;
-        right: 90px;
+        bottom: 650px;
+        right: 140px;
 
         cursor: pointer;
         height: 15px;
@@ -8746,8 +9506,8 @@
 
         position: absolute;
 
-        bottom: 790px;
-        right: 180px;
+        bottom: 650px;
+        right: 230px;
 
         cursor: pointer;
         height: 15px;
@@ -8764,8 +9524,8 @@
 
         position: absolute;
 
-        bottom: 790px;
-        right: 120px;
+        bottom: 650px;
+        right: 170px;
 
         cursor: pointer;
         height: 15px;
@@ -8788,7 +9548,7 @@
         font-weight: bold;
         
         text-align: center;
-        top: 400px;
+        top: 240px;
 
         transition: 0.6s ease;
     }
@@ -8796,7 +9556,7 @@
     .Tool1:hover
     {
         color: silver;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
 
     .Tool2
@@ -8810,7 +9570,7 @@
         font-weight: bold;
         
         text-align: center;
-        top: 400px;
+        top: 240px;
 
         transition: 0.6s ease;
     }
@@ -8818,7 +9578,7 @@
     .Tool2:hover
     {
         color: silver;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
 
     .Tool3
@@ -8832,7 +9592,7 @@
         font-weight: bold;
         
         text-align: center;
-        top: 400px;
+        top: 240px;
 
         transition: 0.6s ease;
     }
@@ -8840,7 +9600,7 @@
     .Tool3:hover
     {
         color: silver;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
 
     .Tool4
@@ -8854,7 +9614,7 @@
         font-weight: bold;
         
         text-align: center;
-        top: 400px;
+        top: 240px;
 
         transition: 0.6s ease;
     }
@@ -8862,7 +9622,7 @@
     .Tool4:hover
     {
         color: silver;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
 
     .Tool5
@@ -8876,7 +9636,7 @@
         font-weight: bold;
         
         text-align: center;
-        top: 400px;
+        top: 240px;
 
         transition: 0.6s ease;
     }
@@ -8884,7 +9644,7 @@
     .Tool5:hover
     {
         color: silver;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
 
     /* logos */
@@ -8901,14 +9661,14 @@
         background-position-x: -10px;
         background-position-y: -10px;
 
-        left: 752px;
-        top: 60px;
+        left: 1860px;
+        top: 760px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -8925,8 +9685,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 752px;
-        top: 60px;
+        left: 1860px;
+        top: 760px;
 
         cursor: pointer;
         height: 50px;
@@ -8963,14 +9723,14 @@
         background-position-x: 0px;
         background-position-y: 0px;
 
-        left: 752px;
-        top: 130px;
+        left: 1930px;
+        top: 760px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -8986,8 +9746,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 752px;
-        top: 130px;
+        left: 1930px;
+        top: 760px;
 
         cursor: pointer;
         height: 50px;
@@ -9024,14 +9784,14 @@
         background-position-x: -25px;
         background-position-y: -24px;
 
-        left: 752px;
-        top: 200px;
+        left: 2000px;
+        top: 760px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -9047,8 +9807,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 752px;
-        top: 200px;
+        left: 2000px;
+        top: 760px;
 
         cursor: pointer;
         height: 50px;
@@ -9083,16 +9843,16 @@
         background-size: 63px;
         background-repeat: no-repeat;
         background-position-x: -3.5px;
-        background-position-y: -0px;
+        background-position-y: 0px;
 
-        left: 752px;
-        top: 270px;
+        left: 500px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -9108,8 +9868,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 752px;
-        top: 270px;
+        left: 500px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -9139,21 +9899,21 @@
 
         position: absolute;
 
-        background-image: url(futaba2.jpg);
+        background-image: url(Bash\ Logo.jpg);
         
         background-size: 125px;
         background-repeat: no-repeat;
         background-position-x: -37px;
-        background-position-y: -100px;
+        background-position-y: -10px;
 
-        left: 752px;
-        top: 400px;
+        left: 570px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -9170,8 +9930,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 752px;
-        top: 400px;
+        left: 570px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -9210,14 +9970,14 @@
         background-position-x: -60px;
         background-position-y: -18px;
 
-        left: 752px;
-        top: 470px;
+        left: 430px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -9233,8 +9993,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 752px;
-        top: 470px;
+        left: 430px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -9272,14 +10032,14 @@
         background-position-x: -11px;
         background-position-y: -2px;
 
-        left: 752px;
-        top: 540px;
+        left: 640px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -9295,8 +10055,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 752px;
-        top: 540px;
+        left: 640px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -9334,14 +10094,14 @@
         background-position-x: -2px;
         background-position-y: -3px;
 
-        left: 752px;
-        top: 610px;
+        left: 360px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -9357,8 +10117,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 752px;
-        top: 610px;
+        left: 360px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -9396,8 +10156,8 @@
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-        right: 355px;
-        bottom: 560px;
+        right: 415px;
+        bottom: 390px;
 
         padding-left: 0px;
         
@@ -9424,15 +10184,15 @@
 
         position: absolute;
 
-        top: -530px;
-        right: -95px;
+        top: -330px;
+        right: 35px;
 
     }
 
     .HighlightsImages
     {
-        height: 350px;
-        width: 496px;
+        height: 200px;
+        width: 356px;
 
         transition: 0.6s ease;
 
@@ -9440,15 +10200,15 @@
 
     .HighlightsImages:hover
     {
-        height: 360px;
-        width: 506px;
+        height: 210px;
+        width: 366px;
 
     }
 
     .HighlightsImages2
     {
-        height: 350px;
-        width: 496px;
+        height: 200px;
+        width: 356px;
 
         transition: 0.6s ease;
 
@@ -9456,15 +10216,15 @@
 
     .HighlightsImages2:hover
     {
-        height: 360px;
-        width: 506px;
+        height: 210px;
+        width: 366px;
 
     }
 
     .HighlightsImages3
     {
-        height: 350px;
-        width: 496px;
+        height: 200px;
+        width: 356px;
 
         transition: 0.6s ease;
 
@@ -9472,15 +10232,15 @@
 
     .HighlightsImages3:hover
     {
-        height: 360px;
-        width: 506px;
+        height: 210px;
+        width: 366px;
 
     }
 
     .HighlightsImages4
     {
-        height: 350px;
-        width: 496px;
+        height: 200px;
+        width: 356px;
 
         transition: 0.6s ease;
 
@@ -9488,15 +10248,15 @@
 
     .HighlightsImages4:hover
     {
-        height: 360px;
-        width: 506px;
+        height: 210px;
+        width: 366px;
 
     }
 
     .HighlightsImages5
     {
-        height: 350px;
-        width: 496px;
+        height: 200px;
+        width: 356px;
 
         transition: 0.6s ease;
 
@@ -9504,8 +10264,8 @@
 
     .HighlightsImages5:hover
     {
-        height: 360px;
-        width: 506px;
+        height: 210px;
+        width: 366px;
 
     }
 
@@ -9537,11 +10297,11 @@
         position: absolute;
         cursor: pointer;
 
-        top: -380px;
-        right: -160px;
+        top: -250px;
+        right: -5px;
 
         color: silver;
-        font-size: 45px;
+        font-size: 25px;
 
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
@@ -9554,10 +10314,10 @@
         cursor: pointer;
 
         color: silver;
-        font-size: 45px;
+        font-size: 25px;
 
-        top: -380px;
-        right: 450px;
+        top: -250px;
+        right: 430px;
 
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
@@ -9566,7 +10326,7 @@
     .Prev2:hover, .Next2:hover
     {
         color: silver;
-        font-size: 55px;
+        font-size: 35px;
     }
 
     .Dot11
@@ -9574,8 +10334,8 @@
 
         position: absolute;
 
-        bottom: 140px;
-        right: 150px;
+        bottom: 100px;
+        right: 200px;
 
         cursor: pointer;
         height: 15px;
@@ -9599,8 +10359,8 @@
 
         position: absolute;
 
-        bottom: 140px;
-        right: 210px;
+        bottom: 100px;
+        right: 260px;
 
         cursor: pointer;
         height: 15px;
@@ -9617,8 +10377,8 @@
 
         position: absolute;
 
-        bottom: 140px;
-        right: 90px;
+        bottom: 100px;
+        right: 140px;
 
         cursor: pointer;
         height: 15px;
@@ -9635,8 +10395,8 @@
 
         position: absolute;
 
-        bottom: 140px;
-        right: 180px;
+        bottom: 100px;
+        right: 230px;
 
         cursor: pointer;
         height: 15px;
@@ -9653,8 +10413,8 @@
 
         position: absolute;
 
-        bottom: 140px;
-        right: 120px;
+        bottom: 100px;
+        right: 170px;
 
         cursor: pointer;
         height: 15px;
@@ -9674,12 +10434,12 @@
         
         background-color: rgba(0,0,0,0.918);
 
-        left: 1658px;
-        top: 115px;
+        left: 755px;
+        top: 2406.7px;
 
-        padding-top: 1325px;
-        padding-left: 603px;
-        padding-right: 300px;
+        padding-top: 837px;
+        padding-left: 989.5px;
+        padding-right: 52px;
 	
 	/* border-style: dashed; */
         
@@ -9691,8 +10451,8 @@
 
         color: silver;
 
-        top: 50px;
-        right: 300px;
+        top: 10px;
+        right: 395px;
 
         font-size: 25px;
         font-weight: bold;
@@ -9712,8 +10472,8 @@
 
         color: silver;
 
-        top: 60px;
-        right: 278px;
+        top: 20px;
+        right: 375px;
 
         font-size: 25px;
         font-weight: bold;
@@ -9749,8 +10509,8 @@
         position: absolute;
         cursor: pointer;
 
-        top: 40px;
-        right: 215px;
+        top: 10px;
+        right: 340px;
 
         color: silver;
         font-size: 25px;
@@ -9768,8 +10528,8 @@
         color: silver;
         font-size: 25px;
 
-        top: 40px;
-        right: 655px;
+        top: 10px;
+        right: 725px;
 
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
@@ -9796,79 +10556,79 @@
     {
         position: absolute;
 
-        bottom: 900px;
-        right: 70px;
+        bottom: 550px;
+        right: 315px;
 
     }
 
     .PI
     {
-        height: 300px;
-        width: 735px;
+        height: 200px;
+        width: 435px;
         transition: 0.6s ease;
     }
 
     .PI:hover
     {
-        height: 310px;
-        width: 745px;
+        height: 210px;
+        width: 445px;
     }
 
     .PI2
     {
-        height: 300px;
-        width: 735px;
+        height: 200px;
+        width: 435px;
         transition: 0.6s ease;
     }
 
     .PI2:hover
     {
-        height: 310px;
-        width: 745px;
+        height: 210px;
+        width: 445px;
     }
 
     .PI3
     {
-        height: 300px;
-        width: 735px;
+        height: 200px;
+        width: 435px;
         transition: 0.6s ease;
     }
 
     .PI3:hover
     {
-        height: 310px;
-        width: 745px;
+        height: 210px;
+        width: 445px;
     }
 
     .PI4
     {
-        height: 300px;
+        height: 200px;
         left: 300px;
         transition: 0.6s ease;
     }
 
     .PI4:hover
     {
-        height: 320px;
-        left: 320px;
+        height: 220px;
+        left: 300px;
     }
 
     .PI5
     {
-        height: 300px;
+        height: 200px;
         left: 300px;
         transition: 0.6s ease;
     }
 
     .PI5:hover
     {
-        height: 320px;
-        left: 320px;
+        height: 220px;
+        left: 300px;
     }
 
     .PI6
     {
-        height: 300px;
+        height: 200px;
         left: 300px;
 
         transition: 0.6s ease;
@@ -9876,8 +10636,8 @@
 
     .PI6:hover
     {
-        height: 320px;
-        left: 320px;
+        height: 220px;
+        left: 300px;
     }
     
     
@@ -9889,7 +10649,7 @@
 
         background-color: black;
 
-        top: 510px;
+        top: 310px;
 
         right: 0px;
         padding-right: 0px;
@@ -9935,16 +10695,16 @@
         to {opacity: 1}
     }
 
-
+	
 }
 
-/*1440P Resolution*/
+
 @media only screen and (min-width: 2560px)
 {
-    
-    body
+	
+	body
 	{
-        background-image: url(B1.jpg);
+        background-image: url(Black2.svg);
         background-repeat: repeat;
     }
 
@@ -9959,32 +10719,39 @@
 
     #MenuBar
     {
-        background-image: url(B1.jpg); 
-        background-position-y: 450px;
-        background-position-x: 1250px;
+        background-image: url(p1.gif); 
+        background-position-y: 1500px;
+        background-position-x: 0px;
 
-        background-color: red;
+        background-size: 2500px;
+
+        background-color: black;
         
 
         position: absolute;
         top: 0.3px;
         left: 0.2px;    
         
-        padding-top: 115px;
-        padding-left: 2559px;
+        padding-top: 1440px;
+        padding-left: 2559.5px;
 
     }
 
     #FutabWebsHeader
     {
         position: absolute;
+        background-color: rgba(0, 0, 0, 0.800);
 
-        color: silver;
+        padding-left: 1074.5px;
 
-        left: 1590px;
-        top: -10px;
+        padding-top: 1440px;
 
-        font-size: 40px; 
+        color: rgba(0, 0, 0, 0);
+
+        left: 1425.5px;
+        top: 0px;
+
+        font-size: 0px; 
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         transition: 0.6s ease;
 
@@ -9992,27 +10759,35 @@
 
     #FutabWebsHeader:hover
     {
-        color: violet;
-        font-size: 41px;
+        color: rgba(0, 0, 0, 0);
+        font-size: 0px;
     }
+
+    .AboutMeText
+    {
+        position: absolute;
+    }
+
 
     .FutabaLogo
     {   
 
         position: absolute;
 
-        background-image: url(RB.jpg);
-        background-size: 150px;
+        background-image: url(P10.gif);
+        background-position-y: 0px;
+        background-position-x: -50px;
+        background-size: 380px;
         background-repeat: no-repeat;
 
-        left: 345px;
-        top: -113px;
+        left: 1830px;
+        top: 300px;
 
         cursor: pointer;
-        height: 150px;
-        width: 150px;
+        height: 250px;
+        width: 250px;
         margin: 0 2px;
-        background-color: purple;
+        background-color: silver;
         border-radius: 50%;
         display: inline-block;
         transition: 0.1s ease;
@@ -10020,13 +10795,152 @@
 
     .FutabaLogo:hover
     {
-        height: 160px;
-        width: 160px;
+        height: 260px;
+        width: 260px;
         background-position-x: 0px;
-        background-size: 160px;
-        background-image: url(RB2.jpg);
+        background-size: 380px;
+        background-image: url(P9.gif);
+        background-position-x: -50px;
+        background-position-y: 0px;
+    }
+
+    .NameHeader
+    {
+        position: absolute;
+        
+        color: silver;
+        font-size: 35px;
+
+        bottom: 790px;
+        right: 513px;
+
+        transition: 0.6s ease;
+    }
+
+    .ShortBioHeader
+    {
+        position: absolute;
+
+        color: silver;
+        font-size: 30px;
+
+        text-align: center;
+
+        bottom: 690px;
+        right: 320px;
+
+        transition: 0.6s ease;
+    }
+
+    .LongBioHeader
+    {
+        position: absolute;
+
+        cursor: pointer;
+
+        border-style: solid;
+        border-radius: 5%;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+        color: silver;
+        font-size: 30px;
+
+        text-align: center;
+
+        bottom: 500px;
+        right: 539px;
+
+        transition: 0.6s ease;
+
         
     }
+
+    .LongBioHeader:hover
+    {
+        background-color: silver;
+        color: black;
+        
+    }
+
+    .Skills
+    {
+        position: absolute;
+
+        cursor: pointer;
+
+        border-style: solid;
+        border-radius: 5%;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+        color: silver;
+        font-size: 30px;
+
+        text-align: center;
+
+        bottom: 440px;
+        right: 553px;
+
+        transition: 0.6s ease;
+
+        
+    }
+
+    .Skills:hover
+    {
+        background-color: silver;
+        color: black;
+        
+    }
+
+    .CoverLetter
+    {
+        position: absolute;
+
+        cursor: pointer;
+
+        border-style: solid;
+        border-radius: 5%;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+        color: silver;
+        font-size: 30px;
+
+        text-align: center;
+
+        bottom: 380px;
+        right: 512px;
+
+        transition: 0.6s ease;
+
+        
+    }
+
+    .CoverLetter:hover
+    {
+        background-color: silver;
+        color: black;
+        
+    }
+
+
+    .NameHeader:hover 
+    {
+        color: white;
+        font-size: 36px;
+    }
+
+    .ShortBioHeader:hover
+    {
+        color: white;
+        font-size: 30.5px;
+    }
+
 
     /* Main center text field */  
     #CenterTextBox
@@ -10037,11 +10951,11 @@
 
         /* background-color: gray; */
 
-        left: 830px;
-        top: 115px;
+        left: 755px;
+        top: 1440px;
 
-        padding-top: 1325px;
-        padding-left: 828px;
+        padding-top: 967px;
+        padding-left: 1041.6px;
 
 	/* border-style: dashed;*/ 
         
@@ -10056,7 +10970,7 @@
         /* font-weight: bold; */
 
         top: 40px;
-        right: 260px;
+        right: 375px;
 
         font-size: 25px;
         font-weight: bold;
@@ -10078,7 +10992,7 @@
         color: silver;
 
         top: 50px;
-        right: 175px;
+        right: 300px;
 
         font-size: 25px;
         font-weight: bold;
@@ -10088,7 +11002,7 @@
     {
         position: absolute;
 
-        right: 590px;
+        right: 720px;
         top: 130px;
     }
 
@@ -10099,7 +11013,7 @@
         color: silver;
 
         top: 90px;
-        left: 37px;
+        left: 120px;
 
         font-size: 21px;
         font-weight: bold;
@@ -10130,7 +11044,7 @@
 
         border-style: dashed;
 
-        right: 10px;
+        right: 70px;
         top: 130px;
     }
 
@@ -10141,7 +11055,7 @@
         color: silver;
 
         top: 90px;
-        left: 585px;
+        left: 735px;
         
         font-size: 21px;
         font-weight: bold;
@@ -10170,7 +11084,7 @@
 
         height: 10px;
 
-        right: 285px;
+        right: 385px;
         top: 120px;
 
 
@@ -10194,7 +11108,7 @@
         color: silver;
 
         top: 90px;
-        left: 325px;
+        left: 435px;
 
         font-size: 21px;
         font-weight: bold;
@@ -10209,8 +11123,6 @@
         font-size: 22px;
     }
 
-
-    
     #BundleDescription
     {
         position: absolute;
@@ -10249,7 +11161,7 @@
         color: silver;
 
         top: 470px;
-        right: 250px;
+        right: 375px;
 
         font-size: 25px;
         font-weight: bold;
@@ -10270,7 +11182,7 @@
         color: silver;
 
         top: 480px;
-        right: 175px;
+        right: 300px;
 
         font-size: 25px;
         font-weight: bold;
@@ -10280,7 +11192,7 @@
     {
         position: absolute;
 
-        right: 545px;
+        right: 700px;
         top: 565px;
     }
 
@@ -10291,7 +11203,7 @@
         color: silver;
 
         top: 530px;
-        left: 53px;
+        left: 120px;
 
         font-size: 21px;
         font-weight: bold;
@@ -10307,12 +11219,12 @@
 
     .GrayCppPic
     {
-        height: 140px; 
+        height: 150px; 
         transition: 0.6s ease;
     }
     .GrayCppPic:hover 
     {
-        height: 150px;
+        height: 160px;
     }
 
     
@@ -10320,7 +11232,7 @@
     {
         position: absolute;
 
-        right: 10px;
+        right: 90px;
         top: 565px;
     }
 
@@ -10331,7 +11243,7 @@
         color: silver;
 
         top: 530px;
-        left: 605px;
+        left: 745px;
 
         font-size: 21px;
         font-weight: bold;
@@ -10361,7 +11273,7 @@
     {
         position: absolute;
 
-        right: 270px;
+        right: 375px;
         top: 565px;
     }
 
@@ -10372,7 +11284,7 @@
         color: silver;
 
         top: 530px;
-        left: 328px;
+        left: 425px;
 
         font-size: 21px;
         font-weight: bold;
@@ -10388,13 +11300,13 @@
 
     .MasterBundle
     {
-        height: 140px;
+        height: 150px;
         transition: 0.6s ease;
     }
     
     .MasterBundle:hover
     {
-        height: 150px;
+        height: 160px;
     }
 
     #BundleDescription2
@@ -10433,11 +11345,12 @@
         background-color: rgba(0, 0, 0, 0.900);
 
         
-        left: -1px;
-        top: 115px;
+        left: 755px;
+        top: 3242.7px;
 
-        padding-top: 1325px;
-        padding-left: 528px;
+        padding-top: 967px;
+        padding-left: 738.6px;
+        padding-right: 304px;
 
 	    /* border-style: dashed;*/
 
@@ -10449,8 +11362,8 @@
 
         color: silver;
 
-        top: 50px;
-        left: 180px;
+        top: 10px;
+        left: 330px;
 
         font-size: 25px;
         font-weight: bold;
@@ -10470,8 +11383,8 @@
 
         color: silver;
 
-        top: 60px;
-        right: 255px;
+        top: 20px;
+        right: 315px;
 
         font-size: 25px;
         font-weight: bold;
@@ -10489,8 +11402,8 @@
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-        right: 380px;
-        bottom: 1190px;
+        right: 415px;
+        bottom: 885px;
 
         transition: 0.6s ease;
 
@@ -10517,16 +11430,16 @@
 
         position: absolute;
 
-        top: -1180px;
-        right: -95px;
+        top: -880px;
+        right: 35px;
 
         
     }
 
     .SocialImages
     {
-        height: 350px;
-        width: 496px;
+        height: 200px;
+        width: 356px;
 
         transition: 0.6s ease;
 
@@ -10534,15 +11447,15 @@
 
     .SocialImages:hover
     {
-        height: 360px;
-        width: 506px;
+        height: 210px;
+        width: 366px;
 
     }
 
     .SocialImages2
     {
-        height: 350px;
-        width: 496px;
+        height: 200px;
+        width: 356px;
 
         transition: 0.6s ease;
 
@@ -10550,15 +11463,15 @@
 
     .SocialImages2:hover
     {
-        height: 360px;
-        width: 506px;
+        height: 210px;
+        width: 366px;
 
     }
 
     .SocialImages3
     {
-        height: 350px;
-        width: 496px;
+        height: 200px;
+        width: 356px;
 
         transition: 0.6s ease;
 
@@ -10566,15 +11479,15 @@
 
     .SocialImages3:hover
     {
-        height: 360px;
-        width: 506px;
+        height: 210px;
+        width: 366px;
 
     }
 
     .SocialImages4
     {
-        height: 350px;
-        width: 496px;
+        height: 200px;
+        width: 356px;
 
         transition: 0.6s ease;
 
@@ -10582,15 +11495,15 @@
 
     .SocialImages4:hover
     {
-        height: 360px;
-        width: 506px;
+        height: 210px;
+        width: 366px;
 
     }
 
     .SocialImages5
     {
-        height: 350px;
-        width: 496px;
+        height: 200px;
+        width: 356px;
 
         transition: 0.6s ease;
 
@@ -10598,8 +11511,8 @@
 
     .SocialImages5:hover
     {
-        height: 360px;
-        width: 506px;
+        height: 210px;
+        width: 366px;
 
     }
     
@@ -10633,11 +11546,11 @@
         position: absolute;
         cursor: pointer;
 
-        top: -1050px;
-        right: -160px;
+        top: -800px;
+        right: -5px;
 
         color: silver;
-        font-size: 45px;
+        font-size: 25px;
 
         transition:  0.6s ease;
         border-radius: 0 3px 3px 0;
@@ -10651,10 +11564,10 @@
         cursor: pointer;
 
         color: silver;
-        font-size: 45px;
+        font-size: 25px;
 
-        top: -1050px;
-        right: 450px;
+        top: -800px;
+        right: 430px;
 
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
@@ -10663,7 +11576,7 @@
     .Prev:hover, .Next:hover
     {
         color: silver;
-        font-size: 55px;
+        font-size: 35px;
     }
 
     .Dot1
@@ -10671,8 +11584,8 @@
 
         position: absolute;
 
-        bottom: 790px;
-        right: 150px;
+        bottom: 650px;
+        right: 200px;
 
         cursor: pointer;
         height: 15px;
@@ -10696,8 +11609,8 @@
 
         position: absolute;
 
-        bottom: 790px;
-        right: 210px;
+        bottom: 650px;
+        right: 260px;
 
         cursor: pointer;
         height: 15px;
@@ -10714,8 +11627,8 @@
 
         position: absolute;
 
-        bottom: 790px;
-        right: 90px;
+        bottom: 650px;
+        right: 140px;
 
         cursor: pointer;
         height: 15px;
@@ -10732,8 +11645,8 @@
 
         position: absolute;
 
-        bottom: 790px;
-        right: 180px;
+        bottom: 650px;
+        right: 230px;
 
         cursor: pointer;
         height: 15px;
@@ -10750,8 +11663,8 @@
 
         position: absolute;
 
-        bottom: 790px;
-        right: 120px;
+        bottom: 650px;
+        right: 170px;
 
         cursor: pointer;
         height: 15px;
@@ -10774,7 +11687,7 @@
         font-weight: bold;
         
         text-align: center;
-        top: 400px;
+        top: 240px;
 
         transition: 0.6s ease;
     }
@@ -10782,7 +11695,7 @@
     .Tool1:hover
     {
         color: silver;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
 
     .Tool2
@@ -10796,7 +11709,7 @@
         font-weight: bold;
         
         text-align: center;
-        top: 400px;
+        top: 240px;
 
         transition: 0.6s ease;
     }
@@ -10804,7 +11717,7 @@
     .Tool2:hover
     {
         color: silver;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
 
     .Tool3
@@ -10818,7 +11731,7 @@
         font-weight: bold;
         
         text-align: center;
-        top: 400px;
+        top: 240px;
 
         transition: 0.6s ease;
     }
@@ -10826,7 +11739,7 @@
     .Tool3:hover
     {
         color: silver;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
 
     .Tool4
@@ -10840,7 +11753,7 @@
         font-weight: bold;
         
         text-align: center;
-        top: 400px;
+        top: 240px;
 
         transition: 0.6s ease;
     }
@@ -10848,7 +11761,7 @@
     .Tool4:hover
     {
         color: silver;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
 
     .Tool5
@@ -10862,7 +11775,7 @@
         font-weight: bold;
         
         text-align: center;
-        top: 400px;
+        top: 240px;
 
         transition: 0.6s ease;
     }
@@ -10870,7 +11783,7 @@
     .Tool5:hover
     {
         color: silver;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
 
     /* logos */
@@ -10887,14 +11800,14 @@
         background-position-x: -10px;
         background-position-y: -10px;
 
-        left: 752px;
-        top: 60px;
+        left: 1860px;
+        top: 760px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -10911,8 +11824,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 752px;
-        top: 60px;
+        left: 1860px;
+        top: 760px;
 
         cursor: pointer;
         height: 50px;
@@ -10949,14 +11862,14 @@
         background-position-x: 0px;
         background-position-y: 0px;
 
-        left: 752px;
-        top: 130px;
+        left: 1930px;
+        top: 760px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -10972,8 +11885,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 752px;
-        top: 130px;
+        left: 1930px;
+        top: 760px;
 
         cursor: pointer;
         height: 50px;
@@ -11010,14 +11923,14 @@
         background-position-x: -25px;
         background-position-y: -24px;
 
-        left: 752px;
-        top: 200px;
+        left: 2000px;
+        top: 760px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -11033,8 +11946,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 752px;
-        top: 200px;
+        left: 2000px;
+        top: 760px;
 
         cursor: pointer;
         height: 50px;
@@ -11069,16 +11982,16 @@
         background-size: 63px;
         background-repeat: no-repeat;
         background-position-x: -3.5px;
-        background-position-y: -0px;
+        background-position-y: 0px;
 
-        left: 752px;
-        top: 270px;
+        left: 500px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -11094,8 +12007,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 752px;
-        top: 270px;
+        left: 500px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -11125,21 +12038,21 @@
 
         position: absolute;
 
-        background-image: url(futaba2.jpg);
+        background-image: url(Bash\ Logo.jpg);
         
         background-size: 125px;
         background-repeat: no-repeat;
         background-position-x: -37px;
-        background-position-y: -100px;
+        background-position-y: -10px;
 
-        left: 752px;
-        top: 400px;
+        left: 570px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -11156,8 +12069,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 752px;
-        top: 400px;
+        left: 570px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -11196,14 +12109,14 @@
         background-position-x: -60px;
         background-position-y: -18px;
 
-        left: 752px;
-        top: 470px;
+        left: 430px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -11219,8 +12132,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 752px;
-        top: 470px;
+        left: 430px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -11258,14 +12171,14 @@
         background-position-x: -11px;
         background-position-y: -2px;
 
-        left: 752px;
-        top: 540px;
+        left: 640px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -11281,8 +12194,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 752px;
-        top: 540px;
+        left: 640px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -11320,14 +12233,14 @@
         background-position-x: -2px;
         background-position-y: -3px;
 
-        left: 752px;
-        top: 610px;
+        left: 360px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
         width: 50px;
         margin: 0 2px;
-        background-color: silver;
+        background-color: black;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -11343,8 +12256,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 752px;
-        top: 610px;
+        left: 360px;
+        top: 450px;
 
         cursor: pointer;
         height: 50px;
@@ -11382,8 +12295,8 @@
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-        right: 355px;
-        bottom: 560px;
+        right: 415px;
+        bottom: 390px;
 
         padding-left: 0px;
         
@@ -11410,15 +12323,15 @@
 
         position: absolute;
 
-        top: -530px;
-        right: -95px;
+        top: -330px;
+        right: 35px;
 
     }
 
     .HighlightsImages
     {
-        height: 350px;
-        width: 496px;
+        height: 200px;
+        width: 356px;
 
         transition: 0.6s ease;
 
@@ -11426,15 +12339,15 @@
 
     .HighlightsImages:hover
     {
-        height: 360px;
-        width: 506px;
+        height: 210px;
+        width: 366px;
 
     }
 
     .HighlightsImages2
     {
-        height: 350px;
-        width: 496px;
+        height: 200px;
+        width: 356px;
 
         transition: 0.6s ease;
 
@@ -11442,15 +12355,15 @@
 
     .HighlightsImages2:hover
     {
-        height: 360px;
-        width: 506px;
+        height: 210px;
+        width: 366px;
 
     }
 
     .HighlightsImages3
     {
-        height: 350px;
-        width: 496px;
+        height: 200px;
+        width: 356px;
 
         transition: 0.6s ease;
 
@@ -11458,15 +12371,15 @@
 
     .HighlightsImages3:hover
     {
-        height: 360px;
-        width: 506px;
+        height: 210px;
+        width: 366px;
 
     }
 
     .HighlightsImages4
     {
-        height: 350px;
-        width: 496px;
+        height: 200px;
+        width: 356px;
 
         transition: 0.6s ease;
 
@@ -11474,15 +12387,15 @@
 
     .HighlightsImages4:hover
     {
-        height: 360px;
-        width: 506px;
+        height: 210px;
+        width: 366px;
 
     }
 
     .HighlightsImages5
     {
-        height: 350px;
-        width: 496px;
+        height: 200px;
+        width: 356px;
 
         transition: 0.6s ease;
 
@@ -11490,8 +12403,8 @@
 
     .HighlightsImages5:hover
     {
-        height: 360px;
-        width: 506px;
+        height: 210px;
+        width: 366px;
 
     }
 
@@ -11523,11 +12436,11 @@
         position: absolute;
         cursor: pointer;
 
-        top: -380px;
-        right: -160px;
+        top: -250px;
+        right: -5px;
 
         color: silver;
-        font-size: 45px;
+        font-size: 25px;
 
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
@@ -11540,10 +12453,10 @@
         cursor: pointer;
 
         color: silver;
-        font-size: 45px;
+        font-size: 25px;
 
-        top: -380px;
-        right: 450px;
+        top: -250px;
+        right: 430px;
 
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
@@ -11552,7 +12465,7 @@
     .Prev2:hover, .Next2:hover
     {
         color: silver;
-        font-size: 55px;
+        font-size: 35px;
     }
 
     .Dot11
@@ -11560,8 +12473,8 @@
 
         position: absolute;
 
-        bottom: 140px;
-        right: 150px;
+        bottom: 100px;
+        right: 200px;
 
         cursor: pointer;
         height: 15px;
@@ -11585,8 +12498,8 @@
 
         position: absolute;
 
-        bottom: 140px;
-        right: 210px;
+        bottom: 100px;
+        right: 260px;
 
         cursor: pointer;
         height: 15px;
@@ -11603,8 +12516,8 @@
 
         position: absolute;
 
-        bottom: 140px;
-        right: 90px;
+        bottom: 100px;
+        right: 140px;
 
         cursor: pointer;
         height: 15px;
@@ -11621,8 +12534,8 @@
 
         position: absolute;
 
-        bottom: 140px;
-        right: 180px;
+        bottom: 100px;
+        right: 230px;
 
         cursor: pointer;
         height: 15px;
@@ -11639,8 +12552,8 @@
 
         position: absolute;
 
-        bottom: 140px;
-        right: 120px;
+        bottom: 100px;
+        right: 170px;
 
         cursor: pointer;
         height: 15px;
@@ -11660,12 +12573,12 @@
         
         background-color: rgba(0,0,0,0.918);
 
-        left: 1658px;
-        top: 115px;
+        left: 755px;
+        top: 2406.7px;
 
-        padding-top: 1325px;
-        padding-left: 603px;
-        padding-right: 300px;
+        padding-top: 837px;
+        padding-left: 989.5px;
+        padding-right: 52px;
 	
 	/* border-style: dashed; */
         
@@ -11677,8 +12590,8 @@
 
         color: silver;
 
-        top: 50px;
-        right: 300px;
+        top: 10px;
+        right: 395px;
 
         font-size: 25px;
         font-weight: bold;
@@ -11698,8 +12611,8 @@
 
         color: silver;
 
-        top: 60px;
-        right: 278px;
+        top: 20px;
+        right: 375px;
 
         font-size: 25px;
         font-weight: bold;
@@ -11735,8 +12648,8 @@
         position: absolute;
         cursor: pointer;
 
-        top: 40px;
-        right: 215px;
+        top: 10px;
+        right: 340px;
 
         color: silver;
         font-size: 25px;
@@ -11754,8 +12667,8 @@
         color: silver;
         font-size: 25px;
 
-        top: 40px;
-        right: 655px;
+        top: 10px;
+        right: 725px;
 
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
@@ -11782,79 +12695,79 @@
     {
         position: absolute;
 
-        bottom: 900px;
-        right: 70px;
+        bottom: 550px;
+        right: 315px;
 
     }
 
     .PI
     {
-        height: 300px;
-        width: 735px;
+        height: 200px;
+        width: 435px;
         transition: 0.6s ease;
     }
 
     .PI:hover
     {
-        height: 310px;
-        width: 745px;
+        height: 210px;
+        width: 445px;
     }
 
     .PI2
     {
-        height: 300px;
-        width: 735px;
+        height: 200px;
+        width: 435px;
         transition: 0.6s ease;
     }
 
     .PI2:hover
     {
-        height: 310px;
-        width: 745px;
+        height: 210px;
+        width: 445px;
     }
 
     .PI3
     {
-        height: 300px;
-        width: 735px;
+        height: 200px;
+        width: 435px;
         transition: 0.6s ease;
     }
 
     .PI3:hover
     {
-        height: 310px;
-        width: 745px;
+        height: 210px;
+        width: 445px;
     }
 
     .PI4
     {
-        height: 300px;
+        height: 200px;
         left: 300px;
         transition: 0.6s ease;
     }
 
     .PI4:hover
     {
-        height: 320px;
-        left: 320px;
+        height: 220px;
+        left: 300px;
     }
 
     .PI5
     {
-        height: 300px;
+        height: 200px;
         left: 300px;
         transition: 0.6s ease;
     }
 
     .PI5:hover
     {
-        height: 320px;
-        left: 320px;
+        height: 220px;
+        left: 300px;
     }
 
     .PI6
     {
-        height: 300px;
+        height: 200px;
         left: 300px;
 
         transition: 0.6s ease;
@@ -11862,8 +12775,8 @@
 
     .PI6:hover
     {
-        height: 320px;
-        left: 320px;
+        height: 220px;
+        left: 300px;
     }
     
     
@@ -11875,7 +12788,7 @@
 
         background-color: black;
 
-        top: 510px;
+        top: 310px;
 
         right: 0px;
         padding-right: 0px;
@@ -11921,5 +12834,5 @@
         to {opacity: 1}
     }
 
-
+	
 }
