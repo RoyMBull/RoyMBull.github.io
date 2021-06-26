@@ -136,8 +136,8 @@
 
         text-align: center;
 
-        bottom: 300px;
-        right: 0px;
+        bottom: 280px;
+        right: -20px;
 
         transition: 0.6s ease;
     }
@@ -192,7 +192,7 @@
         text-align: center;
 
         bottom: 140px;
-        right: 143px;
+        right: 146px;
 
         transition: 0.6s ease;
 
@@ -224,7 +224,7 @@
         text-align: center;
 
         bottom: 100px;
-        right: 115px;
+        right: 112px;
 
         transition: 0.6s ease;
 
@@ -2273,8 +2273,8 @@
 
         text-align: center;
 
-        bottom: 320px;
-        right: 0px;
+        bottom: 300px;
+        right: -20px;
 
         transition: 0.6s ease;
     }
@@ -2329,7 +2329,7 @@
         text-align: center;
 
         bottom: 140px;
-        right: 151px;
+        right: 154px;
 
         transition: 0.6s ease;
 
@@ -2361,7 +2361,7 @@
         text-align: center;
 
         bottom: 100px;
-        right: 123px;
+        right: 120px;
 
         transition: 0.6s ease;
 
@@ -4412,8 +4412,8 @@
 
         text-align: center;
 
-        bottom: 320px;
-        right: 0px;
+        bottom: 300px;
+        right: -20px;
 
         transition: 0.6s ease;
     }
@@ -4468,7 +4468,7 @@
         text-align: center;
 
         bottom: 140px;
-        right: 151px;
+        right: 154px;
 
         transition: 0.6s ease;
 
@@ -4500,7 +4500,7 @@
         text-align: center;
 
         bottom: 100px;
-        right: 123px;
+        right: 120px;
 
         transition: 0.6s ease;
 
@@ -8689,8 +8689,8 @@
 
         text-align: center;
 
-        bottom: 320px;
-        right: 70px;
+        bottom: 300px;
+        right: 50px;
 
         transition: 0.6s ease;
     }
@@ -8745,7 +8745,7 @@
         text-align: center;
 
         bottom: 140px;
-        right: 222px;
+        right: 225px;
 
         transition: 0.6s ease;
 
@@ -8777,7 +8777,7 @@
         text-align: center;
 
         bottom: 100px;
-        right: 195px;
+        right: 192px;
 
         transition: 0.6s ease;
 
@@ -10703,7 +10703,7 @@
 	
 }
 
-@media only screen and (min-width: 568px)
+@media only screen and (min-width: 568px) 
 {
 	
 	body
@@ -12843,7 +12843,7 @@
 	
 }
 
-@media only screen and (min-width: 640px)
+@media only screen and (min-width: 640px) 
 {
 	
 	body
@@ -14983,7 +14983,7 @@
 	
 }
 
-@media only screen and (min-width: 640px)
+@media only screen and (min-width: 640px) 
 {
 	
 	body
@@ -17124,7 +17124,7 @@
 	
 }
 
-@media only screen and (min-width: 731px)
+@media only screen and (min-width: 731px) 
 {
 	
 	body
