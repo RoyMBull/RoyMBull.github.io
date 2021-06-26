@@ -12848,7 +12848,7 @@
 	
 	body
 	{
-        background-image: url(Black.svg);
+        background-image: url(Black2.svg);
         background-repeat: repeat;
     }
 
@@ -12970,7 +12970,7 @@
         text-align: center;
 
         bottom: 320px;
-        right: 110px;
+        right: 130px;
 
         transition: 0.6s ease;
     }
@@ -13025,7 +13025,7 @@
         text-align: center;
 
         bottom: 140px;
-        right: 273px;
+        right: 270px;
 
         transition: 0.6s ease;
 
@@ -13057,7 +13057,7 @@
         text-align: center;
 
         bottom: 100px;
-        right: 238px;
+        right: 241px;
 
         transition: 0.6s ease;
 
@@ -17129,7 +17129,7 @@
 	
 	body
 	{
-        background-image: url(Black2.svg);
+        background-image: url(Black.svg);
         background-repeat: repeat;
     }
 
@@ -17253,7 +17253,7 @@
         text-align: center;
 
         bottom: 320px;
-        right: 170px;
+        right: 150px;
 
         transition: 0.6s ease;
     }
@@ -17308,7 +17308,7 @@
         text-align: center;
 
         bottom: 140px;
-        right: 320px;
+        right: 323px;
 
         transition: 0.6s ease;
 
@@ -17340,7 +17340,7 @@
         text-align: center;
 
         bottom: 100px;
-        right: 292px;
+        right: 289px;
 
         transition: 0.6s ease;
 
