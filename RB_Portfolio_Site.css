@@ -32090,6 +32090,7 @@
 }
 
 /*1440P Resolutions*/
+
 @media only screen and (min-width: 1948px)
 {
 	
@@ -32342,12 +32343,11 @@
  
          /* background-color: gray; */
  
-         left: 755px;
+         left: 330px;
          top: 1439.5px;
  
-         padding-top: 967px;
-         padding-left: 1041.6px;
- 
+         padding-top: 1167px;
+         padding-left: 1891.6px;
      /* border-style: dashed;*/ 
          
      }
@@ -32360,10 +32360,10 @@
  
          /* font-weight: bold; */
  
-         top: 40px;
-         left: 375px;
+         top: 10px;
+         left: 770px;
  
-         font-size: 25px;
+         font-size: 35px;
          font-weight: bold;
          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
          transition: 0.6s ease;
@@ -32373,7 +32373,7 @@
      #ProgrammingResources:hover
      {
          color: silver;
-         font-size: 26px;
+         font-size: 36px;
      }
      
      #ProgrammingResourcesLine
@@ -32403,10 +32403,10 @@
  
          color: silver;
  
-         top: 90px;
-         left: 80px;
+         top: 70px;
+         left: 140px;
  
-         font-size: 21px;
+         font-size: 35px;
          font-weight: bold;
          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
          transition: 0.6s ease;
@@ -32415,17 +32415,17 @@
      #CppTitle:hover
      {
          color: silver;
-         font-size: 22px;
+         font-size: 36px;
      }
  
      .CppPic
      {
-         height: 150px;
+         height: 320px;
          transition: 0.6s ease;
      }
      .CppPic:hover 
      {
-         height: 160px;
+         height: 330px;
      }
  
      
@@ -32435,7 +32435,7 @@
  
          border-style: dashed;
  
-         left: 735px;
+         left: 1390px;
          top: 120px;
      }
  
@@ -32445,10 +32445,10 @@
  
          color: silver;
  
-         top: 90px;
-         left: 735px;
+         top: 70px;
+         left: 1435px;
          
-         font-size: 21px;
+         font-size: 35px;
          font-weight: bold;
          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
          transition: 0.6s ease;
@@ -32456,17 +32456,17 @@
      #PythonTitle:hover
      {
          color: silver;
-         font-size: 22px;
+         font-size: 36px;
      }
  
      .PythonPic
      {
-         height: 150px;
+         height: 320px;
          transition: 0.6s ease;
      }
      .PythonPic:hover 
      {
-         height: 160px;
+         height: 330px;
      }
  
      #Linux
@@ -32475,7 +32475,7 @@
  
          height: 10px;
  
-         left: 392px;
+         left: 722px;
          top: 120px;
  
  
@@ -32483,12 +32483,12 @@
  
      .LinuxPic
      {
-         height: 150px;
+         height: 320px;
          transition: 0.6s ease;
      }
      .LinuxPic:hover 
      {
-         height: 160px;
+         height: 330px;
      }
  
  
@@ -32498,10 +32498,10 @@
  
          color: silver;
  
-         top: 90px;
-         left: 430px;
+         top: 70px;
+         left: 828px;
  
-         font-size: 21px;
+         font-size: 35px;
          font-weight: bold;
          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
          transition:  0.6s ease;
@@ -32511,7 +32511,7 @@
      #LinuxTitle:hover
      {
          color: silver;
-         font-size: 22px;
+         font-size: 36px;
      }
  
      #BundleDescription
@@ -32523,7 +32523,7 @@
          color: silver;
  
          right: 10px;
-         top: 270px;
+         top: 450px;
  
          text-align: center;
  
@@ -32577,8 +32577,8 @@
      {
          position: absolute;
  
-         right: 700px;
-         top: 565px;
+         right: 720px;
+         top: 700px;
      }
  
      #GrayHatCppTitle
@@ -32587,10 +32587,10 @@
  
          color: silver;
  
-         top: 530px;
-         left: 100px;
+         top: 650px;
+         left: 160px;
  
-         font-size: 21px;
+         font-size: 35px;
          font-weight: bold;
          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
          transition: 0.6s ease;
@@ -32599,17 +32599,17 @@
      #GrayHatCppTitle:hover
      {
          color: silver;
-         font-size: 22px;
+         font-size: 36px;
      }
  
      .GrayCppPic
      {
-         height: 150px; 
+         height: 270px; 
          transition: 0.6s ease;
      }
      .GrayCppPic:hover 
      {
-         height: 160px;
+         height: 280px;
      }
  
      
@@ -32617,8 +32617,8 @@
      {
          position: absolute;
  
-         left: 735px;
-         top: 565px;
+         left: 1390px;
+         top: 700px;
      }
  
      #GrayHatPython3Title
@@ -32627,10 +32627,10 @@
  
          color: silver;
  
-         top: 530px;
-         left: 780px;
+         top: 650px;
+         left: 1470px;
  
-         font-size: 21px;
+         font-size: 35px;
          font-weight: bold;
          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
          transition: 0.6s ease;
@@ -32639,18 +32639,18 @@
      #GrayHatPython3Title:hover
      {
          color: silver;
-         font-size: 22px;
+         font-size: 36px;
      }
  
      .BlackHatPython
      {
-         height: 150px;
+         height: 250px;
          transition: 0.6s ease;
      }
      
      .BlackHatPython:hover
      {
-         height: 160px;
+         height: 260px;
      }
  
  
@@ -32658,8 +32658,8 @@
      {
          position: absolute;
  
-         left: 380px;
-         top: 565px;
+         left: 685px;
+         top: 700px;
      }
  
      #KaliLinuxTitle
@@ -32668,10 +32668,10 @@
  
          color: silver;
  
-         top: 530px;
-         left: 440px;
+         top: 650px;
+         left: 820px;
  
-         font-size: 21px;
+         font-size: 35px;
          font-weight: bold;
          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
          transition: 0.6s ease;
@@ -32680,18 +32680,18 @@
      #KaliLinuxTitle:hover
      {
          color: silver;
-         font-size: 22px;
+         font-size: 36px;
      }
  
      .MasterBundle
      {
-         height: 130px;
+         height: 250px;
          transition: 0.6s ease;
      }
      
      .MasterBundle:hover
      {
-         height: 140px;
+         height: 260px;
      }
  
      #BundleDescription2
@@ -32703,7 +32703,7 @@
          color: silver;
  
          right: 10px;
-         top: 760px;
+         top: 960px;
  
          text-align: center;
  
@@ -33364,8 +33364,8 @@
         background-position-x: -3.5px;
         background-position-y: 0px;
 
-        left: 500px;
-        top: 450px;
+        left: 930px;
+        top: 565px;
 
         cursor: pointer;
         height: 50px;
@@ -33387,8 +33387,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 500px;
-        top: 450px;
+        left: 930px;
+        top: 565px;
 
         cursor: pointer;
         height: 50px;
@@ -33425,8 +33425,8 @@
         background-position-x: -37px;
         background-position-y: -10px;
 
-        left: 570px;
-        top: 450px;
+        left: 1000px;
+        top: 565px;
 
         cursor: pointer;
         height: 50px;
@@ -33449,8 +33449,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 570px;
-        top: 450px;
+        left: 1000px;
+        top: 565px;
 
         cursor: pointer;
         height: 50px;
@@ -33489,8 +33489,8 @@
         background-position-x: -60px;
         background-position-y: -18px;
 
-        left: 430px;
-        top: 450px;
+        left: 860px;
+        top: 565px;
 
         cursor: pointer;
         height: 50px;
@@ -33512,8 +33512,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 430px;
-        top: 450px;
+        left: 860px;
+        top: 565px;
 
         cursor: pointer;
         height: 50px;
@@ -33551,8 +33551,8 @@
         background-position-x: -11px;
         background-position-y: -2px;
 
-        left: 640px;
-        top: 450px;
+        left: 1070px;
+        top: 565px;
 
         cursor: pointer;
         height: 50px;
@@ -33574,8 +33574,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 640px;
-        top: 450px;
+        left: 1070px;
+        top: 565px;
 
         cursor: pointer;
         height: 50px;
@@ -33613,8 +33613,8 @@
         background-position-x: -2px;
         background-position-y: -3px;
 
-        left: 360px;
-        top: 450px;
+        left: 790px;
+        top: 565px;
 
         cursor: pointer;
         height: 50px;
@@ -33636,8 +33636,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 360px;
-        top: 450px;
+        left: 790px;
+        top: 565px;
 
         cursor: pointer;
         height: 50px;
@@ -34470,12 +34470,11 @@
  
          /* background-color: gray; */
  
-         left: 755px;
+         left: 330px;
          top: 1439.5px;
  
-         padding-top: 967px;
-         padding-left: 1041.6px;
- 
+         padding-top: 1167px;
+         padding-left: 1891.6px;
      /* border-style: dashed;*/ 
          
      }
@@ -34488,10 +34487,10 @@
  
          /* font-weight: bold; */
  
-         top: 40px;
-         left: 375px;
+         top: 10px;
+         left: 770px;
  
-         font-size: 25px;
+         font-size: 35px;
          font-weight: bold;
          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
          transition: 0.6s ease;
@@ -34501,7 +34500,7 @@
      #ProgrammingResources:hover
      {
          color: silver;
-         font-size: 26px;
+         font-size: 36px;
      }
      
      #ProgrammingResourcesLine
@@ -34531,10 +34530,10 @@
  
          color: silver;
  
-         top: 90px;
-         left: 80px;
+         top: 70px;
+         left: 140px;
  
-         font-size: 21px;
+         font-size: 35px;
          font-weight: bold;
          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
          transition: 0.6s ease;
@@ -34543,17 +34542,17 @@
      #CppTitle:hover
      {
          color: silver;
-         font-size: 22px;
+         font-size: 36px;
      }
  
      .CppPic
      {
-         height: 150px;
+         height: 320px;
          transition: 0.6s ease;
      }
      .CppPic:hover 
      {
-         height: 160px;
+         height: 330px;
      }
  
      
@@ -34563,7 +34562,7 @@
  
          border-style: dashed;
  
-         left: 735px;
+         left: 1390px;
          top: 120px;
      }
  
@@ -34573,10 +34572,10 @@
  
          color: silver;
  
-         top: 90px;
-         left: 735px;
+         top: 70px;
+         left: 1435px;
          
-         font-size: 21px;
+         font-size: 35px;
          font-weight: bold;
          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
          transition: 0.6s ease;
@@ -34584,17 +34583,17 @@
      #PythonTitle:hover
      {
          color: silver;
-         font-size: 22px;
+         font-size: 36px;
      }
  
      .PythonPic
      {
-         height: 150px;
+         height: 320px;
          transition: 0.6s ease;
      }
      .PythonPic:hover 
      {
-         height: 160px;
+         height: 330px;
      }
  
      #Linux
@@ -34603,7 +34602,7 @@
  
          height: 10px;
  
-         left: 392px;
+         left: 722px;
          top: 120px;
  
  
@@ -34611,12 +34610,12 @@
  
      .LinuxPic
      {
-         height: 150px;
+         height: 320px;
          transition: 0.6s ease;
      }
      .LinuxPic:hover 
      {
-         height: 160px;
+         height: 330px;
      }
  
  
@@ -34626,10 +34625,10 @@
  
          color: silver;
  
-         top: 90px;
-         left: 430px;
+         top: 70px;
+         left: 828px;
  
-         font-size: 21px;
+         font-size: 35px;
          font-weight: bold;
          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
          transition:  0.6s ease;
@@ -34639,7 +34638,7 @@
      #LinuxTitle:hover
      {
          color: silver;
-         font-size: 22px;
+         font-size: 36px;
      }
  
      #BundleDescription
@@ -34651,7 +34650,7 @@
          color: silver;
  
          right: 10px;
-         top: 270px;
+         top: 450px;
  
          text-align: center;
  
@@ -34705,8 +34704,8 @@
      {
          position: absolute;
  
-         right: 700px;
-         top: 565px;
+         right: 720px;
+         top: 700px;
      }
  
      #GrayHatCppTitle
@@ -34715,10 +34714,10 @@
  
          color: silver;
  
-         top: 530px;
-         left: 100px;
+         top: 650px;
+         left: 160px;
  
-         font-size: 21px;
+         font-size: 35px;
          font-weight: bold;
          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
          transition: 0.6s ease;
@@ -34727,17 +34726,17 @@
      #GrayHatCppTitle:hover
      {
          color: silver;
-         font-size: 22px;
+         font-size: 36px;
      }
  
      .GrayCppPic
      {
-         height: 150px; 
+         height: 270px; 
          transition: 0.6s ease;
      }
      .GrayCppPic:hover 
      {
-         height: 160px;
+         height: 280px;
      }
  
      
@@ -34745,8 +34744,8 @@
      {
          position: absolute;
  
-         left: 735px;
-         top: 565px;
+         left: 1390px;
+         top: 700px;
      }
  
      #GrayHatPython3Title
@@ -34755,10 +34754,10 @@
  
          color: silver;
  
-         top: 530px;
-         left: 780px;
+         top: 650px;
+         left: 1470px;
  
-         font-size: 21px;
+         font-size: 35px;
          font-weight: bold;
          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
          transition: 0.6s ease;
@@ -34767,18 +34766,18 @@
      #GrayHatPython3Title:hover
      {
          color: silver;
-         font-size: 22px;
+         font-size: 36px;
      }
  
      .BlackHatPython
      {
-         height: 150px;
+         height: 250px;
          transition: 0.6s ease;
      }
      
      .BlackHatPython:hover
      {
-         height: 160px;
+         height: 260px;
      }
  
  
@@ -34786,8 +34785,8 @@
      {
          position: absolute;
  
-         left: 380px;
-         top: 565px;
+         left: 685px;
+         top: 700px;
      }
  
      #KaliLinuxTitle
@@ -34796,10 +34795,10 @@
  
          color: silver;
  
-         top: 530px;
-         left: 440px;
+         top: 650px;
+         left: 820px;
  
-         font-size: 21px;
+         font-size: 35px;
          font-weight: bold;
          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
          transition: 0.6s ease;
@@ -34808,18 +34807,18 @@
      #KaliLinuxTitle:hover
      {
          color: silver;
-         font-size: 22px;
+         font-size: 36px;
      }
  
      .MasterBundle
      {
-         height: 130px;
+         height: 250px;
          transition: 0.6s ease;
      }
      
      .MasterBundle:hover
      {
-         height: 140px;
+         height: 260px;
      }
  
      #BundleDescription2
@@ -34831,7 +34830,7 @@
          color: silver;
  
          right: 10px;
-         top: 760px;
+         top: 960px;
  
          text-align: center;
  
@@ -35492,8 +35491,8 @@
         background-position-x: -3.5px;
         background-position-y: 0px;
 
-        left: 500px;
-        top: 450px;
+        left: 930px;
+        top: 565px;
 
         cursor: pointer;
         height: 50px;
@@ -35515,8 +35514,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 500px;
-        top: 450px;
+        left: 930px;
+        top: 565px;
 
         cursor: pointer;
         height: 50px;
@@ -35553,8 +35552,8 @@
         background-position-x: -37px;
         background-position-y: -10px;
 
-        left: 570px;
-        top: 450px;
+        left: 1000px;
+        top: 565px;
 
         cursor: pointer;
         height: 50px;
@@ -35577,8 +35576,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 570px;
-        top: 450px;
+        left: 1000px;
+        top: 565px;
 
         cursor: pointer;
         height: 50px;
@@ -35617,8 +35616,8 @@
         background-position-x: -60px;
         background-position-y: -18px;
 
-        left: 430px;
-        top: 450px;
+        left: 860px;
+        top: 565px;
 
         cursor: pointer;
         height: 50px;
@@ -35640,8 +35639,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 430px;
-        top: 450px;
+        left: 860px;
+        top: 565px;
 
         cursor: pointer;
         height: 50px;
@@ -35679,8 +35678,8 @@
         background-position-x: -11px;
         background-position-y: -2px;
 
-        left: 640px;
-        top: 450px;
+        left: 1070px;
+        top: 565px;
 
         cursor: pointer;
         height: 50px;
@@ -35702,8 +35701,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 640px;
-        top: 450px;
+        left: 1070px;
+        top: 565px;
 
         cursor: pointer;
         height: 50px;
@@ -35741,8 +35740,8 @@
         background-position-x: -2px;
         background-position-y: -3px;
 
-        left: 360px;
-        top: 450px;
+        left: 790px;
+        top: 565px;
 
         cursor: pointer;
         height: 50px;
@@ -35764,8 +35763,8 @@
         background-position-x: -10px;
         background-position-y: 0px;
 
-        left: 360px;
-        top: 450px;
+        left: 790px;
+        top: 565px;
 
         cursor: pointer;
         height: 50px;
