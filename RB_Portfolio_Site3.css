@@ -36120,11 +36120,11 @@
         
         background-color: rgba(0,0,0,0.918);
 
-        left: 755px;
+        left: 415px;
         top: 0px;
 
-        padding-top: 837px;
-        padding-left: 989.5px;
+        padding-top: 1329px;
+        padding-left: 1689.5px;
         padding-right: 52px;
 	
 	/* border-style: dashed; */
@@ -36137,10 +36137,10 @@
 
         color: silver;
 
-        top: 10px;
-        left: 385px;
+        top: 40px;
+        left: 725px;
 
-        font-size: 25px;
+        font-size: 35px;
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         transition: 0.6s ease;
@@ -36191,11 +36191,11 @@
         position: absolute;
         cursor: pointer;
 
-        top: 10px;
-        left: 725px;
+        top: 35px;
+        left: 1125px;
 
         color: silver;
-        font-size: 25px;
+        font-size: 35px;
 
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
@@ -36208,10 +36208,10 @@
         cursor: pointer;
 
         color: silver;
-        font-size: 25px;
+        font-size: 35px;
 
-        top: 10px;
-        left: 310px;
+        top: 35px;
+        left: 610px;
 
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
@@ -36238,88 +36238,88 @@
     {
         position: absolute;
 
-        bottom: 550px;
-        left: 300px;
+        bottom: 920px;
+        left: 610px;
 
     }
 
     .PI
     {
-        height: 200px;
-        width: 435px;
+        height: 300px;
+        width: 535px;
         transition: 0.6s ease;
     }
 
     .PI:hover
     {
-        height: 210px;
-        width: 445px;
+        height: 310px;
+        width: 545px;
     }
 
     .PI2
     {
-        height: 200px;
-        width: 435px;
+        height: 300px;
+        width: 535px;
         transition: 0.6s ease;
     }
 
     .PI2:hover
     {
-        height: 210px;
-        width: 445px;
+        height: 310px;
+        width: 545px;
     }
 
     .PI3
     {
-        height: 200px;
-        width: 435px;
+        height: 300px;
+        width: 535px;
         transition: 0.6s ease;
     }
 
     .PI3:hover
     {
-        height: 210px;
-        width: 445px;
+        height: 310px;
+        width: 545px;
     }
 
     .PI4
     {
-        height: 200px;
-        left: 300px;
+        height: 300px;
+        left: 400px;
         transition: 0.6s ease;
     }
 
     .PI4:hover
     {
-        height: 220px;
-        left: 300px;
+        height: 310px;
+        left: 410px;
     }
 
     .PI5
     {
-        height: 200px;
-        left: 300px;
+        height: 300px;
+        left: 400px;
         transition: 0.6s ease;
     }
 
     .PI5:hover
     {
-        height: 220px;
-        left: 300px;
+        height: 310px;
+        left: 410px;
     }
 
     .PI6
     {
-        height: 200px;
-        left: 300px;
+        height: 300px;
+        left: 400px;
 
         transition: 0.6s ease;
     }
 
     .PI6:hover
     {
-        height: 220px;
-        left: 300px;
+        height: 310px;
+        left: 410px;
     }
     
     
@@ -36331,14 +36331,14 @@
 
         background-color: black;
 
-        top: 310px;
+        top: 510px;
 
         right: 0px;
         padding-right: 0px;
         padding-bottom: 10px;
 
         color: silver;
-        font-size: 25px;
+        font-size: 35px;
         text-align: center;
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
