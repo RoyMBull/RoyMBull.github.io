@@ -51,9 +51,9 @@ body
 .FutabaLogo
 {   
 
-    	background-image: url(P10.GIF);
+    	background-image: url(Lan\ Turtle.jpg);
     	background-position-y: -10px;
-    	background-position-x: -70px;
+    	background-position-x: -78px;
     	background-size: 400px;
     	background-repeat: no-repeat;
 		border-color: red;
@@ -75,10 +75,10 @@ body
 {
     	height: 260px;
     	width: 260px;
-    	background-size: 375px;
-    	background-image: url(P9.GIF);
-    	background-position-x: -50px;
-    	background-position-y: 0px;
+    	background-size: 440px;
+    	background-image: url(RansomeWare.jpg);
+    	background-position-x: -85px;
+    	background-position-y: -30px;
 }
 
 
