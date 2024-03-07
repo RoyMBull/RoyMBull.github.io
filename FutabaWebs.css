@@ -52,18 +52,17 @@ body
 {   
 
     	background-image: url(Lan\ Turtle.jpg);
-    	background-position-y: -10px;
-    	background-position-x: -78px;
-    	background-size: 400px;
+    	background-position-y: 0px;
+    	background-position-x: -76px;
+    	background-size: 443px;
     	background-repeat: no-repeat;
 		border-color: red;
-		border-style: solid;
-   	 
+		border-style: solid;   	 
    	 
 
     	cursor: pointer;
-    	height: 250px;
-    	width: 250px;
+    	height: 300px;
+    	width: 300px;
     	margin: 0 2px;
     	background-color: silver;
     	border-radius: 50%;
@@ -73,12 +72,13 @@ body
 
 .FutabaLogo:hover
 {
-    	height: 260px;
-    	width: 260px;
-    	background-size: 440px;
+    	height: 305px;
+    	width: 305px;
+    	background-size: 462px;
     	background-image: url(RansomeWare.jpg);
-    	background-position-x: -85px;
-    	background-position-y: -30px;
+		background-repeat: repeat;
+    	background-position-x: -75px;
+    	background-position-y: -10px;
 }
 
 
@@ -111,7 +111,7 @@ body
 
 	background-image: url(Cyber\ Security\ Portfolio.png);
 	border-style: solid;
-	border-color: red;
+	border-color: #500606;
     
 	background-size: 78px;
 	background-repeat: no-repeat;
