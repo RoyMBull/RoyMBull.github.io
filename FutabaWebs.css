@@ -340,6 +340,119 @@ body
 	max-height: 275px;
 }
 
+
+.Modal_Pic_TCP_Client
+{
+	object-fit: cover;
+	width: 96%;
+	max-height: 405px;
+}
+
+.Modal_Pic_TCP_Server
+{
+	object-fit: cover;
+	width: 96.5%;
+	max-height: 405px;
+}
+
+.Modal_Pic_MITB
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_Hero_Signal
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_SQL_Injection
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_Github
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_Exploits
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_Py_Tools
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_You_Pic
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_Drone
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_BotNet
+{
+	object-fit: cover;
+	width: 96%;
+	max-height: 405px;
+}
+
+.Modal_Pic_CCTV
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_LAN_Turtle
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_Ransomware
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_Resources
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_Man_Browser
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
 .Title_Menu
 {
 	max-width: 960px;
