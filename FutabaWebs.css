@@ -14,7 +14,7 @@ body
 	grid-template-columns: repeat(3, 1fr);
 	column-gap: 0px;
 	row-gap: 0px;
-	background-image: url("RansomeWare.jpg");
+	background-image: url("Cipher.webp");
 	background-size: 1300px;
 }
 
