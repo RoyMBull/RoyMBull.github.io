@@ -1,7 +1,7 @@
 body
 {
     
-	background-image: url("PurpleRain3.gif");
+	background-image: url("RedCity.gif");
     
 }
 
@@ -14,8 +14,8 @@ body
 	grid-template-columns: repeat(3, 1fr);
 	column-gap: 0px;
 	row-gap: 0px;
-	background-image: url("Mobile\ Hacking.png");
-	background-size: 1500px;
+	background-image: url("t1.png");
+	background-size: 1300px;
 }
 
 .BannerButtons
@@ -51,14 +51,13 @@ body
 .FutabaLogo
 {   
 
-    	background-image: url(futaba2.jpg);
+    	background-image: url(Lan\ Turtle.jpg);
     	background-position-y: 0px;
-    	background-position-x: -5px;
-    	background-size: 300px;
-		background-repeat: no-repeat;
-		border-color: purple;
-		border-style: solid;
-   	 
+    	background-position-x: -76px;
+    	background-size: 443px;
+    	background-repeat: no-repeat;
+		border-color: red;
+		border-style: solid;   	 
    	 
 
     	cursor: pointer;
@@ -73,27 +72,27 @@ body
 
 .FutabaLogo:hover
 {
-    	height: 310px;
-    	width: 310px;
-    	background-position-x: 0px;
-    	background-size: 305px;
-    	background-image: url(futaba3.jpg);
-    	background-position-x: 0px;
-    	background-position-y: 0px;
+    	height: 305px;
+    	width: 305px;
+    	background-size: 462px;
+    	background-image: url(RansomeWare.jpg);
+		background-repeat: repeat;
+    	background-position-x: -75px;
+    	background-position-y: -10px;
 }
 
 
 .WelcomeLogo
 {   
 
-	background-image: url(Cyber\ Security\ Portfolio.png);
+	background-image: url(RansomeWare.jpg);
 	border-style: solid;
-	border-color: purple;
+	border-color: red;
     
-	background-size: 100px;
+	background-size: 103px;
 	background-repeat: no-repeat;
-	background-position-x: -28px;
-	background-position-y: -15px;
+	background-position-x: -29.8px;
+	background-position-y: -10.5px;
 
 	left: 150px;
 	top: 450px;
@@ -112,12 +111,12 @@ body
 
 	background-image: url(Cyber\ Security\ Portfolio.png);
 	border-style: solid;
-	border-color: black;
+	border-color: #500606;
     
-	background-size: 100px;
+	background-size: 78px;
 	background-repeat: no-repeat;
-	background-position-x: -28px;
-	background-position-y: -15px;
+	background-position-x: -18px;
+	background-position-y: -10px;
 
 	left: 150px;
 	top: 450px;
@@ -134,14 +133,14 @@ body
 
 .PatreonLogo
 {   
-	background-image: url(Patreon2.jpg);
+	background-image: url(RansomeWare.jpg);
 	border-style: solid;
-	border-color: purple;
+	border-color: red;
     
-	background-size: 75px;
+	background-size: 103px;
 	background-repeat: no-repeat;
-	background-position-x: -14px;
-	background-position-y: 0px;
+	background-position-x: -29.8px;
+	background-position-y: -10.5px;
 
     
 
@@ -158,14 +157,14 @@ body
 .TwitterLogo
 {   
 
-	background-image: url(Twitter.png);
+	background-image: url(RansomeWare.jpg);
 	border-style: solid;
-	border-color: purple;
+	border-color: red;
     
-	background-size: 44px;
+	background-size: 103px;
 	background-repeat: no-repeat;
-	background-position-x: 0px;
-	background-position-y: 0px;
+	background-position-x: -29.8px;
+	background-position-y: -10.5px;
 
 	left: 150px;
 	top: 450px;
@@ -182,14 +181,14 @@ body
 .InstagramLogo
 {   
 
-	background-image: url(Instagram.jpg);
+	background-image: url(RansomeWare.jpg);
 	border-style: solid;
-	border-color: purple;
+	border-color: red;
     
 	background-size: 103px;
 	background-repeat: no-repeat;
 	background-position-x: -29.8px;
-	background-position-y: -27.5px;
+	background-position-y: -10.5px;
 
 	left: 210px;
 	top: 450px;
@@ -306,6 +305,7 @@ body
 	column-gap: 10px;
 	row-gap: 10px;
 	overflow-x: auto;
+
 }
 
 .Featured_Items2
@@ -349,9 +349,10 @@ body
 .F_Pics
 {
 	object-fit: cover;
-	width: 200%;
+	width: 100%;
 	max-height: 275px;
 }
+
 
 .Modal_Pic_TCP_Client
 {
@@ -479,6 +480,7 @@ body
 	max-height: 405px;
 }
 
+
 .Modal_Pic_Programming
 {
 	object-fit: cover;
@@ -502,17 +504,17 @@ body
 
 .Modal_Pic_Cipher
 {
-	object-fit: cover;
-	width: 100%;
-	max-height: 405px;
+    object-fit: cover;
+    width: 100%;
+    max-height: 405px;
 }
-
+        
 .Modal_Pic_Mobile
 {
-	object-fit: cover;
-	width: 100%;
-	max-height: 405px;
-}
+    object-fit: cover;
+    width: 100%;
+    max-height: 405px;
+}    
 
 .Modal_Pic_Totsugeki
 {
@@ -527,6 +529,7 @@ body
 	width: 100%;
 	max-height: 405px;
 }
+
 
 .Title_Menu
 {
@@ -592,35 +595,13 @@ body
 .Contact_Icons
 {   
 
-	background-image: url(futaba3.jpg);
+	background-image: url(RansomeWare.jpg);
+    border-color: red;
     
-	background-size: 100px;
+	background-size: 103px;
 	background-repeat: no-repeat;
-	background-position-x: -46px;
-	background-position-y: 0px;
-
-	left: 210px;
-	top: 450px;
-
-	cursor: pointer;
-	height: 50px;
-	width: 50px;
-	margin: 0 2px;
-	background-color: black;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
-}
-
-.Contact_Icons2
-{   
-
-	background-image: url(TCPServer.avif);
-    
-	background-size: 100px;
-	background-repeat: no-repeat;
-	background-position-x: -26px;
-	background-position-y: -20px;
+	background-position-x: -29.8px;
+	background-position-y: -10.5px;
 
 	left: 210px;
 	top: 450px;
