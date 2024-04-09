@@ -530,6 +530,19 @@ body
 	max-height: 405px;
 }
 
+.Modal_Pic_Mentor
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_Hats
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
 
 .Title_Menu
 {
