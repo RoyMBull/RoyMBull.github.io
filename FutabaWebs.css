@@ -568,6 +568,27 @@ body
 	max-height: 405px;
 }
 
+.Modal_Pic_SSOOpen
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_DLLCode
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_ExifTool
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
 .Title_Menu
 {
 	max-width: 960px;
