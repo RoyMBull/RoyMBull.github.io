@@ -596,6 +596,85 @@ body
 	max-height: 405px;
 }
 
+.Modal_Pic_SSID
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_CookieSession
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_Zip2John
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_TCP1
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_TCP2
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_TCPLab
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_LEDProject
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_ArduinoLED1
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_ArduinoLED2
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_Resources2
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_Resources2
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+
+
 .Title_Menu
 {
 	max-width: 960px;
