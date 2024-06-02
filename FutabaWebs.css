@@ -673,6 +673,41 @@ body
 	max-height: 405px;
 }
 
+.Modal_Pic_DLPRansomware
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_RemoteFileInclusion
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_HTTPServer
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_Potentiometer
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
+.Modal_Pic_HydraPat
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+}
+
 
 
 .Title_Menu
