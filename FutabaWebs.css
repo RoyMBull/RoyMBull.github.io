@@ -367,6 +367,11 @@ body
 	transition: 0.3s ease;
 }
 
+.modal-body:hover
+{
+	transition: 0.3s ease;
+	
+}
 
 .d-grid
 {
@@ -391,6 +396,11 @@ body
 	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
 }
 
+.modal-body:hover
+{
+	box-shadow: -10px 0 30px #940d0d, 0px 0 30px #940d0d;
+
+}
 
 .Modal_Pic_TCP_Client
 {
