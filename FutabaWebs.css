@@ -30,6 +30,19 @@ body
 	background-color: purple;
 }
 
+.modal-body
+{
+	color: silver;
+	font-size: 20px;
+	transition: 0.3 ease;
+}
+
+.modal-body:hover
+{
+	color: #d8286b; /** cc2565 **/ 
+
+}
+
 .Futaba_Logo
 {
 	color: white;
