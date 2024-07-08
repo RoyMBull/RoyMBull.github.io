@@ -33,7 +33,7 @@ body
 .modal-body
 {
 	color: silver;
-	font-size: 20px;
+	font-size: 25px;
 	transition: 0.3 ease;
 }
 
@@ -41,6 +41,18 @@ body
 {
 	color: #d8286b; /** cc2565 **/ 
 
+}
+
+.card-body
+{
+	color: #d8286b;
+	transition: 0.3 ease;
+}
+
+.card-body:hover
+{
+	color: #d8286b;
+	transition: 0.3 ease;
 }
 
 .Futaba_Logo
