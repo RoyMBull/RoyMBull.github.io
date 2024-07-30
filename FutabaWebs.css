@@ -18,6 +18,19 @@ body
 	background-size: 1300px;
 }
 
+.Return
+{
+	max-width: 960px;
+	margin: -10px;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 0px;
+	row-gap: 0px;
+	background-image: url("t1.png");
+	background-size: 1500px;
+}
+
 .BannerButtons
 {
 
