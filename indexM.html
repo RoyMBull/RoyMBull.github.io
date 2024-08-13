@@ -1,0 +1,3540 @@
+<!doctype html> <!-- This is going to tell the wbe browser thrat we are wokgin tiwh ta html document -->
+
+<!-- -->
+
+<html> <!-- This is going to define the main html body of th epage -->
+    <head> <!-- This is going to defien the main header tha is going to contain any and  all main title, links refernes, even style seets and meta tag settigs for the page  -->
+        <title> Roy M Bull </title>
+
+        <!-- This is going to set the mian meta elements for the site, as well as the main tye of unicode it will accept -->
+        <meta
+            name = "viewpoint"
+            content = "device-width, initial-scale=1"
+            charset = "utf-8"
+        />
+
+        <!-- This is going to set up the main  icon that is to be shwon on the main tab pag e-->
+        <link 
+            rel = "shortcut icon"
+            type = "x-icon"
+            href = "RansomeWare.jpg"
+        /> 
+
+        <!-- THis is goign to include a main style sheet for our web applicaiton -->
+        <link   
+            rel = "stylesheet"
+            href = "FutabaWebs.css"
+        />
+
+        <!-- Next we are going to include a main script that is gonig to be shown on the page -->
+        <script src = "FutabaWebs.js">
+
+            
+        </script>
+
+        <!-- This is all for bootstrap 5 -->
+        <link   
+            rel = "stylesheet"
+            href = "bootstrap.min.css"
+        />
+        
+        <script src="bootstrap.bundle.min.js" > </script>
+        <script src="bootstrap.min.js" > </script>
+        <script src="popper.min.js" > </script>
+
+        <!-- This is all for bootstrap 3 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        -->
+
+
+    </head>
+
+<body> 
+    
+
+<!-- 
+    START OF MODALS
+
+    These are the main dialogue menus that pop up for the main elements when you click on any of the main images or buttons to view more information
+    
+-->
+
+    <!-- CTF Modal -->
+    <div class = "modal fade" id = "CTF_Write_Ups" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> CTF_Write_Ups </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "CTF.webp" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        I’ve participated in various high level complex CTF challenges, some of which landed me interviews at companies that had them as a part of their hiring process such as: “Security Innovation”, “Brainnest Consulting”, as well as “Chip Scan”.
+                        
+                    </br>
+                </br>
+                        I also do a bunch of platforms like HackTheBox and TryHackMe, as well as the many 6 that are available on “Canyouhack[.]us” which was provided by “Security Innovation”.
+
+                    </br>
+                </br>
+
+                        I’m also a Pico CTF competitor, and have even done a few high level forensics challenges that involve high level cryptanalysis techniques to decipher hidden data, as well as rebuild, analyze, and compile them.
+
+                    </br>
+                </br>
+
+                        All of the CTF’s I’ve participated in inspired me to create my own known as “Futaba’s Playground”
+
+                    </br>
+                </br>
+                        - The Hacker Who Laughs 🕸🕸🎃🎃🕸🕸
+
+                    </p>
+    
+                    <a href = "https://drive.google.com/drive/folders/1AVCVjhWW0irlQ0D-1izHHc5ksFtV40Og" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+    <!-- Crypto Modal -->
+    <div class = "modal fade" id = "Crypto_Malware" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> Crypto_Malware </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "RansomeWare.jpg" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        I wrote a test sample to demonstrate how ransomware targets and infects a victim system via file enumeration and disk encryption tactics such as RSA and AES encryption. 
+
+                    </br>
+                </br>
+
+                        For this test specifically I am only using RSA encryption.
+
+                    </br>
+                </br>
+
+                        The code basically creates a directory with a series of files with a bit of sample data in them, creates crypto keys to use for the experiment, enumerates and locates all the root files in the folder, and then handles them via encrypting the files, showing you the cipher text, and then reversing the process to decrypt it in front of you. It even tests the keys by asking you to input data when it launches so that you see the program works.
+
+                    </br>
+                </br>
+                        - The Hacker Who Laughs 🕸🕸🎃🎃🕸🕸
+
+                    </p>
+    
+                    <a href = "https://github.com/RoyMBull/Python-Pen-Testing-Tools/blob/main/Python%20PenTesting%20Tools/Ransomeware.py" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+
+    <!-- LAN Turtle Project Modal -->
+    <div class = "modal fade" id = "Lan_Turtle" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> Lan_Turtle </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 Modal_Pic_LAN_Turtle" src = "Lan Turtle.jpg" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        I've always wanted to have one of my rubber ducky scripts write its own code In a cool way, so I figured why not combine that with a LAN turtle.
+                        
+                    </br>
+                </br>
+                
+                        I'm even working on a version of this that acts as retro malware to disable security systems in place, allowing me to install any backdoor.
+                     
+                    </br>
+                </br>
+                        - The Hacker Who Laughs 🕸🕸🎃🎃🕸🕸
+
+                    </p>
+    
+                    <a href = "https://github.com/RoyMBull/Ruby-Ducky-Code/blob/main/Ruber%20Ducky%20Code/LanTurtleScript.ino" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+    <!-- MITB Modal -->
+    <div class = "modal fade" id = "MITB" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> Man-In-The-Browser </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 Modal_Pic_MITB" src = "MITB.jpg" style = "border-color: red; background-color: black; height: 550px; object-fit: cover;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        I wrote a Man-In-The-Browser exploit that is able to sit in place via the use of exceptions to monitor and track end user browser sessions to keylog facebook credentials from the end user. 
+
+                    </br>
+                </br>
+
+                        I ran into a HUGE issue during trial and error with the code. Whenever the end user would clickoff off the page, the code would be unable to find the form elements, breaking the code. What I NEED it to do is, when  the end user leaves the page, or should they be on the same site but the code can’t find the elements, is for the for loop to break, bringing us back to the main while loop so that the process to check for sites begins again. To get around this I set up an exception handler.
+                     
+                    </br>
+                </br>
+                        - The Hacker Who Laughs 🕸🕸🎃🎃🕸🕸
+
+                    </p>
+    
+                    <a href = "https://github.com/RoyMBull/Python-Pen-Testing-Tools/blob/main/Python%20PenTesting%20Tools/MITB.py" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+
+        <!-- TCP Client Modal -->
+        <div class = "modal fade" id = "TCP_Client" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> TCP_Client </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 mx-3 Modal_Pic_TCP_Client" src = "TCPClient.avif" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        This is a TCP Client that I wrote that connects to a server in a listening state on a victim machine, that can check the OS and version of the system, and then install and run payloads I set based on that, even tools that I might need to pwn the system. 
+
+                    </br>
+                </br>
+
+                        I’m upgrading this in the future to combine data encryption to mask my network traffic on internal networks to stay hidden for exploits. 
+
+                    </br>
+                </br>
+                        - The Hacker Who Laughs 🕸🕸🎃🎃🕸🕸
+
+                    </p>
+    
+                    <a href = "https://github.com/RoyMBull/Python-Pen-Testing-Tools/blob/main/Python%20PenTesting%20Tools/TCPClientBackDoor.py" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+    <!-- TCP Server Modal -->
+    <div class = "modal fade" id = "TCP_Server" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> TCP_Server </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 mx-2 Modal_Pic_TCP_Server" src = "TCPServer.avif" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        This is a TCP Server that I wrote that listens on a victim machine for TCP Client side connections, so that it can interpret and handle any and all shell code commands that are sent by the botmaster.
+
+                    </br>
+                </br>
+                
+                        I’m upgrading this in the future to combine data encryption to mask my network traffic on internal networks to stay hidden for exploits.
+   
+                    </br>
+                </br>
+                        - The Hacker Who Laughs 🕸🕸🎃🎃🕸🕸
+
+                    </p>
+    
+                    <a href = "https://github.com/RoyMBull/Python-Pen-Testing-Tools/blob/main/Python%20PenTesting%20Tools/TCPServerBackDoor.py" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+    <!-- Hero Modal -->
+    <div class = "modal fade" id = "Hero_Signal" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> Hero_Signal </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 Modal_Pic_Hero_Signal" src = "HeroSignal.png" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        I designed a custom bash script that makes Kali Linux more accessible to new comers. It's on version 5 but I have a demo version that you can try out here.
+
+                    </br>
+                </br>
+
+                        You can find that right here on my GitHub 
+
+                    </br>
+                </br>
+                        - The Hacker Who Laughs 🕸🕸🎃🎃🕸🕸
+
+                    </p>
+    
+                    <a href = "https://github.com/RoyMBull/Bash-Shell-Scripting/blob/main/Bash%20Shell%20Scripting/MasterScriptFWebsVer4.sh" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+    <!-- SQL Script Modal -->
+    <div class = "modal fade" id = "SQL_Inject_Script" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> SQL_Inject_Script </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 Modal_Pic_SQL_Injection" src = "SQL.jpg" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        This is a script that I designed that solves one of “Security Innovations” first SQL injection based CTF’s. 
+
+                    </br>
+                </br>
+
+                        The script is able to inject a payload into the URL parameter of the web server while pre-loading a cookie session that has been assigned to it, solving the challenge, and storing the results for us in a file, in which we can parse through to check for the flag.
+
+                     
+                    </br>
+                </br>
+                        - The Hacker Who Laughs 🕸🕸🎃🎃🕸🕸
+
+                    </p>
+    
+                    <a href = "https://github.com/RoyMBull/Python-Pen-Testing-Tools/blob/main/Python%20PenTesting%20Tools/SQLInjection.py" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+    <!-- CTF Modal -->
+    <div class = "modal fade" id = "CTF_Server" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;">  Futabas_Playground CTF  </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "CTFServer.jpeg" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        This is a custom portable CTF server that I wrote in: HTML/CSS/JS, and PHP. Further languages used are SQL for the backend of the database which is MYSQL. The server is designed to allow you to pentest wherever you are locally vs the traditional meas of having to be connected to the internet in order to engage in web application pentesting CTF challenges, allowing you to get practice wherever you are on the go. 
+                        
+                    </br>
+                </br>
+                        It’s also home lab friendly and allows you to practice network penetration testing as well, and includes a variety of challenges that test a lot of your hacking methodology and skill sets. You’re going to have to apply yourself and LEARN if you want to secure all “11 flags”.
+
+                        You can run this challenge as either locally on your system, or on another system that you can run either directly or vm machine. This makes it more accessiible to all users. If you have nethunter you can also participate in the challenge as well from you phone if you wanted to try mobile hacking.
+
+                    </br>
+                </br>
+                        THIS DOES RUN ON NETHUNTER AS WELL THE SAME WAY. YOU NEED TO MAKE SURE YOU ARE ROOT WHEN YOU RUN NETHUNTER SO THE SCRIPT WORKS CORRECTLY OTHERWISE IT WILL CRASH AND FAIL!
+                    
+                    </br>
+                </br>
+                        - The Hacker Who Laughs 🕸🕸🎃🎃🕸🕸
+
+                    </p>
+    
+                    <a href = "https://github.com/RoyMBull/Futabas_Playground" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+    <!-- GitHub Modal -->
+    <div class = "modal fade" id = "GitHub" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> RoyMBull GitHub </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 Modal_Pic_Github" src = "GIthubWorkShop.png" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        I’ve included this handy Guide that will help you navigate my GitHub. These are all my main projects you should check out first before exploring around my GitHub in general. Feel free to look around!                     
+                    
+                    </br>
+                </br>
+                        - The Hacker Who Laughs 🕸🕸🎃🎃🕸🕸
+
+                    </p>
+    
+                    <a href = "https://github.com/RoyMBull/READ-ME" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+    <!-- Exploit Modal -->
+    <div class = "modal fade" id = "Exploit_Videos" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> Exploit_Videos </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 Modal_Pic_Exploits" src = "ExploitVideos.png" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        Check out some of my live hacking exploit demonstrations.
+
+                    </br>
+                </br>
+                        - The Hacker Who Laughs 🕸🕸🎃🎃🕸🕸
+
+
+                    </p>
+    
+                    <a href = "https://www.youtube.com/channel/UCzQkhb-WC86ZV2C52BU-OuQ" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+    <!-- Python Modal -->
+    <div class = "modal fade" id = "Python_Tools" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> Python-Pen-Testing-Tools </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 Modal_Pic_Py_Tools" src = "Sombra.png" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        I’ve included a safe UDP backdoor to run that only works on one system via 2 terminals. I’ve excluded the full version for safety purposes that utilizes TCP/IP in order to allow for remote data communication between said systems on the networks. Feel free to check out the SSH version.
+                        
+                    </br>
+                </br>
+
+                        I’ve also created my own personal MITB(Man in the browser attack) program, that will launch a total “real” chrome browser (read the code in the description to download the module needed to run the program), which will keep track of any sites written in the code, and will log it down into a text file. For safety purposes it only tells you whether you visited the site or not.
+
+                    </br>
+                </br>
+
+                        I’ve also written my own personal RSA encryption/decryption tool you can use to secure data. The program has a manual mode I’ve written that will explain how to use it.
+
+                    </br>
+                </br>
+
+                        I primarily use python to program a series of low-level networking tools: Client/Servers via TCP, UDP, and SSH, HTML and flask Servers, as well as network sniffers to scan and monitor traffic on networks by sending UDP packet datagrams to wait for responses and see what machines I can talk to, as well as interacting with a variety of different network protocols. I also use python to develop: Encryption/Decryption tools, Man in the browser attack programs, mapping web applications, web brute forcing, as well as to develop trojan programs that I can update and communicate with on different systems, as well as for SQL injection attacks. I’m learning machine learning with python at the moment, and I do also use it to develop fast GUI’s for pentesting tools using PYQT5.
+                     
+                    </br>
+                </br>
+                        - The Hacker Who Laughs 🕸🕸🎃🎃🕸🕸
+
+                    </p>
+    
+                    <a href = "https://github.com/RoyMBull/Python-Pen-Testing-Tools" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+
+    <!-- YouPic Modal -->
+    <div class = "modal fade" id = "YouPic_Feature" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> YouPic_Feature </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 Modal_Pic_You_Pic" src = "YouPIc Feature.jpeg" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        My Research was also featured on a photography platform called “YouPic”.
+
+                    </br>
+                </br>
+
+                        - The Hacker Who Laughs 🕸🕸🎃🕸🕸
+
+
+                    </p>
+    
+                    <a href = "https://youpic.com/roybull" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+    <!-- Rubber Ducky Modal -->
+    <div class = "modal fade" id = "Ruby_Ducky" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> Ruby-Ducky </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "RubberDucky.avif" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        This is an interchangeable rubber ducky script I wrote designed to run and execute various payloads. For demonstration purposes I’ve provided a safe version of the code you can run and script onto an arduino board that utilizes a micro USB port (The arduino Keyboard library only works with those types of boards). 
+                        
+                    </br>
+                </br>
+                
+                        Simply load up the arduino program and sketch “KeyboardInjectionLINUX.ino” to the board and the sample code will run. I’ve also included a set of functions in a text file, that you can use to edit and swap out functions in the original code should you wish to. Have fun!!!                     
+                    
+                    </br>
+                </br>
+                        - The Hacker Who Laughs 🕸🕸🎃🎃🕸🕸
+
+                    </p>
+    
+                    <a href = "https://github.com/RoyMBull/Ruby-Ducky-Code" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+    
+    <!-- App Modal -->
+    <div class = "modal fade" id = "Pen_Testing_App" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> Pen_Testing_App </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "PenTestApp.jpg" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        This is a second build of a penetration testing app I've developed that is meant to automate a variety of the different tools I've written. The interface only includes code that has been fully tested thoroughly. Any others, feel free to browse and look at it. You won't see it in the interface but it's there in case you wish to see it. The following to look at first are:
+                    </br>
+                </br>
+
+                        Bash_Interface.py (This is the main interface)
+                        
+                    </br>
+                </br>
+
+                        LinuxInstall.py (Installs all needed components, including PYQ5 in case you don't have it installed. Also compatible with windows via pip installer)
+                        
+                    </br>
+                </br>
+
+                        Installer Module.sh(Script that will install all needed compilers for Linux should you not have them installed) 
+                     
+                    </br>
+                </br>
+                        - The Hacker Who Laughs 🕸🕸🎃🎃🕸🕸
+
+                    </p>
+    
+                    <a href = "https://github.com/RoyMBull/Pen-Testing-App-Ver2" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+
+    <!-- Drone Modal -->
+    <div class = "modal fade" id = "Hacking_Drone" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> Hacking_Drone </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 Modal_Pic_Drone" src = "Pentesting Drone.jpeg" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        Inspired by Marcus's drone from Watch Dogs 2 and as a tribute to the series, I'm developing a penetration testing drone, it's sole purpose, to fly around capturing packet data, as well as cracking Wireless encryptions, integrating the use of a raspberry pi zero to host my UDP BackDoor Server program in order to communicate with the drone and see what's on the pi as it's flying. Think of it as a flying wifi-pineapple. When the drone boots up, the pi zero will auto login, where a set of scripts will run, starting up the UDP Server.
+
+                    </br>
+                </br>
+
+                        The flight controller for the drone is built up from scratch, rather than using a pre-built one. The drone will take a series of commands from the transmitter, the controller, also built from scratch (keyboard input option available as well), and depending on the value read from the analog of the joystick module, will move the drone either: forward, backward, left, right, up down, and shifts the values of the signal values sent to the ESC's of the drone in order to move the drone accordingly, all calibrated properly. The drone is still in prototype phase, and is near completion.
+
+                    </br>
+                </br>
+
+                        In the future I will be diving into how to facial recognition software, which I will build from scratch in order to build a true replica of Wrench from Watch Dogs 2, his face mask that acts as a build board, where his facial expressions are scanned by the mask in order to display a a set of emojis that show his emotions. 
+                     
+                    </br>
+                </br>
+                        - The Hacker Who Laughs 🕸🕸🎃🎃🕸🕸
+                        
+                    </p>
+    
+                    <a href = "https://github.com/RoyMBull/Pen-Testing-Drone-Prototype" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+    
+    <!-- Botnet Modal -->
+    <div class = "modal fade" id = "How_to_Botnet" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> How_to_Botnet </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 mx-3 Modal_Pic_BotNet" src = "Botnet.png" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        Today we are going to be talking about how to build a custom backdoor exploit in Python3, as well as what RCE is, including various methods to achieve it. These two techniques are your bread and butter and are what you’ll be going for during a lot of pentests, CTF challenges, etc, regardless of how you go about it: SQL injection, OS command injection, remote file inclusion, etc. It’s really all the same. 
+                        
+                    </br>
+                </br>
+
+                        If you’ve ever noticed, during a lot of big hacks, one of the most common things that ALWAYS happens is that the attackers somehow discover a way to RCE the system, allowing them to gain backdoor access and formulate something called a “botnet”, allowing them to deliver various payloads and command and control the network. Before I dive into this, as always I want to get you up to speed on some terminology so that you understand what’s going on. Let’s go over the main TCP/IP handshake so you understand the overall process.
+                        
+                    </br>
+                </br>
+
+                        Disclaimer:
+                        
+                    </br>
+                </br>
+
+                        As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let's begin!
+
+                    </br>
+                </br>
+
+                        - The Hacker Who Laughs 🕸🕸🎃🕸🕸
+                     
+                    </p>
+    
+                    <a href = "https://www.linkedin.com/pulse/how-botnet-roy-bull-futaba-webs--2qnme/?trackingId=%2FTyiiJhMQueJsBUP3NAEGA%3D%3D" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+
+    <!-- ARP Modal -->
+    <div class = "modal fade" id = "ARP_Poisoning" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> ARP_Poisoning </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "Masq.jpeg" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        Today we are going to be talking about ARP poisoning and how to poison a network. A lot of this is going to be heavy networking based, so do mind your fundamentals. I'll explain some stuff along the way. As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pentest on anyone's network unless it is your own, or you have permission to do so.
+                        
+                    </br>
+                </br>
+
+                        - The Hacker Who Laughs 🕸🕸🎃🎃🕸🕸
+                     
+                    </p>
+    
+                    <a href = "https://www.linkedin.com/pulse/what-arp-poisoning-roy-bull-futaba-webs--g382e/?trackingId=%2FTyiiJhMQueJsBUP3NAEGA%3D%3D" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+
+    <!--CCTV Modal -->
+    <div class = "modal fade" id = "CCTV_Hacking" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> CCTV_Hacking </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 Modal_Pic_CCTV" src = "CCTV.png" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        Today we are going to be covering the Shodan API and how to use it for CCTV hacking to tap into camera feeds, as well as how to gather information about various IoT gateway devices on the internet and exploit the services on them. 
+                    
+                    </br>
+                </br>
+
+                        This is also going to dive into complex topics like: port forwarding, router exploitation, the routersploit framework, the metasploit framework, as well as how the internet works under the hood. 
+                        
+                    </br>
+                </br>
+
+                        I'm not going to directly tap into a camera feed live as that's illegal (even if it's a public cam for a park), but I am going to show you how to talk to specific ports using an IP address, whether it be in numeral format or alphabetical format. It's the same process you'll be using to tap into camera feeds should you find an open port.
+
+                    </br>
+                </br>
+                
+                        For this demonstration, since we'll be using metasploit for it, you're going to need a Shodan premium membership to get a lifetime API key(s). Sadly, Shodan now requires you to be a premium member if you wish to use the API freely.
+
+                    </br>
+                </br>
+
+                        Disclaimer
+
+                    </br>
+                </br>
+
+                        As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let's begin!
+                    
+                    </br>
+                </br>
+
+                        - The Hacker Who Laughs 🕸🕸🎃🕸🕸
+                     
+                    </p>
+    
+                    <a href = "https://www.linkedin.com/pulse/cctv-hacking-roy-bull-futaba-webs--doqpe/?trackingId=%2FTyiiJhMQueJsBUP3NAEGA%3D%3D" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+    
+    <!-- SQL Modal -->
+    <div class = "modal fade" id = "SQL_Injection" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> SQL_Injection </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "SQL.jpeg" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        Today I'll be covering SQL injection and advanced fuzzing and filter bypassing techniques you need to know to be a successful pen-tester. You can't avoid not knowing this as you'll see it regardless of what side you are on: blue team, if you are defending against it, or red team, if you are checking if it's a weakness in the system. 
+                        
+                    </br>
+                </br>
+
+                        As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, lets begin!
+                    
+                    </br>
+                </br>
+
+                        - The Hacker Who Laughs 🕸🕸🎃🕸🕸                     
+                    </p>
+    
+                    <a href = "https://www.linkedin.com/pulse/what-sql-injection-roy-bull-futaba-webs--ggphe/?trackingId=%2FTyiiJhMQueJsBUP3NAEGA%3D%3D" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+
+    <!-- LAN Turtle Modal -->
+    <div class = "modal fade" id = "LAN_Turtle" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> LAN_Turtle </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 Modal_Pic_LAN_Turtle" src = "BackdoorHacker.jpg" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        Today, I'm going to show you how to make your own custom LAN turtle Rubber Ducky using Arduino. This is going to simulate connecting the target system back to a server side, much like a meterpreter shell, so that we can pipe over commands on our end and control the target system. 
+
+                    </br>
+                </br>
+
+                        The two scripts that are going to be used are the ones from the previous article on "How to Botnet". The client side is going to be integrated with Arduino, where it will will write its own code live and connect back to the server, whereas the server side, the python script, is going to sit in a listening state on the system, waiting for the client to connect to it so it can be fed instructions from the client side to control the system. Traditionally you always want to have the server sitting on the victim system so that you can connect and interact with it, but nowadays making your back-doors peer to peer is actually best because it allows your setup to be more versatile. For safety purposes, it's just going to connect back and that's it, nothing else! The real version that is unsafe to use stays with me. 
+
+                    </br>
+                </br>
+
+                        Sadly, this is one of those projects that you NEED to have the right equipment for to pull off, but you can still follow along the 2 demonstration videos here. One, that shows the code being automated, and then another, of me connecting it live in front of you as proof it works. 
+
+                    </br>
+                </br>
+
+                        Disclaimer
+
+                    </br>
+                </br>
+
+                        As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let's begin!
+                        
+                    </br>
+                </br>
+
+                        - The Hacker Who Laughs 🕸🕸🎃🕸🕸
+                     
+                    </p>
+    
+                    <a href = "https://www.linkedin.com/pulse/lan-turtle-roy-bull-futaba-webs--7ivse/?trackingId=%2FTyiiJhMQueJsBUP3NAEGA%3D%3D" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+
+    <!-- Ransomware Modal -->
+    <div class = "modal fade" id = "Ransomware" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> Ransomware </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 Modal_Pic_Ransomware" src = "MitM-Hero.png" style = "border-color: red; background-color: black; height: 250px;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        Today I’m going to be going over Crypto malware/ransomware and how to fabricate your own for educational and study purposes. But before I start, I would like to mention as a disclaimer that I by no means condone any form of illegal behavior you might use this information for. It's STRICTLY for educational purposes ONLY.
+                        
+                    </br>
+                </br>
+
+                        Due to the nature of how long my posts will be getting in the future I will be writing them in main news articles so I can fully flesh them out better in full detail.
+
+                    </br>
+                </br>
+
+                        Link to the main article for the video and explanation is in the link below. Any and all major past content I’ve made will also be made available via my newsletter article following soon. 
+
+                    </br>
+                </br>
+
+                        - The Hacker Who Laughs 🕸🕸🎃🎃🕸🕸
+                     
+                    </p>
+    
+                    <a href = "https://www.linkedin.com/pulse/what-ransomware-roy-bull-futaba-webs--eoece/?trackingId=%2FTyiiJhMQueJsBUP3NAEGA%3D%3D" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+
+    <!-- Free Resources Modal -->
+    <div class = "modal fade" id = "FREE_Resources" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> 2024 Resources 1 </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 Modal_Pic_Resources" src = "Resources.jpeg" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        SOOOOOO, as promised, here is the list of any and all resources I wanted to openly share of mine that I personally recommend and use all the time. It's a special celebration for finally reaching close to 300 connections on here.
+
+                    </br>
+                </br>
+
+                        If you would like to help other people have access to HIGH QUALITY resources so they can learn, then I suggest MEGA sharing this so that connections in your network see it!
+
+                    </br>
+                </br>
+
+                        - The Hacker Who Laughs 🕸🕸🎃🎃🕸🕸 
+                     
+                    </p>
+    
+                    <a href = "https://www.linkedin.com/pulse/cyber-security-resources-2024-roy-bull-futaba-webs--ssynf?trackingId=8Um162STR2isGWcRpq0Whw%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3B9sbB2r0zR%2FSMqA05Y3ccRw%3D%3D" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+
+    <!-- MITB Exploit Modal -->
+    <div class = "modal fade" id = "MITB_Exploit" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> MITB_Exploit </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 Modal_Pic_Man_Browser" src = "MITB.png" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        Today we are going to talk about Social Engineering, specifically, a "man in the browser" exploit, as well as what social engineering is and how threat actors use it to exploit and leverage a system to gain access. There are various forms of social engineering, and we'll cover them all here today.
+
+                    </br>
+                </br>
+
+                        Social engineering is one of the most commonly used tactics, as well as something that is known as a physical hack.
+
+                    </br>
+                </br>
+
+                        As always, before we dive right into this, some terminology needs to be explained so that you can follow along with the article.
+
+                    </br>
+                </br>
+
+                        Disclaimer
+
+                    </br>
+                </br>
+
+                        As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let's begin!
+
+                    </br>
+                </br>
+
+                        - The Hacker Who Laughs 🕸🕸🎃🕸🕸
+                     
+                    </p>
+    
+                    <a href = "https://www.linkedin.com/pulse/mitb-exploit-roy-bull-futaba-webs--k552e/?trackingId=8Um162STR2isGWcRpq0Whw%3D%3D" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+
+    <!-- Bypassing Tor Modal -->
+    <div class = "modal fade" id = "Bypassing_Tor" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> Bypassing_Tor </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "MrRobot.jpeg" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        Today, in order to celebrate the launching of my new website, I have a special article for today. It's going to feature the first episode of  "Mr.Robot", where Elliot hacks a pedophile. 
+
+                    </br>
+                </br>
+
+                        We are also going to talk about the TOR Onion protocol, as well as how to bypass it. We are also going to discuss online anonymity, and how to setup and configure TOR so you can be "truly" anonymous.
+                        In order to discuss this I need to go over the 3 layers of the internet: The surface web, deep web, and dark web.
+                        
+                    </br>
+                </br>
+
+                        Disclaimer
+                        
+                    </br>
+                </br>
+
+                        As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let's begin!
+                        
+                    </br>
+                </br>
+
+                        - The Hacker Who Laughs 🕸🕸🎃🕸🕸
+                     
+                    </p>
+    
+                    <a href = "https://www.linkedin.com/pulse/bypassing-tor-roy-bull-futaba-webs--rcpee/?trackingId=8Um162STR2isGWcRpq0Whw%3D%3D" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+    <!-- Portfolio Modal-->
+    <div class = "modal fade" id = "Cyber_Portfolio" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> Cyber_Portfolio </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "Cyber Security Portfolio.png" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        Self-Taught Cyber Security Professional with a background in Software Engineering, IT Technical Support, Security Engineering, and proficiency in Electrical engineering and Reverse Engineering. 
+
+                    </br>
+                </br>
+
+                        I have a love and passion for offensive security. I reverse engineer various core API’s and technologies in order to explore and fabricate new ideas that will make my projects come to life.  
+
+                    </br>
+                </br>
+
+                        I use my Software Engineering skills to design custom exploits and penetration testing tools, and CTF servers that demonstrate my Security Engineering skills and ingenious ingenuity. 
+
+                    </br>
+                </br>
+
+                        My Electrical Engineering skills allow me to devise various custom tools such as keyboard injection exploits that manipulate the virtual keyboard API of a system in order to inject payloads and bypass security measures for security testing, some with the ability to write their own code, which I use to extend further C/C++ Win32API and LinuxAPI exploits along with python scripts.
+
+                    </br>
+                </br>
+
+                        On top of being proficient in C/C++ I’m also proficient in 13 programming languages in total, my main ones being: C/C++, Python3, Bash, SQL, HTML/CSS/JS, PHP, and of course a bit of Powershell scripting as well. 
+
+                    </br>
+                </br>
+
+                        My IT skills are on par with level 4 tier experience. I use my reverse engineering skills in order to deduce probable causes and solutions for technical problems. 
+
+                    </br>
+                </br>
+                        Reverse engineering is my specialty and is how I learn. Given my level of ingenuity, I was allowed to operate above my tier level and demonstrate my skill sets to the fullest and solve lots of complex technical problems at the companies that I worked at, including the infamous Pfizer Pharmaceutical company, which I have thorough documentation of in my research portfolio.
+
+                    </br>
+                </br>
+                
+                        My skill sets won’t disappoint you! Check out my work and my research. I take pride in what I do as a professional hacker.
+                     
+                    </br>
+                </br>
+                        - The Hacker Who Laughs 🕸🕸🎃🎃🕸🕸
+
+                    </p>
+    
+                    <a href = "https://drive.google.com/drive/folders/1SSrPxY4UKp-YLhBjqsTKBl29VTaqCfyp?usp=sharing" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+
+    <!-- Futaba_Webs Modal -->
+    <div class = "modal fade" id = "Futaba_Business" style = "background-image: url('RedCity.gif'); zoom: 170%">
+        <div class = "modal-dialog modal-lg">
+        <div class = "modal-content">
+    
+                <div class = "modal-header" style = "background-color: black; color: gray ">
+    
+                    <span class="Contact_Icons mx-4"></span>
+    
+                    <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> About Futaba_Webs </h3>
+    
+                    <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+    
+                </div>
+    
+                <div class = "modal-body bg-dark">
+    
+                    <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "Your Journey begins.png" style = "border-color: red; background-color: black;"> </h3>
+                    
+                    <p class = "pb-5 mt-4"> 
+                        
+                        Futaba_Webs is a new brand I’m starting that focuses on developing a series of unique penetration testing tools with style, both software and hardware wise. I also develop and create educational resources that will help people learn how to program, as well as paint the clear pathway to the cyber security field and all it’s intricacies. The most difficult part of learning anything is knowing where to start. 
+                     
+                    </br>
+                </br>
+                        - The Hacker Who Laughs 🕸🕸🎃🎃🕸🕸
+
+                    </p>
+    
+                    <a href = "https://www.linkedin.com/company/futaba-webs" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
+    
+                        </div>
+    
+                    </a>     
+    
+    
+    
+                </div>
+    
+    
+        </div>
+        </div>
+        </div>
+
+
+    <!-- Futaba Bio Modal -->
+    <div class = "modal fade" id = "Futaba_Bio" style = "background-image: url('RedCity.gif'); zoom: 170%">
+    <div class = "modal-dialog modal-lg">
+    <div class = "modal-content">
+
+            <div class = "modal-header" style = "background-color: black; color: gray ">
+
+                <span class="Contact_Icons mx-4"></span>
+
+                <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> About Roy M Bull </h3>
+
+                <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+
+            </div>
+
+            <div class = "modal-body bg-dark">
+                
+                <h3 class = "pb-2" style = "font-weight: bold; color: gray"> Who is Roy M Bull?: </h3>
+                
+                <p class = "pb-5"> 
+                    
+                    I’m a self-taught software engineer with a background in cyber security/penetration testing, and have been programming for over 11 years now. One of my specialties is reverse engineering. I like to reverse engineer various core API’s and technologies in order to explore and fabricate new ideas that will make my projects come to life. My favorite video game series known as the MBNS(Megaman Battle Network Series) inspired me to want to learn how to code/program.
+                 
+                </p>
+
+
+                <h3 class = "pb-2" style = "font-weight: bold; color: gray"> What is Futaba_Webs? </h3>
+                
+                <p class = "pb-5"> 
+                    
+                    Futaba_Webs is a new brand I’m starting that focuses on developing a series of unique penetration testing tools with style, both software and hardware wise. I also develop and create educational resources that will help people learn how to program, as well as paint the clear pathway to the cyber security field and all it’s intricacies. The most difficult part of learning anything is knowing where to start. 
+                                     
+                </p>
+
+
+
+                <h3 class = "pb-2" style = "font-weight: bold; color: gray">  Why the name Futaba_Webs? </h3>
+                
+                <p class = "pb-5"> 
+                    
+                    The name Futaba_Webs was inspired from my list of favorite video game characters that are hackers: Futaba from Persona 5, Wrench from WatchDogs 2, and Sombra from Overwatch. The other half of my name, Webs, is inspired from my love of the way of the spider, Spider-Man, my favorite spider(s) being, Spider-Gwen and Superior Spider-Man.
+
+                </p>
+
+
+                <h3 class = "pb-2" style = "font-weight: bold; color: gray"> The Hacker Who Laughs 🕸🕸🎃🕸🕸  </h3>
+                
+                <p class = "pb-5"> 
+                    
+                    This iconic phrase you see all the time on all of my stuff is inspired from DC’s “The Batman Who Laughs”. The pumpkins and the overall theme of where I’m going with them is inspired from “Jack-O'' from my favorite fighting game series of all time “Guilty Gear “, as well as my favorite Marvel SuperHero, “Spider-Man”. The overall theme of this in the long run is to create my own version of a “Spider” that combines all the iconic themes together. 
+
+                                     
+                </p>
+
+
+
+
+            </div>
+
+
+    </div>
+    </div>
+    </div>
+
+
+
+<!-- 
+    END OF MODALS
+-->
+
+
+<!-- 
+        START OF SIDE MENU #1
+
+        This is one of the main side menus that will appear to the “RIGHT” when you click to view my “latest projects”
+
+-->    
+    
+    <div class = "offcanvas offcanvas-end bg-dark" id = "Latest_Projects" style = "background-image: url('Spider.jpg')"> 
+
+        <div class = "offcanvas-header">
+
+                 
+                <span class="Contact_Icons mx-1"></span>
+        <div class = "offcanvas-title" style = "font-size: 30px;font-weight: bold; color: gray; text-align: center; background-color: rgba(0, 0, 0, 0.900)"> Latest_Projects </div>
+
+            <button type = "button" data-bs-dismiss = "offcanvas" class = "btn-close bg-danger"></button>
+
+        </div>
+
+        <div class = "offcanvas-body">
+
+            <div class = "card F_Items float-start mx-5" style = "background-color: black; color: gray; font-weight: bold;" > 
+
+                <div class = "card-header">
+        
+                    <h3 style = "background-color: black; color: gray; font-weight: bold; text-align: center;">  Custom CTF  </h3>
+        
+                </div>
+        
+                <div class = "card-body"> 
+        
+                    <a href = "https://github.com/RoyMBull/Futabas_Playground">
+                        <img class = "img-thumbnail F_Pics bg-dark" src = "Wanan be a programmer.jpg" style = "border-color: red; height: 250px;" />
+                    </a>
+                    
+                        <strong> 
+
+                            <p class = "pt-4" style = "font-size: 20px;"> This is a custom portable CTF server that I wrote in: HTML/CSS/JS, and PHP. </p>
+        
+                            <p style = "font-size: 20px;"> The server is designed to allow you to pentest wherever you are locally vs the traditional means of having to be connected to the internet in order to engage in web application pentesting CTF challenges, allowing you to get practice wherever you are on the go. </p>
+                    
+                        </strong>
+                    
+
+                    <a href = "https://github.com/RoyMBull/Futabas_Playground" style = "text-decoration: none;"> 
+
+                        <div class="d-grid">
+                      
+                            <button type = "button" class = "btn btn-block" style = "background-color: #500606; font-weight: bold; color: gray; border-color: red;" > Click to View Project </button>
+    
+                        </div>
+
+                    </a>                   
+        
+                </div>
+        
+            </div>
+
+            
+
+        </div>
+
+        <button type = "button" class = "btn btn-dark Modal_Pic_Generic" data-bs-dismiss = "offcanvas" style = "background-color: #500606; font-weight: bold; color: gray; border-color: red;"> Close Menu </button>
+
+    </div> 
+
+    <!--
+        END OF SIDE MENU #1
+     -->
+
+
+
+
+    <!-- 
+        START OF SIDE MENU #2 
+
+        This is one of the main side menus that will appear to the “RIGHT” when you click to view my “latest news”
+    
+    -->
+
+    <div class = "offcanvas offcanvas-start bg-dark" id = "Latest_News" style = "background-image: url('Spider.jpg');"> 
+
+        <div class = "offcanvas-header">
+
+            <span class="Contact_Icons mx-1"></span>
+        
+            <div class = "offcanvas-title" style = "font-size: 30px;font-weight: bold; color: gray; background-color: rgba(0, 0, 0, 0.900); text-align: center;"> Latest_News </div>
+
+        <button type = "button" data-bs-dismiss = "offcanvas" class = "btn-close bg-danger"></button>
+
+    </div>
+
+    <div class = "offcanvas-body">
+
+        <div class = "card F_Items float-start mx-5" style = "background-color: black; color: gray; font-weight: bold;" > 
+
+            <div class = "card-header">
+    
+                <h3 style = "background-color: black; color: gray; font-weight: bold; text-align: center;">  Latest_News  </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+    
+                <a href = "https://www.patreon.com/posts/buffer-overflow-109076690" style = "text-decoration: none;"> 
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "BufferOveflow.jpg" style = "border-color: red; height: 250px;" />
+                </a>
+
+                <strong> 
+
+                    <p class = "pt-4" style = "font-size: 20px;"> Today’s exploit video will feature something that has been HEAVILY requested by many of my followers… BINARY injection, also known commonly as a Buffer Overflow exploit specifically for 64 bit.
+                        
+                    </p>
+
+                    <p style = "font-size: 20px;"> Much like how SQL injection is hard to learn without proper instruction, so is binary injection. This will be for beginners.
+
+                    </p>
+            
+                </strong>
+                
+
+            <a href = "https://www.patreon.com/posts/buffer-overflow-109076690" style = "text-decoration: none;"> 
+
+                <div class="d-grid">
+              
+                    <button type = "button" class = "btn btn-block" style = "background-color: #500606; font-weight: bold; color: gray; border-color: red;" > Click to View Article </button>
+
+                </div>
+
+            </a>      
+
+            </div>
+    
+        </div>
+
+        
+
+    </div>
+
+    <button type = "button" class = "btn btn-dark Modal_Pic_Generic" data-bs-dismiss = "offcanvas" style = "background-color: #500606; font-weight: bold; color: gray; border-color: red;"> Close Menu </button>
+
+    </div> 
+
+<div class = "container-fluid container-xxl bg-image Banner"> 
+    
+
+        <div class = "Futaba_Logo" style = "font-size: 33px; text-align: center;"> 
+
+            🕸🕸🎃🕸🕸
+    
+        </div>
+
+        <div class = "Futaba_Logo"> 
+                        
+            <a href = "#Features">
+
+                <span class = "img mx-5 FutabaLogo"></span>
+                
+            </a>
+
+        </div>
+
+        <div class = "Futaba_Logo" style = "font-size: 33px; text-align: center;"> 
+
+            🕸🕸🎃🕸🕸
+    
+        </div>
+
+        <div class = "Futaba_Logo"> 
+
+             
+           
+
+        </div>
+
+        <div class = "Futaba_Logo"> 
+
+            <div class="d-grid">
+                
+                <button type = "button" class = "btn btn-block BannerNeon" style = "background-color: rgba(0, 0, 0, 0.5); font-size: 90px; font-weight: bold; color: gray; border-color: red;"> Roy M Bull </button>
+
+            </div> 
+
+        </div>
+
+        <div class = "Futaba_Logo"> 
+
+            
+
+        </div>
+
+
+        <div class = "Futaba_Logo"> 
+
+            
+    
+        </div>
+
+        <div class = "Futaba_Logo"> 
+
+            <div class="d-grid">
+                
+                <button type = "button" class = "btn btn-block BannerNeon" style = "background-color: rgba(0, 0, 0, 0.5); font-size: 45px; font-weight: bold; color: gray; border-color: red;"> The Hacker Who Laughs <p style = "font-size: 27px;"> 🕸🕸🎃🕸🕸 </p> </button>
+
+            </div>
+
+        </div>
+
+        <div class = "Futaba_Logo"> 
+
+            
+    
+        </div>
+
+        <div class = "Futaba_Logo"> 
+
+            
+    
+        </div>
+
+        <div class = "Futaba_Logo"> 
+
+            <a href=""> <span class="InstagramLogo InstagramLogoHover float-end mx-0 BannerNeon"></span> </a>
+
+            <a href=""> <span class="WelcomeLogo WelcomeLogoHover float-end mx-4 BannerNeon"></span> </a>
+
+            <a href=""> <span class="TwitterLogo TwitterLogoHover float-start mx-0 BannerNeon"></span> </a>
+
+            <a href=""> <span class="PatreonLogo PatreonLogoHover float-start mx-4 BannerNeon"></span> </a>
+    
+            
+        </div>
+
+        <div class = "Futaba_Logo"> 
+
+            
+    
+        </div>
+
+        <div class = "Futaba_Logo">           
+
+    
+        </div>
+
+        <div class = "Futaba_Logo"> 
+            
+            <div class="d-grid">
+                
+                <button type = "button" class = "btn btn-block BannerNeon" style = "background-color: black; font-weight: bold; font-size: 35px; color: gray; border-color: red;" data-bs-target = "#Futaba_Bio" data-bs-toggle = "modal"> About_Roy_M_Bull </button>
+
+            </div> 
+            
+        </div>
+
+        <div class = "Futaba_Logo"> 
+
+            
+    
+        </div>
+
+        <div class = "Futaba_Logo"> 
+
+            
+    
+        </div>
+
+
+        <div class = "Futaba_Logo"> 
+                
+                <button type = "button" class = "btn float-start BannerNeon" style = "background-color: black; font-weight: bold; font-size: 30px; color: gray; border-color: red;" data-bs-toggle = "offcanvas" data-bs-target = "#Latest_News"> Lastest_News </button>
+
+                <button type = "button" class = "btn float-end BannerNeon" style = "background-color: black; font-weight: bold; font-size: 30px; color: gray; border-color: red;" data-bs-toggle = "offcanvas" data-bs-target = "#Latest_Projects"> Latest_Projects </button>
+            
+        </div>
+
+        <div class = "Futaba_Logo"> 
+
+            
+    
+        </div>
+
+        <div class = "Futaba_Logo" style = "font-size: 33px; text-align: center;"> 
+
+            🕸🕸🎃🕸🕸
+    
+        </div>
+
+        <div class = "Futaba_Logo">             
+
+            <a href = "https://www.linkedin.com/in/roy-bull-futaba-webs-2091501b7/" style = "text-decoration:none">
+                
+                <div class="d-grid">
+                
+                    <button type = "button" class = "btn btn-block BannerNeon" style = "background-color: black; font-weight: bold; font-size: 35px; color: gray; border-color: red;"> My Linkedin </button>
+
+                </div> 
+            </a>
+
+        </div>
+
+        <div class = "Futaba_Logo" style = "font-size: 33px; text-align: center;"> 
+
+            🕸🕸🎃🕸🕸
+    
+        </div>
+        
+</div>
+
+
+
+<!-- Features  -->
+
+<div class = "container-fluid container-xxl bg-dark Title_Menu pt-5 pb-5" id = "Features">
+
+    <div class = "progress">
+
+        <div class = "progress-bar progress-bar-animated progress-bar-striped Title_Headers" style = "background-color: black; color: black; font-size: 30px;" aria-valuemin = "0" aria-valuenow = "100" aria-valuemax = "100">
+
+            🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸
+
+        </div>
+
+    </div>
+
+    <a href = "MoreFeatures.html" style = "text-decoration:none">
+                
+        <div class="d-grid">
+        
+            <button type = "button" class = "btn btn-block BannerNeon" style = "font-weight: bold; font-size: 45px; color: gray;"> 🕸🕸🎃🕸🕸 Features 🕸🕸🎃🕸🕸 </button>
+
+        </div> 
+    </a>
+
+    <div class = "progress">
+
+        <div class = "progress-bar progress-bar-animated progress-bar-striped Title_Headers" style = "background-color: black; color: black; font-size: 30px;" aria-valuemin = "0" aria-valuenow = "100" aria-valuemax = "100">
+
+            🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸
+
+        </div>
+
+    </div>
+
+    
+</div>
+
+
+<div class = "container-fluid container-xxl bg-dark Featured_Items "> 
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;">  🕸🕸🎃🕸🕸  </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+    
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "Your Journey begins.png" style = "border-color: red; height: 250px;" data-bs-target = "#Futaba_Business" data-bs-toggle = "modal"/>
+                
+
+                <em> 
+                    <strong> 
+                        <p> Check out my Linkedin Business Page to see more of my content! </p>
+                        </strong>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#Futaba_Business" data-bs-toggle = "modal" > Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;"> CTF Server </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+    
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "CTFServer.jpeg" style = "border-color: red; height: 250px;" data-bs-target = "#CTF_Server" data-bs-toggle = "modal"/>
+                <em> 
+                    <strong> 
+                        <p> This is a custom portable CTF server that I made! Try it out! </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#CTF_Server" data-bs-toggle = "modal" > Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;">  RoyMBull Github  </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+                
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "GIthubWorkShop.png" style = "border-color: red; height: 250px;" data-bs-target = "#GitHub" data-bs-toggle = "modal"/>
+
+                <em> 
+                    <strong> 
+                        <p>  Take a loot at some of my projects available on my GitHub page!
+                        </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#GitHub" data-bs-toggle = "modal" > Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;">  Exploit Videos  </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+                
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "ExploitVideos.png" style = "border-color: red; height: 250px;" data-bs-target = "#Exploit_Videos" data-bs-toggle = "modal" />
+
+                <em> 
+                    <strong> 
+                        <p>  Check out some of my live hacking exploit demonstrations. </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#Exploit_Videos" data-bs-toggle = "modal"> Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center; ">  Python Tools  </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+    
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "Sombra.png" style = "border-color: red; height: 250px;" data-bs-target = "#Python_Tools" data-bs-toggle = "modal"/>
+
+                <em> 
+                    <strong> 
+                        <p>  Check out some of the demo code for my Pent-Testing Tools! </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#Python_Tools" data-bs-toggle = "modal"> Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;">  YouPic Feature  </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+    
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "YouPIc Feature.jpeg" style = "border-color: red; height: 250px;" data-bs-target = "#YouPic_Feature" data-bs-toggle = "modal" />
+                
+                <em> 
+                    <strong> 
+                        <p>  I was featured on a photography platform called “YouPic”. </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#YouPic_Feature" data-bs-toggle = "modal" > Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+
+                <h3 style = "color: gray; font-weight: bold; text-align: center;">  Ruby-Ducky  </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+                
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "RubberDucky.avif" style = "border-color: red; height: 250px;" data-bs-target = "#Ruby_Ducky" data-bs-toggle = "modal"/>
+
+                <em> 
+                    <strong> 
+                        <p>  Check out some of my Keyboard Injection (Rubber Ducky) Scripts. </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#Ruby_Ducky" data-bs-toggle = "modal"> Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;">  Pen-Testing-App  </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+    
+                    <img class = "img-thumbnail F_Pics bg-dark Modal_Pic_Generic" src = "PenTestApp.jpg" style = "border-color: red; height: 250px;" data-bs-target = "#Pen_Testing_App" data-bs-toggle = "modal"/>
+
+                <em> 
+                    <strong> 
+                        <p>  This is a penetration testing app I'm developing! </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#Pen_Testing_App" data-bs-toggle = "modal"> Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;">  Hacking Drone  </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+                
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "Pentesting Drone.jpeg" style = "border-color: red; height: 250px;" data-bs-target = "#Hacking_Drone" data-bs-toggle = "modal"/>
+
+                <em> 
+                    <strong> 
+                        <p>  I'm developing a drone based on WatchDogs for penetration testing!  </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#Hacking_Drone" data-bs-toggle = "modal"> Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div> 
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;">  More Features   </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+                
+                <a href = "MoreFeatures.html" style="text-decoration: none;"> 
+
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "futaba3.jpg" style = "border-color: red; height: 250px;" data-bs-target = "#" data-bs-toggle = "modal" />
+
+                </a>
+
+                <em> 
+                    <strong> 
+                        <p>  Click to See more Features and available content  </p>
+                    </strong>
+                </em>
+
+
+                <a href = "MoreFeatures.html" style="text-decoration: none;"> 
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#" data-bs-toggle = ""> Click to View More </button>
+
+                    </div>
+                
+                </a>
+    
+            </div>
+    
+        </div>
+
+    </div> 
+
+</div>
+
+
+<!-- Articles -->
+
+<div class = "container-fluid container-xxl bg-dark Title_Menu pt-5 pb-5">
+
+    <div class = "progress">
+
+        <div class = "progress-bar progress-bar-animated progress-bar-striped Title_Headers" style = "background-color: black; color: black; font-size: 30px;" aria-valuemin = "0" aria-valuenow = "100" aria-valuemax = "100">
+
+            🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸
+
+        </div>
+
+    </div>
+
+    <a href = "MoreArticles.html" style = "text-decoration:none">
+                
+        <div class="d-grid">
+        
+            <button type = "button" class = "btn btn-block BannerNeon" style = "font-weight: bold; font-size: 45px; color: gray;"> 🕸🕸🎃🕸🕸 Articles 🕸🕸🎃🕸🕸 </button>
+
+        </div> 
+    </a>
+
+    <div class = "progress">
+
+        <div class = "progress-bar progress-bar-animated progress-bar-striped Title_Headers" style = "background-color: black; color: black; font-size: 30px;" aria-valuemin = "0" aria-valuenow = "100" aria-valuemax = "100">
+
+            🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸
+
+        </div>
+
+    </div>
+
+    
+</div>
+
+
+<div class = "container-fluid container-xxl bg-dark Featured_Items "> 
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;"> How to Botnet </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+                
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "Botnet.png" style = "border-color: red; height: 250px;" data-bs-target = "#How_to_Botnet" data-bs-toggle = "modal"/>
+
+                <em> 
+                    <strong> 
+                        <p> Today we are going to be talking about how to build a custom backdoor script in Python3 </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#How_to_Botnet" data-bs-toggle = "modal" > Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" >
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;"> ARP poisoning </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+    
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "Masq.jpeg" style = "border-color: red; height: 250px;" data-bs-target = "#ARP_Poisoning" data-bs-toggle = "modal"/>
+ 
+                <em> 
+                    <strong> 
+                        <p> Today we are going to be talking about ARP poisoning and how to poison a network. </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#ARP_Poisoning" data-bs-toggle = "modal"> Click to View More </button>
+
+                    </div>
+
+                </div>
+    
+        </div>
+
+    </div>
+
+
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: black; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;"> CCTV Hacking </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+                
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "CCTV.png" style = "border-color: red; height: 250px;" data-bs-target = "#CCTV_Hacking" data-bs-toggle = "modal" />
+
+                <em> 
+                    <strong> 
+                        <p> Today we are going to be covering the Shodan API and how to use it for CCTV hacking </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;"data-bs-target = "#CCTV_Hacking" data-bs-toggle = "modal" > Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;"> SQL Injection </h3>
+    
+            </div>
+    
+            <div class = "card-body">  
+    
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "SQL.jpeg" style = "border-color: red; height: 250px;" data-bs-target = "#SQL_Injection" data-bs-toggle = "modal"/>
+                    
+                <em> 
+                    <strong> 
+                        <p> Today I'll be covering SQL injection and advanced fuzzing and filter bypassing </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#SQL_Injection" data-bs-toggle = "modal"> Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;"> LAN Turtle </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+                        
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "BackdoorHacker.jpg" style = "border-color: red; height: 250px;" data-bs-target = "#LAN_Turtle" data-bs-toggle = "modal"/>
+    
+                <em> 
+                    <strong> 
+                        <p> Today, I'm going to show you how to make your own custom LAN turtle Rubber Ducky </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;"data-bs-target = "#LAN_Turtle" data-bs-toggle = "modal" > Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;"> Ransomware </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+                        
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "MitM-Hero.png" style = "border-color: red; height: 250px;" data-bs-target = "#Ransomware" data-bs-toggle = "modal" />
+                
+                <em> 
+                    <strong> 
+                        <p> Today I’m going to be going over Crypto malware/ransomware and how to write it </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#Ransomware" data-bs-toggle = "modal"> Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;">  2024 Resources 1 </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+                                    
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "Resources.jpeg" style = "border-color: red; height: 250px;" data-bs-target = "#FREE_Resources" data-bs-toggle = "modal"/>
+                
+                <em> 
+                    <strong> 
+                        <p> Here is a list of some of my best Cyber Security Resources for 2024 that I personally recommend</p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#FREE_Resources" data-bs-toggle = "modal"> Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;"> MITB Exploit </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+    
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "MITB.png" style = "border-color: red; height: 250px;" data-bs-target = "#MITB_Exploit" data-bs-toggle = "modal"/>
+    
+                <em> 
+                    <strong> 
+                        <p> Today we are going to talk about how to perform a "man in the browser" exploit </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;"data-bs-target = "#MITB_Exploit" data-bs-toggle = "modal" > Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;"> Bypassing Tor </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+    
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "MrRobot.jpeg" style = "border-color: red; height: 250px;" data-bs-target = "#Bypassing_Tor" data-bs-toggle = "modal" />
+
+                <em> 
+                    <strong> 
+                        <p> Today we are going to cover Mr.Robot, specifically how Elliot bypassed Tor </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#Bypassing_Tor" data-bs-toggle = "modal"> Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;">  More Articles   </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+                
+                <a href = "MoreArticles.html" style="text-decoration: none;"> 
+                    
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "futaba3.jpg" style = "border-color: red; height: 250px;" data-bs-target = "#" data-bs-toggle = "modal" />
+
+                <em> 
+                    <strong> 
+                        <p style = "color: gray;"> I post articles 2 to 3 times a week covering hacking and Cyber content. Check it out!  </p>
+                    </strong>
+                </em>
+
+                <a href = "MoreArticles.html" style="text-decoration: none;"> 
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#" data-bs-toggle = ""> Click to View More </button>
+
+                    </div>
+
+                </a>
+    
+            </div>
+    
+        </div>
+
+    </div> 
+
+</div>
+
+
+<!-- Projects -->
+
+<div class = "container-fluid container-xxl bg-dark Title_Menu pt-5 pb-5">
+
+    <div class = "progress">
+
+        <div class = "progress-bar progress-bar-animated progress-bar-striped Title_Headers" style = "background-color: black; color: black; font-size: 30px;" aria-valuemin = "0" aria-valuenow = "100" aria-valuemax = "100">
+
+            🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸
+
+        </div>
+
+    </div>
+
+    <a href = "MoreProjects.html" style = "text-decoration:none">
+                
+        <div class="d-grid">
+        
+            <button type = "button" class = "btn btn-block BannerNeon" style = "font-weight: bold; font-size: 45px; color: gray;"> 🕸🕸🎃🕸🕸 Projects 🕸🕸🎃🕸🕸 </button>
+
+        </div> 
+    </a>
+
+    <div class = "progress">
+
+        <div class = "progress-bar progress-bar-animated progress-bar-striped Title_Headers" style = "background-color: black; color: black; font-size: 30px;" aria-valuemin = "0" aria-valuenow = "100" aria-valuemax = "100">
+
+            🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸
+
+        </div>
+
+    </div>
+
+    
+</div>
+
+
+
+<div class = "container-fluid container-xxl bg-dark Featured_Items "> 
+
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;"> Cyber Portfolio </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+                    
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "Cyber Security Portfolio.png" style = "border-color: red; height: 250px;"  data-bs-target = "#Cyber_Portfolio" data-bs-toggle = "modal"/>
+                    
+                <em> 
+                    <strong> 
+                        <p> This is a main collective of my entire Cyber Security Journey
+                        </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#Cyber_Portfolio" data-bs-toggle = "modal"> Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;"> CTF Write-Ups </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+    
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "CTF.webp" style = "border-color: red; height: 250px;" data-bs-target = "#CTF_Write_Ups" data-bs-toggle = "modal"/>
+                    
+                <em> 
+                    <strong> 
+                        <p> Check out some of my Write-UPs from various CTF competitions.
+
+                        </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#CTF_Write_Ups" data-bs-toggle = "modal"> Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;"> Crypto Malware </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "RansomeWare.jpg" style = "border-color: red; height: 250px;" data-bs-target = "#Crypto_Malware" data-bs-toggle = "modal" />
+     
+                <em> 
+                    <strong> 
+                        <p> I wrote a simulation of ransomware for demonstration </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#Crypto_Malware" data-bs-toggle = "modal"> Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;"> Lan Turtle </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+    
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "Lan Turtle.jpg" style = "border-color: red; height: 250px;" data-bs-target = "#Lan_Turtle" data-bs-toggle = "modal"/>
+    
+                <em> 
+                    <strong> 
+                        <p> I made a LAN Turtle that writes it's own code! Check out the live video </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#Lan_Turtle" data-bs-toggle = "modal"> Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;"> MITB </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+    
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "MITB.jpg" style = "border-color: red; height: 250px;" data-bs-target = "#MITB" data-bs-toggle = "modal" />
+    
+                <em> 
+                    <strong> 
+                        <p> Man-In-The-Browser exploit that steals Facebook credentials </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;"data-bs-target = "#MITB" data-bs-toggle = "modal" > Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;"> TCP Client </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+                        
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "TCPClient.avif" style = "border-color: red; height: 250px;" data-bs-target = "#TCP_Client" data-bs-toggle = "modal" />
+    
+                <em> 
+                    <strong> 
+                        <p> This is a custom TCP Client that connects back to a TCP server </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#TCP_Client" data-bs-toggle = "modal" > Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;"> TCP Server </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+                
+
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "TCPServer.avif" style = "border-color: red; height: 250px;" data-bs-target = "#TCP_Server" data-bs-toggle = "modal"/>
+    
+                </a>
+
+                <em> 
+                    <strong> 
+                        <p> This is a custom TCP Server that listens for TCP Client Connection
+                        </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;"data-bs-target = "#TCP_Server" data-bs-toggle = "modal" > Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;"> Hero Signal </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+    
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "HeroSignal.png" style = "border-color: red; height: 250px;" data-bs-target = "#Hero_Signal" data-bs-toggle = "modal" />
+                     
+                <em> 
+                    <strong> 
+                        <p> This is a script that I designed to make Kali Linux more accessible!
+                        </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#Hero_Signal" data-bs-toggle = "modal"> Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;"> SQL Inject Script </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+    
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "SQL.jpg" style = "border-color: red; height: 250px;" data-bs-target = "#SQL_Inject_Script" data-bs-toggle = "modal" />
+                    
+                <em> 
+                    <strong> 
+                        <p> Solves an entire CTF challenge from “Security Innovation” </p>
+                    </strong>
+                </em>
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#SQL_Inject_Script" data-bs-toggle = "modal"> Click to View More </button>
+
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    <div class = "FeaturedItems">  
+
+        <div class = "card F_Items bg-dark" style = "background-color: indigo; color: gray; font-weight: bold; width: 430px;" > 
+
+            <div class = "card-header bg-dark">
+    
+                <h3 style = "color: gray; font-weight: bold; text-align: center;">  More Projects   </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+                
+                <a href = "MoreProjects.html" style="text-decoration: none;"> 
+
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "futaba3.jpg" style = "border-color: red; height: 250px;" data-bs-target = "#" data-bs-toggle = "" />
+
+                </a>
+                
+                <em> 
+                    <strong> 
+                        <p>  Click to See more Projects and available content  </p>
+                    </strong>
+                </em>
+
+                <a href = "MoreProjects.html" style="text-decoration: none;"> 
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" data-bs-target = "#" data-bs-toggle = ""> Click to View More </button>
+
+                    </div>
+
+                </a>
+    
+            </div>
+    
+        </div>
+
+    </div> 
+
+
+
+</div>
+
+
+
+<!-- Resume -->
+<div class = "container-fluid container-xxl bg-dark Title_Menu pt-5 pb-5">
+
+    <div class = "progress">
+
+        <div class = "progress-bar progress-bar-animated progress-bar-striped Title_Headers" style = "background-color: black; color: black; font-size: 30px;" aria-valuemin = "0" aria-valuenow = "100" aria-valuemax = "100">
+
+            🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸
+
+        </div>
+
+    </div>
+
+    <a href = "https://docs.google.com/document/d/1lGuP_h19VxtkKtJSfxdo_t5v6FFYkaar/edit?rtpof=true&sd=true" style = "text-decoration:none">
+                
+        <div class="d-grid">
+        
+            <button type = "button" class = "btn btn-block BannerNeon" style = "font-weight: bold; font-size: 45px; color: gray;"> 🕸🕸🎃🕸🕸 Resume 🕸🕸🎃🕸🕸 </button>
+
+        </div> 
+    </a>
+
+    <div class = "progress">
+
+        <div class = "progress-bar progress-bar-animated progress-bar-striped Title_Headers" style = "background-color: black; color: black; font-size: 30px;" aria-valuemin = "0" aria-valuenow = "100" aria-valuemax = "100">
+
+            🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸
+
+        </div>
+
+    </div>
+
+    
+</div>         
+
+
+<div class = "container-fluid container-xxl Resume bg-dark"> 
+
+    <a href = "https://www.canva.com/design/DAFqyj86qrg/Y-M43gMP27tbxI3_KOoCSA/edit?utm_content=DAFqyj86qrg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+        
+        <img class = "img-thumbnail Modal_Pic_Generic" style = "background-color: black; border-color: #5f0707" src = "Experience.png"/>  
+
+    </a>
+
+    <a href = "https://www.canva.com/design/DAFqyj86qrg/Y-M43gMP27tbxI3_KOoCSA/edit?utm_content=DAFqyj86qrg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+        
+        <img class = "img-thumbnail Modal_Pic_Generic" style = "background-color: black; border-color: #5f0707" src = "2.png"/>
+
+    </a>
+
+</div>
+
+
+<!-- Contact Info -->
+<div class = "container-fluid container-xxl bg-dark Title_Menu pt-5 pb-5">
+
+    <div class = "progress">
+
+        <div class = "progress-bar progress-bar-animated progress-bar-striped Title_Headers" style = "background-color: black; color: black; font-size: 30px;" aria-valuemin = "0" aria-valuenow = "100" aria-valuemax = "100">
+
+            🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸
+
+        </div>
+
+    </div>
+
+    <p style = "font-size: 50px; color: gray; text-align: center;"> 🕸🕸🎃🕸🕸 Contact Info 🕸🕸🎃🕸🕸 </p>
+
+    <div class = "progress">
+
+        <div class = "progress-bar progress-bar-animated progress-bar-striped Title_Headers" style = "background-color: black; color: black; font-size: 30px;" aria-valuemin = "0" aria-valuenow = "100" aria-valuemax = "100">
+
+            🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸🕸
+
+        </div>
+
+    </div>
+
+    
+</div>
+
+
+
+<div class = "container-fluid container-xxl bg-dark Contact_Info pt-1 pb-4">
+
+    <div class = "ContactInfo">
+
+        <div class = "container"> 
+            
+            <a href=""> <span class="Contact_Icons float-start"></span> </a>
+    
+            <div class = "container mx-4 px-5 pt-2" style = "color: gray; font-size: 30px;">
+                
+                Address: Brooklyn, NY 11236 
+    
+            </div>
+    
+        </div>
+        
+        </br>
+    
+    
+        <div class = "container"> 
+                
+            <a href=""> <span class="Contact_Icons float-start"></span> </a>
+    
+            <div class = "container mx-4 px-5 pt-2" style = "color: gray; font-size: 30px;">
+                
+                E-mail: roybull440@gmail.com
+    
+            </div>
+    
+        </div>
+        
+        </br>
+    
+    
+        <div class = "container"> 
+                
+            <a href=""> <span class="Contact_Icons float-start"></span> </a>
+    
+            <div class = "container mx-4 px-5 pt-2" style = "color: gray; font-size: 30px;">
+                
+                Phone: Request Via Email 
+    
+            </div>
+    
+        </div>
+        
+        </br>
+
+
+    <div class = "container"> 
+            
+        <a href="https://drive.google.com/drive/folders/1DrYVNzZDdNZ8rZmDcOY5q74-o0aalWcl?usp=share_link"> <span class="Contact_Icons float-start"></span> </a>
+
+        <div class = "container mx-4 px-5 pt-2">
+            
+            <a href = "https://drive.google.com/drive/folders/1DrYVNzZDdNZ8rZmDcOY5q74-o0aalWcl?usp=share_link" style = "color: gray; font-size: 30px;">
+                    
+                Certifications
+
+            </a>
+            
+
+        </div>
+
+    </div>  
+    </br>
+
+    <div class = "container pt-2 pb-1" style = "border-style: solid; border-color: #500606; border-radius: 25px;"> 
+            
+        <span class="CyberSecuritySkills float-start mt-2"></span>
+
+        <div class = "container mx-4 px-5 pt-2">
+            
+            <p style = "color: gray; text-decoration: none; font-size: 30px; font-weight: bold;">
+                    
+                Cyber Security Skills
+
+            </p>
+            
+
+        </div>
+
+    </div>  
+    </br>
+
+
+        <div class = "container" style = "color: gray;">
+
+
+            <h2>   Penetration Testing
+
+                <div class = "progress">
+        
+                    <div class = "progress-bar-lg progress-bar-animated progress-bar-striped Title_Headers" style = "width: 100%; color: black; font-size: 30px; background-color: hsl(0, 84%, 25%);" aria-valuemin = "0" aria-valuenow = "100" aria-valuemax = "100">
+     
+                    </div>
+            
+                </div>
+
+            </h2>            
+
+        </div>
+
+        <div class = "container" style = "color: gray;">
+
+
+            <h3 class = "mt-1 pt-3">  Web Application Pen-Testing 
+
+                <div class = "progress">
+        
+                    <div class = "progress-bar progress-bar-animated progress-bar-striped Title_Headers" style = "width: 100%; color: black; font-size: 30px; background-color: hsl(0, 84%, 25%);" aria-valuemin = "0" aria-valuenow = "100" aria-valuemax = "100">
+
+                    </div>
+            
+                </div>
+
+            </h3>            
+
+        </div>
+
+        <div class = "container" style = "color: gray;">
+
+
+            <h3 class = "mt-1 pt-3">   Network Pen-Testing 
+
+                <div class = "progress">
+        
+                    <div class = "progress-bar progress-bar-animated progress-bar-striped Title_Headers" style = "width: 100%; color: black; font-size: 30px; background-color: hsl(0, 84%, 25%);" aria-valuemin = "0" aria-valuenow = "100" aria-valuemax = "100">
+                    </div>
+            
+                </div>
+
+            </h3>            
+
+        </div>
+
+        <div class = "container" style = "color: gray;">
+
+
+            <h3 class = "mt-1 pt-3">   Network Security & Vulnerability Analysis  
+
+                <div class = "progress">
+        
+                    <div class = "progress-bar progress-bar-animated progress-bar-striped Title_Headers" style = "width: 100%; color: black; font-size: 30px; background-color: hsl(0, 84%, 25%);" aria-valuemin = "0" aria-valuenow = "100" aria-valuemax = "100">
+  
+                    </div>
+            
+                </div>
+
+            </h3>            
+
+        </div>
+
+        <div class = "container" style = "color: gray;">
+
+
+            <h3 class = "mt-1 pt-3">   Malware Analysis/Development & Forensics 
+
+                <div class = "progress">
+        
+                    <div class = "progress-bar progress-bar-animated progress-bar-striped Title_Headers" style = "width: 100%; color: black; font-size: 30px; background-color: hsl(0, 84%, 25%);" aria-valuemin = "0" aria-valuenow = "100" aria-valuemax = "100">
+              
+                    </div>
+            
+                </div>
+
+            </h3>            
+
+        </div>
+
+        
+
+    </div>
+
+
+
+    <div class = "ContactInfo">
+
+        <form 
+            method = "GET"
+            action = "#"
+        >
+        
+            <div class = "form-floating">
+                
+                <p style = "font-weight: bold; color: hsl(0, 86%, 34%)"> Enter Your Name </p>
+                <input 
+                    type = "text"
+                    name = "name"
+                    id = "name"
+                    placeholder = "Enter Your Name"
+                    class = "form-control"
+                    style = "background-color: black; color: red; border-color: gray;"
+                /> 
+
+                <span class = "badge" style = "background-color: black; color: hsl(0, 86%, 34%);"> Name </span>
+              
+            </div>
+        </br>
+
+            <div class = "form-floating">
+
+                <p style = "font-weight: bold; color: hsl(0, 86%, 34%)"> Enter Your Email-Address </p>
+                <input 
+                    type = "text"
+                    name = "name"
+                    id = "name"
+                    placeholder = "Enter Your Name"
+                    class = "form-control"
+                    style = "background-color: black; color: red; border-color: gray;"
+                /> 
+
+                <span class = "badge" style = "background-color: black; color: hsl(0, 86%, 34%);"> Email Address </span>
+
+            </div>
+        </br>
+
+
+            <div class = "form-floating">
+
+                <p style = "font-weight: bold; color: hsl(0, 86%, 34%)"> Enter A Message </p>
+                <textarea
+                    type = "text"
+                    name = "name"
+                    id = "name"
+                    placeholder = "Enter Your Name"
+                    class = "form-control"
+                    style = "background-color: black; padding-bottom: 200px; color: red; border-color: gray;"    
+                > </textarea>
+
+                <span class = "badge" style = "background-color: black; color: hsl(0, 86%, 34%);"> Enter Message </span>
+            
+            </br>
+            </br>
+
+                <button type = "button" class = "btn" style = "background-color: black; color: hsl(0, 86%, 34%); font-weight: bold; border-color: gray;"> Send Message</button>
+
+            </div>
+        </br>
+        
+        <p style = "color: hsl(0, 86%, 34%);"> ©Futaba_Webs 2024 </p>
+    
+    
+        </form>
+
+    </div>
+
+    <div class = "ContactInfo" style = "font-size: 60px; text-align: center;">
+
+        <a href = "https://roymbull.github.io/" style = "text-decoration: none;">
+
+        <div class="d-grid mt-2">
+                
+            <button type = "button" class = "btn btn-lg btn-block" style = "background-color: #500606; font-weight: bold; color: gray; border-color: red;"> Dark Mode </button>
+
+        </div> 
+
+        </a>
+
+    </div>
+
+    <div class = "ContactInfo" style = "font-size: 60px; text-align: center;">
+
+        <a href = "https://futabawebs.github.io/" style = "text-decoration: none;">
+
+            <div class="d-grid mt-2">
+                    
+                <button type = "button" class = "btn btn-lg btn-block" style = "background-color: #500606; font-weight: bold; color: gray; border-color: red;"> Purple Mode </button>
+    
+            </div> 
+
+        </a>
+
+    </div>
+
+
+    
+</div>
+
+
+</body>
+</html>

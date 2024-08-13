@@ -1,0 +1,1394 @@
+body
+{
+    
+	background-image: url("RedCity.gif");
+    
+}
+
+.Banner
+{
+	max-width: 960px;
+	margin: -10px;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 0px;
+	row-gap: 0px;
+	background-image: url("t1.png");
+	background-size: 1300px;
+}
+
+.Return
+{
+	max-width: 960px;
+	margin: -10px;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 0px;
+	row-gap: 0px;
+	background-image: url("t1.png");
+	background-size: 1500px;
+}
+
+.BannerButtons
+{
+
+	transition: 0.1s ease;
+
+}
+
+.BannerButtons:hover
+{
+	background-color: purple;
+}
+
+.modal-body
+{
+	color: silver;
+	font-size: 24px;
+	transition: 0.3 ease;
+}
+
+.modal-body:hover
+{
+	color: #d8286b; /** cc2565 **/ 
+
+}
+
+.card-body
+{
+	color: #d8286b;
+	transition: 0.3 ease;
+}
+
+.card-body:hover
+{
+	color: #d8286b;
+	transition: 0.3 ease;
+}
+
+.Futaba_Logo
+{
+	color: white;
+	font-size: 20px;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.750);
+	border: hidden;
+
+	/**
+	background: steelblue;
+	border: skyblue 1px solid;
+	**/
+    
+    
+
+}
+
+
+.FutabaLogo
+{   
+
+    	background-image: url(Lan\ Turtle.jpg);
+    	background-position-y: 0px;
+    	background-position-x: -76px;
+    	background-size: 643px;
+    	background-repeat: no-repeat;
+		border-color: red;
+		border-style: solid;   	 
+   	 
+
+    	cursor: pointer;
+    	height: 500px;
+    	width: 500px;
+    	margin: 0 2px;
+    	background-color: silver;
+    	border-radius: 50%;
+    	display: inline-block;
+    	transition: 0.1s ease;
+}
+
+.FutabaLogo:hover
+{
+    	height: 505px;
+    	width: 505px;
+    	background-size: 662px;
+    	background-image: url(RansomeWare.jpg);
+		background-repeat: repeat;
+    	background-position-x: -75px;
+    	background-position-y: -10px;
+		box-shadow: 25px 0 40px #940d0d, -25px 0 40px #940d0d;
+
+}
+
+.BannerNeon
+{
+	transition: 0.3s ease;
+}
+
+.BannerNeon:hover
+{
+	box-shadow: -10px 0 30px #940d0d, 0px 0 30px #940d0d;
+
+}
+
+.WelcomeLogo
+{   
+
+	background-image: url(RansomeWare.jpg);
+	border-style: solid;
+	border-color: red;
+    
+	background-size: 103px;
+	background-repeat: no-repeat;
+	background-position-x: -20.8px;
+	background-position-y: -10.5px;
+
+	left: 150px;
+	top: 450px;
+
+	cursor: pointer;
+	height: 100px;
+	width: 100px;
+	margin: 0 2px;
+	background-color: black;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.CyberSecuritySkills
+{   
+
+	background-image: url(Cyber\ Security\ Portfolio.png);
+	border-style: solid;
+	border-color: #500606;
+    
+	background-size: 78px;
+	background-repeat: no-repeat;
+	background-position-x: -18px;
+	background-position-y: -10px;
+
+	left: 150px;
+	top: 450px;
+
+	cursor: pointer;
+	height: 50px;
+	width: 50px;
+	margin: 0 2px;
+	background-color: black;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+
+.PatreonLogo
+{   
+	background-image: url(RansomeWare.jpg);
+	border-style: solid;
+	border-color: red;
+    
+	background-size: 153px;
+	background-repeat: no-repeat;
+	background-position-x: -29.8px;
+	background-position-y: -10.5px;
+
+    
+
+	cursor: pointer;
+	height: 100px;
+	width: 100px;
+	margin: 0 2px;
+	background-color: black;
+	border-radius: 50%;
+	display: inline-block;
+    
+}
+
+.TwitterLogo
+{   
+
+	background-image: url(RansomeWare.jpg);
+	border-style: solid;
+	border-color: red;
+    
+	background-size: 143px;
+	background-repeat: no-repeat;
+	background-position-x: -29.8px;
+	background-position-y: -10.5px;
+
+	left: 150px;
+	top: 450px;
+
+	cursor: pointer;
+	height: 100px;
+	width: 100px;
+	margin: 0 2px;
+	background-color: black;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.InstagramLogo
+{   
+
+	background-image: url(RansomeWare.jpg);
+	border-style: solid;
+	border-color: red;
+    
+	background-size: 203px;
+	background-repeat: no-repeat;
+	background-position-x: -29.8px;
+	background-position-y: -10.5px;
+
+	left: 210px;
+	top: 450px;
+
+	cursor: pointer;
+	height: 10px;
+	width: 100px;
+	margin: 0 2px;
+	background-color: black;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+
+.About_Futaba_Webs
+	{
+    	cursor: pointer;
+
+    	border-style: solid;
+    	border-radius: 5%;
+
+    	padding-left: 10px;
+    	padding-right: 10px;
+
+    	color: purple;
+    	font-size: 20px;
+
+    	text-align: center;
+
+    	bottom: 180px;
+    	right: 90px;
+
+    	transition: 0.6s ease;
+
+   	 
+	}
+
+	.About_Futaba_Webs:hover
+	{
+    	background-color: violet;
+    	color: black;
+   	 
+	}
+
+	.News_Feed
+	{
+    	cursor: pointer;
+
+    	border-style: solid;
+    	border-radius: 5%;
+
+    	padding-left: 10px;
+    	padding-right: 10px;
+
+    	color: purple;
+    	font-size: 20px;
+
+    	text-align: center;
+
+    	bottom: 140px;
+    	right: 100px;
+
+    	transition: 0.6s ease;
+
+   	 
+	}
+
+	.News_Feed:hover
+	{
+    	background-color: violet;
+    	color: black;
+   	 
+	}
+
+	.Socials
+	{
+    	cursor: pointer;
+
+    	border-style: solid;
+    	border-radius: 5%;
+
+    	padding-left: 10px;
+    	padding-right: 10px;
+
+    	color: purple;
+    	font-size: 20px;
+
+    	text-align: center;
+
+    	bottom: 100px;
+    	right: 113px;
+
+    	transition: 0.6s ease;
+
+   	 
+	}
+
+	.Socials:hover
+	{
+    	background-color: violet;
+    	color: black;
+   	 
+	}
+
+
+.Featured_Items
+{
+	max-width: 960px;
+	margin: 10px auto;
+	margin-left: 100px auto;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	column-gap: 10px;
+	row-gap: 10px;
+	overflow-x: auto;
+
+}
+
+.Featured_Items2
+{
+	max-width: 960px;
+	margin: 10px auto;
+	margin-left: 100px auto;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	column-gap: 10px;
+	row-gap: 10px;
+	overflow-x: auto;
+}
+
+.FeaturedItems
+{
+	background: steelblue;
+	color: white;
+	font-size: 20px;
+	padding: 20px;
+	background-image: url("Spider.jpg");
+
+}
+
+.mainpage
+{
+	background: steelblue;
+	color: white;
+	font-size: 20px;
+	padding: 20px;
+	border: skyblue 1px solid;
+
+}
+
+.F_Items
+{
+	width: 263.9px;
+	transition: 0.3s ease;
+}
+
+.F_Pics
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 275px;
+	transition: 0.3s ease;
+}
+
+.modal-body:hover
+{
+	transition: 0.3s ease;
+	
+}
+
+.d-grid
+{
+	transition: 0.3s ease;
+}
+
+.F_Pics:hover
+{
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+
+}
+
+.F_Items:hover
+{
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+
+}
+
+
+.d-grid:hover
+{
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.modal-body:hover
+{
+	box-shadow: -10px 0 30px #940d0d, 0px 0 30px #940d0d;
+
+}
+
+.Modal_Pic_TCP_Client
+{
+	object-fit: cover;
+	width: 96%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_TCP_Server
+{
+	object-fit: cover;
+	width: 96.5%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_MITB
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_Hero_Signal
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_SQL_Injection
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_Github
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_Exploits
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_Py_Tools
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_You_Pic
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_Drone
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_BotNet
+{
+	object-fit: cover;
+	width: 96%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_Generic
+{
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_CCTV
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_LAN_Turtle
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_Ransomware
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_Resources
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_Man_Browser
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_Wifi_Hacking
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_Women_Cyber
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_Programming
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_Evil_Twin
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_Malware_Architype
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_Cipher
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_Mobile
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_Totsugeki
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_NOT_Cyber
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_Mentor
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_Hats
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_DangerMobile
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+
+.Modal_Pic_FoxyProxy
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_Footprinting
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+
+.Modal_Pic_SSOOpen
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_DLLCode
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_ExifTool
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_Resources2
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_SSID
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_CookieSession
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_Zip2John
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_TCP1
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_TCP2
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_TCPLab
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_LEDProject
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_ArduinoLED1
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_ArduinoLED2
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_DLPRansomware
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_RemoteFileInclusion
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_HTTPServer
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_Potentiometer
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_HydraPat
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_WindowsRecall
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_HTTPRequests
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_AdvancedMITB
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_SQLMapRCE
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+.Modal_Pic_JoyStick
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	transition: 0.3s ease;
+}
+
+
+/* /** HOVER EFFECTS FOR THE MODAL IMAGES  **/
+.Modal_Pic_TCP_Client:hover
+{
+	object-fit: cover;
+	width: 96%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+
+}
+
+.Modal_Pic_TCP_Server:hover
+{
+	object-fit: cover;
+	width: 96.5%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+
+}
+
+.Modal_Pic_MITB:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_Hero_Signal:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_SQL_Injection:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_Github:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_Exploits:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_Py_Tools:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_You_Pic:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_Drone:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_BotNet:hover
+{
+	object-fit: cover;
+	width: 96%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_Generic:hover
+{
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_CCTV:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_LAN_Turtle:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_Ransomware:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_Resources:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_Man_Browser:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_Wifi_Hacking:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_Women_Cyber:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_Programming:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_Evil_Twin:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_Malware_Architype:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_Cipher:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_Mobile:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_Totsugeki:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_NOT_Cyber:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_Mentor:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_Hats:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_DangerMobile:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+
+.Modal_Pic_FoxyProxy:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_Footprinting:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+
+.Modal_Pic_SSOOpen:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_DLLCode:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_ExifTool:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_Resources2:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_SSID:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_CookieSession:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_Zip2John:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_TCP1:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_TCP2:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_TCPLab:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_LEDProject:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_ArduinoLED1:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_ArduinoLED2:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_DLPRansomware:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_RemoteFileInclusion:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_HTTPServer:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_Potentiometer:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_HydraPat:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_WindowsRecall:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_HTTPRequests:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_AdvancedMITB:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_SQLMapRCE:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+.Modal_Pic_JoyStick:hover
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 405px;
+	box-shadow: 25px 0 100px #5f0707, -25px 0 100px black;
+}
+
+
+
+.Title_Menu
+{
+	max-width: 960px;
+	margin: -10px;
+	padding: 0px;
+    
+}
+
+
+.Title_Headers
+{
+	width: 100%;
+}
+
+#hero
+{
+	height: 200px;   	 
+}
+
+
+.Resume
+{
+	max-width: 960px;
+	margin: 10px auto;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 10px;
+	row-gap: 10px;
+
+}
+
+.Contact_Info
+{
+	max-width: 960px;
+	margin: 10px auto;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 10px;
+	row-gap: 10px;
+
+}
+
+.ContactInfo
+{
+	color: silver;
+	font-size: 20px;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.950);
+
+	/**
+	background: steelblue;
+	border: skyblue 1px solid;
+	**/
+    
+    
+
+}
+
+
+.Contact_Icons
+{   
+
+	background-image: url(RansomeWare.jpg);
+    border-color: red;
+    
+	background-size: 103px;
+	background-repeat: no-repeat;
+	background-position-x: -29.8px;
+	background-position-y: -10.5px;
+
+	left: 210px;
+	top: 450px;
+
+	cursor: pointer;
+	height: 50px;
+	width: 50px;
+	margin: 0 2px;
+	background-color: black;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
