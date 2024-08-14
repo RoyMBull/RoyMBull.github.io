@@ -59,6 +59,8 @@ body
 .card-body
 {
 	color: #d8286b;
+	font-size: 24px;
+	text-align: center;
 	transition: 0.3 ease;
 }
 
@@ -112,11 +114,11 @@ body
 {
     	height: 505px;
     	width: 505px;
-    	background-size: 662px;
+    	background-size: 862px;
     	background-image: url(RansomeWare.jpg);
 		background-repeat: repeat;
-    	background-position-x: -45px;
-    	background-position-y: -px;
+    	background-position-x: -175px;
+    	background-position-y: 0px;
 		box-shadow: 25px 0 40px #940d0d, -25px 0 40px #940d0d;
 
 }
