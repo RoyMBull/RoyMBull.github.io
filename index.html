@@ -48,14 +48,6 @@
         <link href="jquery.terminal.min.css" rel="stylesheet"/>
         <script src="https://cdn.jsdelivr.net/npm/js-polyfills/keyboard.js"></script>
 
-
-        <!-- This is all for bootstrap 3 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        -->
-
-
     </head>
 
 <body> 
@@ -83,14 +75,10 @@
 
             </div>
 
-            <div class = "modal-body" id = "HASH" style = "background-color: black;">
+            <div class = "modal-body" id = "TerminalF" style = "background-color: black;">
 
-                <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "CTF.webp" style = "border-color: red; background-color: black;"> </h3>
-                
-                <div id = "T">
-
-
-                </div>
+                <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "TheBatManWhoLaughs.jpg" style = "border-color: red; background-color: black;"> </h3>
+            
 
 
                 <script>
@@ -116,13 +104,13 @@
                     jQuery(function($) {
                         var id = 1;                       
 
-                        term = $('#HASH').terminal(function(command, term) 
+                        term = $('#TerminalF').terminal(function(command, term) 
                         {
 
                             //This is going to pull up the main help menu for the end user to see all avaialble commands and options
                             if (command == 'help') 
                             {
-                                term.echo("\n \n (Commands) \n \n \n help -> Shows list of all commands \n \n \n mobile -> Navigate to the Mobile version of this site \n \n \n desktop -> Navigate to the Desktop version of this site \n \n \n futaba -> Navigates you to either Mobile or Desktop for Purple Mode \n \n darkmode -> Navigates you to either Mobile or Desktop for Dark Mode \n \n modal -> Pull up my article and feeds here! \n \n \n navi -> Browse between the pages in either mode/color \n \n \n");
+                                term.echo("\n \n (Commands) \n \n \n help -> Shows list of all commands \n \n \n mobile -> Navigate to the Mobile version of this site \n \n \n desktop -> Navigate to the Desktop version of this site \n \n \n futaba -> Navigates you to either Mobile or Desktop for Purple Mode \n \n darkmode -> Navigates you to either Mobile or Desktop for Dark Mode \n \n navi -> Browse between the pages in either mode/color \n \n \n");
                             } 
                             
                             //Takes the end user to the Mobile verison of the site
@@ -367,7 +355,7 @@
 
                             else
                             {
-                                return "Unknown Command!";
+                                return "Unknown Command! Run 'help' to see a list of all available commands";
 
                             }
 
