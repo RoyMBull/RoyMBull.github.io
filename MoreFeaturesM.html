@@ -42,11 +42,10 @@
         <script src="bootstrap.min.js" > </script>
         <script src="popper.min.js" > </script>
 
-        <!-- This is all for bootstrap 3 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+        <script src="jquery.terminal.min.js"></script>
+        <link href="jquery.terminal.min.css" rel="stylesheet"/>
+        <script src="https://cdn.jsdelivr.net/npm/js-polyfills/keyboard.js"></script>
 
 
     </head>
@@ -98,6 +97,503 @@
     These are the main dialogue menus that pop up for the main elements when you click on any of the main images or buttons to view more information
     
 -->
+
+<!-- Terminal Mode Modal -->
+<div class = "modal fade" id = "TerminalMode" style = "background-image: url('RedCity.gif'); zoom: 170%">
+    <div class = "modal-dialog modal-lg">
+    <div class = "modal-content">
+
+            <div class = "modal-header" style = "background-color: black; color: gray ">
+
+                <span class="Contact_Icons mx-4"></span> 
+
+                <h3 class = "modal-title" style = "text-align: center; font-weight: bold;"> Terminal Mode</h3>
+
+                <button class = "btn-close bg-danger"  data-bs-dismiss = "modal"> </button>
+
+            </div>
+
+            <div class = "modal-body" id = "TerminalF" style = "background-color: black;">
+
+                <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "TheBatManWhoLaughs.jpg" style = "border-color: red; background-color: black;"> </h3>
+            
+
+
+                <script>
+
+                     //This is going to be the main function that calls any body or main ID element on te page for us
+                        //THIS IS CRUCIAL AS WHERE YOU SET IT INSIDE THE $() will tell the code where to place all the css and html elements on the page
+
+                        /** Useful Options/objects 
+                          
+                            term -> This is going to tell the code to do the following
+
+                                echo: Print something for us 
+                                push: Execute a function for us via the main datathat is being overloaded from the main function in the code
+                                pause: 
+
+                            prompt: -> This is going to prompt  amessage to the end user on the screen for us (ADD IN THE COLON TO FINISH THE COMMAND OVERALL)
+
+
+
+                         **/
+                        
+                         var term;
+                    jQuery(function($) {
+                        var id = 1;                       
+
+                        term = $('#TerminalF').terminal(function(command, term) 
+                        {
+
+                            //This is going to pull up the main help menu for the end user to see all avaialble commands and options
+                            if (command == 'help') 
+                            {
+                                term.echo("\n \n (Commands) \n \n \n 🕸🕸🎃🕸🕸 CTRL-ALT-O -> Pulls up the standard temrinal \n \n 🕸🕸🎃🕸🕸 CTRL-ALT-P-> Pull up the full screen terminal \n \n \n help -> Shows list of all commands \n \n \n banner -> Displays the main banner for the terminal \n \n \n mobile -> Navigate to the Mobile version of this site \n \n \n desktop -> Navigate to the Desktop version of this site \n \n \n futaba -> Navigates you to either Mobile or Desktop for Purple Mode \n \n darkmode -> Navigates you to either Mobile or Desktop for Dark Mode \n \n navi -> Browse between the pages in either mode/color \n \n \n index -> Takes you to the index section \n \n \n articles -> Takes you to the articles section \n \n \n features -> Takes you to the features section \n \n \n termux -> Takes you to the full screen terminal mode \n \n \n exit -> Closes the terminal window \n \n ");
+                            } 
+                            
+                            //Takes the end user to the Mobile verison of the site
+                            else if (command == 'mobile') 
+                            {
+                                window.location.href = "https://roymbull.github.io/indexM.html";   
+                            } 
+
+                            //Takes the end user to the Desktop version of the site 
+                            else if (command == 'desktop') 
+                            {
+                                window.location.href = "https://roymbull.github.io/index.html";   
+                            }
+
+                            //This will give the end user the option of being able to go to either the desktop or mobile mode of the web applicaton for PURPLE MODE
+                            else if (command == "futaba")
+                            {
+                                //The user is going to be brought to a menu that is going to change the ovreall display of the prompt
+                                term.push(
+
+                                    function(command, term) //This is going to be the main function that handles any commnad input from the end user
+                                    {   
+                                        //This pulls up the mian help menu for the command
+                                        if (command == "help")
+                                        { 
+                                            term.echo("\n This command brings you to either the Mobile or Desktop verison for the purple mode of the site \n \n (Commands) \n \n mobile -> Takes you to Mobile mode \n \n desktop -> Takes you to Desktop mode \n \n")
+
+                                        }
+
+                                        //If the command is equal to Mobile, then we are going to send the end user to the mobile version of the site
+                                        else if (command == "mobile")
+                                        {
+                                            window.location.href = "https://futabawebs.github.io/indexM.html";
+                                        }
+
+                                        //If the command is equal to Desktop, then we are going to send the end user to the desktop version of the site
+                                        else if (command == "desktop")
+                                        {
+                                            window.location.href = "https://futabawebs.github.io/index.html";
+                                        }  
+                                        
+                                        //This will redirect the user to the full screen page in order to refresh the main terminal back to a default state
+                                        else if (command == "cd" || command == "cd .." || command == "..")
+                                        {
+
+                                            window.location.href = "https://roymbull.github.io/FullScreenMode.html";
+
+                                        }
+
+                                        //Exits the terminal
+                                        else if (command == "exit")
+                                        {
+                                            window.location.href = "https://roymbull.github.io/indexM.html";
+
+                                        }
+
+                                    },
+
+                                    { //This is going to change the overall prompt for the terminal that is being displayed to the end user
+                                        prompt: 'Futaba_Webs# ',
+                                        name: 'futaba'
+                                    }
+
+
+                                );
+                                
+                            }
+
+                            //This will give the end user the option of being able to go to either the desktop or mobile mode of the web applicaton for DARK MODE
+                            else if (command == "darkmode")
+                            {
+                                //The user is going to be brought to a menu that is going to change the ovreall display of the prompt
+                                term.push(
+
+                                    function(command, term) //This is going to be the main function that handles any commnad input from the end user
+                                    {   
+                                        //This pulls up the mian help menu for the command
+                                        if (command == "help")
+                                        { 
+                                            term.echo("\n This command brings you to either the Mobile or Desktop verison for the dark mode of the site \n \n (Commands) \n \n mobile -> Takes you to Mobile mode \n \n desktop -> Takes you to Desktop mode \n \n")
+
+                                        }
+
+                                        //If the command is equal to Mobile, then we are going to send the end user to the mobile version of the site
+                                        else if (command == "mobile")
+                                        {
+                                            window.location.href = "https://roymbull.github.io/indexM.html";
+                                        }
+
+                                        //If the command is equal to Desktop, then we are going to send the end user to the desktop version of the site
+                                        else if (command == "desktop")
+                                        {
+                                            window.location.href = "https://roymbull.github.io/index.html";
+                                        }
+
+                                        //This will redirect the user to the full screen page in order to refresh the main terminal back to a default state
+                                        else if (command == "cd" || command == "cd .." || command == "..")
+                                        {
+
+                                            window.location.href = "https://roymbull.github.io/FullScreenMode.html";
+
+                                        }
+
+                                        //Exits the terminal
+                                        else if (command == "exit")
+                                        {
+                                            window.location.href = "https://roymbull.github.io/indexM.html";
+
+                                        }
+
+                                    },
+
+                                    { //This is going to change the overall prompt for the terminal that is being displayed to the end user
+                                        prompt: 'RoyMBull# ',
+                                        name: 'futaba'
+                                    }
+
+
+                                );
+                                
+                            }
+                            
+                            //This will allow the end user to move to different pages for the site
+                            else if (command == "navi")
+                            {
+                                //The user is going to be brought to a menu that is going to change the ovreall display of the prompt
+                                term.push(
+
+                                    function(command, term) //This is going to be the main function that handles any commnad input from the end user
+                                    {   
+                                        //This pulls up the mian help menu for the command
+                                        if (command == "help")
+                                        { 
+                                            term.echo("\n This command allows you to browse any of the pages of the site in either color pallet or mode (desktop/mobile) \n \n (Commands) \n \n index-mp -> Takes you to the PURPLE version of Mobile mode for the index page  \n \n index-dp -> Takes you to the PURPLE version of Desktop mode for the index page \n \n index-drkm -> Takes you to the DARK version of Mobile mode for the index page \n \n index-drkd -> Takes you to the DARK version of Desktop mode for the index page \n \n articles-mp -> Takes you to the PURPLE version of Mobile mode for the article section \n \n articles-dp -> Takes you to the PURPLE version of Desktop mode for the article section \n \n articles-drkm -> Takes you to the DARK version of Mobile mode for the article section \n \n articles-drkd -> Takes you to the DARK version of Desktop mode for the article section \n \n articles2-mp -> Takes you to the PURPLE version of Mobile mode for the the article section page 2 \n \n articles2-dp -> Takes you to the PURPLE version of Desktop mode for the the article section page 2 \n \n articles2-drkm -> Takes you to the DARK version of Mobile mode for the the article section page 2 \n \n articles2-drkd -> Takes you to the DARK version of Desktop mode for the the article section page 2 \n \n features-mp -> Takes you to the PURPLE version of Mobile mode for the the features section \n \n features-dp -> Takes you to the PURPLE version of Desktops mode for the the features section \n \n features-drkm -> Takes you to the DARK version of Mobile mode for the the features section \n \n features-drkd -> Takes you to the DARK version of Desktop mode for the the features section \n \n Projects-mp -> Takes you to the PURPLE version of Mobile mode for the the projects section \n \n  projects-dp -> Takes you to the PURPLE version of Desktop mode for the the projects section \n \n projects-drkm -> Takes you to the DARK version of Mobile mode for the the projects section \n \n projects-drkd -> Takes you to the DARK version of Desktop mode for the the features section \n \n" )
+
+                                        }
+
+                                        //This will redirect the user to the full screen page in order to refresh the main terminal back to a default state
+                                        else if (command == "cd" || command == "cd .." || command == "..")
+                                        {
+
+                                            window.location.href = "https://roymbull.github.io/FullScreenMode.html";
+
+                                        }
+
+                                        //Exits the terminal
+                                        else if (command == "exit")
+                                        {
+                                            window.location.href = "https://roymbull.github.io/indexM.html";
+
+                                        }
+                            
+
+                                        //This will take the end user to any of the available options/pages
+                                        else if (command == "index-mp")
+                                        {
+                                            window.location.href = "https://futabawebs.github.io/indexM.html";
+                                        }
+
+
+                                        //This will take the end user to any of the available options/pages
+                                        else if (command == "index-dp")
+                                        {
+                                            window.location.href = "https://futabawebs.github.io/index.html";
+                                        }
+
+                                        //This will take the end user to any of the available options/pages
+                                        else if (command == "index-drkm")
+                                        {
+                                            window.location.href = "https://roymbull.github.io/indexM.html";
+                                        }
+
+                                        //This will take the end user to any of the available options/pages
+                                        else if (command == "index-drkd")
+                                        {
+                                            window.location.href = "https://roymbull.github.io/index.html";
+                                        }
+
+                                        //This will take the end user to any of the available options/pages
+                                        else if (command == "articles-mp")
+                                        {
+                                            window.location.href = "https://futabawebs.github.io/MoreArticlesM.html";
+                                        }
+
+                                        //This will take the end user to any of the available options/pages
+                                        else if (command == "articles-dp")
+                                        {
+                                            window.location.href = "https://futabawebs.github.io/MoreArticles.html";
+                                        }
+
+                                        //This will take the end user to any of the available options/pages
+                                        else if (command == "articles-drkm")
+                                        {
+                                            window.location.href = "https://roymbull.github.io/MoreArticlesM.html";
+                                        }
+
+                                        //This will take the end user to any of the available options/pages
+                                        else if (command == "articles-drkd")
+                                        {
+                                            window.location.href = "https://roymbull.github.io/MoreArticles.html";
+                                        }
+
+                                        //This will take the end user to any of the available options/pages
+                                        else if (command == "articles2-mp")
+                                        {
+                                            window.location.href = "https://futabawebs.github.io/MoreArticles2M.html";
+                                        }
+
+                                        //This will take the end user to any of the available options/pages
+                                        else if (command == "articles2-dp")
+                                        {
+                                            window.location.href = "https://futabawebs.github.io/MoreArticles2.html";
+                                        }
+                                        
+                                        //This will take the end user to any of the available options/pages
+                                        else if (command == "articles2-drkm")
+                                        {
+                                            window.location.href = "https://roymbull.github.io/MoreArticles2M.html";
+                                        }
+
+
+                                        //This will take the end user to any of the available options/pages
+                                        else if (command == "articles2-drkd")
+                                        {
+                                            window.location.href = "https://roymbull.github.io/MoreArticles2.html";
+                                        }
+
+                                        //This will take the end user to any of the available options/pages
+                                        else if (command == "features-mp")
+                                        {
+                                            window.location.href = "https://futabawebs.github.io/MoreFeaturesM.html";
+                                        }
+
+                                        //This will take the end user to any of the available options/pages
+                                        else if (command == "features-dp")
+                                        {
+                                            window.location.href = "https://futabawebs.github.io/MoreFeatures.html";
+                                        }
+
+                                        //This will take the end user to any of the available options/pages
+                                        else if (command == "features-drkm")
+                                        {
+                                            window.location.href = "https://roymbull.github.io/MoreFeaturesM.html";
+                                        }
+
+                                        //This will take the end user to any of the available options/pages
+                                        else if (command == "features-drkd")
+                                        {
+                                            window.location.href = "https://roymbull.github.io/MoreFeatures.html";
+                                        }
+
+                                        //This will take the end user to any of the available options/pages
+                                        else if (command == "projects-mp")
+                                        {
+                                            window.location.href = "https://futabawebs.github.io/MoreFeaturesM.html";
+                                        }
+
+                                        //This will take the end user to any of the available options/pages
+                                        else if (command == "projects-dp")
+                                        {
+                                            window.location.href = "https://futabawebs.github.io/MoreFeatures.html";
+                                        }
+
+                                        //This will take the end user to any of the available options/pages
+                                        else if (command == "projects-drkm")
+                                        {
+                                            window.location.href = "https://roymbull.github.io/MoreProjectsM.html";
+                                        }
+
+                                        //This will take the end user to any of the available options/pages
+                                        else if (command == "projects-drkd")
+                                        {
+                                            window.location.href = "https://roymbull.github.io/MoreProjects.html";
+                                        }
+
+
+                                    },
+
+                                    { //This is going to change the overall prompt for the terminal that is being displayed to the end user
+                                        prompt: 'Navigation# ',
+                                        name: 'futaba'
+                                    }
+
+
+                                );
+                                
+                            }
+
+                            //This will redirect the user to the full screen page in order to refresh the main terminal back to a default state
+                            else if (command == "cd" || command == "cd .." || command == "..")
+                               {
+
+                                    window.location.href = "https://roymbull.github.io/FullScreenMode.html";
+
+                               }
+
+                               //Exits the terminal
+                               else if (command == "exit")
+                               {
+                                    window.location.href = "https://roymbull.github.io/indexM.html";
+
+                               }
+                            
+                               //Index command options
+                               else if (command == "index")
+                               {
+                                    term.echo("\n \n Options: \n \n -d -> Takes you to the desktop verison of the site \n \n -m -> Takes you to the mobile version of the site \n \n")
+                                    
+                               }
+
+                               else if (command == "index -d" || command == "cd index -d")
+                               {
+
+                                    window.location.href = "https://roymbull.github.io/index.html";
+
+                               } 
+
+                               else if (command == "index -m" || command == "cd index -m")
+                               {
+
+                                    window.location.href = "https://roymbull.github.io/indexM.html";
+                                
+                               }
+
+                               //Articles command options
+                               else if (command == "articles")
+                               {
+                                    term.echo("\n \n Options: \n \n -d -> Takes you to the desktop verison of the site \n \n -m -> Takes you to the mobile version of the site \n \n")
+                                    
+                               }
+
+                               else if (command == "articles -d" || command == "cd articles -d")
+                               {
+
+                                    window.location.href = "https://roymbull.github.io/MoreArticles.html";
+
+                               } 
+
+                               else if (command == "articles -m" || command == "cd articles -m")
+                               {
+
+                                    window.location.href = "https://roymbull.github.io/MoreArticlesM.html";
+                                
+                               }
+
+                               //Articles2 command options
+                               else if (command == "articles2")
+                               {
+                                    term.echo("\n \n Options: \n \n -d -> Takes you to the desktop verison of the site \n \n -m -> Takes you to the mobile version of the site \n \n")
+                                    
+                               }
+
+                               else if (command == "articles2 -d" || command == "cd articles2 -d")
+                               {
+
+                                    window.location.href = "https://roymbull.github.io/MoreArticles2.html";
+
+                               } 
+
+                               else if (command == "articles2 -m" || command == "cd articles2 -m")
+                               {
+
+                                    window.location.href = "https://roymbull.github.io/MoreArticles2M.html";
+                                
+                               }
+
+                               //Features command options
+                               else if (command == "features")
+                               {
+                                    term.echo("\n \n Options: \n \n -d -> Takes you to the desktop verison of the site \n \n -m -> Takes you to the mobile version of the site \n \n")
+                                    
+                               }
+
+                               else if (command == "features -d" || command == "cd features -d")
+                               {
+
+                                    window.location.href = "https://roymbull.github.io/MoreFeatures.html";
+
+                               } 
+
+                               else if (command == "features -m" || command == "cd features -m")
+                               {
+
+                                    window.location.href = "https://roymbull.github.io/MoreFeaturesM.html";
+                                
+                               }
+
+                               //Projects command options
+                               else if (command == "projects")
+                               {
+                                    term.echo("\n \n Options: \n \n -d -> Takes you to the desktop verison of the site \n \n -m -> Takes you to the mobile version of the site \n \n")
+                                    
+                               }
+
+                               else if (command == "projects -d" || command == "cd projects -d")
+                               {
+
+                                    window.location.href = "https://roymbull.github.io/MoreProjects.html";
+
+                               } 
+
+                               else if (command == "projects -m" || command == "cd projects -m")
+                               {
+
+                                    window.location.href = "https://roymbull.github.io/MoreProjectsM.html";
+                                
+                               }
+
+                                //Termux command options
+                                else if (command == "termux")
+                               {
+                                    term.echo("\n \n Options: \n \n -f -> Takes you to the desktop verison of the site \n \n")
+                                    
+                               }
+
+                               else if (command == "termux -f" || command == "cd termux -f")
+                               {
+
+                                    window.location.href = "https://roymbull.github.io/FullScreenMode.html";
+
+                               } 
+
+                            else
+                            {
+                                return "Unknown Command! Run 'help' to see a list of all available commands";
+
+                            }
+
+
+                        }, {
+                            greetings: "Welcome to terminal mode 🕸🕸🎃🎃🕸🕸 \n  - The Hacker Who Laughs 🕸🕸🎃🎃🕸🕸 \n \n Run the 'help' command to see all available options \n"
+                        });
+                    });
+                    
+                    </script>
+                
+                
+
+                    
+            </div>
+
+
+    </div>
+    </div>
+    </div>
 
     <!-- CTF Modal -->
     <div class = "modal fade" id = "CTF_Write_Ups" style = "background-image: url('RedCity.gif'); zoom: 170%">
@@ -2150,6 +2646,25 @@
 
        </a>
     </div>
+
+    <div class = "ContactInfo" style = "font-size: 60px; text-align: center;" hidden>
+
+        <div class="d-grid pt-3">
+                
+            <button type = "button" class = "btn btn-block BannerNeon" style = "background-color: black; font-weight: bold; font-size: 35px; color: gray; border-color: red;" data-bs-target="#TerminalMode" data-bs-toggle = "modal" accesskey="o" hidden> Terminal Mode 🕸🕸🎃🕸🕸 </button>
+
+        </div> 
+
+        <a href = "https://roymbull.github.io/FullScreenMode.html" style = "text-decoration:none" hidden>
+            
+            <div class="d-grid">
+            
+                <button type = "button" class = "btn btn-block BannerNeon" style = "background-color: black; font-weight: bold; font-size: 35px; color: gray; border-color: red;" accesskey="p"> Terminal ModeF </button>
+
+            </div> 
+        </a>
+        
+     </div>
 
 
     
