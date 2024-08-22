@@ -146,7 +146,7 @@
                             //This is going to pull up the main help menu for the end user to see all avaialble commands and options
                             if (command == 'help') 
                             {
-                                term.echo("\n \n (Commands) \n \n \n 🕸🕸🎃🕸🕸 CTRL-ALT-O -> Pulls up the standard temrinal \n \n 🕸🕸🎃🕸🕸 CTRL-ALT-P-> Pull up the full screen terminal \n \n \n help -> Shows list of all commands \n \n \n banner -> Displays the main banner for the terminal \n \n \n mobile -> Navigate to the Mobile version of this site \n \n \n desktop -> Navigate to the Desktop version of this site \n \n \n futaba -> Navigates you to either Mobile or Desktop for Purple Mode \n \n darkmode -> Navigates you to either Mobile or Desktop for Dark Mode \n \n navi -> Browse between the pages in either mode/color \n \n \n index -> Takes you to the index section \n \n \n articles -> Takes you to the articles section \n \n \n features -> Takes you to the features section \n \n \n termux -> Takes you to the full screen terminal mode \n \n \n exit -> Closes the terminal window \n \n ");
+                                term.echo("\n \n (Commands) \n \n \n 🕸🕸🎃🕸🕸 CTRL-ALT-O -> Pulls up the standard temrinal \n \n 🕸🕸🎃🕸🕸 CTRL-ALT-P-> Pull up the full screen terminal \n \n \n help -> Shows list of all commands \n \n \n banner -> Displays the main banner for the terminal \n \n \n mobile -> Navigate to the Mobile version of this site \n \n \n desktop -> Navigate to the Desktop version of this site \n \n \n futaba -> Navigates you to either Mobile or Desktop for Purple Mode \n \n darkmode -> Navigates you to either Mobile or Desktop for Dark Mode \n \n navi -> Browse between the pages in either mode/color \n \n \n index -> Takes you to the index section \n \n \n articles -> Takes you to the articles section \n \n \n features -> Takes you to the features section \n \n \n termux -> Takes you to the full screen terminal mode \n \n \n exit -> Closes the terminal window \n \n \n modal -> Pulls up a list of modals for you to query \n \n ");
                             } 
                             
                             //Takes the end user to the Mobile verison of the site
@@ -571,6 +571,14 @@
 
                                else if (command == "termux -f" || command == "cd termux -f")
                                {
+
+                                    window.location.href = "https://roymbull.github.io/FullScreenMode.html";
+
+                               } 
+
+                               else if (command == "modal")
+                               {
+                                alert("This command can only be ran in FULL SCREEN mode. Redirecting you now!")    
 
                                     window.location.href = "https://roymbull.github.io/FullScreenMode.html";
 
