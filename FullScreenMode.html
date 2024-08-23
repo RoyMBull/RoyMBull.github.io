@@ -95,7 +95,7 @@
                             //This is going to pull up the main help menu for the end user to see all avaialble commands and options
                             if (command == 'help') 
                             {
-                                term.echo("\n \n (Commands) \n \n \n 🕸🕸🎃🕸🕸 CTRL-ALT-O -> Pulls up the standard temrinal \n \n 🕸🕸🎃🕸🕸 CTRL-ALT-P-> Pull up the full screen terminal \n \n \n help -> Shows list of all commands \n \n \n banner -> Displays the main banner for the terminal \n \n \n mobile -> Navigate to the Mobile version of this site \n \n \n desktop -> Navigate to the Desktop version of this site \n \n \n futaba -> Navigates you to either Mobile or Desktop for Purple Mode \n \n darkmode -> Navigates you to either Mobile or Desktop for Dark Mode \n \n navi -> Browse between the pages in either mode/color \n \n \n index -> Takes you to the index section \n \n \n articles -> Takes you to the articles section \n \n \n features -> Takes you to the features section \n \n \n termux -> Takes you to the full screen terminal mode \n \n \n exit -> Closes the terminal window \n \n \n modal -> Pulls up a list of modals for you to query \n \n \n resume -> resume -d/-l/-w (Takes you to dark/light/word versions \n \n  ");
+                                term.echo("\n \n (Commands) \n \n \n 🕸🕸🎃🕸🕸 CTRL-ALT-O -> Pulls up the standard temrinal \n \n 🕸🕸🎃🕸🕸 CTRL-ALT-P-> Pull up the full screen terminal \n \n \n help -> Shows list of all commands \n \n \n banner -> Displays the main banner for the terminal \n \n \n mobile -> Navigate to the Mobile version of this site \n \n \n desktop -> Navigate to the Desktop version of this site \n \n \n futaba -> Navigates you to either Mobile or Desktop for Purple Mode \n \n darkmode -> Navigates you to either Mobile or Desktop for Dark Mode \n \n navi -> Browse between the pages in either mode/color \n \n \n index -> Takes you to the index section \n \n \n articles -> Takes you to the articles section \n \n \n features -> Takes you to the features section \n \n \n termux -> Takes you to the full screen terminal mode \n \n \n exit -> Closes the terminal window \n \n \n modal -> Pulls up a list of modals for you to query \n \n \n resume -> resume -d/-l/-w (Takes you to dark/light/word versions \n \n \n news -show -> Pops open the news side menu for the site \n \n \n projets -show -> Pops open the projects side menu for the site \n \n \n links -> Takes you to all available links from my link tree \n \n \n wget -> Downloads my projects to your system (USE AT YOUR OWN RISK!) \n \n \n");
                             } 
 
                             else if (command == "modal")
@@ -114,7 +114,72 @@
                                {
                                    window.location.href = "https://roymbull.github.io/index.html";   
                                }
-   
+
+
+                               //Wget command
+                               else if (command == "wget")
+                               {
+                                    term.echo("\n \n (Commands) \n \n \n -resume -> Downloads a copy of all of my resume versions \n \n \n -ctf -> Downloads my custom CTF server for you to play \n \n \n -python -> Downloads all of my python tools for you to download \n \n \n -ducky -> Downlaods all of my rubber ducky code for you \n \n \n -pentestapp -> Donwloads my pentesting app prototype for you \n \n \n -drone -> Downloads my hacking drone prototype for you \n \n \n -bash -> Downloads all of my bash scripts for you (CHECK THE 'MASTERSCRIPT'!) \n \n \n")
+
+                               }
+
+                               else if (command == "wget -resume")
+                               {
+
+                                    window.location.href = "https://github.com/RoyMBull/Resumes/archive/refs/heads/main.zip"
+
+                               }
+
+                               else if (command == "wget -ctf")
+                               {
+
+                                    window.location.href = "https://github.com/RoyMBull/Futabas_Playground/archive/refs/heads/main.zip"
+
+                               }
+
+                               else if (command == "wget -python")
+                               {
+
+                                    window.location.href = "https://github.com/RoyMBull/Python-Pen-Testing-Tools/archive/refs/heads/main.zip"
+
+                               }
+
+                               else if (command == "wget -ducky")
+                               {
+
+                                    window.location.href = "https://github.com/RoyMBull/Ruby-Ducky-Code/archive/refs/heads/main.zip"
+
+                               }
+
+                               else if (command == "wget -pentestapp")
+                               {
+
+                                    window.location.href = "https://github.com/RoyMBull/Pen-Testing-App-Ver2/archive/refs/heads/main.zip"
+
+                               }
+
+                               else if (command == "wget -drone")
+                               {
+
+                                    window.location.href = "https://github.com/RoyMBull/Pen-Testing-Drone-Prototype/archive/refs/heads/main.zip"
+
+                               }
+
+                               else if (command == "wget -bash")
+                               {
+
+                                    window.location.href = "https://github.com/RoyMBull/Bash-Shell-Scripting/archive/refs/heads/main.zip"
+
+                               }
+
+                               else if (command == "links")
+                               {
+
+                                    window.location.href = "https://linktr.ee/Futaba_Webs"
+
+                               }
+
+                              
                                //This is going to display the main banner for us
                                else if (command == "banner")
                                {
@@ -1827,6 +1892,38 @@
                                 );
                                 
                             }
+
+                            else if (command == "news -show")
+                            {
+                                $(document).ready(
+
+                                    function() //This function will call the desired modal
+                                    {
+                                        $('#Latest_News').offcanvas('show');
+
+                                    } 
+
+
+                                );
+                                
+                            }
+
+                            else if (command == "projects -show")
+                            {
+                                $(document).ready(
+
+                                    function() //This function will call the desired modal
+                                    {
+                                        $('#Latest_Projects').offcanvas('show');
+
+                                    } 
+
+
+                                );
+                                
+                            }
+
+
 
                             else
                             {
@@ -7970,6 +8067,150 @@
 <!-- 
     END OF MODALS
 -->
+
+
+<!-- 
+        START OF SIDE MENU #1
+
+        This is one of the main side menus that will appear to the “RIGHT” when you click to view my “latest projects”
+
+-->    
+    
+<div class = "offcanvas offcanvas-end bg-dark" id = "Latest_Projects" style = "background-image: url('Spider.jpg')"> 
+
+    <div class = "offcanvas-header">
+
+             
+            <span class="Contact_Icons mx-1"></span>
+    <div class = "offcanvas-title" style = "font-size: 30px;font-weight: bold; color: gray; text-align: center; background-color: rgba(0, 0, 0, 0.900)"> Latest_Projects </div>
+
+        <button type = "button" data-bs-dismiss = "offcanvas" class = "btn-close bg-danger"></button>
+
+    </div>
+
+    <div class = "offcanvas-body">
+
+        <div class = "card F_Items float-start mx-5" style = "background-color: black; color: gray; font-weight: bold;" > 
+
+            <div class = "card-header">
+    
+                <h3 style = "background-color: black; color: gray; font-weight: bold; text-align: center;">  Custom CTF  </h3>
+    
+            </div>
+    
+            <div class = "card-body"> 
+    
+                <a href = "https://github.com/RoyMBull/Futabas_Playground">
+                    <img class = "img-thumbnail F_Pics bg-dark" src = "Wanan be a programmer.jpg" style = "border-color: red; height: 250px;" />
+                </a>
+                
+                    <strong> 
+
+                        <p class = "pt-4" style = "font-size: 20px;"> This is a custom portable CTF server that I wrote in: HTML/CSS/JS, and PHP. </p>
+    
+                        <p style = "font-size: 20px;"> The server is designed to allow you to pentest wherever you are locally vs the traditional means of having to be connected to the internet in order to engage in web application pentesting CTF challenges, allowing you to get practice wherever you are on the go. </p>
+                
+                    </strong>
+                
+
+                <a href = "https://github.com/RoyMBull/Futabas_Playground" style = "text-decoration: none;"> 
+
+                    <div class="d-grid">
+                  
+                        <button type = "button" class = "btn btn-block" style = "background-color: #500606; font-weight: bold; color: gray; border-color: red;" > Click to View Project </button>
+
+                    </div>
+
+                </a>                   
+    
+            </div>
+    
+        </div>
+
+        
+
+    </div>
+
+    <button type = "button" class = "btn btn-dark Modal_Pic_Generic" data-bs-dismiss = "offcanvas" style = "background-color: #500606; font-weight: bold; color: gray; border-color: red;"> Close Menu </button>
+
+</div> 
+
+<!--
+    END OF SIDE MENU #1
+ -->
+
+
+
+
+<!-- 
+    START OF SIDE MENU #2 
+
+    This is one of the main side menus that will appear to the “RIGHT” when you click to view my “latest news”
+
+-->
+
+<div class = "offcanvas offcanvas-start bg-dark" id = "Latest_News" style = "background-image: url('Spider.jpg');"> 
+
+    <div class = "offcanvas-header">
+
+        <span class="Contact_Icons mx-1"></span>
+    
+        <div class = "offcanvas-title" style = "font-size: 30px;font-weight: bold; color: gray; background-color: rgba(0, 0, 0, 0.900); text-align: center;"> Latest_News </div>
+
+    <button type = "button" data-bs-dismiss = "offcanvas" class = "btn-close bg-danger"></button>
+
+</div>
+
+<div class = "offcanvas-body">
+
+    <div class = "card F_Items float-start mx-5" style = "background-color: black; color: gray; font-weight: bold;" > 
+
+        <div class = "card-header">
+
+            <h3 style = "background-color: black; color: gray; font-weight: bold; text-align: center;">  Latest_News  </h3>
+
+        </div>
+
+        <div class = "card-body"> 
+
+            <a href = "https://www.patreon.com/posts/buffer-overflow-109076690" style = "text-decoration: none;"> 
+                <img class = "img-thumbnail F_Pics bg-dark" src = "BufferOveflow.jpg" style = "border-color: red; height: 250px;" />
+            </a>
+
+            <strong> 
+
+                <p class = "pt-4" style = "font-size: 20px;"> Today’s exploit video will feature something that has been HEAVILY requested by many of my followers… BINARY injection, also known commonly as a Buffer Overflow exploit specifically for 64 bit.
+                    
+                </p>
+
+                <p style = "font-size: 20px;"> Much like how SQL injection is hard to learn without proper instruction, so is binary injection. This will be for beginners.
+
+                </p>
+        
+            </strong>
+            
+
+        <a href = "https://www.patreon.com/posts/buffer-overflow-109076690" style = "text-decoration: none;"> 
+
+            <div class="d-grid">
+          
+                <button type = "button" class = "btn btn-block" style = "background-color: #500606; font-weight: bold; color: gray; border-color: red;" > Click to View Article </button>
+
+            </div>
+
+        </a>      
+
+        </div>
+
+    </div>
+
+    
+
+</div>
+
+<button type = "button" class = "btn btn-dark Modal_Pic_Generic" data-bs-dismiss = "offcanvas" style = "background-color: #500606; font-weight: bold; color: gray; border-color: red;"> Close Menu </button>
+
+</div> 
 
                     </body>
                     </html>
