@@ -43,6 +43,11 @@ body
 	background-color: purple;
 }
 
+.modal
+{
+	background-image: url("RedCity.gif");
+}
+
 .modal-body
 {
 	color: silver;
