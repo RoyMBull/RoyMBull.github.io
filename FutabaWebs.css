@@ -140,14 +140,14 @@ body
 .WelcomeLogo
 {   
 
-	background-image: url(RansomeWare.jpg);
+	background-image: url(asian2.jpg);
 	border-style: solid;
 	border-color: red;
     
 	background-size: 103px;
 	background-repeat: no-repeat;
 	background-position-x: -29.8px;
-	background-position-y: -10.5px;
+	background-position-y: -2.5px;
 
 	left: 150px;
 	top: 450px;
@@ -185,17 +185,16 @@ body
 	display: inline-block;
 }
 
-
 .PatreonLogo
 {   
-	background-image: url(RansomeWare.jpg);
+	background-image: url(Patreon2.jpg);
 	border-style: solid;
 	border-color: red;
     
-	background-size: 103px;
+	background-size: 75px;
 	background-repeat: no-repeat;
-	background-position-x: -29.8px;
-	background-position-y: -10.5px;
+	background-position-x: -14px;
+	background-position-y: 0px;
 
     
 
@@ -212,14 +211,14 @@ body
 .TwitterLogo
 {   
 
-	background-image: url(RansomeWare.jpg);
+	background-image: url(Twitter.png);
 	border-style: solid;
 	border-color: red;
     
-	background-size: 103px;
+	background-size: 44px;
 	background-repeat: no-repeat;
-	background-position-x: -29.8px;
-	background-position-y: -10.5px;
+	background-position-x: 0px;
+	background-position-y: 0px;
 
 	left: 150px;
 	top: 450px;
@@ -236,14 +235,14 @@ body
 .InstagramLogo
 {   
 
-	background-image: url(RansomeWare.jpg);
+	background-image: url(Instagram.jpg);
 	border-style: solid;
 	border-color: red;
     
 	background-size: 103px;
 	background-repeat: no-repeat;
 	background-position-x: -29.8px;
-	background-position-y: -10.5px;
+	background-position-y: -27.5px;
 
 	left: 210px;
 	top: 450px;
@@ -256,7 +255,6 @@ body
 	border-radius: 50%;
 	display: inline-block;
 }
-
 
 .About_Futaba_Webs
 	{
