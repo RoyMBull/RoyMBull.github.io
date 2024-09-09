@@ -50,6 +50,7 @@ body
 
 .modal-body
 {
+	background-color: black;
 	color: silver;
 	font-size: 24px;
 	transition: 0.3 ease;
