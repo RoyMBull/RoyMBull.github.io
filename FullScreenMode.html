@@ -17,7 +17,7 @@
         <link 
             rel = "shortcut icon"
             type = "x-icon"
-            href = "futaba2.jpg"
+            href = "asian2.jpg"
         /> 
 
         <link   
@@ -29,7 +29,7 @@
          <link 
          rel = "shortcut icon"
          type = "x-icon"
-         href = "RansomeWare.jpg"
+         href = "asian2.jpg"
          />
 
 
@@ -49,12 +49,10 @@
         <script src="bootstrap.min.js" > </script>
         <script src="popper.min.js" > </script>
 
-        <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+        <script src="jquery"></script>
         <script src="jquery.terminal.min.js"></script>
         <link href="jquery.terminal.min.css" rel="stylesheet"/>
-        <script src="https://cdn.jsdelivr.net/npm/js-polyfills/keyboard.js"></script>
-    
-
+        <script src="keyboard.js"></script>
 
     </head>
 
@@ -95,7 +93,7 @@
                             //This is going to pull up the main help menu for the end user to see all avaialble commands and options
                             if (command == 'help') 
                             {
-                                term.echo("\n \n (Commands) \n \n \n 🕸🕸🎃🕸🕸 CTRL-ALT-O -> Pulls up the standard temrinal \n \n 🕸🕸🎃🕸🕸 CTRL-ALT-P-> Pull up the full screen terminal \n \n \n help -> Shows list of all commands \n \n \n banner -> Displays the main banner for the terminal \n \n \n mobile -> Navigate to the Mobile version of this site \n \n \n desktop -> Navigate to the Desktop version of this site \n \n futaba -> Navigates you to either Mobile or Desktop for Purple Mode \n \n \n darkmode -> Navigates you to either Mobile or Desktop for Dark Mode \n \n \n navi -> Browse between the pages in either mode/color \n \n \n index -> Takes you to the index section \n \n \n articles -> Takes you to the articles section \n \n \n features -> Takes you to the features section \n \n \n termux -> Takes you to the full screen terminal mode \n \n \n exit -> Closes the terminal window \n \n \n modal -> Pulls up a list of modals for you to query \n \n \n resume -> resume -d/-l/-w (Takes you to dark/light/word versions \n \n \n news -show -> Pops open the news side menu for the site \n \n \n projets -show -> Pops open the projects side menu for the site \n \n \n links -> Takes you to all available links from my link tree \n \n \n wget -> Downloads my projects to your system (USE AT YOUR OWN RISK!) \n \n \n");
+                                term.echo("\n \n (Commands) \n \n \n 🕸🕸🎃🕸🕸 CTRL-ALT-O -> Pulls up the standard temrinal \n \n 🕸🕸🎃🕸🕸 CTRL-ALT-P-> Pull up the full screen terminal \n \n \n help -> Shows list of all commands \n \n \n banner -> Displays the main banner for the terminal \n \n \n mobile -> Navigate to the Mobile version of this site \n \n \n desktop -> Navigate to the Desktop version of this site \n \n futaba -> Navigates you to either Mobile or Desktop for Purple Mode \n \n \n darkmode -> Navigates you to either Mobile or Desktop for Dark Mode \n \n \n navi -> Browse between the pages in either mode/color \n \n \n index -> Takes you to the index section \n \n \n articles -> Takes you to the articles section \n \n \n features -> Takes you to the features section \n \n \n termux -> Takes you to the full screen terminal mode \n \n \n exit -> Closes the terminal window (Brings you to Purple Mode) \n \n \n home -> Closes the terminal window (Brings you to Professional Mode) \n \n \n modal -> Pulls up a list of modals for you to query \n \n \n resume -> resume -d/-l/-w (Takes you to dark/light/word versions \n \n \n news -show -> Pops open the news side menu for the site \n \n \n projets -show -> Pops open the projects side menu for the site \n \n \n links -> Takes you to all available links from my link tree \n \n \n wget -> Downloads my projects to your system (USE AT YOUR OWN RISK!) \n \n \n");
                             } 
 
                             else if (command == "modal")
@@ -258,6 +256,13 @@
 
                                         }
 
+                                        else if (command == "home")
+                                        {
+                                            window.location.href = "https://futabawebs.github.io/Futaba_Webs/";
+
+                                        }
+
+
                                     },
 
                                     { //This is going to change the overall prompt for the terminal that is being displayed to the end user
@@ -312,6 +317,12 @@
 
                                         }
 
+                                        else if (command == "home")
+                                        {
+                                            window.location.href = "https://futabawebs.github.io/Futaba_Webs/";
+
+                                        }
+
                                     },
 
                                     { //This is going to change the overall prompt for the terminal that is being displayed to the end user
@@ -351,6 +362,12 @@
                                         else if (command == "exit")
                                         {
                                             window.location.href = "https://roymbull.github.io/index.html";
+
+                                        }
+
+                                        else if (command == "home")
+                                        {
+                                            window.location.href = "https://futabawebs.github.io/Futaba_Webs/";
 
                                         }
                             
@@ -504,6 +521,12 @@
                                     window.location.href = "https://roymbull.github.io/index.html";
 
                                }
+
+                               else if (command == "home")
+                                        {
+                                            window.location.href = "https://futabawebs.github.io/Futaba_Webs/";
+
+                                        }
                             
                                //Index command options
                                else if (command == "index")
@@ -1941,7 +1964,7 @@
 
 
 <!-- Terminal Mode Modal -->
-<div class = "modal fade" id = "TerminalMode" style = "background-image: url('RedCity.gif');">
+<div class = "modal fade" id = "TerminalMode">
     <div class = "modal-dialog modal-lg">
     <div class = "modal-content">
 
@@ -2137,6 +2160,13 @@
 
                                         }
 
+
+                                        else if (command == "home")
+                                        {
+                                            window.location.href = "https://futabawebs.github.io/Futaba_Webs/";
+
+                                        }
+
                                     },
 
                                     { //This is going to change the overall prompt for the terminal that is being displayed to the end user
@@ -2191,6 +2221,12 @@
 
                                         }
 
+                                        else if (command == "home")
+                                        {
+                                            window.location.href = "https://futabawebs.github.io/Futaba_Webs/";
+
+                                        }
+
                                     },
 
                                     { //This is going to change the overall prompt for the terminal that is being displayed to the end user
@@ -2230,6 +2266,12 @@
                                         else if (command == "exit")
                                         {
                                             window.location.href = "https://roymbull.github.io/index.html";
+
+                                        }
+
+                                        else if (command == "home")
+                                        {
+                                            window.location.href = "https://futabawebs.github.io/Futaba_Webs/";
 
                                         }
                             
@@ -2383,6 +2425,12 @@
                                     window.location.href = "https://roymbull.github.io/index.html";
 
                                }
+
+                               else if (command == "home")
+                                        {
+                                            window.location.href = "https://futabawebs.github.io/Futaba_Webs/";
+
+                                        }
                             
                                //Index command options
                                else if (command == "index")
@@ -3842,7 +3890,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4" src = "CTF.webp" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -3904,7 +3952,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4" src = "RansomeWare.jpg" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -3963,7 +4011,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4 Modal_Pic_LAN_Turtle" src = "Lan Turtle.jpg" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -4016,7 +4064,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4 Modal_Pic_MITB" src = "MITB.jpg" style = "border-color: red; background-color: black; height: 550px; object-fit: cover;"> </h3>
                     
@@ -4070,7 +4118,7 @@
 
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4 mx-3 Modal_Pic_TCP_Client" src = "TCPClient.avif" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -4123,7 +4171,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4 mx-2 Modal_Pic_TCP_Server" src = "TCPServer.avif" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -4176,7 +4224,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4 Modal_Pic_Hero_Signal" src = "HeroSignal.png" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -4229,7 +4277,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4 Modal_Pic_SQL_Injection" src = "SQL.jpg" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -4283,7 +4331,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4" src = "CTFServer.jpeg" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -4341,7 +4389,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4 Modal_Pic_Github" src = "GIthubWorkShop.png" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -4389,7 +4437,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4 Modal_Pic_Exploits" src = "ExploitVideos.png" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -4438,7 +4486,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4 Modal_Pic_Py_Tools" src = "Sombra.png" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -4502,7 +4550,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4 Modal_Pic_You_Pic" src = "YouPIc Feature.jpeg" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -4552,7 +4600,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4" src = "RubberDucky.avif" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -4606,7 +4654,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4" src = "PenTestApp.jpg" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -4669,7 +4717,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4 Modal_Pic_Drone" src = "Pentesting Drone.jpeg" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -4728,7 +4776,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4 mx-3 Modal_Pic_BotNet" src = "Botnet.png" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -4793,7 +4841,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "Masq.jpeg" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -4843,7 +4891,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4 Modal_Pic_CCTV" src = "CCTV.png" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -4918,7 +4966,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "SQL.jpeg" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -4972,7 +5020,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4 Modal_Pic_LAN_Turtle" src = "BackdoorHacker.jpg" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -5042,7 +5090,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4 Modal_Pic_Ransomware" src = "MitM-Hero.png" style = "border-color: red; background-color: black; height: 250px;"> </h3>
                     
@@ -5102,7 +5150,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4 Modal_Pic_Resources" src = "Resources.jpeg" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -5157,7 +5205,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4 Modal_Pic_Man_Browser" src = "MITB.png" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -5227,7 +5275,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "MrRobot.jpeg" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -5292,7 +5340,7 @@
                 
                 </div>
                 
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
                 
                     <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "hacked.webp" style = "border-color: red; background-color: black;"> </h3>
                                 
@@ -5352,7 +5400,7 @@
                     
                 </div>
                     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
                     
                     <img class = "img-thumbnail mt-4 Modal_Pic_Women_Cyber" src = "Women Cyber.jpg" style = "border-color: red; background-color: black;"> </h3>
                                     
@@ -5411,7 +5459,7 @@
                         
                 </div>
                         
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
                         
                     <img class = "img-thumbnail mt-4 Modal_Pic_Women_Cyber" src = "Programming.jpg" style = "border-color: red; background-color: black;"> </h3>
                                         
@@ -5476,7 +5524,7 @@
                             
                 </div>
                             
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
                             
                     <img class = "img-thumbnail mt-4 Modal_Pic_Women_Cyber" src = "TheBatManWhoLaughs.jpg" style = "border-color: red; background-color: black;"> </h3>
                                             
@@ -5550,7 +5598,7 @@
                                 
                 </div>
                                 
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
                                 
                     <img class = "img-thumbnail mt-4 Modal_Pic_Women_Cyber" src = "Card Crush Virus.png" style = "border-color: red; background-color: black;"> </h3>
                                                 
@@ -5619,7 +5667,7 @@
                                     
                 </div>
                                     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
                                     
                     <img class = "img-thumbnail mt-4 Modal_Pic_Mobile" src = "Mobile Hacking.png" style = "border-color: red; background-color: black;"> </h3>
                                                     
@@ -5686,7 +5734,7 @@
                 </div>
                                         
                 
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
                                         
                     <img class = "img-thumbnail mt-4 Modal_Pic_Cipher" src = "Cipher.webp" style = "border-color: red; background-color: black;"> </h3>
                                                         
@@ -5749,7 +5797,7 @@
                                             
                 </div>
                                             
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
                                             
                     <img class = "img-thumbnail mt-4 Modal_Pic_Totsugeki" src = "Totsugeki.png" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -5828,7 +5876,7 @@
                                                 
                 </div>
                                                 
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
                                                 
                     <img class = "img-thumbnail mt-4 Modal_Pic_NOT_Cyber" src = "NOTCyber.png" style = "border-color: red; background-color: black;"> </h3>
                                                                 
@@ -5900,7 +5948,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_Mentor" src = "Mentor.png" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -5973,7 +6021,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_Hats" src = "Persona.png" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -6051,7 +6099,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_DangerMobile" src = "DANGERMobile.png" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -6125,7 +6173,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_FoxyProxy" src = "Foxy Proxy.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -6188,7 +6236,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_Footprinting" src = "footprinting.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -6256,7 +6304,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_SSOOpen" src = "Danger Session Hijacking.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -6329,7 +6377,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_DLLCode" src = "dll1.png" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -6397,7 +6445,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_ExifTool" src = "pandasecurity-cyberstalking.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -6465,7 +6513,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_Resources2" src = "Resources2.jpeg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -6528,7 +6576,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_CookieSession" src = "Danger SSID MAC.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -6589,7 +6637,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_CookieSession" src = "Cookie Session Hijacking.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -6651,7 +6699,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_Zip2John" src = "Zip2John.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -6712,7 +6760,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_TCPLab" src = "TCPLab.png" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -6798,7 +6846,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_Resources2" src = "LEDProject.png" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -6862,7 +6910,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_TCP1" src = "TCPBotNet1.png" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -6947,7 +6995,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_TCP2" src = "TCPBotNet2png" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -7033,7 +7081,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_ArduinoLED1" src = "arduino1.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -7115,7 +7163,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_ArduinoLED2" src = "darkadruino.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -7197,7 +7245,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_DLPRansomware" src = "DLPRansomware.png" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -7279,7 +7327,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_RemoteFileInclusion" src = "RemoteInclusion.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -7346,7 +7394,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_HTTPServer" src = "HTTPServer.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -7411,7 +7459,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_Potentiometer" src = "potentiometer.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -7476,7 +7524,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_HydraPat" src = "Hydra.jpeg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -7542,7 +7590,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_WindowsRecall" src = "WindowsRecall.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -7623,7 +7671,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_HTTPRequests" src = "POST Request.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -7697,7 +7745,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_AdvancedMITB" src = "MITBAdvanced.png" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -7770,7 +7818,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_SQLMapRCE" src = "SQLMap RCE.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -7843,7 +7891,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_JoyStick" src = "Joystick.png" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -7916,7 +7964,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "CSAM.png" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -8000,7 +8048,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "Metasploit.png" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -8084,7 +8132,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "Web Cam Hacking.png" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -8148,7 +8196,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4" src = "Cyber Security Portfolio.png" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -8231,7 +8279,7 @@
     
                 </div>
     
-                <div class = "modal-body bg-dark">
+                <div class = "modal-body">
     
                     <img class = "img-thumbnail mt-4" src = "Your Journey begins.png" style = "border-color: red; background-color: black;"> </h3>
                     
@@ -8280,7 +8328,7 @@
 
             </div>
 
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                 
                 <h3 class = "pb-2" style = "font-weight: bold; color: gray"> Who is Roy M Bull?: </h3>
                 
@@ -8346,7 +8394,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "Form Requests.png" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -8423,7 +8471,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "Radio Module.webp" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -8499,7 +8547,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "WAP.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -8580,7 +8628,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "AI2.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -8665,7 +8713,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "RevShellPhp.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -8738,7 +8786,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "SSHClient.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -8807,7 +8855,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "Wireshark.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -8871,7 +8919,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "servo.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -8942,7 +8990,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "LCD.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -9019,7 +9067,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "BufferOveflow.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -9100,7 +9148,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "RCEBinary.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -9177,7 +9225,7 @@
                                             
             </div>
                                             
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "smbclient.jpg" style = "border-color: red; background-color: black;"> </h3>
                                                             
@@ -9245,7 +9293,7 @@
 
             </div>
 
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
 
                 <a href = "https://www.canva.com/design/DAFqyj86qrg/Y-M43gMP27tbxI3_KOoCSA/edit?utm_content=DAFqyj86qrg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" style = "text-decoration: none;"> 
 
@@ -9297,7 +9345,7 @@
 
             </div>
 
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
 
                 <a href = "https://www.canva.com/design/DAF7nEk2kts/V4kGXVGrgvwFPchY2rEn2Q/edit?utm_content=DAF7nEk2kts&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" style = "text-decoration: none;"> 
 
@@ -9349,7 +9397,7 @@
 
             </div>
 
-            <div class = "modal-body bg-dark">
+            <div class = "modal-body">
 
                 <a href = "https://docs.google.com/document/d/1lGuP_h19VxtkKtJSfxdo_t5v6FFYkaar/edit?rtpof=true&sd=true" style = "text-decoration: none;"> 
 
