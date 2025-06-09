@@ -1692,46 +1692,163 @@
             <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_DLPRansomware" src = "DLPRansomware.png" style = "border-color: red; background-color: black;"> </h3>
-                                                            
-                <p class = "pb-5 mt-4"> 
-                        
-                    Today, I'm going to talk more about ransomware attacks and how to prevent them. This is to raise more awareness on proper Cyber Security data Hygiene methods, as well as other techniques that can be used to prevent any real damage should this attack connect. This article is also going to feature some of my formal QA answers from a recent interview I did most recently.                                                                       
-                                                                    
-                </br>
-                </br> 
-        
-                    I recently participated in a formal QA interview for a research group at the University of Washington that focused on Business Impact Analysis, and the best mitigation strategies and tactics that should be applied to better secure our digital landscape. The goal of the research project is to help educate small businesses run by women and other minority groups on proper Cyber Security practices. The QA was led by a woman named Grace Sommers. If you would like all the full in depth answers regarding the QA, you can find it on my patreon attached to the advanced version of this article. It's 9 pages and you can learn a lot about how to properly defend your digital systems from various attack vectors, including various endpoint security methods if that fancies you.
+                       
                 
-                </br>
-                </br>  
+                </br></br>
+                 <h4 id = "premise" style = "text-align: center; color: #D43F52;">Premise 🕸🕸🎃🕸🕸
 
-                    This article is a part of the Danger! Series, which is where I raise more Cyber Security awareness about critical flaws and vulnerabilities that exist within various system infrastructures, including any protocols and data communication methods, and the Dangers of what could happen should they be exploited to the fullest extent. I also go over various mitigation strategies that can be used to prevent them as well. If by chance there is an exploit video for me showing the full potential risk, it will be included in the advance version of this article for PAID patreon members only!
-                
-                </br>
-                </br>  
-                
-                    Ransomware attacks are on the rise, and are a favorable attack method commonly used by a lot of crypto gangs. It's important to know how to protect yourself from these types of attacks. Ransomware, as shocking as this might sound, is EASY to stop, rather, easy to render useless. It's simply a matter of understanding the critical flaw within the attack method itself and what it relies on to execute.
-        
-                </br>
-                </br> 
-        
-                    I'll also be covering some basic stuff like FDE, cryptography, etc, so that you FULLY understand how the attack method works. Pay close attention to the cryptography stuff since you NEED to understand how it works, both from the perspective of a threat actor, as well as from an overall security standpoint perspective.
-        
-                </br>
-                </br> 
-        
-                    If you would like a demonstration of the technique, I wrote an article demonstrating how to write the code and perform the technique, as well as a live demonstration that can be found on my YouTube channel. If you would like to see the sample code for it, you can find it in my "Python-Pen-Testing-Tools" in my main Github Repository            
-                
-                </br>
-                </br> 
-                              
-                    Disclaimer
-                                                                        
-                </br>
-                </br>
-                                                
-                    As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let’s begin! 
-                    
+                        </h4>
+
+						<p>I recently participated in a formal QA interview for a research group at the University of Washington that focused on Business Impact Analysis, and the best mitigation strategies and tactics that should be applied to better secure our digital landscape. The goal of the research project is to help educate small businesses run by women and other minority groups on proper Cyber Security practices. The QA was led by a woman named Grace Sommers. If you would like all the full in depth answers regarding the QA, you can find it on my patreon attached to the advanced version of this article. It's 9 pages and you can learn a lot about how to properly defend your digital systems from various attack vectors, including various endpoint security methods if that fancies you.</p>
+
+                        <p></p>
+
+                        <p>The more advanced version of this article is going to feature some more in depth techniques aside from the basic ones that will be discussed here today. As always, that will be for my patreon supporters only.</p>
+
+                        <p></p>
+
+                        <p>This article is a part of the Danger! Series, which is where I raise more Cyber Security awareness about critical flaws and vulnerabilities that exist within various system infrastructures, including any protocols and data communication methods, and the Dangers of what could happen should they be exploited to the fullest extent. I also go over various mitigation strategies that can be used to prevent them as well. If by chance there is an exploit video for me showing the full potential risk, it will be included in the advance version of this article for PAID patreon members only!</p>
+
+                        <p></p>
+
+                        <p>Ransomware attacks are on the rise, and are a favorable attack method commonly used by a lot of crypto gangs. It's important to know how to protect yourself from these types of attacks. Ransomware, as shocking as this might sound, is EASY to stop, rather, easy to render useless. It's simply a matter of understanding the critical flaw within the attack method itself and what it relies on to execute.</p>
+
+                        <p></p>
+
+                        <p>Even with all of this you still need to know proper data mitigation techniques, since the attack method also focuses on data exfiltration. I'm going to teach you various mitigation strategies that not only protect you from ransomware attacks, BUT, protect various data endpoints to prevent exfiltration. Why? Even if you render a ransomware attack from crippling your infrastructure, the attacker STILL got away with sensitive data which they can use as they please. You need to observe all the little things to see the bigger picture.</p>
+
+                        <p></p>
+
+                        <p>I'll also be covering some basic stuff like FDE, cryptography, etc, so that you FULLY understand how the attack method works. Pay close attention to the cryptography stuff since you NEED to understand how it works, both from the perspective of a threat actor, as well as from an overall security standpoint perspective.</p>
+
+                        <p></p>
+
+                        <p>If you would like a demonstration of the technique, I wrote an article demonstrating how to write the code and perform the technique, as well as a live demonstration that can be found on my YouTube channel. If you would like to see the sample code for it, you can find it in my "Python-Pen-Testing-Tools" in my main Github Repository <a href = "https://github.com/RoyMBull/Python-Pen-Testing-Tools/blob/main/Python%20PenTesting%20Tools/Ransomeware.py" style = "text-decoration: none;">here</a>. </p>
+
+
+                        </br></br>
+                        <h4 id = "fde" style = "text-align: center; color: #D43F52;">What is FDE (Full disk encryption)? 🕸🕸🎃🕸🕸
+
+                        </h4>
+
+						<p>Before we dive into what Ransomware is, let's go over what FDE is, since it heavily applies to the topic for today.</p>
+
+                        <p></p>
+
+                        <p>FDE, full disk encryption, is a defensive technique that is used to harden data protection across all hierarchical flat file systems. It's the overall process of enumerating the entire file system, and then applying what is known as symmetric cryptography in order to encrypt the entire data storage medium. A good example of this would be bitlocker, which is commonly used for Windows system infrastructures.</p>
+
+                        <p></p>
+
+                        <p>As you know, data encryption is irreversible without the crypto keys, so by performing this method and leaving the keys out the hands of the attacker, should they breach the system, whether it be digitally or physically, any and all data they steal will be useless to them.</p>
+                      
+                        </br></br>
+                    <h4 id = "crypto" style = "text-align: center; color: #D43F52;">What is Symmetric/Asymmetric Cryptography? 🕸🕸🎃🕸🕸
+
+                        </h4>
+
+						<p>Symmetric cryptography, also known as single key cryptography, is the process of using a singular crypto key known as a private key in order to both encrypt as well as decrypt data. It's commonly more used for FDE over Asymmetric due to it being the faster encryption method.</p>
+
+                        <p></p>
+
+                        <p>This makes sense as the overall process for FDE is to enumerate THE ENTIRE file system ENTIRELY and encrypt EVERY single file on the system. Asymmetric would be too slow for this as it's a slower encryption standard. It's also commonly used in mobile device data encryption as well for the same reasons.</p>
+
+                        <p></p>
+
+                        <p>Asymmetric encryption on the other hand uses two crypto keys to perform the same process, except, in this case, it uses a public key for encryption, and a private key for decryption. The main reason for this is to add more secure complexity for various data communication methods. It’s also commonly used in stuff like PGP, pretty good privacy, which is commonly used for secure email data encryption.</p>
+
+                        <p></p>
+
+                        <p>One of the BIGGEST downfalls of symmetric data encryption is it's VULNERABLE to interception attacks. Should an attacker intercept the crypto key, they can: decrypt all data and messages, replay new ones on behalf of the original recipients, and a lot more.</p>
+
+                        <p></p>
+
+                        <p>However, with Asymmetric encryption, this isn't the case. Since it uses two crypto keys which come in pairs, Should a threat actor intercept the communication pipeline and steal one of the keys, their efforts will be in vain, as they lack one of the means to facilitate a SOLID man in the middle attack.</p>
+
+                        <p></p>
+
+                        <p>The whole premise of a man in the middle attack is to not only intercept the communication, but to reply messages on behalf of the respective parties. By using public key cryptography on top of other data channel splitting techniques, you render this the ineffective and leave them in a situation where they can’t facilitate it fully.</p>
+
+                        <p></p>
+
+                        <p>Should an attacker secure the public key only, then they'll only be able to send messages. They won't be able to read any of the data that is being sent back and forth, and any new messages will be suspected as false ones, which will lead to the replacing of the keys. Even if they verify with the key, it will all be for nothing.</p>
+
+                        <p></p>
+
+                        <p>However, in the event they have the private key, they'll be able to decrypt any and all messages, BUT, they won't be able to spoof and gain further insight and other information out of the communication pipeline. This is still a problem for them due to the fact most PKI infrastructures, even stuff like PGP, REQUIRE you to have the public key BEFORE you begin a communication to ensure message authenticity from the recipients. Simply not having the public key is like a lack of ID to verify who you are…. WHICH MEANS A DEAD PRIVATE KEY! This does vary depending on the infrastructure so do be mindful as I'm going over this.</p>
+
+</br></br>
+ <h4 id = "ransomware" style = "text-align: center; color: #D43F52;">What is Ransomware? 🕸🕸🎃🕸🕸
+
+                        </h4>
+
+						<p>Now that we've gone over the basics, let's talk about what Ransomware is.</p>
+
+                        <p></p>
+
+                        <p>Ransomware is basically FDE with malicious intent. It's a form of malware that is known as "crypto" malware, which deploys cryptographic techniques that enumerate the victims file system, exfiltrating data from it, and then encrypting the main copy of the data on the file system, rendering it useless to them. Be mindful that "crypto" malware and "ransomware" are TWO different forms of malware. Crypto malware is the main archetype, where as Ransomware is the child of said archetype, inheriting cryptographic techniques. </p>
+
+                        <p></p>
+
+                        <p>After the data is encrypted, a message is displayed to the end user requiring them to pay a "ransom" in order to receive the crypto keys to decrypt their data, hence the name "ransomware". The problem with this is paying the ransom doesn't guarantee you will receive the keys.</p>
+
+                        <p></p>
+
+                        <p>Ransomware is on the rise for being an effective attack method because it can be combined with phage malware techniques and phishing techniques to become SUPER effective.</p>
+
+                        <p></p>
+
+                        <p>Before, a simple click of the link or mishap in security meant you had an undetected botnet. NOW, it means all your data is encrypted and unreadable, which can be problematic if you're handling sensitive data that has to do with critical record information like someone's student or home loan payment information for example.</p>
+
+                        <p></p>
+
+                        <p>Mr.Robot for example, one of their biggest exploits in the show was encrypting all of E Corp's data in order to "FREE" everyone from debt. HOWEVER, it caused quite the opposite effect, where now people that were close to being debt free, or had funds in their bank accounts, were unable to access anything or prove what they've made payments due to the data being indecipherable. The result? TOTAL CHAOS where the people they were trying to “Free” suffered more.</p>
+
+
+                        </br></br>
+                        <h4 id = "strategy" style = "text-align: center; color: #D43F52;">What should you do during a Ransomware Attack? 🕸🕸🎃🕸🕸
+
+                        </h4>
+
+						<p>One of the biggest misconceptions about ransomware attacks, a common question that gets asked, is what do you do in the event of a ransomware data breach? This is a VERY bad question to ask, as it under prepares many business infrastructures on how to deal with actual ransomware threats.</p>
+
+                        <p></p>
+
+                        <p>The real practical question to ask is what do you do BEFORE a ransomware attack occurs? Still scratching your head? Let me explain.</p>
+
+                        <p></p>
+
+                        <p>You see, in the event that a ransomware attack connects, THERE IS NOTHING YOU CAN DO!!!! Ransomware is an IRREVERSIBLE process, where unless you have the crypto keys, which are in the hands of the attacker, there is NOTHING you can do. Even if you pay the ransom, you're not guaranteed to be given the crypto keys to re-acquire the data that has been stolen. You also have loads of fines that stack along with the ransomware breach that you are required to report on top of that.</p>
+
+
+                        </br></br>
+                         <h4 id = "mitigation" style = "text-align: center; color: #D43F52;">What is the simplest means to prevent damage from this type of attack? 🕸🕸🎃🕸🕸
+
+                        </h4>
+
+						<p>One of the SIMPLEST yet COMMONLY ignored methods to prevent ransomware  from being super effective BEFORE it strikes is the usage of constant data backups. There are two main types: inferential and differential backups.</p>
+
+                        <p></p>
+
+                        <p>Differential backups  are full backups where you backup any and all data across the board. This is done at certain time frames regularly to back up large quantities of data at a time.</p>
+
+                        <p></p>
+
+                        <p>Incremental backups are partial backups where you backup portions of data at a time. This is common practice on top of the differential one as you'll often have a case where certain portions of data need to be backed up. Think of it like this, if you modified a file on your flash drive, would you back up the entire drive again? Doesn't make sense right?  This is where you would apply this method.</p>
+
+                        
+                    </br>
+			
+			<img src="counter.png" class="img-responsive" alt="portfolio img">
+				
+                </br></br>
+
+                <p> If you like to see the more advanced version of this article that talks about methods that can be used to mitigate, as well as any videos included, SUBSCRIBE TO MY PATREON CYBER SECURITY TIER!
+
+
+                </p>
+                        
+
+            
                 </br>
                 </br>
                                                 
@@ -1739,7 +1856,7 @@
                                                                  
                 </p>
                                                 
-                    <a href = "https://www.linkedin.com/pulse/danger-ransomeware-dlps-roy-bull-futaba-webs--fhece?trackingId=JXvx%2BhahS6COD5ensM4IBA%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bm3K9z0xDTcmXsFki1TmLpw%3D%3D" style = "text-decoration: none;"> 
+                    <a href = "https://futabawebs.github.io/Futaba_Webs/DangerRansomware" style = "text-decoration: none;"> 
                                             
                         <div class="d-grid">
                                                                   
@@ -1774,31 +1891,147 @@
             <div class = "modal-body">
                                             
                 <img class = "img-thumbnail mt-4 Modal_Pic_RemoteFileInclusion" src = "RemoteInclusion.jpg" style = "border-color: red; background-color: black;"> </h3>
-                                                            
-                <p class = "pb-5 mt-4"> 
+                     
+                
+                </br></br>
+                <h4 id = "premise" style = "text-align: center; color: #D43F52;">Premise 🕸🕸🎃🕸🕸
+
+                        </h4>
+
+						<p>Today's article will include a video demonstration of how to perform local file inclusion, also known as directory traversal, against a remote web application server. I'll even cover one of the best FREE beginner tools that you can use to apply the technique in a more automated fashion.</p>
+
+                        <p></p>
+
+                        <p>If you would like to see how to perform remote file inclusion, as well as the best means to do so, then I suggest checking out this video <a href = "https://www.patreon.com/posts/lab-python-104381028" style = "text-decoration: none;">here</a> from my patreon lab for the TCPBackdoor exploit.</p>
+
+
+                        </br></br>
+                        <h4 id = "remote" style = "text-align: center; color: #D43F52;">What is Remote File inclusion? 🕸🕸🎃🕸🕸
+
+                        </h4>
+
+						<p>Remote file inclusion is the process of directly uploading malicious files/payloads to a remote web application server in order to have it become a part of the main file archives that belong to it.. This allows the threat actor to infect and or control the web application on a massive scale, as well as deliver unsuspecting payloads to end users that use said service. If done correctly. it can lead to the compromising of many end user networks and IoT devices if not mitigated correctly.</p>
+
+                        <p></p>
+
+
+                        <p>As you know, web application servers use the HTTP/HTTPS protocol to host various html files that end users can access through the internet on behalf of a web browser application. When you visit a website, you're auto directed to the main HTML index page welcoming you to the site. From there the end user browses the site through the main UI(user interface) which will allow them to view any and all HTML pages that are hosted on the web application, as well as any other fields that might be included with it.</p>
+
+                        <p></p>
+
+                        <p>Web applications, as I’ve mentioned earlier, host various other files that are accessible to the end user, like executables, that are auto downloaded to their system the moment they visit the resource location on the server.</p>
+
+                        <p></p>
+
+                        <p>For example: https://website[.]com/Download.exe (JUST AN EXAMPLE! IT'S NOT REAL)</p>
+
+                        <p></p>
+
+                        <p>When you visit this link, it will download a file that is known simply as "Download.exe". Much like how when you visit an HTML page, it's automatically displayed and interpreted on the screen for you, downloadable non HTML files are auto downloaded to your system for you to use.</p>
+
+                        <p></p>
+
+                        <p>Remote file inclusion exploits both of these things discussed about web applications in 2 ways.</p>
+
+                        <p></p>
+
+                        <p>#1, it can host fake pages and replace the pre-existing ones with spoofed pages that are malicious.</p>
+
+                        <p></p>
+
+                        <p>Ever heard of a website that was hacked, and suddenly all the "legitimate" web pages on it were now all malicious and infected end user systems? Well this is how REAL threat actors go about it when they compromise a web application.</p>
+
+                        <p></p>
+
+                        <p>By exploiting this vulnerability in a LEGITIMATE web application, you not only trick the web browser and security in place to protect the end user from spoofed sites, BUT, you also trick the end user into visiting pages that are malicious, allowing them to steal sensitive credentials, and even land a botnet onto the end user network should they want to extend their overall attack surface.</p>
+
+                        <p></p>
+
+                        <p>#2, it can be used to host executables that are auto downloaded to the victim's system</p>
+
+                        <p></p>
+
+                        <p>It's no shocker that one of the bread and butters for a threat actor is to use this technique to host malicious payloads that are auto downloaded to the victim's system. This can be deadly if it's a majorly trusted executable whose signature is also spoofed and ran on the target system.</p>
+
+                        <p></p>
+
+                        <p>Imagine VSCode, a desktop application that is commonly trusted and downloaded onto millions of systems daily, suddenly replaced with a fake version that was trusted by any and all end user systems? This would lead to a massive breach on many systems, as it's also possible for an attacker to spoof the signature of the software to bypass security. They can even do stuff like DLL and Code injection, as well as many obfuscation techniques to go undetected. The list goes on with the amount of creativity and devastating dama that can be done should an attacker land this critical flaw against a well trusted system</p>
+
+                        <p></p>
+
+                        <p>#3 it can allow you to pull of RCE and directory traversal</p>
+
+                        <p></p>
+
+                        <p>If you manage to pop a php file to a web application, you basically have a remote backdoor into the system that you can tap into whenever you need to and further extend your reach to the network the web application is hosted on.</p>
+
+
+                        </br></br>
+                        <h4 id = "local" style = "text-align: center; color: #D43F52;">What is local file inclusion? 🕸🕸🎃🕸🕸
+
+                        </h4>
+
+						<p>Local file inclusion, also known as directory traversal, is a technique that allows you to browse the web application's file system. This isn't a form of RCE no, BUT, it does allow you to browse stuff that is outside the bounds of the web application root directory.</p>
+
+                        <p></p>
+
+                        <p>As mentioned before, when you visit a web application you are accessing the HTML files via the file system of the web application.</p>
+
+                        <p></p>
+
+                        <p>For security reasons, in order to prevent you from accessing files outside those bounds, you are prohibited from being able to view anything that is not a part of the main web application root directory that is configured for it.</p>
+
+                        <p></p>
+
+                        <p>Directory traversal bypasses this security and allows you to access any and all files that are sensitive on  the system.</p>
+
+                        <p></p>
+
+                        <p>This can also lead to RCE because should you, in the event there is an open SSH service for example, should you happen to find the credentials to connect with the right privileges, you can extend your attack surface.</p>
+
+                        <p></p>
+
+                        <p>You can also view any and all sensitive files to gain access to password data that can allow you to compromise any services that are tied to the web application, such as the administrative credentials for login pages if they happen to be there.</p>
+
+
                         
-                    Today I want to talk about two different types of file inclusion techniques that can be used to exploit web applications: Remote File Inclusion and local file inclusion. I also want to talk about the difference between the two since they tend to be mistaken for one another, as well as a few techniques that can be used to mitigate against them.
-                
-                </br>  
-                </br>                                                                    
-                                                                    
-                    Today's article will include a video demonstration of how to perform local file inclusion, also known as directory traversal, against a remote web application server. I'll even cover one of the best FREE beginner tools that you can use to apply the technique in a more automated fashion.
-        
-                </br>
-                </br> 
-        
-                    If you would like to see how to perform remote file inclusion, as well as the best means to do so, then I suggest checking out this video from patreon lab for the TCPBackdoor exploit
-                
-                </br>
-                </br>  
-                              
-                    Disclaimer
-                                                                        
-                </br>
-                </br>
-                                                
-                    As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let’s begin! 
-                    
+                        </br></br>
+                 <h4 id = "difference" style = "text-align: center; color: #D43F52;">The difference between the two? 🕸🕸🎃🕸🕸
+
+                        </h4>
+
+						<p>The biggest overall difference between remote file inclusion and local file inclusion, is that remote file inclusion is more you uploading and or replacing legitimate files on the web application to infect it.</p>
+
+                        <p></p>
+
+                        <p>Local file inclusion is more used to browse the system to find sensitive files and or credentials. You can exploit this in various ways, even through programs on the file system that print text data from various files in the web application system.</p>
+
+                        </br></br>
+                        <h4 id = "rce" style = "text-align: center; color: #D43F52;">What is RCE? 🕸🕸🎃🕸🕸
+
+                        </h4>
+
+						<p>RCE, RCE, RCE! You’ve been hearing me say this a lot, but I haven’t quite yet explained what it means right? </p>
+
+                        <p></p>
+
+                        <p>RCE, remote code execution, is the main goal and bread and butter for any and all forms of injection exploits against any system. It's commonly applied to various things: buffer overflows via obfuscated malware, remote code execution, SQL injection, etc. It’s also just a common end game for any form of breach. </p>
+
+                        <p></p>
+
+                        <p>Your end goal is to always find a way to RCE a system in order to control it directly via shell code commands, which can be combined with various coding techniques to deal more damage.</p>
+
+                    </br>
+			
+			<img src="counter.png" class="img-responsive" alt="portfolio img">
+				
+                </br></br>
+
+                <p> If you like to see the more advanced version of this article that talks about methods that can be used to mitigate, as well as any videos included, SUBSCRIBE TO MY PATREON CYBER SECURITY TIER!
+
+
+                </p>
+
                 </br>
                 </br>
                                                 
@@ -1806,7 +2039,7 @@
                                                                  
                 </p>
                                                 
-                    <a href = "https://www.linkedin.com/pulse/remotelocal-file-inclusion-roy-bull-futaba-webs--6odpe?trackingId=JXvx%2BhahS6COD5ensM4IBA%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bm3K9z0xDTcmXsFki1TmLpw%3D%3D" style = "text-decoration: none;"> 
+                    <a href = "https://futabawebs.github.io/Futaba_Webs/RemoteLocalFileInclusion" style = "text-decoration: none;"> 
                                             
                         <div class="d-grid">
                                                                   
