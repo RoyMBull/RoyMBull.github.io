@@ -2214,53 +2214,12 @@
                                             
             </div>
                                             
-            <div class = "modal-body">
-                                            
-                <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "smbclient.jpg" style = "border-color: red; background-color: black;"> </h3>
-                                                            
-                <p class = "pb-5 mt-4"> 
-                        
-                    For today’s tool video, I’m going to show you how to use the smbclient tool in order to sniff out and exploit smb file shares on windows systems to retrieve a sensitive file that contains password end user credentials.
-        
-                </br> 
-                </br>                                                                   
-                                                                    
-                    File shares are one of the most CRITICAL end points to protect on any system. There’s a reason why OS systems CLOSE their ports by default on most systems. 
-        
-                </br>
-                </br> 
-        
-                    Should a threat actor be able to breach the service, they will have access to any and all file shares on the system, as well as being able to upload and replace and or tamper with files within the FTP service. This can lead to a lot more complex exploits like living off the land for example.
-        
-                </br>
-                </br> 
-                              
-                    Disclaimer
-                                                                        
-                </br>
-                </br>
-                                                
-                    As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let’s begin! 
-                    
-                </br>
-                </br>
-                                                
-                    - The Hacker Who Laughs 🕸🕸🎃🕸🕸
-                                                                 
-                </p>
-                                                
-                    <a href = "https://www.patreon.com/posts/smbclient-109125435" style = "text-decoration: none;">
-                                            
-                        <div class="d-grid">
-                                                                  
-                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
-                                                
-                        </div>
-                                                
-                    </a>     
-                                            
-        
-            </div>
+           <div class = "modal-body">
+                                        
+          <p id = "smbc"> </p>                                        
+                                        
+                                        
+    </div>
                                             
             </div>
             </div>
@@ -2270,6 +2229,24 @@
     END OF MODALS
 -->
 
+<script> 
+
+const SmbClient = document.getElementById('SmbClient')
+      
+      SmbClient.addEventListener('show.bs.modal', () => {
+        
+        document.getElementById("smbc").innerHTML = `<img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "smbclient.jpg" style = "border-color: red; background-color: black;> </h3> <p class = "pb-5 mt-4"> For today’s tool video, I’m going to show you how to use the smbclient tool in order to sniff out and exploit smb file shares on windows systems to retrieve a sensitive file that contains password end user credentials. </br> </br> File shares are one of the most CRITICAL end points to protect on any system. There’s a reason why OS systems CLOSE their ports by default on most systems. </br> </br> Should a threat actor be able to breach the service, they will have access to any and all file shares on the system, as well as being able to upload and replace and or tamper with files within the FTP service. This can lead to a lot more complex exploits like living off the land for example. </br> </br> Disclaimer </br> </br> As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let’s begin! </br> </br> - The Hacker Who Laughs 🕸🕸🎃🕸🕸 </p> <a href = "https://www.patreon.com/posts/smbclient-109125435" style = "text-decoration: none;"> <div class="d-grid"> <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button> </div> </a>`;
+        
+    })
+
+      SmbClient.addEventListener('hide.bs.modal', () => {
+        
+        document.getElementById("smbc").innerHTML = '';
+
+      })
+
+    
+</script>
 
 </body>
 </html>

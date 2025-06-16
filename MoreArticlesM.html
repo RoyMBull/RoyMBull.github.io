@@ -2556,127 +2556,10 @@
         
                     </div>
         
-                    <div class = "modal-body">
+                   <div class = "modal-body">
         
-                        <img class = "img-thumbnail mt-4 mx-3 Modal_Pic_BotNet" src = "Botnet.png" style = "border-color: red; background-color: black;"> </h3>
-                        
-                        </br></br>
-
-                        <h3 class="media-heading" style = "text-align: center; color: #D43F52;"> 🕸 Synopsis 🕸 </h3>
-								<p>Today we are going to be talking about how to build a custom backdoor exploit in Python3, as well as what RCE is, including various methods to achieve it. These two techniques are your bread and butter and are what you’ll be going for during a lot of pentests, CTF challenges, etc,  regardless of how you go about it: SQL injection, OS command injection, remote file inclusion, etc. It’s really all the same. If you’ve ever noticed, during a lot of big hacks, one of the most common things that ALWAYS happens is that the attackers somehow discover a way to RCE the system, allowing them to gain backdoor access and formulate something called a “botnet”, allowing them to deliver various payloads and command and control the network. Before I dive into this, as always I want to get you up to speed on some terminology so that you understand what’s going on. Let’s go over the main TCP/IP handshake so you understand the overall process.
-
-
-
-
-								</br> 
-								</br>
-							
-                                    
-                               <strong style = "text-align: center; color: #D43F52;"> <im> Disclaimer</im></strong> 
-
-                                </br> 
-								</br>
-                                    As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let's begin!
-
-
-								</p>
-
-                    </br>
-</br>
-                         <h4 id = "tcp" style = "text-align: center; color: #D43F52;">What is the TCP/IP 3-way-hand-shake? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>First, In order for you to fully understand how all of this works, we need to go over the TCP/IP 3-way-handshake, as well as how sockets/ports work, and how all of this ties in together. This carries over on a fundamental level and gets you into the habit of understanding how network data communications function on a logical and "visual" level. </p>
-
-                        <p></p>
-
-                        <p>Let’s start off with the classic Web application example. When you visit a web application, you begin a process that is known as the TCP/IP handshake, which occurs in 3 steps via flags set in ICMP data packets: SYN, where the client is initiating a connection to the server, SYN/ACK, where the server responds, acknowledging the session being inquired, followed by ACK, which is the client side sends to finalize and begin the connection to the server. All of this also applies to the basic principles of how systems talk to each other over a network, which is what makes up the internet as a whole as it’s just a larger scale of that. </p>
-</br>
-</br>
-
-                        <h4 id = "backdoor" style = "text-align: center; color: #D43F52;">What is a BackDoor? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>Backdoors, also known as RAT, remote access Trojan, is the form of interconnecting two systems together maliciously in order to send data and or control a system. It can vary depending on what it’s needed for. In most cases it’s used as a way to botnet, command and control, and RCE a system. Stuff like a meterpreter shell in metasploit is a common example that is often used. It’s also known as a reverse shell exploit which is the same concept.</p>
-
-                        <p></p>
-
-                        <p>As the name would suggest, often it’s used via Trojan malware methods, or “companion” viruses that trick the user into clicking on it with stuff like “fake adds” or “false program icons” on your computer screen. Once you click on it, you’ve given the attacker access to your system. </p>
-
-
-                        </br>
-</br>
-                        
-                    <h4 id = "rce" style = "text-align: center; color: #D43F52;">What is RCE? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>RCE, remote code execution, is when you are able to remotely control a system via shell code commands Shell code commands are terminal commands, things like bash and powershell for example. For hackers, this can be achieved in a variety of different ways. SQL injection for example can achieve this via the “system” command feature that comes packaged with SQL. SQL allows you to use this to send shell code commands to the main system. This means that if you are able to pwn a server via SQL injection you also have the potential to RCE it in the process. </p>
-
-                </br></br>
-
-                        
-            <h4 id = "botnet" style = "text-align: center; color: #D43F52;">What is a Botnet? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>Botnetting is the overall process of infecting a variety of different systems on a network, controlling them like bots/zombies in order to further one’s access to the network, compromising the IT infrastructure further. This takes place during the maintaining access step of the pentesting methodology, and is where you establish ways to stay connected to a compromised network. This goes into something that is known as command in control. </p>
-
-                        <p></p>
-                        
-                        
-                    </br></br>
-
-                    
-            <h4 id = "cmc" style = "text-align: center; color: #D43F52;">What is command and control? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>Command and control is when you control, as the botmaster of the botnet, all the systems on the network and do regular checks on them to see if they are still alive. Think of it as you “blueteaming” for your “botnet”. For example, you can do stuff like beacons, which sends data packets to check if the system is still alive, or even install logs so that you get regular status updates on them. </p>
-
-                        <p></p>
-                        
-                        
-                    </br></br>
-
-            <h4 id = "clientserver" style = "text-align: center; color: #D43F52;">What is the difference between Client and Server? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>VERY CRUCIAL, and this is something that will play a vital role in your understanding of the difference between client and server. A client connects and sends data to the server, and a server “listens”. What do I mean by that? Servers have open ports that are in a listening state that wait for incoming connections and data from clients, and then handles and responds to them accordingly.  The best way to think of this would be in the sense of ordering from an actual server via a restaurant menu. You put in an order, and then the server responds by delivering it to you. </p>
-
-                        <p></p>
-
-                         </br>
-			
-			<img src="counter.png" class="img-responsive" alt="portfolio img">
-				
-                </br></br>
-
-                <p> If you like to see the more advanced version of this article that talks about methods that can be used to mitigate, as well as any videos included, SUBSCRIBE TO MY PATREON CYBER SECURITY TIER!
-
-
-                </p>
-
-                        </br>
-                    </br>
-    
-                            - The Hacker Who Laughs 🕸🕸🎃🕸🕸
-                         
-                        </p>
-        
-                        <a href = "https://futabawebs.github.io/Futaba_Webs/HowtoBotnet" style = "text-decoration: none;"> 
-    
-                            <div class="d-grid">
-                          
-                                <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
-        
-                            </div>
-        
-                        </a>     
-        
+                       
+        <p id = "bot"> </p>
         
         
                     </div>
@@ -2702,93 +2585,9 @@
         
                     </div>
         
-                    <div class = "modal-body">
+                   <div class = "modal-body">
         
-                        <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "Masq.jpeg" style = "border-color: red; background-color: black;"> </h3>
-                        
-
-                        </br> 
-								</br>
-
-                       <h3 class="media-heading" style = "text-align: center; color: #D43F52;"> 🕸 Synopsis 🕸 </h3>
-								<p>Today we are going to be talking about ARP poisoning and how to poison a network. A lot of this is going to be heavy networking based, so do mind your fundamentals. I'll explain some stuff along the way. As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pentest on anyone's network unless it is your own, or you have permission to do so.
-
-
-								</br> 
-								</br>
-							
-                                    
-                               <strong> <im> Disclaimer</im></strong> 
-
-                                </br> 
-								</br>
-                                    As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let's begin!
-
-
-								</p>
-
-
-                          </br> 
-								</br>
-
-                        <h4 id = "premise" style = "text-align: center; color: #D43F52;">Premise 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>In order to walk you through how to perform the technique, lets go over a few things first like: ARP, pingsweep, and spoofing. ARP, address resolution protocol, is what NSlookup is, but for MAC addresses. ARP translates the corresponding MAC address back to the IP of the system it pertained to. Pingsweeping is the process of pinging a series of IP addresses via a network range to check for ICMP responses. No response typically indicates a system is not up, a response indicates the system is up. There are a variety of different scan types, each with unique return results. Spoofing is the concept of masquerading as another entity, whether it be a machine, such as a spoofed MAC address, or a person for social engineering exploits, such as a spoofed ID badge for example. Now that we have the basics covered out of the way, lets begin!</p>
-
-                        <p></p>
-
-                        <p>As always, any and all advanced versions of this article with a video guide if given will be for PAID patreon members only!!</p>
-
-                        </br> 
-								</br>
-
-                        <h4 id = "arp" style = "text-align: center; color: #D43F52;">What is ARP Poisoning?  🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>How does ARP poisoning work? Essentially you are masquerading your IP and MAC address on the internal network as another system in order to receive any network traffic data intended for it. When you communicate on the network, whether it be internally (the local network) or externally (a web server), the default gateway, your router, handles the communication for you and routes it on your behalf. When you receive a response it also handles and forwards that information to you as well. If you masquerade as another system on the network, it's essentially going to send you a copy of the return information from the victim as well. In the process, since you are also on that same system on the network, you'll also be able to see any outgoing network traffic from the victim itself and receive a copy of that as well. This means that if any of those communications are insecure, such as HTTP for example, you'll be able to see any and all data in plain text format. If the victim sent over any POST HTTP request data for example, you will be able to see any credentials they sent over to authenticate to a web server. This methodology is what is also known as a form of a man in the middle attack exploit. A Man in the Middle attack is when you intercept a communication for one or more parties involved and either steal or forward that data, manipulating it, as if you were the original sender, unsuspected to said parties involved.</p>
-</br> 
-								</br>
-                       
- <h4 id = "subnetting" style = "text-align: center; color: #D43F52;">What is Subnetting? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>You might be asking yourself what is a subnet? Subnets are essentially networks that have been fragmented into smaller sub networks, hence subnetting. Each subnet is assigned a unique "subnet mask", the "/24" that you see here, that allows you to identify each subnet. Each subnet has it's own pool of IP addresses that can be assigned to members of that particular subnet. This allows for segmentation practices that prevent stuff like single point of failures, which are essentially monolithic based infrastructures that nest everything into one place. For network security purposes, when you do this you make it HARD for attackers to find everything, decreasing your attack surface, securing your systems greatly. With subnetting it's also possible to control which subnets can talk to each other, which is the main reason we begin a main hunt for them via the route and traceroute commands.</p>
-                        
-                        
-                    </br>
-			
-                    </br> 
-			<img src="counter.png" class="img-responsive" alt="portfolio img">
-				
-            </br>
-                </br>
-
-                <p> If you like to see the more advanced version of this article that talks about methods that can be used to mitigate, as well as any videos included, SUBSCRIBE TO MY PATREON CYBER SECURITY TIER!
-
-
-                </p>
-
-                        </br>
-                    </br>
-    
-                            - The Hacker Who Laughs 🕸🕸🎃🕸🕸
-                         
-                        </p>
-        
-                        <a href = "https://futabawebs.github.io/Futaba_Webs/ARP_Poisoning" style = "text-decoration: none;"> 
-    
-                            <div class="d-grid">
-                          
-                                <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
-        
-                            </div>
-        
-                        </a>     
-        
+                      <p id = "arp"> </p>
         
         
                     </div>
@@ -2814,139 +2613,10 @@
         
                     </div>
         
-                    <div class = "modal-body">
+                   <div class = "modal-body">
         
-                        <img class = "img-thumbnail mt-4 Modal_Pic_CCTV" src = "CCTV.png" style = "border-color: red; background-color: black;"> </h3>
-                      
-                        </br></br>
-                      
-                        <h3 class="media-heading" style = "text-align: center; color: #D43F52;"> 🕸 Synopsis 🕸 </h3>
-								<p>Today we are going to be covering the Shodan API and how to use it for CCTV hacking to tap into camera feeds, as well as how to gather information about various IoT gateway devices on the internet and exploit the services on them. This is also going to dive into complex topics like: port forwarding, router exploitation, the routersploit framework, the metasploit framework, as well as how the internet works under the hood. I'm not going to directly tap into a camera feed live as that's illegal (even if it's a public cam for a park), but I am going to show you how to talk to specific ports using an IP address, whether it be in numeral format or alphabetical format. It's the same process you'll be using to tap into camera feeds should you find an open port.
-
-
-								</br> 
-								</br>
-							
-                                    
-                               <strong> <im> Disclaimer</im></strong> 
-
-                                </br> 
-								</br>
-                                    As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let's begin!
-
-
-								</p>
-
-
-                                </br></br>
-
-                                <h4 id = "premise" style = "text-align: center; color: #D43F52;">Premise 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>For this demonstration, since we'll be using metasploit for it, you're going to need a Shodan premium membership to get a lifetime API key(s). Sadly, Shodan now requires you to be a premium member if you wish to use the API freely. </p>
-
-                        <p></p>
-
-                        <p>You can still query searches on the site if you are looking for something and tap into feeds via GUI, but you won't have access to the full features of the core API if you wish to craft your own exploits with them via metasploit and your own code for example.</p>
-
-                        <p></p>
-
-                        <p>Link to <a href = "https://shodan.io/" style = "text-decoration: none;">Shodan</a></p>
-
-                        <p></p>
-
-                        <p>Like always, before we dive into the actual exploit, let's touch up on a bit of terminology and major concepts so that you understand how the overall process works. Wouldn't be a good article without that.</p>
-
-                        </br></br>
-
-                        <h4 id = "api" style = "text-align: center; color: #D43F52;">What is an API? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>You've probably heard this term a lot, and probably need a bit of clarification on what this is. An API (Application programming interface) is essentially the core biological functions that make up a computer program. In most cases nowadays it's used in context with "automation" software for web applications, stuff like the "Shodan API" for example, that have core integrated functions that allow you to query information about IoT devices on the web. Another example of an API, would be a kernel, which pertains to the core functions that make up an operating system, and dictates how hardware and software interact with each other, allowing you to control the system. </p>
-
-                        <p></p>
-
-                        <p>Another good example would be the Windows32 API, that hackers and researchers use for stuff like DLL and Code injections to hook and hijack Windows system processes. They can also use it for little pranks like preventing you from opening your CD Drive, or shutting off your monitor by broadcasting a system command to all handles on the main system, shutting it off and on as they please. </p>
-                      
-                        </br></br>
-
-                    <h4 id = "shodan" style = "text-align: center; color: #D43F52;">What is the Shodan API? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>The Shodan API is an OSINT tool that is used to track and gather information about various IoT gateway devices (routers), services hosted on them, as well as their corresponding IP's that are connected to the internet. This allows you to gain insight and exploit various services hosted on them and tap into things like: CCTV surveillance systems, home security systems, as well as file sharing services, SSH services, and of course, WEB APPLICATION services. You can also exploit any vulnerabilities that are in the firmware of the router itself, allowing you to pwn it and compromise the internal network.</p>
-
-                        <p></p>
-
-                        <p>Fun fact, when you are talking to a web server, you aren't actually talking to the main system itself directly, you are talking to the router that is hosting the service on behalf of it, indirectly. This also comes into play when you are port scanning with NMAP. When you scan with NMAP, you're actually scanning the router that is hosting many services on behalf of other systems on the internal network, or a singular one if that's the case.</p>
-
-                        <p></p>
-
-                        <p>As we know, the internet is made up of various communication devices, routers, that interconnect to one another, allowing end users to exchange data, access services like web applications (web sites), and communicate over the internet. All of this is possible through a technique known as port forwarding, that allows internal networks to safely communicate with each other. The internet wouldn't be possible without it, and without it, internal networks and highly sensitive information would be highly exposed and easily compromised.</p>
-
-                        </br></br>
-
-
-                        <h4 id = "router" style = "text-align: center; color: #D43F52;">What is a Router? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>A router is a form of network communication device that is used to host a network, forward communications to and from the network via DNS, domain name server, as well as assign IP addresses to systems that are on the local network. The router is also known as the default gateway.</p>
-
-                        <p></p>
-
-                        </br></br>
-                        
-                 <h4 id = "dns" style = "text-align: center; color: #D43F52;">What is DNS? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>DNS, Domain name server, hosted on port 53, is what allows you to query, as well as translate the alphabetical address of a website into something that the machine can understand, numeral format, routing you to your destination. Alphabetical names are used because they are a lot easier for us to remember.</p>
-
-                        <p></p>
-
-                       </br></br>
-
-            <h4 id = "dhcp" style = "text-align: center; color: #D43F52;">What is DHCP? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>DHCP, dynamic host configuration protocol, is what is used to automatically assign  IP addresses to host systems  on the network, otherwise systems would have to statically assign themselves as one that falls within the network range. If this isn't set properly it can cause issues such as you being unable to access the internet, even though it says you have internet.</p>
-
-                        <p></p>
-                      
-                        
-                    </br></br>
-			
-			<img src="counter.png" class="img-responsive" alt="portfolio img">
-				
-                </br></br>
-
-                <p> If you like to see the more advanced version of this article that talks about methods that can be used to mitigate, as well as any videos included, SUBSCRIBE TO MY PATREON CYBER SECURITY TIER!
-
-
-                </p>
-
-
-                        </br>
-                    </br>
-    
-                            - The Hacker Who Laughs 🕸🕸🎃🕸🕸
-                         
-                        </p>
-        
-                        <a href = "https://futabawebs.github.io/Futaba_Webs/CCTVHacking" style = "text-decoration: none;"> 
-    
-                            <div class="d-grid">
                           
-                                <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
-        
-                            </div>
-        
-                        </a>     
-        
+        <p id = "cctv"> </p>
         
         
                     </div>
@@ -2974,98 +2644,7 @@
         
                     <div class = "modal-body">
         
-                        <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "SQL.jpeg" style = "border-color: red; background-color: black;"> </h3>
-                        
-                        </br></br>
-
-                      <h3 class="media-heading" style = "text-align: center; color: #D43F52;"> 🕸 Synopsis 🕸 </h3>
-								<p>Today I'll be covering SQL injection and advanced fuzzing and filter bypassing techniques you need to know to be a successful pen-tester. You can't avoid not knowing this as you'll see it regardless of what side you are on: blue team, if you are defending against it, or red team, if you are checking if it's a weakness in the system. As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, lets begin!
-
-								</br> 
-								</br>
-							
-                                    
-                               <strong> <im> Disclaimer</im></strong> 
-
-                                </br> 
-								</br>
-                                    As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let's begin!
-
-
-								</p>
-
-
-                                </br></br>
-
-
-                        <h4 id = "sql" style = "text-align: center; color: #D43F52;">What is SQL Injection? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>What exactly is SQL injection? SQL injection exploits invalid user input, input that isn't properly validated when being handled to the server side from the client side when the end user performs a query to the server: logins, searches, etc. This allows you to take advantage of the input you send to manipulate the server-side back-end to retrieve additional data that isn't intended for you. This allows you to access stuff like: additional information from the main database table you are linked to, additional database tables, and additional functions and or features of the back-end of the database that you are talking to such as system command features that allow you to pivot and hijack the system further for OS command injection exploits. You can even manipulate the very privileges that are set for you and upgrade yourself to admin if you wanted to either via OS command injection if system commands are enabled on the SQL server, or via the usage of SQL queries that you can use to edit your information in the system. The possibilities are endless and are only limited based on the scope of your imagination. If you are wondering what OS command injection exploits are, it's essentially where you inject shell-code commands like bash and power-shell to the server side end to control the system directly. The overall premise of injection methods is to exploit the processes and features of the server side you are talking to in order to control it. This requires you to do a bit of recon on how the server works in order to understand what weak points to look for. We'll eventually cover how to search for injection types a system might be vulnerable to.</p>
-
-                    
-                        </br></br>
-
-                    <h4 id = "tcp" style = "text-align: center; color: #D43F52;">What is TCP/IP? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>But first, In order for you to fully understand how SQL injection works, we need to go over the TCP/IP 3-way-handshake. This carries over on a fundamental level and gets you into the habit of understanding how network data communications function on a logical and "visual" level. SQL injection is often hard due to a lot of people unable to "visualize" how the process works. Visualization is KEY in tech, especially Cyber Security.</p>
-
-                        <p></p>
-
-                        <p>When you visit a web application, you begin a process that is known as the TCP/IP handshake, which occurs in 3 steps via flags set in ICMP data packets: SYN, where the client is initiating a connection to the server, SYN/ACK, where the server responds, acknowledging the session being inquired, followed by ACK, which the client sends to finalize and begin the connection to the server. SQL queries follow a similar order: you input data into the parameter of a web application, and then that information is processed into a structured query, and then sent to the server side for processing on the back-end, in which the server responds back to you and you acknowledge it.</p>
-
-                        <p></p>
-
-                        <p>A good place to get a visual demonstration of what I'm talking about in regards to SQL injection can be found here at this link.</p>
-
-                        </br></br>
-
-                         <h4 id = "tcp" style = "text-align: center; color: #D43F52;">What is TCP/IP? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>But first, In order for you to fully understand how SQL injection works, we need to go over the TCP/IP 3-way-handshake. This carries over on a fundamental level and gets you into the habit of understanding how network data communications function on a logical and "visual" level. SQL injection is often hard due to a lot of people unable to "visualize" how the process works. Visualization is KEY in tech, especially Cyber Security.</p>
-
-                        <p></p>
-
-                        <p>When you visit a web application, you begin a process that is known as the TCP/IP handshake, which occurs in 3 steps via flags set in ICMP data packets: SYN, where the client is initiating a connection to the server, SYN/ACK, where the server responds, acknowledging the session being inquired, followed by ACK, which the client sends to finalize and begin the connection to the server. SQL queries follow a similar order: you input data into the parameter of a web application, and then that information is processed into a structured query, and then sent to the server side for processing on the back-end, in which the server responds back to you and you acknowledge it.</p>
-
-                        <p></p>
-
-                        <p>A good place to get a visual demonstration of what I'm talking about in regards to SQL injection can be found here at this link.</p>
-
-
-                        
-                        
-                    </br></br>
-			
-			<img src="counter.png" class="img-responsive" alt="portfolio img">
-				
-                </br></br>
-
-                <p> If you like to see the more advanced version of this article that talks about methods that can be used to mitigate, as well as any videos included, SUBSCRIBE TO MY PATREON CYBER SECURITY TIER!
-
-
-                </p>
-
-                        </br>
-                    </br>
-    
-                            - The Hacker Who Laughs 🕸🕸🎃🕸🕸                     
-                        </p>
-        
-                        <a href = "https://futabawebs.github.io/Futaba_Webs/SQLInjection" style = "text-decoration: none;"> 
-    
-                            <div class="d-grid">
-                          
-                                <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
-        
-                            </div>
-        
-                        </a>     
+                          <p id = "sql"> </p>
         
         
         
@@ -3092,104 +2671,9 @@
         
                     </div>
         
-                    <div class = "modal-body">
+                <div class = "modal-body">
         
-                        <img class = "img-thumbnail mt-4 Modal_Pic_LAN_Turtle" src = "BackdoorHacker.jpg" style = "border-color: red; background-color: black;"> </h3>
-                        
-                        </br></br>
-
-                         <h4 id = "premise" style = "text-align: center; color: #D43F52;">Premise 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>The two scripts that are going to be used are the ones from the previous article on "How to Botnet". The client side is going to be integrated with Arduino, where it will will write its own code live and connect back to the server, whereas the server side, the python script, is going to sit in a listening state on the system, waiting for the client to connect to it so it can be fed instructions from the client side to control the system. Traditionally you always want to have the server sitting on the victim system so that you can connect and interact with it, but nowadays making your back-doors peer to peer is actually best because it allows your setup to be more versatile. For safety purposes, it's just going to connect back and that's it, nothing else! The real version that is unsafe to use stays with me. </p>
-
-                        <p></p>
-
-                        <p>Sadly, this is one of those projects that you NEED to have the right equipment for to pull off, but you can still follow along the 2 demonstration videos here. One, that shows the code being automated, and then another, of me connecting it live in front  of you as proof it works. </p>
-
-						🎃 <a href = "https://www.youtube.com/watch?v=xEtP3p976dM" style = "text-decoration: none;">YouTube LIVE Demo</a>
-
-						</br>
-					</br>		
-
-                            🎃 <a href = "https://drive.google.com/file/d/1dJtIvUE0sjXatg6xlN_iNqjcDlSjP1X3/view?usp=sharing" style = "text-decoration: none;"> Physical LIVE Demo</a>
-
-						</br>
-					</br>	
-
-                            🎃 <a href = "https://github.com/RoyMBull/Python-Pen-Testing-Tools/blob/main/Python%20PenTesting%20Tools/TCPServerBackDoor.py" style = "text-decoration: none;">TCP Server Backdoor Script</a>
-
-						</br>
-					</br>	
-
-                            🎃 <a href = "https://www.adafruit.com/product/2771?gad_source=1&gclid=CjwKCAiA29auBhBxEiwAnKcSqhgYKutZ7hyr7HrVcAtP2s6pWWmpxFnqvGjif_qa6GxIQivcWPL05BoCGB4QAvD_Bw" style = "text-decoration: none;">Link to board</a>
-
-						</br>
-					</br>	
-
-                            🎃 <a href = "https://adafruit.github.io/arduino-board-index/package_adafruit_index.json" style = "text-decoration: none;">Link to json file for board</a>
-
-						</br>
-					</br>	
-
-                            🎃 <a href = "https://www.arduino.cc/en/software" style = "text-decoration: none;">Link to Arduino IDE: (USE THE 2.O OR HIGHER ONE!!!)</a>
-
-						</br>
-					</br>	</br>
-
-                      <h4 id = "rubber" style = "text-align: center; color: #D43F52;">What is a Rubber Ducky? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>A rubber ducky is a keyboard injection exploit that uses pre-rendered keystrokes via virtual keyboard in order to inject a series of commands and payloads that infect the system in a variety of ways. It does this by communicating with the virtual keyboard on the kernel layer of your operating system. This allows it to mimic and control the system as if it were an actual person.</p>
-
-                        <p></p>
-
-                        <p>Think of it like if I were to program it to write out this whole articles in front of you in a matter of seconds. You can do all sorts of stuff: pop open shells, run scripts, have it write it's own code and then execute it, log into accounts, botnet a system, even serve as a form of retro malware or a bruteforcer tool if you wanted to.</p>
-
-                        </br></br>
-
-
-                     <h4 id = "ducky" style = "text-align: center; color: #D43F52;">Why is it called a Rubber Ducky? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-                        <p>It's commonly known as a rubber ducky due to its innocent-like appearance. The goal of it typically is to insert it manually, OR, have someone pick it up and connect it to a USB port on a system, triggering it to go off. There are many ways to create one, but for today, we are going to do it using the Arduino libraries "keyboard" module to get this up and running.</p>
-
-                        <p></p>
-
-                        <p>Sadly at the time of making this I had to do more work than necessary since I didn't have storage means to  load my code when it connects... SOOO..... I HAD IT WRITE IT'S OWN CODE LIVE. It's actually more impressive when you see the code write itself live in front of you.</p>
-
-                        <p></p>
-
-                        <p>Before we start this, let's go over some of the main key functions so that you understand what is going on.</p>
-
-                        </br></br>
-
-                        <img src="counter.png" class="img-responsive" alt="portfolio img">
-				
-                </br></br>
-
-                <p> If you like to see the more advanced version of this article that talks about methods that can be used to mitigate, as well as any videos included, SUBSCRIBE TO MY PATREON CYBER SECURITY TIER!
-
-
-                </p>
-
-                            - The Hacker Who Laughs 🕸🕸🎃🕸🕸
-                         
-                        </p>
-        
-                        <a href = "https://futabawebs.github.io/Futaba_Webs/LANTurtle" style = "text-decoration: none;"> 
-    
-                            <div class="d-grid">
-                          
-                                <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
-        
-                            </div>
-        
-                        </a>     
-        
+                    <p id = "turtle"> </p>
         
         
                     </div>
@@ -3215,70 +2699,10 @@
         
                     </div>
         
-                    <div class = "modal-body">
+                 <div class = "modal-body">
         
-                        <img class = "img-thumbnail mt-4 Modal_Pic_Ransomware" src = "MitM-Hero.png" style = "border-color: red; background-color: black; height: 250px;"> </h3>
-                        
-                        </br></br>
-
-                       <h4 id = "crypto" style = "text-align: center; color: #D43F52;">What is Ransomware? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>What is ransomware? Before I answer that question, I first need to explain to you what FDE(Full Disk Encryption) is. FDE is basically stuff like Bitlocker, where it enumerates the file system and encrypts data on the system in order to prevent data theft. In this case, it’s used for defensive purposes. BUT, what if I told you,  it could be used maliciously? That’s what Ransomware is. It's a form of crypto malware that uses FDE to maliciously enumerate and encrypt file system data, holding it hostage, with the crypto keys left in the hands of the attacker, forcing the victim to pay a ransom in order to retrieve the keys to decrypt the data. The real data is excavated off the system in the process with the encrypted version remaining on the system. </p>
-
-                        <p></p>
-
-                        <p>Now you might be asking yourself, how do hackers create such complex and intricate malware? It must be so complex and time consuming to write right? Well... it's actually not that hard to write. All you're really doing is combining basic file disk enumeration tactics with either asymmetric or symmetric encryption methods, and some other things to spice it up a bit. I've actually prepared a test sample for today's study, as well as a demonstration video to show you how the code works. </p>
-
-                        <p></p>
-
-                        <p>Link to the main the demonstration video can be found <a href = "https://www.youtube.com/watch?v=Jh15ZOUWVcg" style = "text-decoration: none;">here</a>.</p>
-
-                        <p></p>
-
-                        <p>Link to the main Code can be found <a href = "https://github.com/RoyMBull/Python-Pen-Testing-Tools/blob/main/Python%20PenTesting%20Tools/Ransomeware.py" style = "text-decoration: none;">here</a>. IF YOU WANT TO BROWSE IT SAFELY JUST GO TO MY GITHUB PAGE AND VIEW "PYTHON-PENTESTING TOOLS" TO VIEW IT FROM THE BROWSER THAT WAY AS WELL.</p>
-
-                        </br></br>
-
-                         <h4 id = "import" style = "text-align: center; color: #D43F52;">Importing Serialization Module 🕸🕸🎃🕸🕸
-
-                        </h4>
-
                     
-
-						<p>The first thing my code is going to do is import the serialization module and any sub modules with it: RSA, hashes, padding, etc. We need this in order to: create, format, as well as add things like padding and hashing in order to add key stretching, which adds key complexity to the algorithm. What is "Key Stretching"? Key stretching allows us to create longer & more complex crypto keys of a smaller size. This makes the crypto key much harder to deduce via cipher text analysis attacks, as well as allow max computational performance. Typically the larger the key, the longer it takes to encrypt/decrypt. We’re also going to add in the main os/os.sys modules to send shell code commands to the main system, as well as create any directories and pivot the system for enumeration. </p>
-
-                        <p></p>
-
-                        
-                    </br>
-			
-			<img src="counter.png" class="img-responsive" alt="portfolio img">
-				
-                </br></br>
-
-                <p> If you like to see the more advanced version of this article that talks about methods that can be used to mitigate, as well as any videos included, SUBSCRIBE TO MY PATREON CYBER SECURITY TIER!
-
-
-                </p>
-                   
-                        </br></br>
-    
-                            - The Hacker Who Laughs 🕸🕸🎃🕸🕸
-                         
-                        </p>
-        
-                        <a href = "https://futabawebs.github.io/Futaba_Webs/WhatIsRansomeWare" style = "text-decoration: none;"> 
-    
-                            <div class="d-grid">
-                          
-                                <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
-        
-                            </div>
-        
-                        </a>     
-        
+        <p id = "ransom"> </p>
         
         
                     </div>
@@ -3304,36 +2728,9 @@
         
                     </div>
         
-                    <div class = "modal-body">
+                  <div class = "modal-body">
         
-                        <img class = "img-thumbnail mt-4 Modal_Pic_Resources" src = "Resources.jpeg" style = "border-color: red; background-color: black;"> </h3>
-                        
-                        <p class = "pb-5 mt-4"> 
-                            
-                            SOOOOOO, as promised, here is the list of any and all resources I wanted to openly share of mine that I personally recommend and use all the time. It's a special celebration for finally reaching close to 300 connections on here.
-    
-                        </br>
-                    </br>
-    
-                            If you would like to help other people have access to HIGH QUALITY resources so they can learn, then I suggest MEGA sharing this so that connections in your network see it!
-    
-                        </br>
-                    </br>
-    
-                            - The Hacker Who Laughs 🕸🕸🎃🕸🕸 
-                         
-                        </p>
-        
-                        <a href = "https://www.linkedin.com/pulse/cyber-security-resources-2024-roy-bull-futaba-webs--ssynf?trackingId=8Um162STR2isGWcRpq0Whw%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3B9sbB2r0zR%2FSMqA05Y3ccRw%3D%3D" style = "text-decoration: none;"> 
-    
-                            <div class="d-grid">
-                          
-                                <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
-        
-                            </div>
-        
-                        </a>     
-        
+                       <p id = "frees"> </p>
         
         
                     </div>
@@ -3359,121 +2756,9 @@
         
                     </div>
         
-                    <div class = "modal-body">
+                   <div class = "modal-body">
         
-                        <img class = "img-thumbnail mt-4 Modal_Pic_Man_Browser" src = "MITB.png" style = "border-color: red; background-color: black;"> </h3>
-                        
-                        </br></br>
-
-                        <h4 id = "premise" style = "text-align: center; color: #D43F52;">Premise 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>Social engineering is one of the most commonly used tactics, as well as something that is known as a physical hack.</p>
-            
-                        <p></p>
-    
-                        <p>As always, before we dive right into this, some terminology needs to be explained so that you can follow along with the article.</p>
-
-                        </br></br>
-
-
-                        <h4 id = "mitb" style = "text-align: center; color: #D43F52;">What is a Man in The Browse Exploit? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>MITB, man in the browser, is a form of social engineering exploit that masquerades as your favorite web browser in order to phish sensitive credentials out of you, and is considered a form of a man in the middle attack. It's such an exact copy that you literally cannot tell the difference. The only difference you'll notice is that your "sessions" don't seem to quite be there. What do I mean by that? Ever opened a browser in private mode and realized you had to log back into all of your stuff? That's what I'm talking about, except it doesn't have the little incognito icon or any indicators you are used to seeing that would give it away, or at least NOT anymore. If the attacker is smart, then they can locate where cookies and saved data are stored onto the system, and then integrate it into this, BUT, that would defeat the purpose of having you re-enter them in again manually so they can exploit you. </p>
-
-                        <p></p>
-
-                        <p>Even still this form of exploit will trick you just the same. It even has the exact settings and pages, and features as the original, because it IS the original, technically. This allows you to steal credentials and other forms of sensitive information such as cookies for example from end user browser sessions. </p>
-
-                        <p></p>
-
-                        <p>The most dangerous part about this exploit is that:</p>
-
-                        <p></p>
-
-                        <p>🎃 One, it's custom and can go beyond the typical scope of just phishing data from unsuspecting end users, and </p>
-
-                        <p></p>
-
-                        <p>🎃 Two, it takes advantage of the fact you ALWAYS, have your browser open and that you are constantly clicking away at those little keystrokes of yours. This means you can get two for one and install all sorts of malware, run background processes, and even install a keylogger on the system and send data to a remote server you have to log end user credentials. It can get even more scary if you can replicate a screen watch feature in the meterpreter shell to watch the end users screen as they type. This allows you to bypass stuff like MFA, where you can see the EXACT token information being sent. </p>
-
-                        <p></p>
-
-                        <p>For this project you are going to need something that is known as a "chromium" driver, since we are going to be working with Google Chrome for this exploit. This driver, along with the selenium module has come A LONG WAY. It originally ONLY displayed the chromium browser which was a dead give away, but now, it displays the REAL thing, so there is nothing that gives it away if you manage to spoof the chrome signature and place it on the end user system.</p>
-
-                        <p></p>
-
-                        <p>Link to <a href = "https://chromedriver.chromium.org/downloads" style = "text-decoration: none;">Chromium Driver</a> </p>
-
-                        </br></br>
-
-                    <h4 id = "chromium" style = "text-align: center; color: #D43F52;">What is a Chromium Driver? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>The Chromium driver is what we are going to be using to mimic the chrome browser that is installed on your system, along with a module in python that is called "selenium", which allows you to call up a series of web drivers: chrome, Firefox, etc etc, and launch the real thing, even with a default page. It’s most commonly used for web application development across all resolutions for all browsers.</p>
-
-                        <p></p>
-
-                        <p>This is combined with Selenium which is a module in python that allows you to develop test case scenarios for browser integration, for stuff like add on's and extensions, or, if you are the devs, it allows you to test for new in house main features before they are added to the browser. </p>
-
-                        <p></p>
-
-                        <p>In the right hand’s, it’s harmless, BUT, in the right hands it can do a lot of damage. </p>
-
-                        </br></br>
-
-                    <h4 id = "physical" style = "text-align: center; color: #D43F52;">What is a Physical Hack? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>A physical hack is a scenario where the attacker has physical access to the system, and can perform stuff like: inserting a keylogger dongle into systems to log end user keystrokes, installing back-doors and malware, taking advantage of admin access and other trusted systems and services on the network to “live off the land”, as well as bypass security further by disabling firewall systems that might block backdoor access so the attacker can maintain access, which can allow them to further do stuff like: excavate data off the network, further extend their level of access to various other sub-networks and sub domains that might belong to the infrastructure, all while being able to go undetected.</p>
-
-                        <p></p>
-                        
-                        </br></br>
-
-                 <h4 id = "connection" style = "text-align: center; color: #D43F52;">What is  the connection between a Physical hack and Social Engineering? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>Social engineering allows you to manipulate people and gain access to the system physically, followed up by a physical hack that allows you to physically gain and maintain access This sets you up to potentially have backdoor access that allows you to tap back into the system undetected and exploit the system as you see fit. This allows you to bypass stuff that you normally wouldn’t be able to if it were only from a digital landscape. Some things can only be done physically due to the level of complexities that might be in place for a system infrastructure.</p>
-
-                        <p></p>
-
-                        <p>This is a common tactic that is used , whether it be as a pen-tester that is testing the security in an infrastructure, or as a threat actor that is trying to leverage the system for their own personal gain. They go hand in hand.</p>
-
-                        </br></br>
-
-                <img src="counter.png" class="img-responsive" alt="portfolio img">
-				
-                </br></br>
-
-                <p> If you like to see the more advanced version of this article that talks about methods that can be used to mitigate, as well as any videos included, SUBSCRIBE TO MY PATREON CYBER SECURITY TIER!
-
-
-                </p>
-
-                        </br>
-                    </br>
-    
-                            - The Hacker Who Laughs 🕸🕸🎃🕸🕸
-                         
-                        </p>
-        
-                        <a href = "https://futabawebs.github.io/Futaba_Webs/ManInTheBrowserExploit" style = "text-decoration: none;"> 
-    
-                            <div class="d-grid">
-                          
-                                <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
-        
-                            </div>
-        
-                        </a>     
-        
+                       <p id = "mitbexp"> </p>
         
         
                     </div>
@@ -3499,170 +2784,9 @@
         
                     </div>
         
-                    <div class = "modal-body">
+                  <div class = "modal-body">
         
-                        <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "MrRobot.jpeg" style = "border-color: red; background-color: black;"> </h3>
-                 
-</br></br>
-
- <h4 id = "premise" style = "text-align: center; color: #D43F52;">Premise 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>We are also going to talk about the TOR Onion protocol, as well as how to bypass it. We are also going to discuss online anonymity, and how to setup and configure TOR so you can be "truly" anonymous.</p>
-
-                        <p></p>
-
-                        <p>In order to discuss this I need to go over the 3 layers of the internet: The surface web, deep web, and dark web.</p>
-
-                        </br></br>
-                        
-                        <h4 id = "surface" style = "text-align: center; color: #D43F52;">What is the Surface Web? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>The surface web is what we use on a regular day to day basis: work memes, YouTube, etc. It's where the least of the internet is to be explored.</p>
-
-                        </br></br>
-                       
-                        <h4 id = "deep" style = "text-align: center; color: #D43F52;">What is the Deep Web? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>The deep web, which is to not be confused for the Dark web, is where various information archives that aren’t typically available on the surface web can be found. This is where most data breach information is typically leaked, and is also where you can find the "hidden wiki" which is what you need in order to find and access dark web pages</p>
-
-                        </br></br>
-                
-                    <h4 id = "dark" style = "text-align: center; color: #D43F52;">What is the Dark Web? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>The dark web is the internet without any makeup, and is where true levels of anonymity and cyber criminal activity lurk. This is the least safe part of the internet to browse and if you are not careful you could be traced and put yourself as well as others you might live with at risk. A lot of human trafficking operations, organized crime, hackers for hire (black hats), and other crazy stuff goes on here.</p>
-
-                        <p></p>
-
-                        <p>For the sake of anonymity and security links to the "onion" sites are typically hidden and hard to find, and or available on "hidden wiki's" from the deep web. In order to access the Dark Web you'll need a special browser called "Tor"</p>
-
-                        </br></br>
-
-                    <h4 id = "tor" style = "text-align: center; color: #D43F52;">How Does TOR Onion Protocol Work? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-                        <p>The TOR Onion protocol is what's used to connect to dark web, one of the 3 layers of the internet, and is where most illegal activity and transactions occur. TOR operates by forwarding and handling end user data communications, proxy chaining them through dedicated TOR onion servers in order to spoof the end users</p>
-						
-
-                        </br></br>
-
-                    <h4 id = "usetor" style = "text-align: center; color: #D43F52;">How to use TOR? 🕸🕸🎃🕸🕸
-
-                        </h4>
-                    
-                        <p>If you would like to learn how to use TOR, check out my video here on how to set that all up for you</p>
-
-                        <p></p>
-
-                        <p><a href = "https://www.youtube.com/watch?v=YkGqiIE38Ws" style = "text-decoration: none;">How To Setup Tor</a></p>
-
-                        <p></p>
-
-                        <p>I also have a custom script that installs the TOR program as well as the browser and allows you to easily set all of that up. DO NOT USE TOR FROM THE COMFORT OF YOUR OWN HOME! IT'S NOT SAFE AND YOU CAN STILL BE TRACED IF YOU DO NOT KNOW WHAT YOU ARE DOING!</p>
-
-                        <p></p>
-
-                        <p><a href = "https://github.com/RoyMBull/Bash-Shell-Scripting/blob/main/Bash%20Shell%20Scripting/MasterScriptFWebsVer4.sh" style = "text-decoration: none;">Master Script</a></p>
-      
-                        </br></br>
-
-                          <h4 id = "anonymous" style = "text-align: center; color: #D43F52;">Is there such a thing as true anonymity? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>Sadly, NO, there isn't. For as long as any and all software are man made, there will exist vulnerabilities that allow you to exploit and bypass any form of anonymous protocol in place. You can make it hard to crack, but eventually it's going to get hacked.</p>
-
-                        <p></p>
-
-                        </br></br>
-
-            <h4 id = "episode1" style = "text-align: center; color: #D43F52;">Mr.Robot Episode 1 “eps1.0_hellofriend[.]mov” 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>During episode 1 of Mr.Robot, Elliot confronts a coffee shop owner named “Ron”, who runs a TOR server that serves child pornography content on it. The coffee shop is a masquerade to hide his servers in plain sight since it’s hosted securely on his internal network via gigabit internet, which he also makes available to customers to put on a good cover front.</p>
-
-                        <p></p>
-
-                            </br></br>
-
-                        <h4 id = "oninonserver" style = "text-align: center; color: #D43F52;">Why were the Ron’s Onion servers hosted on his internal network? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>Ron hosted the servers internally on his own network in order to preserve his anonymity. This keeps it out of the sight of the law enforcement and viewable only to the specific audience that he caters it to.</p>
-
-                        <p></p>
-
-                        <p>In order for one to maintain anonymity when hosting a [.]Onion server on the dark web it is CRUCIAL for it to be hosted on one's own PRIVATE servers, NOT a public domain, where it can easily be found and compromised. </p>
-
-                        <p></p>
-
-                        <p>The URL link to access the site needs to also be "VIP", where it's essentially hidden in areas of the deep web, while also being given to a select few via various means: WhatsApp, Telegram, hidden Wiki Pages, etc.</p>
-
-                        <p></p>
-
-                        <p>The reason the pages need to be hidden is so that it stays off the ranges of the law enforcement, A.K.A the FBI, which typically is responsible for seizing and shutting down illegal operations on the dark web.</p>
-
-
-                        </br></br>
-
-            <h4 id = "privateserver" style = "text-align: center; color: #D43F52;">How to Host a PRIVATE web Server? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>In order to host your own [.]Onion server you need to understand what port forwarding is. This is crucial and is how Ron was able to host his own TOR servers private on his internal network. Let's dive into what port forwarding is.</p>
-
-                        <p></p>
-
-                        <p>Port forwarding allows you to map internal IP's/ports on a network to an external gateway interface, your router. Here's how the process works. You essentially map an internal IP address and port number from a local system on your network to one of the available ports on your router, so that it's facing the internet. This is going to map the service to the public IP address assigned to the router via the ISP, as well as the port we just set for it. This allows the service to be discoverable by internal and external network devices, meaning if you wanted to host your own website from the comfort of your own home, you could, as well as a variety of different services. Be mindful when you set this, the ports don't have to be the same, meaning you can mismatch them if you want to.</p>
-
-                        </br></br>
-
-           <h4 id = "majorflaw" style = "text-align: center; color: #D43F52;">TOR's Major Flaw and how a Ron got hacked? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>So the biggest question is, how was Elliot able to bypass Tor's security and hack Ron’s TOR server if they were truly anonymous? Well, the answer is quite simple, he wasn’t. Ron was only anonymous when his internal network traffic became external and was routed through TOR's Onion servers, allowing him to change his public IP and proxy it to host it more securely and anonymously. This means that even if the FBI did manage to find the server, the his true identity would be truly anonymous and protected, more so if they didn't leave behind sensitive information about those that were involved with the site. This would also allow him to discard server data should he be compromised.</p>
-
-                        <p></p>
-
-                        <p>The problem with this is TOR only works when it's able to leave the internal network and communicate with TOR's onion servers. Any and all traffic that hasn't left the network yet is fully exposed and can be intercepted if someone breaches the internal network, which allows stuff like DNS spoofing and parsing techniques that can strip secure network traffic and handle it on behalf of the real DNS server itself, forwarding it as if it were never intercepted. </p>
-
-                        <p></p>
-
-                        <p>This also allows an attacker to bypass any form of segmentation that the main access point might have set in place on the local network. This is crucial in that it allowed Elliot to find the server on the local network regardless of whether or Ron might have had proper segmentation and routing configurations in place.</p>
-
-                        <p></p>
-
-                        <p>Regardless of how segmentation on the network is configured, any and ALL network traffic eventually has to talk to the final endpoint node on the network, the default gateway router. Because of this, Elliot was able to intercept the traffic and bypass the TOR onion protocol and locate, as well as excavate any and all sensitive data from the servers and put in an anonymous tip with the law enforcement to have Ron arrested with solid evidence to shut him down for good.</p>             
-                    
-                        
-                        </br>
-                    </br>
-    
-                            - The Hacker Who Laughs 🕸🕸🎃🕸🕸
-                         
-                        </p>
-        
-                        <a href = "https://futabawebs.github.io/Futaba_Webs/BypassingTor" style = "text-decoration: none;"> 
-    
-                            <div class="d-grid">
-                          
-                                <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
-        
-                            </div>
-        
-                        </a>     
-        
+                            <p id = "tor"> </p>
         
         
                     </div>
@@ -3687,70 +2811,10 @@
                     
                     </div>
                     
-                    <div class = "modal-body">
+                  <div class = "modal-body">
                     
-                        <img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "hacked.webp" style = "border-color: red; background-color: black;"> </h3>
-                          
-                        </br></br>
-
-                       <h4 id = "premise" style = "text-align: center; color: #D43F52;">Premise 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>So how does the process work? Well it depends on the type of Wireless security you are trying to crack. In this case since it’s WPA2, the end goal is to intercept the main handshake that occurs between the host and access point when it connects to the network.</p>
-
-                        <p></p>
-
-                        <p>Now you might be wondering, how do you get that information if host systems are already connected to AP? The handshake is complete so there’s no way to get that information right? Wait for them to reconnect? Why wait when you can just force them. What you essentially need to do in order to bypass the security, is “de-authenticate” them from the network, forcing them to reconnect.</p>
-
-                        <p></p>
-
-                        <p>In order to do this you need to tell the AP directly to de-authenticate them since it’s impossible to talk to the specific hosts on the network when you don’t have access to it.Think of the WAP as an HTTP web application server you can send requests and various HTTP headers to, to invoke various responses. In this process we are essentially doing the same thing, sending the right data packets in order to kick end users off the main access point and scan for the handshake in the process. All you NEED, is the right NIC card to perform passive recon for data packets.</p>
-
-                        <p></p>
-
-                        <p>The first step is to use airmon-ng in order to place your main NIC card into something that is called “monitor mode”. Monitor mode allows your NIC card to perform passive recon and sniff out any WAP’s, as well as host systems connected to them. It can also be used to check and kill any processes that might interfere with the scan such as the NetworkManager service for example. The next step is to use the airodump-ng command in order to scan RF channels to search for the SSID of the network AP you wish to target.</p>
-
-                        <p></p>
-
-                        <p>Once found, you can hone in on the AP and see any and all main systems that are connected to it as well, including any MAC addresses that could possibly allow you to bypass stuff like MAC filters that require you to have a trusted MAC address in order to connect to the network.</p>
-
-                        <p></p>
-
-                        <p>Next thing you want to do, while scanning the main AP with airodump-ng is pop open another shell session and then use the aireplay-ng command in order to send authentication packets to force end users to reconnect in order to secure the handshake. THIS PROCESS DOES TAKE TIME.</p>
-
-                        <p></p>
-
-                        <p>Now the question is, how to defend against this. Nowadays, AP’s are essentially “randomizing” the frequency channel to prevent people from scanning the access point.If you can’t scan it, then you can’t see the hosts that are on the network, as well as secure the main handshake. It’s something so simple that can stop hackers in their tracks.</p>
-
-                        </br></br>
-
-                        <img src="counter.png" class="img-responsive" alt="portfolio img">
-				
-                </br></br>
-
-                <p> If you like to see the more advanced version of this article that talks about methods that can be used to mitigate, as well as any videos included, SUBSCRIBE TO MY PATREON CYBER SECURITY TIER!
-
-
-                </p>
-
-                        </br>
-                        </br>
-                
-                            - The Hacker Who Laughs 🕸🕸🎃🕸🕸
-                                     
-                        </p>
-                    
-                            <a href = "https://www.linkedin.com/pulse/wifi-hacking-aircrack-ng-roy-bull-futaba-webs--bydbf/?trackingId=Zc1WbkyUSkampmjlJqWKuw%3D%3D" style = "text-decoration: none;"> 
-                
-                                <div class="d-grid">
-                                      
-                                    <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
-                    
-                                </div>
-                    
-                            </a>     
-                    
+                       
+                    <p id = "wifi"> </p>
                     
                     
                         </div>
@@ -3766,6 +2830,156 @@
     END OF MODALS
 -->
 
+<script> 
+
+const How_to_Botnet = document.getElementById('How_to_Botnet')
+      
+      How_to_Botnet.addEventListener('show.bs.modal', () => {
+        
+        document.getElementById("bot").innerHTML = `<img class = "img-thumbnail mt-4 mx-3 Modal_Pic_BotNet" src = "Botnet.png" style = "border-color: red; background-color: black;"> </h3> </br></br> <h3 class="media-heading" style = "text-align: center; color: #D43F52;"> 🕸 Synopsis 🕸 </h3> <p>Today we are going to be talking about how to build a custom backdoor exploit in Python3, as well as what RCE is, including various methods to achieve it. These two techniques are your bread and butter and are what you’ll be going for during a lot of pentests, CTF challenges, etc, regardless of how you go about it: SQL injection, OS command injection, remote file inclusion, etc. It’s really all the same. If you’ve ever noticed, during a lot of big hacks, one of the most common things that ALWAYS happens is that the attackers somehow discover a way to RCE the system, allowing them to gain backdoor access and formulate something called a “botnet”, allowing them to deliver various payloads and command and control the network. Before I dive into this, as always I want to get you up to speed on some terminology so that you understand what’s going on. Let’s go over the main TCP/IP handshake so you understand the overall process. </br> </br> <strong style = "text-align: center; color: #D43F52;"> <im> Disclaimer</im></strong> </br> </br> As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let's begin! </p> </br> </br> <h4 id = "tcp" style = "text-align: center; color: #D43F52;">What is the TCP/IP 3-way-hand-shake? 🕸🕸🎃🕸🕸 </h4> <p>First, In order for you to fully understand how all of this works, we need to go over the TCP/IP 3-way-handshake, as well as how sockets/ports work, and how all of this ties in together. This carries over on a fundamental level and gets you into the habit of understanding how network data communications function on a logical and "visual" level. </p> <p></p> <p>Let’s start off with the classic Web application example. When you visit a web application, you begin a process that is known as the TCP/IP handshake, which occurs in 3 steps via flags set in ICMP data packets: SYN, where the client is initiating a connection to the server, SYN/ACK, where the server responds, acknowledging the session being inquired, followed by ACK, which is the client side sends to finalize and begin the connection to the server. All of this also applies to the basic principles of how systems talk to each other over a network, which is what makes up the internet as a whole as it’s just a larger scale of that. </p> </br> </br> <h4 id = "backdoor" style = "text-align: center; color: #D43F52;">What is a BackDoor? 🕸🕸🎃🕸🕸 </h4> <p>Backdoors, also known as RAT, remote access Trojan, is the form of interconnecting two systems together maliciously in order to send data and or control a system. It can vary depending on what it’s needed for. In most cases it’s used as a way to botnet, command and control, and RCE a system. Stuff like a meterpreter shell in metasploit is a common example that is often used. It’s also known as a reverse shell exploit which is the same concept.</p> <p></p> <p>As the name would suggest, often it’s used via Trojan malware methods, or “companion” viruses that trick the user into clicking on it with stuff like “fake adds” or “false program icons” on your computer screen. Once you click on it, you’ve given the attacker access to your system. </p> </br> </br> <h4 id = "rce" style = "text-align: center; color: #D43F52;">What is RCE? 🕸🕸🎃🕸🕸 </h4> <p>RCE, remote code execution, is when you are able to remotely control a system via shell code commands Shell code commands are terminal commands, things like bash and powershell for example. For hackers, this can be achieved in a variety of different ways. SQL injection for example can achieve this via the “system” command feature that comes packaged with SQL. SQL allows you to use this to send shell code commands to the main system. This means that if you are able to pwn a server via SQL injection you also have the potential to RCE it in the process. </p> </br></br> <h4 id = "botnet" style = "text-align: center; color: #D43F52;">What is a Botnet? 🕸🕸🎃🕸🕸 </h4> <p>Botnetting is the overall process of infecting a variety of different systems on a network, controlling them like bots/zombies in order to further one’s access to the network, compromising the IT infrastructure further. This takes place during the maintaining access step of the pentesting methodology, and is where you establish ways to stay connected to a compromised network. This goes into something that is known as command in control. </p> <p></p> </br></br> <h4 id = "cmc" style = "text-align: center; color: #D43F52;">What is command and control? 🕸🕸🎃🕸🕸 </h4> <p>Command and control is when you control, as the botmaster of the botnet, all the systems on the network and do regular checks on them to see if they are still alive. Think of it as you “blueteaming” for your “botnet”. For example, you can do stuff like beacons, which sends data packets to check if the system is still alive, or even install logs so that you get regular status updates on them. </p> <p></p> </br></br> <h4 id = "clientserver" style = "text-align: center; color: #D43F52;">What is the difference between Client and Server? 🕸🕸🎃🕸🕸 </h4> <p>VERY CRUCIAL, and this is something that will play a vital role in your understanding of the difference between client and server. A client connects and sends data to the server, and a server “listens”. What do I mean by that? Servers have open ports that are in a listening state that wait for incoming connections and data from clients, and then handles and responds to them accordingly. The best way to think of this would be in the sense of ordering from an actual server via a restaurant menu. You put in an order, and then the server responds by delivering it to you. </p> <p></p> </br> <img src="counter.png" class="img-responsive" alt="portfolio img"> </br></br> <p> If you like to see the more advanced version of this article that talks about methods that can be used to mitigate, as well as any videos included, SUBSCRIBE TO MY PATREON CYBER SECURITY TIER! </p> </br> </br> - The Hacker Who Laughs 🕸🕸🎃🕸🕸 </p> <a href = "https://futabawebs.github.io/Futaba_Webs/HowtoBotnet" style = "text-decoration: none;"> <div class="d-grid"> <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button> </div> </a>`;
+        
+    })
+
+      How_to_Botnet.addEventListener('hide.bs.modal', () => {
+        
+        document.getElementById("bot").innerHTML = '';
+
+      })
+    
+const ARP_Poisoning = document.getElementById('ARP_Poisoning')
+      
+      ARP_Poisoning.addEventListener('show.bs.modal', () => {
+        
+        document.getElementById("arp").innerHTML = `<img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "Masq.jpeg" style = "border-color: red; background-color: black;"> </h3> </br> </br> <h3 class="media-heading" style = "text-align: center; color: #D43F52;"> 🕸 Synopsis 🕸 </h3> <p>Today we are going to be talking about ARP poisoning and how to poison a network. A lot of this is going to be heavy networking based, so do mind your fundamentals. I'll explain some stuff along the way. As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pentest on anyone's network unless it is your own, or you have permission to do so. </br> </br> <strong> <im> Disclaimer</im></strong> </br> </br> As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let's begin! </p> </br> </br> <h4 id = "premise" style = "text-align: center; color: #D43F52;">Premise 🕸🕸🎃🕸🕸 </h4> <p>In order to walk you through how to perform the technique, lets go over a few things first like: ARP, pingsweep, and spoofing. ARP, address resolution protocol, is what NSlookup is, but for MAC addresses. ARP translates the corresponding MAC address back to the IP of the system it pertained to. Pingsweeping is the process of pinging a series of IP addresses via a network range to check for ICMP responses. No response typically indicates a system is not up, a response indicates the system is up. There are a variety of different scan types, each with unique return results. Spoofing is the concept of masquerading as another entity, whether it be a machine, such as a spoofed MAC address, or a person for social engineering exploits, such as a spoofed ID badge for example. Now that we have the basics covered out of the way, lets begin!</p> <p></p> <p>As always, any and all advanced versions of this article with a video guide if given will be for PAID patreon members only!!</p> </br> </br> <h4 id = "arp" style = "text-align: center; color: #D43F52;">What is ARP Poisoning? 🕸🕸🎃🕸🕸 </h4> <p>How does ARP poisoning work? Essentially you are masquerading your IP and MAC address on the internal network as another system in order to receive any network traffic data intended for it. When you communicate on the network, whether it be internally (the local network) or externally (a web server), the default gateway, your router, handles the communication for you and routes it on your behalf. When you receive a response it also handles and forwards that information to you as well. If you masquerade as another system on the network, it's essentially going to send you a copy of the return information from the victim as well. In the process, since you are also on that same system on the network, you'll also be able to see any outgoing network traffic from the victim itself and receive a copy of that as well. This means that if any of those communications are insecure, such as HTTP for example, you'll be able to see any and all data in plain text format. If the victim sent over any POST HTTP request data for example, you will be able to see any credentials they sent over to authenticate to a web server. This methodology is what is also known as a form of a man in the middle attack exploit. A Man in the Middle attack is when you intercept a communication for one or more parties involved and either steal or forward that data, manipulating it, as if you were the original sender, unsuspected to said parties involved.</p> </br> </br> <h4 id = "subnetting" style = "text-align: center; color: #D43F52;">What is Subnetting? 🕸🕸🎃🕸🕸 </h4> <p>You might be asking yourself what is a subnet? Subnets are essentially networks that have been fragmented into smaller sub networks, hence subnetting. Each subnet is assigned a unique "subnet mask", the "/24" that you see here, that allows you to identify each subnet. Each subnet has it's own pool of IP addresses that can be assigned to members of that particular subnet. This allows for segmentation practices that prevent stuff like single point of failures, which are essentially monolithic based infrastructures that nest everything into one place. For network security purposes, when you do this you make it HARD for attackers to find everything, decreasing your attack surface, securing your systems greatly. With subnetting it's also possible to control which subnets can talk to each other, which is the main reason we begin a main hunt for them via the route and traceroute commands.</p> </br> </br> <img src="counter.png" class="img-responsive" alt="portfolio img"> </br> </br> <p> If you like to see the more advanced version of this article that talks about methods that can be used to mitigate, as well as any videos included, SUBSCRIBE TO MY PATREON CYBER SECURITY TIER! </p> </br> </br> - The Hacker Who Laughs 🕸🕸🎃🕸🕸 </p> <a href = "https://futabawebs.github.io/Futaba_Webs/ARP_Poisoning" style = "text-decoration: none;"> <div class="d-grid"> <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button> </div> </a>`;
+        
+    })
+
+      ARP_Poisoning.addEventListener('hide.bs.modal', () => {
+        
+        document.getElementById("arp").innerHTML = '';
+
+      })
+
+
+const CCTV_Hacking = document.getElementById('CCTV_Hacking')
+      
+      CCTV_Hacking.addEventListener('show.bs.modal', () => {
+        
+        document.getElementById("cctv").innerHTML = `<img class = "img-thumbnail mt-4 Modal_Pic_CCTV" src = "CCTV.png" style = "border-color: red; background-color: black;"> </h3> </br></br> <h3 class="media-heading" style = "text-align: center; color: #D43F52;"> 🕸 Synopsis 🕸 </h3> <p>Today we are going to be covering the Shodan API and how to use it for CCTV hacking to tap into camera feeds, as well as how to gather information about various IoT gateway devices on the internet and exploit the services on them. This is also going to dive into complex topics like: port forwarding, router exploitation, the routersploit framework, the metasploit framework, as well as how the internet works under the hood. I'm not going to directly tap into a camera feed live as that's illegal (even if it's a public cam for a park), but I am going to show you how to talk to specific ports using an IP address, whether it be in numeral format or alphabetical format. It's the same process you'll be using to tap into camera feeds should you find an open port. </br> </br> <strong> <im> Disclaimer</im></strong> </br> </br> As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let's begin! </p> </br></br> <h4 id = "premise" style = "text-align: center; color: #D43F52;">Premise 🕸🕸🎃🕸🕸 </h4> <p>For this demonstration, since we'll be using metasploit for it, you're going to need a Shodan premium membership to get a lifetime API key(s). Sadly, Shodan now requires you to be a premium member if you wish to use the API freely. </p> <p></p> <p>You can still query searches on the site if you are looking for something and tap into feeds via GUI, but you won't have access to the full features of the core API if you wish to craft your own exploits with them via metasploit and your own code for example.</p> <p></p> <p>Link to <a href = "https://shodan.io/" style = "text-decoration: none;">Shodan</a></p> <p></p> <p>Like always, before we dive into the actual exploit, let's touch up on a bit of terminology and major concepts so that you understand how the overall process works. Wouldn't be a good article without that.</p> </br></br> <h4 id = "api" style = "text-align: center; color: #D43F52;">What is an API? 🕸🕸🎃🕸🕸 </h4> <p>You've probably heard this term a lot, and probably need a bit of clarification on what this is. An API (Application programming interface) is essentially the core biological functions that make up a computer program. In most cases nowadays it's used in context with "automation" software for web applications, stuff like the "Shodan API" for example, that have core integrated functions that allow you to query information about IoT devices on the web. Another example of an API, would be a kernel, which pertains to the core functions that make up an operating system, and dictates how hardware and software interact with each other, allowing you to control the system. </p> <p></p> <p>Another good example would be the Windows32 API, that hackers and researchers use for stuff like DLL and Code injections to hook and hijack Windows system processes. They can also use it for little pranks like preventing you from opening your CD Drive, or shutting off your monitor by broadcasting a system command to all handles on the main system, shutting it off and on as they please. </p> </br></br> <h4 id = "shodan" style = "text-align: center; color: #D43F52;">What is the Shodan API? 🕸🕸🎃🕸🕸 </h4> <p>The Shodan API is an OSINT tool that is used to track and gather information about various IoT gateway devices (routers), services hosted on them, as well as their corresponding IP's that are connected to the internet. This allows you to gain insight and exploit various services hosted on them and tap into things like: CCTV surveillance systems, home security systems, as well as file sharing services, SSH services, and of course, WEB APPLICATION services. You can also exploit any vulnerabilities that are in the firmware of the router itself, allowing you to pwn it and compromise the internal network.</p> <p></p> <p>Fun fact, when you are talking to a web server, you aren't actually talking to the main system itself directly, you are talking to the router that is hosting the service on behalf of it, indirectly. This also comes into play when you are port scanning with NMAP. When you scan with NMAP, you're actually scanning the router that is hosting many services on behalf of other systems on the internal network, or a singular one if that's the case.</p> <p></p> <p>As we know, the internet is made up of various communication devices, routers, that interconnect to one another, allowing end users to exchange data, access services like web applications (web sites), and communicate over the internet. All of this is possible through a technique known as port forwarding, that allows internal networks to safely communicate with each other. The internet wouldn't be possible without it, and without it, internal networks and highly sensitive information would be highly exposed and easily compromised.</p> </br></br> <h4 id = "router" style = "text-align: center; color: #D43F52;">What is a Router? 🕸🕸🎃🕸🕸 </h4> <p>A router is a form of network communication device that is used to host a network, forward communications to and from the network via DNS, domain name server, as well as assign IP addresses to systems that are on the local network. The router is also known as the default gateway.</p> <p></p> </br></br> <h4 id = "dns" style = "text-align: center; color: #D43F52;">What is DNS? 🕸🕸🎃🕸🕸 </h4> <p>DNS, Domain name server, hosted on port 53, is what allows you to query, as well as translate the alphabetical address of a website into something that the machine can understand, numeral format, routing you to your destination. Alphabetical names are used because they are a lot easier for us to remember.</p> <p></p> </br></br> <h4 id = "dhcp" style = "text-align: center; color: #D43F52;">What is DHCP? 🕸🕸🎃🕸🕸 </h4> <p>DHCP, dynamic host configuration protocol, is what is used to automatically assign IP addresses to host systems on the network, otherwise systems would have to statically assign themselves as one that falls within the network range. If this isn't set properly it can cause issues such as you being unable to access the internet, even though it says you have internet.</p> <p></p> </br></br> <img src="counter.png" class="img-responsive" alt="portfolio img"> </br></br> <p> If you like to see the more advanced version of this article that talks about methods that can be used to mitigate, as well as any videos included, SUBSCRIBE TO MY PATREON CYBER SECURITY TIER! </p> </br> </br> - The Hacker Who Laughs 🕸🕸🎃🕸🕸 </p> <a href = "https://futabawebs.github.io/Futaba_Webs/CCTVHacking" style = "text-decoration: none;"> <div class="d-grid"> <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button> </div> </a>`;
+        
+    })
+
+      CCTV_Hacking.addEventListener('hide.bs.modal', () => {
+        
+        document.getElementById("cctv").innerHTML = '';
+
+      })
+
+const SQL_Injection = document.getElementById('SQL_Injection')
+      
+      SQL_Injection.addEventListener('show.bs.modal', () => {
+        
+        document.getElementById("sql").innerHTML = `<img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "SQL.jpeg" style = "border-color: red; background-color: black;"> </h3> </br></br> <h3 class="media-heading" style = "text-align: center; color: #D43F52;"> 🕸 Synopsis 🕸 </h3> <p>Today I'll be covering SQL injection and advanced fuzzing and filter bypassing techniques you need to know to be a successful pen-tester. You can't avoid not knowing this as you'll see it regardless of what side you are on: blue team, if you are defending against it, or red team, if you are checking if it's a weakness in the system. As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, lets begin! </br> </br> <strong> <im> Disclaimer</im></strong> </br> </br> As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let's begin! </p> </br></br> <h4 id = "sql" style = "text-align: center; color: #D43F52;">What is SQL Injection? 🕸🕸🎃🕸🕸 </h4> <p>What exactly is SQL injection? SQL injection exploits invalid user input, input that isn't properly validated when being handled to the server side from the client side when the end user performs a query to the server: logins, searches, etc. This allows you to take advantage of the input you send to manipulate the server-side back-end to retrieve additional data that isn't intended for you. This allows you to access stuff like: additional information from the main database table you are linked to, additional database tables, and additional functions and or features of the back-end of the database that you are talking to such as system command features that allow you to pivot and hijack the system further for OS command injection exploits. You can even manipulate the very privileges that are set for you and upgrade yourself to admin if you wanted to either via OS command injection if system commands are enabled on the SQL server, or via the usage of SQL queries that you can use to edit your information in the system. The possibilities are endless and are only limited based on the scope of your imagination. If you are wondering what OS command injection exploits are, it's essentially where you inject shell-code commands like bash and power-shell to the server side end to control the system directly. The overall premise of injection methods is to exploit the processes and features of the server side you are talking to in order to control it. This requires you to do a bit of recon on how the server works in order to understand what weak points to look for. We'll eventually cover how to search for injection types a system might be vulnerable to.</p> </br></br> <h4 id = "tcp" style = "text-align: center; color: #D43F52;">What is TCP/IP? 🕸🕸🎃🕸🕸 </h4> <p>But first, In order for you to fully understand how SQL injection works, we need to go over the TCP/IP 3-way-handshake. This carries over on a fundamental level and gets you into the habit of understanding how network data communications function on a logical and "visual" level. SQL injection is often hard due to a lot of people unable to "visualize" how the process works. Visualization is KEY in tech, especially Cyber Security.</p> <p></p> <p>When you visit a web application, you begin a process that is known as the TCP/IP handshake, which occurs in 3 steps via flags set in ICMP data packets: SYN, where the client is initiating a connection to the server, SYN/ACK, where the server responds, acknowledging the session being inquired, followed by ACK, which the client sends to finalize and begin the connection to the server. SQL queries follow a similar order: you input data into the parameter of a web application, and then that information is processed into a structured query, and then sent to the server side for processing on the back-end, in which the server responds back to you and you acknowledge it.</p> <p></p> <p>A good place to get a visual demonstration of what I'm talking about in regards to SQL injection can be found here at this link.</p> </br></br> <h4 id = "tcp" style = "text-align: center; color: #D43F52;">What is TCP/IP? 🕸🕸🎃🕸🕸 </h4> <p>But first, In order for you to fully understand how SQL injection works, we need to go over the TCP/IP 3-way-handshake. This carries over on a fundamental level and gets you into the habit of understanding how network data communications function on a logical and "visual" level. SQL injection is often hard due to a lot of people unable to "visualize" how the process works. Visualization is KEY in tech, especially Cyber Security.</p> <p></p> <p>When you visit a web application, you begin a process that is known as the TCP/IP handshake, which occurs in 3 steps via flags set in ICMP data packets: SYN, where the client is initiating a connection to the server, SYN/ACK, where the server responds, acknowledging the session being inquired, followed by ACK, which the client sends to finalize and begin the connection to the server. SQL queries follow a similar order: you input data into the parameter of a web application, and then that information is processed into a structured query, and then sent to the server side for processing on the back-end, in which the server responds back to you and you acknowledge it.</p> <p></p> <p>A good place to get a visual demonstration of what I'm talking about in regards to SQL injection can be found here at this link.</p> </br></br> <img src="counter.png" class="img-responsive" alt="portfolio img"> </br></br> <p> If you like to see the more advanced version of this article that talks about methods that can be used to mitigate, as well as any videos included, SUBSCRIBE TO MY PATREON CYBER SECURITY TIER! </p> </br> </br> - The Hacker Who Laughs 🕸🕸🎃🕸🕸 </p> <a href = "https://futabawebs.github.io/Futaba_Webs/SQLInjection" style = "text-decoration: none;"> <div class="d-grid"> <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button> </div> </a>`;
+        
+    })
+
+      SQL_Injection.addEventListener('hide.bs.modal', () => {
+        
+        document.getElementById("sql").innerHTML = '';
+
+      })
+
+
+const LAN_Turtle = document.getElementById('LAN_Turtle')
+      
+      LAN_Turtle.addEventListener('show.bs.modal', () => {
+        
+        document.getElementById("turtle").innerHTML = `<img class = "img-thumbnail mt-4 Modal_Pic_LAN_Turtle" src = "BackdoorHacker.jpg" style = "border-color: red; background-color: black;"> </h3> </br></br> <h4 id = "premise" style = "text-align: center; color: #D43F52;">Premise 🕸🕸🎃🕸🕸 </h4> <p>The two scripts that are going to be used are the ones from the previous article on "How to Botnet". The client side is going to be integrated with Arduino, where it will will write its own code live and connect back to the server, whereas the server side, the python script, is going to sit in a listening state on the system, waiting for the client to connect to it so it can be fed instructions from the client side to control the system. Traditionally you always want to have the server sitting on the victim system so that you can connect and interact with it, but nowadays making your back-doors peer to peer is actually best because it allows your setup to be more versatile. For safety purposes, it's just going to connect back and that's it, nothing else! The real version that is unsafe to use stays with me. </p> <p></p> <p>Sadly, this is one of those projects that you NEED to have the right equipment for to pull off, but you can still follow along the 2 demonstration videos here. One, that shows the code being automated, and then another, of me connecting it live in front of you as proof it works. </p> 🎃 <a href = "https://www.youtube.com/watch?v=xEtP3p976dM" style = "text-decoration: none;">YouTube LIVE Demo</a> </br> </br> 🎃 <a href = "https://drive.google.com/file/d/1dJtIvUE0sjXatg6xlN_iNqjcDlSjP1X3/view?usp=sharing" style = "text-decoration: none;"> Physical LIVE Demo</a> </br> </br> 🎃 <a href = "https://github.com/RoyMBull/Python-Pen-Testing-Tools/blob/main/Python%20PenTesting%20Tools/TCPServerBackDoor.py" style = "text-decoration: none;">TCP Server Backdoor Script</a> </br> </br> 🎃 <a href = "https://www.adafruit.com/product/2771?gad_source=1&gclid=CjwKCAiA29auBhBxEiwAnKcSqhgYKutZ7hyr7HrVcAtP2s6pWWmpxFnqvGjif_qa6GxIQivcWPL05BoCGB4QAvD_Bw" style = "text-decoration: none;">Link to board</a> </br> </br> 🎃 <a href = "https://adafruit.github.io/arduino-board-index/package_adafruit_index.json" style = "text-decoration: none;">Link to json file for board</a> </br> </br> 🎃 <a href = "https://www.arduino.cc/en/software" style = "text-decoration: none;">Link to Arduino IDE: (USE THE 2.O OR HIGHER ONE!!!)</a> </br> </br> </br> <h4 id = "rubber" style = "text-align: center; color: #D43F52;">What is a Rubber Ducky? 🕸🕸🎃🕸🕸 </h4> <p>A rubber ducky is a keyboard injection exploit that uses pre-rendered keystrokes via virtual keyboard in order to inject a series of commands and payloads that infect the system in a variety of ways. It does this by communicating with the virtual keyboard on the kernel layer of your operating system. This allows it to mimic and control the system as if it were an actual person.</p> <p></p> <p>Think of it like if I were to program it to write out this whole articles in front of you in a matter of seconds. You can do all sorts of stuff: pop open shells, run scripts, have it write it's own code and then execute it, log into accounts, botnet a system, even serve as a form of retro malware or a bruteforcer tool if you wanted to.</p> </br></br> <h4 id = "ducky" style = "text-align: center; color: #D43F52;">Why is it called a Rubber Ducky? 🕸🕸🎃🕸🕸 </h4> <p>It's commonly known as a rubber ducky due to its innocent-like appearance. The goal of it typically is to insert it manually, OR, have someone pick it up and connect it to a USB port on a system, triggering it to go off. There are many ways to create one, but for today, we are going to do it using the Arduino libraries "keyboard" module to get this up and running.</p> <p></p> <p>Sadly at the time of making this I had to do more work than necessary since I didn't have storage means to load my code when it connects... SOOO..... I HAD IT WRITE IT'S OWN CODE LIVE. It's actually more impressive when you see the code write itself live in front of you.</p> <p></p> <p>Before we start this, let's go over some of the main key functions so that you understand what is going on.</p> </br></br> <img src="counter.png" class="img-responsive" alt="portfolio img"> </br></br> <p> If you like to see the more advanced version of this article that talks about methods that can be used to mitigate, as well as any videos included, SUBSCRIBE TO MY PATREON CYBER SECURITY TIER! </p> - The Hacker Who Laughs 🕸🕸🎃🕸🕸 </p> <a href = "https://futabawebs.github.io/Futaba_Webs/LANTurtle" style = "text-decoration: none;"> <div class="d-grid"> <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button> </div> </a>`;
+        
+    })
+
+      LAN_Turtle.addEventListener('hide.bs.modal', () => {
+        
+        document.getElementById("turtle").innerHTML = '';
+
+      })
+
+
+const Ransomware = document.getElementById('Ransomware')
+      
+      Ransomware.addEventListener('show.bs.modal', () => {
+        
+        document.getElementById("ransom").innerHTML = `<img class = "img-thumbnail mt-4 Modal_Pic_Ransomware" src = "MitM-Hero.png" style = "border-color: red; background-color: black; height: 250px;"> </h3> </br></br> <h4 id = "crypto" style = "text-align: center; color: #D43F52;">What is Ransomware? 🕸🕸🎃🕸🕸 </h4> <p>What is ransomware? Before I answer that question, I first need to explain to you what FDE(Full Disk Encryption) is. FDE is basically stuff like Bitlocker, where it enumerates the file system and encrypts data on the system in order to prevent data theft. In this case, it’s used for defensive purposes. BUT, what if I told you, it could be used maliciously? That’s what Ransomware is. It's a form of crypto malware that uses FDE to maliciously enumerate and encrypt file system data, holding it hostage, with the crypto keys left in the hands of the attacker, forcing the victim to pay a ransom in order to retrieve the keys to decrypt the data. The real data is excavated off the system in the process with the encrypted version remaining on the system. </p> <p></p> <p>Now you might be asking yourself, how do hackers create such complex and intricate malware? It must be so complex and time consuming to write right? Well... it's actually not that hard to write. All you're really doing is combining basic file disk enumeration tactics with either asymmetric or symmetric encryption methods, and some other things to spice it up a bit. I've actually prepared a test sample for today's study, as well as a demonstration video to show you how the code works. </p> <p></p> <p>Link to the main the demonstration video can be found <a href = "https://www.youtube.com/watch?v=Jh15ZOUWVcg" style = "text-decoration: none;">here</a>.</p> <p></p> <p>Link to the main Code can be found <a href = "https://github.com/RoyMBull/Python-Pen-Testing-Tools/blob/main/Python%20PenTesting%20Tools/Ransomeware.py" style = "text-decoration: none;">here</a>. IF YOU WANT TO BROWSE IT SAFELY JUST GO TO MY GITHUB PAGE AND VIEW "PYTHON-PENTESTING TOOLS" TO VIEW IT FROM THE BROWSER THAT WAY AS WELL.</p> </br></br> <h4 id = "import" style = "text-align: center; color: #D43F52;">Importing Serialization Module 🕸🕸🎃🕸🕸 </h4> <p>The first thing my code is going to do is import the serialization module and any sub modules with it: RSA, hashes, padding, etc. We need this in order to: create, format, as well as add things like padding and hashing in order to add key stretching, which adds key complexity to the algorithm. What is "Key Stretching"? Key stretching allows us to create longer & more complex crypto keys of a smaller size. This makes the crypto key much harder to deduce via cipher text analysis attacks, as well as allow max computational performance. Typically the larger the key, the longer it takes to encrypt/decrypt. We’re also going to add in the main os/os.sys modules to send shell code commands to the main system, as well as create any directories and pivot the system for enumeration. </p> <p></p> </br> <img src="counter.png" class="img-responsive" alt="portfolio img"> </br></br> <p> If you like to see the more advanced version of this article that talks about methods that can be used to mitigate, as well as any videos included, SUBSCRIBE TO MY PATREON CYBER SECURITY TIER! </p> </br></br> - The Hacker Who Laughs 🕸🕸🎃🕸🕸 </p> <a href = "https://futabawebs.github.io/Futaba_Webs/WhatIsRansomeWare" style = "text-decoration: none;"> <div class="d-grid"> <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button> </div> </a>`;
+        
+    })
+
+      Ransomware.addEventListener('hide.bs.modal', () => {
+        
+        document.getElementById("ransom").innerHTML = '';
+
+      })
+
+
+const FREE_Resources = document.getElementById('FREE_Resources')
+      
+      FREE_Resources.addEventListener('show.bs.modal', () => {
+        
+        document.getElementById("frees").innerHTML = `<img class = "img-thumbnail mt-4 Modal_Pic_Resources" src = "Resources.jpeg" style = "border-color: red; background-color: black;"> </h3> <p class = "pb-5 mt-4"> SOOOOOO, as promised, here is the list of any and all resources I wanted to openly share of mine that I personally recommend and use all the time. It's a special celebration for finally reaching close to 300 connections on here. </br> </br> If you would like to help other people have access to HIGH QUALITY resources so they can learn, then I suggest MEGA sharing this so that connections in your network see it! </br> </br> - The Hacker Who Laughs 🕸🕸🎃🕸🕸 </p> <a href = "https://www.linkedin.com/pulse/cyber-security-resources-2024-roy-bull-futaba-webs--ssynf?trackingId=8Um162STR2isGWcRpq0Whw%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3B9sbB2r0zR%2FSMqA05Y3ccRw%3D%3D" style = "text-decoration: none;"> <div class="d-grid"> <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button> </div> </a>`;
+        
+    })
+
+      FREE_Resources.addEventListener('hide.bs.modal', () => {
+        
+        document.getElementById("frees").innerHTML = '';
+
+      })
+
+
+const MITB_Exploit = document.getElementById('MITB_Exploit')
+      
+      MITB_Exploit.addEventListener('show.bs.modal', () => {
+        
+        document.getElementById("mitbexp").innerHTML = `<img class = "img-thumbnail mt-4 Modal_Pic_Man_Browser" src = "MITB.png" style = "border-color: red; background-color: black;"> </h3> </br></br> <h4 id = "premise" style = "text-align: center; color: #D43F52;">Premise 🕸🕸🎃🕸🕸 </h4> <p>Social engineering is one of the most commonly used tactics, as well as something that is known as a physical hack.</p> <p></p> <p>As always, before we dive right into this, some terminology needs to be explained so that you can follow along with the article.</p> </br></br> <h4 id = "mitb" style = "text-align: center; color: #D43F52;">What is a Man in The Browse Exploit? 🕸🕸🎃🕸🕸 </h4> <p>MITB, man in the browser, is a form of social engineering exploit that masquerades as your favorite web browser in order to phish sensitive credentials out of you, and is considered a form of a man in the middle attack. It's such an exact copy that you literally cannot tell the difference. The only difference you'll notice is that your "sessions" don't seem to quite be there. What do I mean by that? Ever opened a browser in private mode and realized you had to log back into all of your stuff? That's what I'm talking about, except it doesn't have the little incognito icon or any indicators you are used to seeing that would give it away, or at least NOT anymore. If the attacker is smart, then they can locate where cookies and saved data are stored onto the system, and then integrate it into this, BUT, that would defeat the purpose of having you re-enter them in again manually so they can exploit you. </p> <p></p> <p>Even still this form of exploit will trick you just the same. It even has the exact settings and pages, and features as the original, because it IS the original, technically. This allows you to steal credentials and other forms of sensitive information such as cookies for example from end user browser sessions. </p> <p></p> <p>The most dangerous part about this exploit is that:</p> <p></p> <p>🎃 One, it's custom and can go beyond the typical scope of just phishing data from unsuspecting end users, and </p> <p></p> <p>🎃 Two, it takes advantage of the fact you ALWAYS, have your browser open and that you are constantly clicking away at those little keystrokes of yours. This means you can get two for one and install all sorts of malware, run background processes, and even install a keylogger on the system and send data to a remote server you have to log end user credentials. It can get even more scary if you can replicate a screen watch feature in the meterpreter shell to watch the end users screen as they type. This allows you to bypass stuff like MFA, where you can see the EXACT token information being sent. </p> <p></p> <p>For this project you are going to need something that is known as a "chromium" driver, since we are going to be working with Google Chrome for this exploit. This driver, along with the selenium module has come A LONG WAY. It originally ONLY displayed the chromium browser which was a dead give away, but now, it displays the REAL thing, so there is nothing that gives it away if you manage to spoof the chrome signature and place it on the end user system.</p> <p></p> <p>Link to <a href = "https://chromedriver.chromium.org/downloads" style = "text-decoration: none;">Chromium Driver</a> </p> </br></br> <h4 id = "chromium" style = "text-align: center; color: #D43F52;">What is a Chromium Driver? 🕸🕸🎃🕸🕸 </h4> <p>The Chromium driver is what we are going to be using to mimic the chrome browser that is installed on your system, along with a module in python that is called "selenium", which allows you to call up a series of web drivers: chrome, Firefox, etc etc, and launch the real thing, even with a default page. It’s most commonly used for web application development across all resolutions for all browsers.</p> <p></p> <p>This is combined with Selenium which is a module in python that allows you to develop test case scenarios for browser integration, for stuff like add on's and extensions, or, if you are the devs, it allows you to test for new in house main features before they are added to the browser. </p> <p></p> <p>In the right hand’s, it’s harmless, BUT, in the right hands it can do a lot of damage. </p> </br></br> <h4 id = "physical" style = "text-align: center; color: #D43F52;">What is a Physical Hack? 🕸🕸🎃🕸🕸 </h4> <p>A physical hack is a scenario where the attacker has physical access to the system, and can perform stuff like: inserting a keylogger dongle into systems to log end user keystrokes, installing back-doors and malware, taking advantage of admin access and other trusted systems and services on the network to “live off the land”, as well as bypass security further by disabling firewall systems that might block backdoor access so the attacker can maintain access, which can allow them to further do stuff like: excavate data off the network, further extend their level of access to various other sub-networks and sub domains that might belong to the infrastructure, all while being able to go undetected.</p> <p></p> </br></br> <h4 id = "connection" style = "text-align: center; color: #D43F52;">What is  the connection between a Physical hack and Social Engineering? 🕸🕸🎃🕸🕸 </h4> <p>Social engineering allows you to manipulate people and gain access to the system physically, followed up by a physical hack that allows you to physically gain and maintain access This sets you up to potentially have backdoor access that allows you to tap back into the system undetected and exploit the system as you see fit. This allows you to bypass stuff that you normally wouldn’t be able to if it were only from a digital landscape. Some things can only be done physically due to the level of complexities that might be in place for a system infrastructure.</p> <p></p> <p>This is a common tactic that is used , whether it be as a pen-tester that is testing the security in an infrastructure, or as a threat actor that is trying to leverage the system for their own personal gain. They go hand in hand.</p> </br></br> <img src="counter.png" class="img-responsive" alt="portfolio img"> </br></br> <p> If you like to see the more advanced version of this article that talks about methods that can be used to mitigate, as well as any videos included, SUBSCRIBE TO MY PATREON CYBER SECURITY TIER! </p> </br> </br> - The Hacker Who Laughs 🕸🕸🎃🕸🕸 </p> <a href = "https://futabawebs.github.io/Futaba_Webs/ManInTheBrowserExploit" style = "text-decoration: none;"> <div class="d-grid"> <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button> </div> </a>`;
+        
+    })
+
+      MITB_Exploit.addEventListener('hide.bs.modal', () => {
+        
+        document.getElementById("mitbexp").innerHTML = '';
+
+      })
+
+
+const Bypassing_Tor = document.getElementById('Bypassing_Tor')
+      
+      Bypassing_Tor.addEventListener('show.bs.modal', () => {
+        
+        document.getElementById("tor").innerHTML = `<img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "MrRobot.jpeg" style = "border-color: red; background-color: black;"> </h3> </br></br> <h4 id = "premise" style = "text-align: center; color: #D43F52;">Premise 🕸🕸🎃🕸🕸 </h4> <p>We are also going to talk about the TOR Onion protocol, as well as how to bypass it. We are also going to discuss online anonymity, and how to setup and configure TOR so you can be "truly" anonymous.</p> <p></p> <p>In order to discuss this I need to go over the 3 layers of the internet: The surface web, deep web, and dark web.</p> </br></br> <h4 id = "surface" style = "text-align: center; color: #D43F52;">What is the Surface Web? 🕸🕸🎃🕸🕸 </h4> <p>The surface web is what we use on a regular day to day basis: work memes, YouTube, etc. It's where the least of the internet is to be explored.</p> </br></br> <h4 id = "deep" style = "text-align: center; color: #D43F52;">What is the Deep Web? 🕸🕸🎃🕸🕸 </h4> <p>The deep web, which is to not be confused for the Dark web, is where various information archives that aren’t typically available on the surface web can be found. This is where most data breach information is typically leaked, and is also where you can find the "hidden wiki" which is what you need in order to find and access dark web pages</p> </br></br> <h4 id = "dark" style = "text-align: center; color: #D43F52;">What is the Dark Web? 🕸🕸🎃🕸🕸 </h4> <p>The dark web is the internet without any makeup, and is where true levels of anonymity and cyber criminal activity lurk. This is the least safe part of the internet to browse and if you are not careful you could be traced and put yourself as well as others you might live with at risk. A lot of human trafficking operations, organized crime, hackers for hire (black hats), and other crazy stuff goes on here.</p> <p></p> <p>For the sake of anonymity and security links to the "onion" sites are typically hidden and hard to find, and or available on "hidden wiki's" from the deep web. In order to access the Dark Web you'll need a special browser called "Tor"</p> </br></br> <h4 id = "tor" style = "text-align: center; color: #D43F52;">How Does TOR Onion Protocol Work? 🕸🕸🎃🕸🕸 </h4> <p>The TOR Onion protocol is what's used to connect to dark web, one of the 3 layers of the internet, and is where most illegal activity and transactions occur. TOR operates by forwarding and handling end user data communications, proxy chaining them through dedicated TOR onion servers in order to spoof the end users</p> </br></br> <h4 id = "usetor" style = "text-align: center; color: #D43F52;">How to use TOR? 🕸🕸🎃🕸🕸 </h4> <p>If you would like to learn how to use TOR, check out my video here on how to set that all up for you</p> <p></p> <p><a href = "https://www.youtube.com/watch?v=YkGqiIE38Ws" style = "text-decoration: none;">How To Setup Tor</a></p> <p></p> <p>I also have a custom script that installs the TOR program as well as the browser and allows you to easily set all of that up. DO NOT USE TOR FROM THE COMFORT OF YOUR OWN HOME! IT'S NOT SAFE AND YOU CAN STILL BE TRACED IF YOU DO NOT KNOW WHAT YOU ARE DOING!</p> <p></p> <p><a href = "https://github.com/RoyMBull/Bash-Shell-Scripting/blob/main/Bash%20Shell%20Scripting/MasterScriptFWebsVer4.sh" style = "text-decoration: none;">Master Script</a></p> </br></br> <h4 id = "anonymous" style = "text-align: center; color: #D43F52;">Is there such a thing as true anonymity? 🕸🕸🎃🕸🕸 </h4> <p>Sadly, NO, there isn't. For as long as any and all software are man made, there will exist vulnerabilities that allow you to exploit and bypass any form of anonymous protocol in place. You can make it hard to crack, but eventually it's going to get hacked.</p> <p></p> </br></br> <h4 id = "episode1" style = "text-align: center; color: #D43F52;">Mr.Robot Episode 1 “eps1.0_hellofriend[.]mov” 🕸🕸🎃🕸🕸 </h4> <p>During episode 1 of Mr.Robot, Elliot confronts a coffee shop owner named “Ron”, who runs a TOR server that serves child pornography content on it. The coffee shop is a masquerade to hide his servers in plain sight since it’s hosted securely on his internal network via gigabit internet, which he also makes available to customers to put on a good cover front.</p> <p></p> </br></br> <h4 id = "oninonserver" style = "text-align: center; color: #D43F52;">Why were the Ron’s Onion servers hosted on his internal network? 🕸🕸🎃🕸🕸 </h4> <p>Ron hosted the servers internally on his own network in order to preserve his anonymity. This keeps it out of the sight of the law enforcement and viewable only to the specific audience that he caters it to.</p> <p></p> <p>In order for one to maintain anonymity when hosting a [.]Onion server on the dark web it is CRUCIAL for it to be hosted on one's own PRIVATE servers, NOT a public domain, where it can easily be found and compromised. </p> <p></p> <p>The URL link to access the site needs to also be "VIP", where it's essentially hidden in areas of the deep web, while also being given to a select few via various means: WhatsApp, Telegram, hidden Wiki Pages, etc.</p> <p></p> <p>The reason the pages need to be hidden is so that it stays off the ranges of the law enforcement, A.K.A the FBI, which typically is responsible for seizing and shutting down illegal operations on the dark web.</p> </br></br> <h4 id = "privateserver" style = "text-align: center; color: #D43F52;">How to Host a PRIVATE web Server? 🕸🕸🎃🕸🕸 </h4> <p>In order to host your own [.]Onion server you need to understand what port forwarding is. This is crucial and is how Ron was able to host his own TOR servers private on his internal network. Let's dive into what port forwarding is.</p> <p></p> <p>Port forwarding allows you to map internal IP's/ports on a network to an external gateway interface, your router. Here's how the process works. You essentially map an internal IP address and port number from a local system on your network to one of the available ports on your router, so that it's facing the internet. This is going to map the service to the public IP address assigned to the router via the ISP, as well as the port we just set for it. This allows the service to be discoverable by internal and external network devices, meaning if you wanted to host your own website from the comfort of your own home, you could, as well as a variety of different services. Be mindful when you set this, the ports don't have to be the same, meaning you can mismatch them if you want to.</p> </br></br> <h4 id = "majorflaw" style = "text-align: center; color: #D43F52;">TOR's Major Flaw and how a Ron got hacked? 🕸🕸🎃🕸🕸 </h4> <p>So the biggest question is, how was Elliot able to bypass Tor's security and hack Ron’s TOR server if they were truly anonymous? Well, the answer is quite simple, he wasn’t. Ron was only anonymous when his internal network traffic became external and was routed through TOR's Onion servers, allowing him to change his public IP and proxy it to host it more securely and anonymously. This means that even if the FBI did manage to find the server, the his true identity would be truly anonymous and protected, more so if they didn't leave behind sensitive information about those that were involved with the site. This would also allow him to discard server data should he be compromised.</p> <p></p> <p>The problem with this is TOR only works when it's able to leave the internal network and communicate with TOR's onion servers. Any and all traffic that hasn't left the network yet is fully exposed and can be intercepted if someone breaches the internal network, which allows stuff like DNS spoofing and parsing techniques that can strip secure network traffic and handle it on behalf of the real DNS server itself, forwarding it as if it were never intercepted. </p> <p></p> <p>This also allows an attacker to bypass any form of segmentation that the main access point might have set in place on the local network. This is crucial in that it allowed Elliot to find the server on the local network regardless of whether or Ron might have had proper segmentation and routing configurations in place.</p> <p></p> <p>Regardless of how segmentation on the network is configured, any and ALL network traffic eventually has to talk to the final endpoint node on the network, the default gateway router. Because of this, Elliot was able to intercept the traffic and bypass the TOR onion protocol and locate, as well as excavate any and all sensitive data from the servers and put in an anonymous tip with the law enforcement to have Ron arrested with solid evidence to shut him down for good.</p> </br> </br> - The Hacker Who Laughs 🕸🕸🎃🕸🕸 </p> <a href = "https://futabawebs.github.io/Futaba_Webs/BypassingTor" style = "text-decoration: none;"> <div class="d-grid"> <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button> </div> </a>`;
+        
+    })
+
+      Bypassing_Tor.addEventListener('hide.bs.modal', () => {
+        
+        document.getElementById("tor").innerHTML = '';
+
+      })
+
+
+const Wifi_Hacking = document.getElementById('Wifi_Hacking')
+      
+      Wifi_Hacking.addEventListener('show.bs.modal', () => {
+        
+        document.getElementById("wifi").innerHTML = `<img class = "img-thumbnail mt-4 Modal_Pic_Generic" src = "hacked.webp" style = "border-color: red; background-color: black;"> </h3> </br></br> <h4 id = "premise" style = "text-align: center; color: #D43F52;">Premise 🕸🕸🎃🕸🕸 </h4> <p>So how does the process work? Well it depends on the type of Wireless security you are trying to crack. In this case since it’s WPA2, the end goal is to intercept the main handshake that occurs between the host and access point when it connects to the network.</p> <p></p> <p>Now you might be wondering, how do you get that information if host systems are already connected to AP? The handshake is complete so there’s no way to get that information right? Wait for them to reconnect? Why wait when you can just force them. What you essentially need to do in order to bypass the security, is “de-authenticate” them from the network, forcing them to reconnect.</p> <p></p> <p>In order to do this you need to tell the AP directly to de-authenticate them since it’s impossible to talk to the specific hosts on the network when you don’t have access to it.Think of the WAP as an HTTP web application server you can send requests and various HTTP headers to, to invoke various responses. In this process we are essentially doing the same thing, sending the right data packets in order to kick end users off the main access point and scan for the handshake in the process. All you NEED, is the right NIC card to perform passive recon for data packets.</p> <p></p> <p>The first step is to use airmon-ng in order to place your main NIC card into something that is called “monitor mode”. Monitor mode allows your NIC card to perform passive recon and sniff out any WAP’s, as well as host systems connected to them. It can also be used to check and kill any processes that might interfere with the scan such as the NetworkManager service for example. The next step is to use the airodump-ng command in order to scan RF channels to search for the SSID of the network AP you wish to target.</p> <p></p> <p>Once found, you can hone in on the AP and see any and all main systems that are connected to it as well, including any MAC addresses that could possibly allow you to bypass stuff like MAC filters that require you to have a trusted MAC address in order to connect to the network.</p> <p></p> <p>Next thing you want to do, while scanning the main AP with airodump-ng is pop open another shell session and then use the aireplay-ng command in order to send authentication packets to force end users to reconnect in order to secure the handshake. THIS PROCESS DOES TAKE TIME.</p> <p></p> <p>Now the question is, how to defend against this. Nowadays, AP’s are essentially “randomizing” the frequency channel to prevent people from scanning the access point.If you can’t scan it, then you can’t see the hosts that are on the network, as well as secure the main handshake. It’s something so simple that can stop hackers in their tracks.</p> </br></br> <img src="counter.png" class="img-responsive" alt="portfolio img"> </br></br> <p> If you like to see the more advanced version of this article that talks about methods that can be used to mitigate, as well as any videos included, SUBSCRIBE TO MY PATREON CYBER SECURITY TIER! </p> </br> </br> - The Hacker Who Laughs 🕸🕸🎃🕸🕸 </p> <a href = "https://www.linkedin.com/pulse/wifi-hacking-aircrack-ng-roy-bull-futaba-webs--bydbf/?trackingId=Zc1WbkyUSkampmjlJqWKuw%3D%3D" style = "text-decoration: none;"> <div class="d-grid"> <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button> </div> </a>`;
+        
+    })
+
+      Wifi_Hacking.addEventListener('hide.bs.modal', () => {
+        
+        document.getElementById("wifi").innerHTML = '';
+
+      })
+    
+</script>
 
 </body>
 </html>

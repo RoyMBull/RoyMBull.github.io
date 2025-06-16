@@ -1206,66 +1206,7 @@
                                             
             <div class = "modal-body">
                                             
-                <img class = "img-thumbnail mt-4 Modal_Pic_TCPLab" src = "TCPLab.png" style = "border-color: red; background-color: black;"> </h3>
-                                                            
-                <p class = "pb-5 mt-4"> 
-                        
-                    Today’s demonstration will be a little lab exercise that you can set up to practice using my backdoor script that can be found on my github page. THIS LAB WILL REQUIRE YOU TO WATCH AND FOLLOW TWO VIDEOS AND GUIDES STEP BY STEP TO PULL IT OFF!         
-                </br>
-                </br>                                                                   
-                                                                    
-                    YOU WILL NEED A SEPARATE SYSTEM TO FULLY SIMULATE THE TEST (OR VM IF YOU PREFER)                                                        
-                </br>
-                </br> 
-        
-                    The VM setup is going to be done on kali nethunter BUT, the instructions for this carry over to ANY system that you want to test against the backdoor server on
-                                                                
-                </br>
-                </br> 
-        
-                    I recommend checking out my video guide on how to setup kali nethunter in case you want to do the lab this way! It’s FUN and you get to apply Mobile hacking like a PRO.                      
-        
-                </br>
-                </br>
-        
-                    The goal of the exercise is to show you how to: setup the backdoor exploit, experimenting with kali nethunter (if you happen to have it setup), show you how to set up an apache2 server to deliver payloads, crack passwords with John the ripper so that you can pop the SSH service on the main system, and then show you how to exploit the system further.    
-        
-                </br>
-                </br> 
-        
-                    WE ARE GOING TO RUN A SIMPLE PING SWEEP VIA THE MAIN COMPROMISED SYSTEM TO PULL IT OFF, GOING UNDETECTED!!                                                        
-                
-                </br>
-                </br> 
-        
-                    Due to the nature of how I want you to experience a “limited” shell which you’ll often run into, you’ll notice I’ve made it a bit “less interactive” to a degree so that you HAVE to get into the habit of finding ways to upgrade the quality of your reverse shell to a system!                                                        
-                
-                </br>
-                </br> 
-                              
-                    Disclaimer
-                                                                        
-                </br>
-                </br>
-                                                
-                    As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let’s begin! 
-                    
-                </br>
-                </br>
-                                                
-                    - The Hacker Who Laughs 🕸🕸🎃🕸🕸
-                                                                 
-                </p>
-                                                
-                    <a href = "https://www.patreon.com/posts/lab-python-104381028" style = "text-decoration: none;"> 
-                                            
-                        <div class="d-grid">
-                                                                  
-                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
-                                                
-                        </div>
-                                                
-                    </a>     
+                <p id = "tcpl"> </p>
                                             
         
             </div>
@@ -1290,45 +1231,9 @@
                                             
             </div>
                                             
-            <div class = "modal-body">
+           <div class = "modal-body">
                                             
-                <img class = "img-thumbnail mt-4 Modal_Pic_Resources2" src = "LEDProject.png" style = "border-color: red; background-color: black;"> </h3>
-                                                            
-                <p class = "pb-5 mt-4"> 
-                        
-                    Today’s lab will be the more hands on part of how to setup your first arduino project HANDS on. 
-                
-                </br>
-                </br>                                                                   
-                                                                    
-                    Like I’ve mentioned before, this is basically the “hello world” for arduino. Things will get A LOT more interesting once you cover the core basics so you can start building your own hacking tools with it!
-                                                                
-                </br>
-                </br> 
-                                                
-                    Disclaimer
-                                                                        
-                </br>
-                </br>
-                                                
-                    As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let’s begin! 
-                    
-                </br>
-                </br>
-                                                
-                    - The Hacker Who Laughs 🕸🕸🎃🕸🕸
-                                                                 
-                </p>
-                                                
-                    <a href = "https://www.patreon.com/posts/arduino-led-104511941" style = "text-decoration: none;"> 
-                                            
-                        <div class="d-grid">
-                                                                  
-                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
-                                                
-                        </div>
-                                    
-                    </a>     
+               <p id = "led"> </p>
                                             
         
             </div>
@@ -1354,67 +1259,9 @@
                                             
             </div>
                                             
-            <div class = "modal-body">
+             <div class = "modal-body">
                                             
-                <img class = "img-thumbnail mt-4 Modal_Pic_TCP1" src = "TCPBotNet1.png" style = "border-color: red; background-color: black;"> </h3>
-                                                            
-                <p class = "pb-5 mt-4"> 
-                        
-                    For today’s video, I will be going over how to write the backdoor script from my “Backdoor” article live. Step by step instructions should you need to read them over can be found below in the post, as well as in the main video!
-                
-                </br>
-                </br>                                                                   
-                                                                    
-                    This is going to be a 3 part process, where each step I want you to play around with the core basics of what I’m showing you so you understand what I’m doing and how everything works. 
-                
-                </br>
-                </br> 
-        
-                    The first part is this one, how to build the client side of the backdoor connection. The next step will be building the server side of the backdoor, which the main client will connect back to. Last, we’ll get creative and I’ll show you some more complex and how to get creative with it.         
-                
-                </br>
-                </br>  
-                
-        
-                    THIS REQUIRES YOU TO ALREADY KNOW THE CORE BASICS OF PYTHON.         
-        
-                </br>
-                </br> 
-        
-                    The main reason why this is going to be a 3 step process is because you will be learning stuff about software engineering as well, and I don’t want to overwhelm you with too much information at a time! That, and I want you to play around with all the stuff that is covered in the main video each time and ask me questions so that you MASTER it by the time the next video launches. 
-        
-                </br>
-                </br> 
-        
-                    Don’t focus on memorizing the code step by step, that will get you nowhere. Focus on UNDERSTANDING the theory and the science behind that I’m doing. IF YOU DO NOT UNDERSTAND SOMETHING SHOOT ME A MESSAGE IN THE “light mentorship channel” and I’ll answer any questions that are related to the post, as well as any and all content I’ve made thus far!
-                    
-                </br>
-                </br> 
-                              
-                    Disclaimer
-                                                                        
-                </br>
-                </br>
-                                                
-                    As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let’s begin! 
-                    
-                </br>
-                </br>
-                                                
-                    - The Hacker Who Laughs 🕸🕸🎃🕸🕸
-                                                            
-                                                                 
-                </p>
-                                                
-                    <a href = "https://www.patreon.com/posts/how-to-botnet-1-103046046" style = "text-decoration: none;"> 
-                                            
-                        <div class="d-grid">
-                                                                  
-                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
-                                                
-                        </div>
-                                    
-                    </a>     
+                  <p id = "tcp11"> </p>
                                             
         
             </div>
@@ -1439,67 +1286,9 @@
                                             
             </div>
                                             
-            <div class = "modal-body">
+           <div class = "modal-body">
                                             
-                <img class = "img-thumbnail mt-4 Modal_Pic_TCP2" src = "TCPBotNet2png" style = "border-color: red; background-color: black;"> </h3>
-                                                            
-                <p class = "pb-5 mt-4"> 
-                        
-                    For today’s video, I will be going over how to write the backdoor script from my “Backdoor” article live. Step by step instructions should you need to read them over can be found below in the post, as well as in the main video!                
-                
-                </br>
-                </br>                                                                   
-                                                                    
-                    This is going to be a 3 part process, where each step I want you to play around with the core basics of what I’m showing you so you understand what I’m doing and how everything works. 
-                
-                </br>
-                </br> 
-        
-                    The first part is this one, how to build the client side of the backdoor connection. The next step will be building the server side of the backdoor, which the main client will connect back to. Last, we’ll get creative and I’ll show you some more complex and how to get creative with it.         
-                
-                </br>
-                </br>  
-                
-        
-                    THIS REQUIRES YOU TO ALREADY KNOW THE CORE BASICS OF PYTHON.   
-        
-                </br>
-                </br> 
-        
-                    The main reason why this is going to be a 3 step process is because you will be learning stuff about software engineering as well, and I don’t want to overwhelm you with too much information at a time! That, and I want you to play around with all the stuff that is covered in the main video each time and ask me questions so that you MASTER it by the time the next video launches. 
-        
-                </br>
-                </br> 
-        
-                    Don’t focus on memorizing the code step by step, that will get you nowhere. Focus on UNDERSTANDING the theory and the science behind that I’m doing. IF YOU DO NOT UNDERSTAND SOMETHING SHOOT ME A MESSAGE IN THE “light mentorship channel” and I’ll answer any questions that are related to the post, as well as any and all content I’ve made thus far!
-                    
-                </br>
-                </br> 
-                              
-                    Disclaimer
-                                                                        
-                </br>
-                </br>
-                                                
-                    As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let’s begin! 
-                    
-                </br>
-                </br>
-                                                
-                    - The Hacker Who Laughs 🕸🕸🎃🕸🕸
-                                                            
-                                                                 
-                </p>
-                                                
-                    <a href = "https://www.patreon.com/posts/how-to-botnet-2-103578847" style = "text-decoration: none;"> 
-                                            
-                        <div class="d-grid">
-                                                                  
-                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
-                                                
-                        </div>
-                                    
-                    </a>     
+                 <p id = "tcp22"> </p>
                                             
         
             </div>
@@ -1525,64 +1314,9 @@
                                             
             </div>
                                             
-            <div class = "modal-body">
+           <div class = "modal-body">
                                             
-                <img class = "img-thumbnail mt-4 Modal_Pic_ArduinoLED1" src = "arduino1.jpg" style = "border-color: red; background-color: black;"> </h3>
-                                                            
-                <p class = "pb-5 mt-4"> 
-                        
-                    For today’s video, I will be going over how to write the beginner source code that you need to create your very own LED light bulb in conjunction with a switch module using Arduino. This is basically the “hello world” for Arduino. Step by step instructions should you need to read them over can be found below in the main video!        
-                </br>
-                </br>                                                                   
-                                                                    
-                    This is going to be a 3 part process, where each step I want you to play around with the core basics of what I’m showing you so you understand what I’m doing and how everything works.                                     
-        
-                </br>
-                </br> 
-        
-                    The first part is this one, writing the main code and learning how to read the basic diagram chart for the Arduino UNO board. This is to get you into the habit of learning how to program any module first which is the first and hardest step. Step 2 will be us putting it all together so that you get a live visual on how to set it up. Step 3 will be me showing you around the Arduino IDE, so that you know how to configure boards and various libraries for it. Much like the python one, this first project of ours will be on easy mode, and progressively get harder as time goes on. THERE IS AN END GAME TO THIS!         
-                
-                </br>
-                </br>  
-                
-                    THIS REQUIRES YOU TO HAVE AN ARDUINO UNO BOARD.  
-        
-                </br>
-                </br> 
-        
-                    The main reason why this is going to be a 3 step process is because you will be learning stuff about software engineering as well, and I don’t want to overwhelm you with too much information at a time! That, and I want you to play around with all the stuff that is covered in the main video each time and ask me questions so that you MASTER it by the time the next video launches. 
-        
-                </br>
-                </br> 
-        
-                    Don’t focus on memorizing the code step by step, that will get you nowhere. Focus on UNDERSTANDING the theory and the science behind that I’m doing. IF YOU DO NOT UNDERSTAND SOMETHING SHOOT ME A MESSAGE IN THE “light mentorship channel” and I’ll answer any questions that are related to the post, as well as any and all content I’ve made thus far!
-                    
-                </br>
-                </br> 
-                              
-                    Disclaimer
-                                                                        
-                </br>
-                </br>
-                                                
-                    As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let’s begin! 
-                    
-                </br>
-                </br>
-                                                
-                    - The Hacker Who Laughs 🕸🕸🎃🕸🕸
-                                                                 
-                </p>
-                                                
-                    <a href = "https://www.patreon.com/posts/intro-to-arduino-103108062" style = "text-decoration: none;"> 
-                                            
-                        <div class="d-grid">
-                                                                  
-                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
-                                                
-                        </div>
-                                                
-                    </a>    
+                <p id = "ard"> </p>
                                             
         
             </div>
@@ -1607,65 +1341,27 @@
                                             
             </div>
                                             
-            <div class = "modal-body">
+           <div class = "modal-body">
                                             
-                <img class = "img-thumbnail mt-4 Modal_Pic_ArduinoLED2" src = "darkadruino.jpg" style = "border-color: red; background-color: black;"> </h3>
-                                                            
-                <p class = "pb-5 mt-4"> 
-                        
-                    For today’s video, I will be going over how to install and setup the Arduino IDE for a Linux setup! Majority of all of this will be IN LINUX, to get you used to installing and setting up stuff for it so be warned!!        </br>
-                </br>                                                                   
-                                                                    
-                    This is going to be a 3 part process, where each step I want you to play around with the core basics of what I’m showing you so you understand what I’m doing and how everything works.                                     
+               <p id = "ard2"> </p>
+                      
+               <script>
+const ArduinoLED2 = document.getElementById('ArduinoLED2')
+      
+      ArduinoLED2.addEventListener('show.bs.modal', () => {
         
-                </br>
-                </br> 
+        document.getElementById("ard2").innerHTML = `<img class = "img-thumbnail mt-4 Modal_Pic_ArduinoLED2" src = "darkadruino.jpg" style = "border-color: red; background-color: black;"> </h3> <p class = "pb-5 mt-4"> For today’s video, I will be going over how to install and setup the Arduino IDE for a Linux setup! Majority of all of this will be IN LINUX, to get you used to installing and setting up stuff for it so be warned!! </br> </br> This is going to be a 3 part process, where each step I want you to play around with the core basics of what I’m showing you so you understand what I’m doing and how everything works. </br> </br> The first part is this one, writing the main code and learning how to read the basic diagram chart for the Arduino UNO board. This is to get you into the habit of learning how to program any module first which is the first and hardest step. Step 2 will be us putting it all together so that you get a live visual on how to set it up. Step 3 will be me showing you around the Arduino IDE, so that you know how to configure boards and various libraries for it. Much like the python one, this first project of ours will be on easy mode, and progressively get harder as time goes on. THERE IS AN END GAME TO THIS! </br> </br> THIS REQUIRES YOU TO HAVE AN ARDUINO UNO BOARD. </br> </br> The main reason why this is going to be a 3 step process is because you will be learning stuff about software engineering as well, and I don’t want to overwhelm you with too much information at a time! That, and I want you to play around with all the stuff that is covered in the main video each time and ask me questions so that you MASTER it by the time the next video launches. </br> </br> Don’t focus on memorizing the code step by step, that will get you nowhere. Focus on UNDERSTANDING the theory and the science behind that I’m doing. IF YOU DO NOT UNDERSTAND SOMETHING SHOOT ME A MESSAGE IN THE “light mentorship channel” and I’ll answer any questions that are related to the post, as well as any and all content I’ve made thus far! </br> </br> Disclaimer </br> </br> As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let’s begin! </br> </br> - The Hacker Who Laughs 🕸🕸🎃🕸🕸 </p> <a href = "https://www.patreon.com/posts/intro-to-arduino-103636427" style = "text-decoration: none;"> <div class="d-grid"> <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button> </div> </a>`;
         
-                    The first part is this one, writing the main code and learning how to read the basic diagram chart for the Arduino UNO board. This is to get you into the habit of learning how to program any module first which is the first and hardest step. Step 2 will be us putting it all together so that you get a live visual on how to set it up. Step 3 will be me showing you around the Arduino IDE, so that you know how to configure boards and various libraries for it. Much like the python one, this first project of ours will be on easy mode, and progressively get harder as time goes on. THERE IS AN END GAME TO THIS!         
-                
-                </br>
-                </br>  
-                
-                    THIS REQUIRES YOU TO HAVE AN ARDUINO UNO BOARD.  
+    })
+
+      ArduinoLED2.addEventListener('hide.bs.modal', () => {
         
-                </br>
-                </br> 
-        
-                    The main reason why this is going to be a 3 step process is because you will be learning stuff about software engineering as well, and I don’t want to overwhelm you with too much information at a time! That, and I want you to play around with all the stuff that is covered in the main video each time and ask me questions so that you MASTER it by the time the next video launches. 
-        
-                </br>
-                </br> 
-        
-                    Don’t focus on memorizing the code step by step, that will get you nowhere. Focus on UNDERSTANDING the theory and the science behind that I’m doing. IF YOU DO NOT UNDERSTAND SOMETHING SHOOT ME A MESSAGE IN THE “light mentorship channel” and I’ll answer any questions that are related to the post, as well as any and all content I’ve made thus far!
-                    
-                </br>
-                </br> 
-                              
-                    Disclaimer
-                                                                        
-                </br>
-                </br>
-                                                
-                    As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let’s begin! 
-                    
-                </br>
-                </br>
-                                                
-                    - The Hacker Who Laughs 🕸🕸🎃🕸🕸
-                                                             
-                                                                 
-                </p>
-                                                
-                    <a href = "https://www.patreon.com/posts/intro-to-arduino-103636427" style = "text-decoration: none;"> 
-                                            
-                        <div class="d-grid">
-                                                                  
-                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
-                                                
-                        </div>
-                                    
-                    </a>     
-                                            
+        document.getElementById("ard2").innerHTML = '';
+
+      })
+
+    
+</script>
         
             </div>
                                             
@@ -1689,184 +1385,27 @@
                                             
             </div>
                                             
-            <div class = "modal-body">
+             <div class = "modal-body">
                                             
-                <img class = "img-thumbnail mt-4 Modal_Pic_DLPRansomware" src = "DLPRansomware.png" style = "border-color: red; background-color: black;"> </h3>
-                       
-                
-                </br></br>
-                 <h4 id = "premise" style = "text-align: center; color: #D43F52;">Premise 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>I recently participated in a formal QA interview for a research group at the University of Washington that focused on Business Impact Analysis, and the best mitigation strategies and tactics that should be applied to better secure our digital landscape. The goal of the research project is to help educate small businesses run by women and other minority groups on proper Cyber Security practices. The QA was led by a woman named Grace Sommers. If you would like all the full in depth answers regarding the QA, you can find it on my patreon attached to the advanced version of this article. It's 9 pages and you can learn a lot about how to properly defend your digital systems from various attack vectors, including various endpoint security methods if that fancies you.</p>
-
-                        <p></p>
-
-                        <p>The more advanced version of this article is going to feature some more in depth techniques aside from the basic ones that will be discussed here today. As always, that will be for my patreon supporters only.</p>
-
-                        <p></p>
-
-                        <p>This article is a part of the Danger! Series, which is where I raise more Cyber Security awareness about critical flaws and vulnerabilities that exist within various system infrastructures, including any protocols and data communication methods, and the Dangers of what could happen should they be exploited to the fullest extent. I also go over various mitigation strategies that can be used to prevent them as well. If by chance there is an exploit video for me showing the full potential risk, it will be included in the advance version of this article for PAID patreon members only!</p>
-
-                        <p></p>
-
-                        <p>Ransomware attacks are on the rise, and are a favorable attack method commonly used by a lot of crypto gangs. It's important to know how to protect yourself from these types of attacks. Ransomware, as shocking as this might sound, is EASY to stop, rather, easy to render useless. It's simply a matter of understanding the critical flaw within the attack method itself and what it relies on to execute.</p>
-
-                        <p></p>
-
-                        <p>Even with all of this you still need to know proper data mitigation techniques, since the attack method also focuses on data exfiltration. I'm going to teach you various mitigation strategies that not only protect you from ransomware attacks, BUT, protect various data endpoints to prevent exfiltration. Why? Even if you render a ransomware attack from crippling your infrastructure, the attacker STILL got away with sensitive data which they can use as they please. You need to observe all the little things to see the bigger picture.</p>
-
-                        <p></p>
-
-                        <p>I'll also be covering some basic stuff like FDE, cryptography, etc, so that you FULLY understand how the attack method works. Pay close attention to the cryptography stuff since you NEED to understand how it works, both from the perspective of a threat actor, as well as from an overall security standpoint perspective.</p>
-
-                        <p></p>
-
-                        <p>If you would like a demonstration of the technique, I wrote an article demonstrating how to write the code and perform the technique, as well as a live demonstration that can be found on my YouTube channel. If you would like to see the sample code for it, you can find it in my "Python-Pen-Testing-Tools" in my main Github Repository <a href = "https://github.com/RoyMBull/Python-Pen-Testing-Tools/blob/main/Python%20PenTesting%20Tools/Ransomeware.py" style = "text-decoration: none;">here</a>. </p>
-
-
-                        </br></br>
-                        <h4 id = "fde" style = "text-align: center; color: #D43F52;">What is FDE (Full disk encryption)? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>Before we dive into what Ransomware is, let's go over what FDE is, since it heavily applies to the topic for today.</p>
-
-                        <p></p>
-
-                        <p>FDE, full disk encryption, is a defensive technique that is used to harden data protection across all hierarchical flat file systems. It's the overall process of enumerating the entire file system, and then applying what is known as symmetric cryptography in order to encrypt the entire data storage medium. A good example of this would be bitlocker, which is commonly used for Windows system infrastructures.</p>
-
-                        <p></p>
-
-                        <p>As you know, data encryption is irreversible without the crypto keys, so by performing this method and leaving the keys out the hands of the attacker, should they breach the system, whether it be digitally or physically, any and all data they steal will be useless to them.</p>
-                      
-                        </br></br>
-                    <h4 id = "crypto" style = "text-align: center; color: #D43F52;">What is Symmetric/Asymmetric Cryptography? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>Symmetric cryptography, also known as single key cryptography, is the process of using a singular crypto key known as a private key in order to both encrypt as well as decrypt data. It's commonly more used for FDE over Asymmetric due to it being the faster encryption method.</p>
-
-                        <p></p>
-
-                        <p>This makes sense as the overall process for FDE is to enumerate THE ENTIRE file system ENTIRELY and encrypt EVERY single file on the system. Asymmetric would be too slow for this as it's a slower encryption standard. It's also commonly used in mobile device data encryption as well for the same reasons.</p>
-
-                        <p></p>
-
-                        <p>Asymmetric encryption on the other hand uses two crypto keys to perform the same process, except, in this case, it uses a public key for encryption, and a private key for decryption. The main reason for this is to add more secure complexity for various data communication methods. It’s also commonly used in stuff like PGP, pretty good privacy, which is commonly used for secure email data encryption.</p>
-
-                        <p></p>
-
-                        <p>One of the BIGGEST downfalls of symmetric data encryption is it's VULNERABLE to interception attacks. Should an attacker intercept the crypto key, they can: decrypt all data and messages, replay new ones on behalf of the original recipients, and a lot more.</p>
-
-                        <p></p>
-
-                        <p>However, with Asymmetric encryption, this isn't the case. Since it uses two crypto keys which come in pairs, Should a threat actor intercept the communication pipeline and steal one of the keys, their efforts will be in vain, as they lack one of the means to facilitate a SOLID man in the middle attack.</p>
-
-                        <p></p>
-
-                        <p>The whole premise of a man in the middle attack is to not only intercept the communication, but to reply messages on behalf of the respective parties. By using public key cryptography on top of other data channel splitting techniques, you render this the ineffective and leave them in a situation where they can’t facilitate it fully.</p>
-
-                        <p></p>
-
-                        <p>Should an attacker secure the public key only, then they'll only be able to send messages. They won't be able to read any of the data that is being sent back and forth, and any new messages will be suspected as false ones, which will lead to the replacing of the keys. Even if they verify with the key, it will all be for nothing.</p>
-
-                        <p></p>
-
-                        <p>However, in the event they have the private key, they'll be able to decrypt any and all messages, BUT, they won't be able to spoof and gain further insight and other information out of the communication pipeline. This is still a problem for them due to the fact most PKI infrastructures, even stuff like PGP, REQUIRE you to have the public key BEFORE you begin a communication to ensure message authenticity from the recipients. Simply not having the public key is like a lack of ID to verify who you are…. WHICH MEANS A DEAD PRIVATE KEY! This does vary depending on the infrastructure so do be mindful as I'm going over this.</p>
-
-</br></br>
- <h4 id = "ransomware" style = "text-align: center; color: #D43F52;">What is Ransomware? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>Now that we've gone over the basics, let's talk about what Ransomware is.</p>
-
-                        <p></p>
-
-                        <p>Ransomware is basically FDE with malicious intent. It's a form of malware that is known as "crypto" malware, which deploys cryptographic techniques that enumerate the victims file system, exfiltrating data from it, and then encrypting the main copy of the data on the file system, rendering it useless to them. Be mindful that "crypto" malware and "ransomware" are TWO different forms of malware. Crypto malware is the main archetype, where as Ransomware is the child of said archetype, inheriting cryptographic techniques. </p>
-
-                        <p></p>
-
-                        <p>After the data is encrypted, a message is displayed to the end user requiring them to pay a "ransom" in order to receive the crypto keys to decrypt their data, hence the name "ransomware". The problem with this is paying the ransom doesn't guarantee you will receive the keys.</p>
-
-                        <p></p>
-
-                        <p>Ransomware is on the rise for being an effective attack method because it can be combined with phage malware techniques and phishing techniques to become SUPER effective.</p>
-
-                        <p></p>
-
-                        <p>Before, a simple click of the link or mishap in security meant you had an undetected botnet. NOW, it means all your data is encrypted and unreadable, which can be problematic if you're handling sensitive data that has to do with critical record information like someone's student or home loan payment information for example.</p>
-
-                        <p></p>
-
-                        <p>Mr.Robot for example, one of their biggest exploits in the show was encrypting all of E Corp's data in order to "FREE" everyone from debt. HOWEVER, it caused quite the opposite effect, where now people that were close to being debt free, or had funds in their bank accounts, were unable to access anything or prove what they've made payments due to the data being indecipherable. The result? TOTAL CHAOS where the people they were trying to “Free” suffered more.</p>
-
-
-                        </br></br>
-                        <h4 id = "strategy" style = "text-align: center; color: #D43F52;">What should you do during a Ransomware Attack? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>One of the biggest misconceptions about ransomware attacks, a common question that gets asked, is what do you do in the event of a ransomware data breach? This is a VERY bad question to ask, as it under prepares many business infrastructures on how to deal with actual ransomware threats.</p>
-
-                        <p></p>
-
-                        <p>The real practical question to ask is what do you do BEFORE a ransomware attack occurs? Still scratching your head? Let me explain.</p>
-
-                        <p></p>
-
-                        <p>You see, in the event that a ransomware attack connects, THERE IS NOTHING YOU CAN DO!!!! Ransomware is an IRREVERSIBLE process, where unless you have the crypto keys, which are in the hands of the attacker, there is NOTHING you can do. Even if you pay the ransom, you're not guaranteed to be given the crypto keys to re-acquire the data that has been stolen. You also have loads of fines that stack along with the ransomware breach that you are required to report on top of that.</p>
-
-
-                        </br></br>
-                         <h4 id = "mitigation" style = "text-align: center; color: #D43F52;">What is the simplest means to prevent damage from this type of attack? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>One of the SIMPLEST yet COMMONLY ignored methods to prevent ransomware  from being super effective BEFORE it strikes is the usage of constant data backups. There are two main types: inferential and differential backups.</p>
-
-                        <p></p>
-
-                        <p>Differential backups  are full backups where you backup any and all data across the board. This is done at certain time frames regularly to back up large quantities of data at a time.</p>
-
-                        <p></p>
-
-                        <p>Incremental backups are partial backups where you backup portions of data at a time. This is common practice on top of the differential one as you'll often have a case where certain portions of data need to be backed up. Think of it like this, if you modified a file on your flash drive, would you back up the entire drive again? Doesn't make sense right?  This is where you would apply this method.</p>
-
-                        
-                    </br>
-			
-			<img src="counter.png" class="img-responsive" alt="portfolio img">
-				
-                </br></br>
-
-                <p> If you like to see the more advanced version of this article that talks about methods that can be used to mitigate, as well as any videos included, SUBSCRIBE TO MY PATREON CYBER SECURITY TIER!
-
-
-                </p>
-                        
-
-            
-                </br>
-                </br>
-                                                
-                    - The Hacker Who Laughs 🕸🕸🎃🕸🕸
-                                                                 
-                </p>
-                                                
-                    <a href = "https://futabawebs.github.io/Futaba_Webs/DangerRansomware" style = "text-decoration: none;"> 
+            <p id = "dlp"> </p>
                                             
-                        <div class="d-grid">
-                                                                  
-                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
-                                                
-                        </div>
-                                                
-                    </a>      
-                                            
+        <script>
+const DLPRansomware = document.getElementById('DLPRansomware')
+      
+      DLPRansomware.addEventListener('show.bs.modal', () => {
         
+        document.getElementById("dlp").innerHTML = `<img class = "img-thumbnail mt-4 Modal_Pic_DLPRansomware" src = "DLPRansomware.png" style = "border-color: red; background-color: black;"> </h3> </br></br> <h4 id = "premise" style = "text-align: center; color: #D43F52;">Premise 🕸🕸🎃🕸🕸 </h4> <p>I recently participated in a formal QA interview for a research group at the University of Washington that focused on Business Impact Analysis, and the best mitigation strategies and tactics that should be applied to better secure our digital landscape. The goal of the research project is to help educate small businesses run by women and other minority groups on proper Cyber Security practices. The QA was led by a woman named Grace Sommers. If you would like all the full in depth answers regarding the QA, you can find it on my patreon attached to the advanced version of this article. It's 9 pages and you can learn a lot about how to properly defend your digital systems from various attack vectors, including various endpoint security methods if that fancies you.</p> <p></p> <p>The more advanced version of this article is going to feature some more in depth techniques aside from the basic ones that will be discussed here today. As always, that will be for my patreon supporters only.</p> <p></p> <p>This article is a part of the Danger! Series, which is where I raise more Cyber Security awareness about critical flaws and vulnerabilities that exist within various system infrastructures, including any protocols and data communication methods, and the Dangers of what could happen should they be exploited to the fullest extent. I also go over various mitigation strategies that can be used to prevent them as well. If by chance there is an exploit video for me showing the full potential risk, it will be included in the advance version of this article for PAID patreon members only!</p> <p></p> <p>Ransomware attacks are on the rise, and are a favorable attack method commonly used by a lot of crypto gangs. It's important to know how to protect yourself from these types of attacks. Ransomware, as shocking as this might sound, is EASY to stop, rather, easy to render useless. It's simply a matter of understanding the critical flaw within the attack method itself and what it relies on to execute.</p> <p></p> <p>Even with all of this you still need to know proper data mitigation techniques, since the attack method also focuses on data exfiltration. I'm going to teach you various mitigation strategies that not only protect you from ransomware attacks, BUT, protect various data endpoints to prevent exfiltration. Why? Even if you render a ransomware attack from crippling your infrastructure, the attacker STILL got away with sensitive data which they can use as they please. You need to observe all the little things to see the bigger picture.</p> <p></p> <p>I'll also be covering some basic stuff like FDE, cryptography, etc, so that you FULLY understand how the attack method works. Pay close attention to the cryptography stuff since you NEED to understand how it works, both from the perspective of a threat actor, as well as from an overall security standpoint perspective.</p> <p></p> <p>If you would like a demonstration of the technique, I wrote an article demonstrating how to write the code and perform the technique, as well as a live demonstration that can be found on my YouTube channel. If you would like to see the sample code for it, you can find it in my "Python-Pen-Testing-Tools" in my main Github Repository <a href = "https://github.com/RoyMBull/Python-Pen-Testing-Tools/blob/main/Python%20PenTesting%20Tools/Ransomeware.py" style = "text-decoration: none;">here</a>. </p> </br></br> <h4 id = "fde" style = "text-align: center; color: #D43F52;">What is FDE (Full disk encryption)? 🕸🕸🎃🕸🕸 </h4> <p>Before we dive into what Ransomware is, let's go over what FDE is, since it heavily applies to the topic for today.</p> <p></p> <p>FDE, full disk encryption, is a defensive technique that is used to harden data protection across all hierarchical flat file systems. It's the overall process of enumerating the entire file system, and then applying what is known as symmetric cryptography in order to encrypt the entire data storage medium. A good example of this would be bitlocker, which is commonly used for Windows system infrastructures.</p> <p></p> <p>As you know, data encryption is irreversible without the crypto keys, so by performing this method and leaving the keys out the hands of the attacker, should they breach the system, whether it be digitally or physically, any and all data they steal will be useless to them.</p> </br></br> <h4 id = "crypto" style = "text-align: center; color: #D43F52;">What is Symmetric/Asymmetric Cryptography? 🕸🕸🎃🕸🕸 </h4> <p>Symmetric cryptography, also known as single key cryptography, is the process of using a singular crypto key known as a private key in order to both encrypt as well as decrypt data. It's commonly more used for FDE over Asymmetric due to it being the faster encryption method.</p> <p></p> <p>This makes sense as the overall process for FDE is to enumerate THE ENTIRE file system ENTIRELY and encrypt EVERY single file on the system. Asymmetric would be too slow for this as it's a slower encryption standard. It's also commonly used in mobile device data encryption as well for the same reasons.</p> <p></p> <p>Asymmetric encryption on the other hand uses two crypto keys to perform the same process, except, in this case, it uses a public key for encryption, and a private key for decryption. The main reason for this is to add more secure complexity for various data communication methods. It’s also commonly used in stuff like PGP, pretty good privacy, which is commonly used for secure email data encryption.</p> <p></p> <p>One of the BIGGEST downfalls of symmetric data encryption is it's VULNERABLE to interception attacks. Should an attacker intercept the crypto key, they can: decrypt all data and messages, replay new ones on behalf of the original recipients, and a lot more.</p> <p></p> <p>However, with Asymmetric encryption, this isn't the case. Since it uses two crypto keys which come in pairs, Should a threat actor intercept the communication pipeline and steal one of the keys, their efforts will be in vain, as they lack one of the means to facilitate a SOLID man in the middle attack.</p> <p></p> <p>The whole premise of a man in the middle attack is to not only intercept the communication, but to reply messages on behalf of the respective parties. By using public key cryptography on top of other data channel splitting techniques, you render this the ineffective and leave them in a situation where they can’t facilitate it fully.</p> <p></p> <p>Should an attacker secure the public key only, then they'll only be able to send messages. They won't be able to read any of the data that is being sent back and forth, and any new messages will be suspected as false ones, which will lead to the replacing of the keys. Even if they verify with the key, it will all be for nothing.</p> <p></p> <p>However, in the event they have the private key, they'll be able to decrypt any and all messages, BUT, they won't be able to spoof and gain further insight and other information out of the communication pipeline. This is still a problem for them due to the fact most PKI infrastructures, even stuff like PGP, REQUIRE you to have the public key BEFORE you begin a communication to ensure message authenticity from the recipients. Simply not having the public key is like a lack of ID to verify who you are…. WHICH MEANS A DEAD PRIVATE KEY! This does vary depending on the infrastructure so do be mindful as I'm going over this.</p> </br></br> <h4 id = "ransomware" style = "text-align: center; color: #D43F52;">What is Ransomware? 🕸🕸🎃🕸🕸 </h4> <p>Now that we've gone over the basics, let's talk about what Ransomware is.</p> <p></p> <p>Ransomware is basically FDE with malicious intent. It's a form of malware that is known as "crypto" malware, which deploys cryptographic techniques that enumerate the victims file system, exfiltrating data from it, and then encrypting the main copy of the data on the file system, rendering it useless to them. Be mindful that "crypto" malware and "ransomware" are TWO different forms of malware. Crypto malware is the main archetype, where as Ransomware is the child of said archetype, inheriting cryptographic techniques. </p> <p></p> <p>After the data is encrypted, a message is displayed to the end user requiring them to pay a "ransom" in order to receive the crypto keys to decrypt their data, hence the name "ransomware". The problem with this is paying the ransom doesn't guarantee you will receive the keys.</p> <p></p> <p>Ransomware is on the rise for being an effective attack method because it can be combined with phage malware techniques and phishing techniques to become SUPER effective.</p> <p></p> <p>Before, a simple click of the link or mishap in security meant you had an undetected botnet. NOW, it means all your data is encrypted and unreadable, which can be problematic if you're handling sensitive data that has to do with critical record information like someone's student or home loan payment information for example.</p> <p></p> <p>Mr.Robot for example, one of their biggest exploits in the show was encrypting all of E Corp's data in order to "FREE" everyone from debt. HOWEVER, it caused quite the opposite effect, where now people that were close to being debt free, or had funds in their bank accounts, were unable to access anything or prove what they've made payments due to the data being indecipherable. The result? TOTAL CHAOS where the people they were trying to “Free” suffered more.</p> </br></br> <h4 id = "strategy" style = "text-align: center; color: #D43F52;">What should you do during a Ransomware Attack? 🕸🕸🎃🕸🕸 </h4> <p>One of the biggest misconceptions about ransomware attacks, a common question that gets asked, is what do you do in the event of a ransomware data breach? This is a VERY bad question to ask, as it under prepares many business infrastructures on how to deal with actual ransomware threats.</p> <p></p> <p>The real practical question to ask is what do you do BEFORE a ransomware attack occurs? Still scratching your head? Let me explain.</p> <p></p> <p>You see, in the event that a ransomware attack connects, THERE IS NOTHING YOU CAN DO!!!! Ransomware is an IRREVERSIBLE process, where unless you have the crypto keys, which are in the hands of the attacker, there is NOTHING you can do. Even if you pay the ransom, you're not guaranteed to be given the crypto keys to re-acquire the data that has been stolen. You also have loads of fines that stack along with the ransomware breach that you are required to report on top of that.</p> </br></br> <h4 id = "mitigation" style = "text-align: center; color: #D43F52;">What is the simplest means to prevent damage from this type of attack? 🕸🕸🎃🕸🕸 </h4> <p>One of the SIMPLEST yet COMMONLY ignored methods to prevent ransomware from being super effective BEFORE it strikes is the usage of constant data backups. There are two main types: inferential and differential backups.</p> <p></p> <p>Differential backups are full backups where you backup any and all data across the board. This is done at certain time frames regularly to back up large quantities of data at a time.</p> <p></p> <p>Incremental backups are partial backups where you backup portions of data at a time. This is common practice on top of the differential one as you'll often have a case where certain portions of data need to be backed up. Think of it like this, if you modified a file on your flash drive, would you back up the entire drive again? Doesn't make sense right? This is where you would apply this method.</p> </br> <img src="counter.png" class="img-responsive" alt="portfolio img"> </br></br> <p> If you like to see the more advanced version of this article that talks about methods that can be used to mitigate, as well as any videos included, SUBSCRIBE TO MY PATREON CYBER SECURITY TIER! </p> </br> </br> - The Hacker Who Laughs 🕸🕸🎃🕸🕸 </p> <a href = "https://futabawebs.github.io/Futaba_Webs/DangerRansomware" style = "text-decoration: none;"> <div class="d-grid"> <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button> </div> </a>`;
+        
+    })
+
+      DLPRansomware.addEventListener('hide.bs.modal', () => {
+        
+        document.getElementById("dlp").innerHTML = '';
+
+      })
+    
+</script>
+
             </div>
                                             
             </div>
@@ -1890,165 +1429,25 @@
                                             
             <div class = "modal-body">
                                             
-                <img class = "img-thumbnail mt-4 Modal_Pic_RemoteFileInclusion" src = "RemoteInclusion.jpg" style = "border-color: red; background-color: black;"> </h3>
+                <p id = "rfi"> </p>
                      
-                
-                </br></br>
-                <h4 id = "premise" style = "text-align: center; color: #D43F52;">Premise 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>Today's article will include a video demonstration of how to perform local file inclusion, also known as directory traversal, against a remote web application server. I'll even cover one of the best FREE beginner tools that you can use to apply the technique in a more automated fashion.</p>
-
-                        <p></p>
-
-                        <p>If you would like to see how to perform remote file inclusion, as well as the best means to do so, then I suggest checking out this video <a href = "https://www.patreon.com/posts/lab-python-104381028" style = "text-decoration: none;">here</a> from my patreon lab for the TCPBackdoor exploit.</p>
-
-
-                        </br></br>
-                        <h4 id = "remote" style = "text-align: center; color: #D43F52;">What is Remote File inclusion? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>Remote file inclusion is the process of directly uploading malicious files/payloads to a remote web application server in order to have it become a part of the main file archives that belong to it.. This allows the threat actor to infect and or control the web application on a massive scale, as well as deliver unsuspecting payloads to end users that use said service. If done correctly. it can lead to the compromising of many end user networks and IoT devices if not mitigated correctly.</p>
-
-                        <p></p>
-
-
-                        <p>As you know, web application servers use the HTTP/HTTPS protocol to host various html files that end users can access through the internet on behalf of a web browser application. When you visit a website, you're auto directed to the main HTML index page welcoming you to the site. From there the end user browses the site through the main UI(user interface) which will allow them to view any and all HTML pages that are hosted on the web application, as well as any other fields that might be included with it.</p>
-
-                        <p></p>
-
-                        <p>Web applications, as I’ve mentioned earlier, host various other files that are accessible to the end user, like executables, that are auto downloaded to their system the moment they visit the resource location on the server.</p>
-
-                        <p></p>
-
-                        <p>For example: https://website[.]com/Download.exe (JUST AN EXAMPLE! IT'S NOT REAL)</p>
-
-                        <p></p>
-
-                        <p>When you visit this link, it will download a file that is known simply as "Download.exe". Much like how when you visit an HTML page, it's automatically displayed and interpreted on the screen for you, downloadable non HTML files are auto downloaded to your system for you to use.</p>
-
-                        <p></p>
-
-                        <p>Remote file inclusion exploits both of these things discussed about web applications in 2 ways.</p>
-
-                        <p></p>
-
-                        <p>#1, it can host fake pages and replace the pre-existing ones with spoofed pages that are malicious.</p>
-
-                        <p></p>
-
-                        <p>Ever heard of a website that was hacked, and suddenly all the "legitimate" web pages on it were now all malicious and infected end user systems? Well this is how REAL threat actors go about it when they compromise a web application.</p>
-
-                        <p></p>
-
-                        <p>By exploiting this vulnerability in a LEGITIMATE web application, you not only trick the web browser and security in place to protect the end user from spoofed sites, BUT, you also trick the end user into visiting pages that are malicious, allowing them to steal sensitive credentials, and even land a botnet onto the end user network should they want to extend their overall attack surface.</p>
-
-                        <p></p>
-
-                        <p>#2, it can be used to host executables that are auto downloaded to the victim's system</p>
-
-                        <p></p>
-
-                        <p>It's no shocker that one of the bread and butters for a threat actor is to use this technique to host malicious payloads that are auto downloaded to the victim's system. This can be deadly if it's a majorly trusted executable whose signature is also spoofed and ran on the target system.</p>
-
-                        <p></p>
-
-                        <p>Imagine VSCode, a desktop application that is commonly trusted and downloaded onto millions of systems daily, suddenly replaced with a fake version that was trusted by any and all end user systems? This would lead to a massive breach on many systems, as it's also possible for an attacker to spoof the signature of the software to bypass security. They can even do stuff like DLL and Code injection, as well as many obfuscation techniques to go undetected. The list goes on with the amount of creativity and devastating dama that can be done should an attacker land this critical flaw against a well trusted system</p>
-
-                        <p></p>
-
-                        <p>#3 it can allow you to pull of RCE and directory traversal</p>
-
-                        <p></p>
-
-                        <p>If you manage to pop a php file to a web application, you basically have a remote backdoor into the system that you can tap into whenever you need to and further extend your reach to the network the web application is hosted on.</p>
-
-
-                        </br></br>
-                        <h4 id = "local" style = "text-align: center; color: #D43F52;">What is local file inclusion? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>Local file inclusion, also known as directory traversal, is a technique that allows you to browse the web application's file system. This isn't a form of RCE no, BUT, it does allow you to browse stuff that is outside the bounds of the web application root directory.</p>
-
-                        <p></p>
-
-                        <p>As mentioned before, when you visit a web application you are accessing the HTML files via the file system of the web application.</p>
-
-                        <p></p>
-
-                        <p>For security reasons, in order to prevent you from accessing files outside those bounds, you are prohibited from being able to view anything that is not a part of the main web application root directory that is configured for it.</p>
-
-                        <p></p>
-
-                        <p>Directory traversal bypasses this security and allows you to access any and all files that are sensitive on  the system.</p>
-
-                        <p></p>
-
-                        <p>This can also lead to RCE because should you, in the event there is an open SSH service for example, should you happen to find the credentials to connect with the right privileges, you can extend your attack surface.</p>
-
-                        <p></p>
-
-                        <p>You can also view any and all sensitive files to gain access to password data that can allow you to compromise any services that are tied to the web application, such as the administrative credentials for login pages if they happen to be there.</p>
-
-
-                        
-                        </br></br>
-                 <h4 id = "difference" style = "text-align: center; color: #D43F52;">The difference between the two? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>The biggest overall difference between remote file inclusion and local file inclusion, is that remote file inclusion is more you uploading and or replacing legitimate files on the web application to infect it.</p>
-
-                        <p></p>
-
-                        <p>Local file inclusion is more used to browse the system to find sensitive files and or credentials. You can exploit this in various ways, even through programs on the file system that print text data from various files in the web application system.</p>
-
-                        </br></br>
-                        <h4 id = "rce" style = "text-align: center; color: #D43F52;">What is RCE? 🕸🕸🎃🕸🕸
-
-                        </h4>
-
-						<p>RCE, RCE, RCE! You’ve been hearing me say this a lot, but I haven’t quite yet explained what it means right? </p>
-
-                        <p></p>
-
-                        <p>RCE, remote code execution, is the main goal and bread and butter for any and all forms of injection exploits against any system. It's commonly applied to various things: buffer overflows via obfuscated malware, remote code execution, SQL injection, etc. It’s also just a common end game for any form of breach. </p>
-
-                        <p></p>
-
-                        <p>Your end goal is to always find a way to RCE a system in order to control it directly via shell code commands, which can be combined with various coding techniques to deal more damage.</p>
-
-                    </br>
-			
-			<img src="counter.png" class="img-responsive" alt="portfolio img">
-				
-                </br></br>
-
-                <p> If you like to see the more advanced version of this article that talks about methods that can be used to mitigate, as well as any videos included, SUBSCRIBE TO MY PATREON CYBER SECURITY TIER!
-
-
-                </p>
-
-                </br>
-                </br>
-                                                
-                    - The Hacker Who Laughs 🕸🕸🎃🕸🕸
-                                                                 
-                </p>
-                                                
-                    <a href = "https://futabawebs.github.io/Futaba_Webs/RemoteLocalFileInclusion" style = "text-decoration: none;"> 
-                                            
-                        <div class="d-grid">
-                                                                  
-                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
-                                                
-                        </div>
-                                                
-                    </a>     
-                                            
+                <script>
+
+const RemoteFileInclusion = document.getElementById('RemoteFileInclusion')
+      
+      RemoteFileInclusion.addEventListener('show.bs.modal', () => {
+        
+        document.getElementById("rfi").innerHTML = `<img class = "img-thumbnail mt-4 Modal_Pic_RemoteFileInclusion" src = "RemoteInclusion.jpg" style = "border-color: red; background-color: black;"> </h3> </br></br> <h4 id = "premise" style = "text-align: center; color: #D43F52;">Premise 🕸🕸🎃🕸🕸 </h4> <p>Today's article will include a video demonstration of how to perform local file inclusion, also known as directory traversal, against a remote web application server. I'll even cover one of the best FREE beginner tools that you can use to apply the technique in a more automated fashion.</p> <p></p> <p>If you would like to see how to perform remote file inclusion, as well as the best means to do so, then I suggest checking out this video <a href = "https://www.patreon.com/posts/lab-python-104381028" style = "text-decoration: none;">here</a> from my patreon lab for the TCPBackdoor exploit.</p> </br></br> <h4 id = "remote" style = "text-align: center; color: #D43F52;">What is Remote File inclusion? 🕸🕸🎃🕸🕸 </h4> <p>Remote file inclusion is the process of directly uploading malicious files/payloads to a remote web application server in order to have it become a part of the main file archives that belong to it.. This allows the threat actor to infect and or control the web application on a massive scale, as well as deliver unsuspecting payloads to end users that use said service. If done correctly. it can lead to the compromising of many end user networks and IoT devices if not mitigated correctly.</p> <p></p> <p>As you know, web application servers use the HTTP/HTTPS protocol to host various html files that end users can access through the internet on behalf of a web browser application. When you visit a website, you're auto directed to the main HTML index page welcoming you to the site. From there the end user browses the site through the main UI(user interface) which will allow them to view any and all HTML pages that are hosted on the web application, as well as any other fields that might be included with it.</p> <p></p> <p>Web applications, as I’ve mentioned earlier, host various other files that are accessible to the end user, like executables, that are auto downloaded to their system the moment they visit the resource location on the server.</p> <p></p> <p>For example: https://website[.]com/Download.exe (JUST AN EXAMPLE! IT'S NOT REAL)</p> <p></p> <p>When you visit this link, it will download a file that is known simply as "Download.exe". Much like how when you visit an HTML page, it's automatically displayed and interpreted on the screen for you, downloadable non HTML files are auto downloaded to your system for you to use.</p> <p></p> <p>Remote file inclusion exploits both of these things discussed about web applications in 2 ways.</p> <p></p> <p>#1, it can host fake pages and replace the pre-existing ones with spoofed pages that are malicious.</p> <p></p> <p>Ever heard of a website that was hacked, and suddenly all the "legitimate" web pages on it were now all malicious and infected end user systems? Well this is how REAL threat actors go about it when they compromise a web application.</p> <p></p> <p>By exploiting this vulnerability in a LEGITIMATE web application, you not only trick the web browser and security in place to protect the end user from spoofed sites, BUT, you also trick the end user into visiting pages that are malicious, allowing them to steal sensitive credentials, and even land a botnet onto the end user network should they want to extend their overall attack surface.</p> <p></p> <p>#2, it can be used to host executables that are auto downloaded to the victim's system</p> <p></p> <p>It's no shocker that one of the bread and butters for a threat actor is to use this technique to host malicious payloads that are auto downloaded to the victim's system. This can be deadly if it's a majorly trusted executable whose signature is also spoofed and ran on the target system.</p> <p></p> <p>Imagine VSCode, a desktop application that is commonly trusted and downloaded onto millions of systems daily, suddenly replaced with a fake version that was trusted by any and all end user systems? This would lead to a massive breach on many systems, as it's also possible for an attacker to spoof the signature of the software to bypass security. They can even do stuff like DLL and Code injection, as well as many obfuscation techniques to go undetected. The list goes on with the amount of creativity and devastating dama that can be done should an attacker land this critical flaw against a well trusted system</p> <p></p> <p>#3 it can allow you to pull of RCE and directory traversal</p> <p></p> <p>If you manage to pop a php file to a web application, you basically have a remote backdoor into the system that you can tap into whenever you need to and further extend your reach to the network the web application is hosted on.</p> </br></br> <h4 id = "local" style = "text-align: center; color: #D43F52;">What is local file inclusion? 🕸🕸🎃🕸🕸 </h4> <p>Local file inclusion, also known as directory traversal, is a technique that allows you to browse the web application's file system. This isn't a form of RCE no, BUT, it does allow you to browse stuff that is outside the bounds of the web application root directory.</p> <p></p> <p>As mentioned before, when you visit a web application you are accessing the HTML files via the file system of the web application.</p> <p></p> <p>For security reasons, in order to prevent you from accessing files outside those bounds, you are prohibited from being able to view anything that is not a part of the main web application root directory that is configured for it.</p> <p></p> <p>Directory traversal bypasses this security and allows you to access any and all files that are sensitive on the system.</p> <p></p> <p>This can also lead to RCE because should you, in the event there is an open SSH service for example, should you happen to find the credentials to connect with the right privileges, you can extend your attack surface.</p> <p></p> <p>You can also view any and all sensitive files to gain access to password data that can allow you to compromise any services that are tied to the web application, such as the administrative credentials for login pages if they happen to be there.</p> </br></br> <h4 id = "difference" style = "text-align: center; color: #D43F52;">The difference between the two? 🕸🕸🎃🕸🕸 </h4> <p>The biggest overall difference between remote file inclusion and local file inclusion, is that remote file inclusion is more you uploading and or replacing legitimate files on the web application to infect it.</p> <p></p> <p>Local file inclusion is more used to browse the system to find sensitive files and or credentials. You can exploit this in various ways, even through programs on the file system that print text data from various files in the web application system.</p> </br></br> <h4 id = "rce" style = "text-align: center; color: #D43F52;">What is RCE? 🕸🕸🎃🕸🕸 </h4> <p>RCE, RCE, RCE! You’ve been hearing me say this a lot, but I haven’t quite yet explained what it means right? </p> <p></p> <p>RCE, remote code execution, is the main goal and bread and butter for any and all forms of injection exploits against any system. It's commonly applied to various things: buffer overflows via obfuscated malware, remote code execution, SQL injection, etc. It’s also just a common end game for any form of breach. </p> <p></p> <p>Your end goal is to always find a way to RCE a system in order to control it directly via shell code commands, which can be combined with various coding techniques to deal more damage.</p> </br> <img src="counter.png" class="img-responsive" alt="portfolio img"> </br></br> <p> If you like to see the more advanced version of this article that talks about methods that can be used to mitigate, as well as any videos included, SUBSCRIBE TO MY PATREON CYBER SECURITY TIER! </p> </br> </br> - The Hacker Who Laughs 🕸🕸🎃🕸🕸 </p> <a href = "https://futabawebs.github.io/Futaba_Webs/RemoteLocalFileInclusion" style = "text-decoration: none;"> <div class="d-grid"> <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button> </div> </a>`;
+        
+    })
+
+      RemoteFileInclusion.addEventListener('hide.bs.modal', () => {
+        
+        document.getElementById("rfi").innerHTML = '';
+
+      })
+    
+</script>
         
             </div>
                                             
@@ -2071,49 +1470,27 @@
                                             
             </div>
                                             
-            <div class = "modal-body">
+           <div class = "modal-body">
                                             
-                <img class = "img-thumbnail mt-4 Modal_Pic_HTTPServer" src = "HTTPServer.jpg" style = "border-color: red; background-color: black;"> </h3>
-                                                            
-                <p class = "pb-5 mt-4"> 
-                        
-                    Today’s video demonstration I’ll be showing you how to make your own custom HTTP server. 
-                </br>                                                                   
-                </br>                                                   
-                    If you’ve been watching most of my videos, even some of my meterpreter stuff so far, you’ll notice that when I’m delivering payloads on a local network I LOVE to host an apache2 server that will serve payloads to victim systems on the network. It bypasses any blacklists from the main ISP and default gateway since this is an internal HTTP server and it’s not morally set to block those. 
+                    <p id = "httpserv"> </p>
+                           
+                    <script>
+
+    const HTTPServer = document.getElementById('HTTPServer')
+      
+      HTTPServer.addEventListener('show.bs.modal', () => {
         
-                </br>
-                </br> 
+        document.getElementById("httpserv").innerHTML = `<img class = "img-thumbnail mt-4 Modal_Pic_HTTPServer" src = "HTTPServer.jpg" style = "border-color: red; background-color: black;"> </h3> <p class = "pb-5 mt-4"> Today’s video demonstration I’ll be showing you how to make your own custom HTTP server. </br> </br> If you’ve been watching most of my videos, even some of my meterpreter stuff so far, you’ll notice that when I’m delivering payloads on a local network I LOVE to host an apache2 server that will serve payloads to victim systems on the network. It bypasses any blacklists from the main ISP and default gateway since this is an internal HTTP server and it’s not morally set to block those. </br> </br> BUT, what if you don’t have the means to setup an apache2 server? This is where you get crafty and make one yourself. It comes in handy for a lot of practical applications that allow you to mix it up with past techniques I’ve shown you, and apply stuff that even apache2 and nginx servers aren’t designed to do. Be mindful, I'm not saying you should drop the apache2 setup. It’s a staple and go to tool overall in general whether it be for penetration testing, or simply just web application development to test your site for responsiveness and effects. </br> </br> Disclaimer </br> </br> As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let’s begin! </br> </br> - The Hacker Who Laughs 🕸🕸🎃🕸🕸 </p> <a href = "https://www.patreon.com/posts/python-http-105196790" style = "text-decoration: none;"> <div class="d-grid"> <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button> </div> </a>`;
         
-                    BUT, what if you don’t have the means to setup an apache2 server? This is where you get crafty and make one yourself. It comes in handy for a lot of practical applications that allow you to mix it up with past techniques I’ve shown you, and apply stuff that even apache2 and nginx servers aren’t designed to do. Be mindful, I'm not saying you should drop the apache2 setup. It’s a staple and go to tool overall in general whether it be for penetration testing, or simply just web application development to test your site for responsiveness and effects.
-                
-                </br>
-                </br>  
-                              
-                    Disclaimer
-                                                                        
-                </br>
-                </br>
-                                                
-                    As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let’s begin! 
-                    
-                </br>
-                </br>
-                                                
-                    - The Hacker Who Laughs 🕸🕸🎃🕸🕸
-                                                                 
-                </p>
-                                                
-                    <a href = "https://www.patreon.com/posts/python-http-105196790" style = "text-decoration: none;"> 
-                                            
-                        <div class="d-grid">
-                                                                  
-                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
-                                                
-                        </div>
-                                                
-                    </a>       
-                                            
+    })
+
+      HTTPServer.addEventListener('hide.bs.modal', () => {
+        
+        document.getElementById("httpserv").innerHTML = '';
+
+      })
+
+</script>
         
             </div>
                                             
@@ -2136,50 +1513,26 @@
                                             
             </div>
                                             
-            <div class = "modal-body">
+             <div class = "modal-body">
                                             
-                <img class = "img-thumbnail mt-4 Modal_Pic_Potentiometer" src = "potentiometer.jpg" style = "border-color: red; background-color: black;"> </h3>
-                                                            
-                <p class = "pb-5 mt-4"> 
-                        
-                    Today’s Arduino lesson I’m going to show you how to program a potentiometer.
-                </br>                                                                   
-                                                                    
-                    The goal of this project is to get you prepared on how to handle analog input for any module in arduino so you can work with stuff like: dials, radio modules, and even joystick input. 
+                    <p id = "potem"> </p>
+                                   
+                    <script>
+const Potentiometer = document.getElementById('Potentiometer')
+      
+      Potentiometer.addEventListener('show.bs.modal', () => {
         
-                </br>
-                </br> 
+        document.getElementById("potem").innerHTML = `<img class = "img-thumbnail mt-4 Modal_Pic_Potentiometer" src = "potentiometer.jpg" style = "border-color: red; background-color: black;"> </h3> <p class = "pb-5 mt-4"> Today’s Arduino lesson I’m going to show you how to program a potentiometer. </br> The goal of this project is to get you prepared on how to handle analog input for any module in arduino so you can work with stuff like: dials, radio modules, and even joystick input. </br> </br> PAY CLOSE ATTENTION to this project as what you’ll learn here, on top of the other stuff will carry over to what is to come soon and a lot more. These projects will start off easy, but like I said, WILL, get progressively harder and more interesting. </br> </br> Disclaimer </br> </br> As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let’s begin! </br> </br> - The Hacker Who Laughs 🕸🕸🎃🕸🕸 </p> <a href = "https://www.patreon.com/posts/arduino-105196792" style = "text-decoration: none;"> <div class="d-grid"> <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button> </div> </a>`;
         
-                    PAY CLOSE ATTENTION to this project as what you’ll learn here, on top of the other stuff will carry over to what is to come soon and a lot more. These projects will start off easy, but like I said, WILL, get progressively harder and more interesting.  
-                
-                </br>
-                </br>  
-                              
-                    Disclaimer
-                                                                        
-                </br>
-                </br>
-                                                
-                    As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let’s begin! 
-                    
-                </br>
-                </br>
-                                                
-                    - The Hacker Who Laughs 🕸🕸🎃🕸🕸
-                                                                 
-                </p>
-                                                
-                    <a href = "https://www.patreon.com/posts/arduino-105196792" style = "text-decoration: none;"> 
-                                            
-                        <div class="d-grid">
-                                                                  
-                            <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button>
-                                                
-                        </div>
-                                                
-                    </a>      
-                                            
+    })
+
+      Potentiometer.addEventListener('hide.bs.modal', () => {
         
+        document.getElementById("potem").innerHTML = '';
+
+      })
+    
+</script>
             </div>
                                             
             </div>
@@ -2192,7 +1545,81 @@
     END OF MODALS
 -->
 
+<script> 
 
+const TCPLab = document.getElementById('TCPLab')
+      
+      TCPLab.addEventListener('show.bs.modal', () => {
+        
+        document.getElementById("tcpl").innerHTML = `<img class = "img-thumbnail mt-4 Modal_Pic_TCPLab" src = "TCPLab.png" style = "border-color: red; background-color: black;"> </h3> <p class = "pb-5 mt-4"> Today’s demonstration will be a little lab exercise that you can set up to practice using my backdoor script that can be found on my github page. THIS LAB WILL REQUIRE YOU TO WATCH AND FOLLOW TWO VIDEOS AND GUIDES STEP BY STEP TO PULL IT OFF! </br> </br> YOU WILL NEED A SEPARATE SYSTEM TO FULLY SIMULATE THE TEST (OR VM IF YOU PREFER) </br> </br> The VM setup is going to be done on kali nethunter BUT, the instructions for this carry over to ANY system that you want to test against the backdoor server on </br> </br> I recommend checking out my video guide on how to setup kali nethunter in case you want to do the lab this way! It’s FUN and you get to apply Mobile hacking like a PRO. </br> </br> The goal of the exercise is to show you how to: setup the backdoor exploit, experimenting with kali nethunter (if you happen to have it setup), show you how to set up an apache2 server to deliver payloads, crack passwords with John the ripper so that you can pop the SSH service on the main system, and then show you how to exploit the system further. </br> </br> WE ARE GOING TO RUN A SIMPLE PING SWEEP VIA THE MAIN COMPROMISED SYSTEM TO PULL IT OFF, GOING UNDETECTED!! </br> </br> Due to the nature of how I want you to experience a “limited” shell which you’ll often run into, you’ll notice I’ve made it a bit “less interactive” to a degree so that you HAVE to get into the habit of finding ways to upgrade the quality of your reverse shell to a system! </br> </br> Disclaimer </br> </br> As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let’s begin! </br> </br> - The Hacker Who Laughs 🕸🕸🎃🕸🕸 </p> <a href = "https://www.patreon.com/posts/lab-python-104381028" style = "text-decoration: none;"> <div class="d-grid"> <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button> </div> </a>`;
+        
+    })
+
+      TCPLab.addEventListener('hide.bs.modal', () => {
+        
+        document.getElementById("tcpl").innerHTML = '';
+
+      })
+    
+const LEDProject = document.getElementById('LEDProject')
+      
+      LEDProject.addEventListener('show.bs.modal', () => {
+        
+        document.getElementById("led").innerHTML = `<img class = "img-thumbnail mt-4 Modal_Pic_Resources2" src = "LEDProject.png" style = "border-color: red; background-color: black;"> </h3> <p class = "pb-5 mt-4"> Today’s lab will be the more hands on part of how to setup your first arduino project HANDS on. </br> </br> Like I’ve mentioned before, this is basically the “hello world” for arduino. Things will get A LOT more interesting once you cover the core basics so you can start building your own hacking tools with it! </br> </br> Disclaimer </br> </br> As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let’s begin! </br> </br> - The Hacker Who Laughs 🕸🕸🎃🕸🕸 </p> <a href = "https://www.patreon.com/posts/arduino-led-104511941" style = "text-decoration: none;"> <div class="d-grid"> <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button> </div> </a>`;
+        
+    })
+
+      LEDProject.addEventListener('hide.bs.modal', () => {
+        
+        document.getElementById("led").innerHTML = '';
+
+      })
+
+
+const TCP1 = document.getElementById('TCP1')
+      
+      TCP1.addEventListener('show.bs.modal', () => {
+        
+        document.getElementById("tcp11").innerHTML = `<img class = "img-thumbnail mt-4 Modal_Pic_TCP1" src = "TCPBotNet1.png" style = "border-color: red; background-color: black;"> </h3> <p class = "pb-5 mt-4"> For today’s video, I will be going over how to write the backdoor script from my “Backdoor” article live. Step by step instructions should you need to read them over can be found below in the post, as well as in the main video! </br> </br> This is going to be a 3 part process, where each step I want you to play around with the core basics of what I’m showing you so you understand what I’m doing and how everything works. </br> </br> The first part is this one, how to build the client side of the backdoor connection. The next step will be building the server side of the backdoor, which the main client will connect back to. Last, we’ll get creative and I’ll show you some more complex and how to get creative with it. </br> </br> THIS REQUIRES YOU TO ALREADY KNOW THE CORE BASICS OF PYTHON. </br> </br> The main reason why this is going to be a 3 step process is because you will be learning stuff about software engineering as well, and I don’t want to overwhelm you with too much information at a time! That, and I want you to play around with all the stuff that is covered in the main video each time and ask me questions so that you MASTER it by the time the next video launches. </br> </br> Don’t focus on memorizing the code step by step, that will get you nowhere. Focus on UNDERSTANDING the theory and the science behind that I’m doing. IF YOU DO NOT UNDERSTAND SOMETHING SHOOT ME A MESSAGE IN THE “light mentorship channel” and I’ll answer any questions that are related to the post, as well as any and all content I’ve made thus far! </br> </br> Disclaimer </br> </br> As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let’s begin! </br> </br> - The Hacker Who Laughs 🕸🕸🎃🕸🕸 </p> <a href = "https://www.patreon.com/posts/how-to-botnet-1-103046046" style = "text-decoration: none;"> <div class="d-grid"> <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button> </div> </a>`;
+        
+    })
+
+      TCP1.addEventListener('hide.bs.modal', () => {
+        
+        document.getElementById("tcp11").innerHTML = '';
+
+      })
+
+const TCP2 = document.getElementById('TCP2')
+      
+      TCP2.addEventListener('show.bs.modal', () => {
+        
+        document.getElementById("tcp22").innerHTML = `<img class = "img-thumbnail mt-4 Modal_Pic_TCP2" src = "TCPBotNet2png" style = "border-color: red; background-color: black;"> </h3> <p class = "pb-5 mt-4"> For today’s video, I will be going over how to write the backdoor script from my “Backdoor” article live. Step by step instructions should you need to read them over can be found below in the post, as well as in the main video! </br> </br> This is going to be a 3 part process, where each step I want you to play around with the core basics of what I’m showing you so you understand what I’m doing and how everything works. </br> </br> The first part is this one, how to build the client side of the backdoor connection. The next step will be building the server side of the backdoor, which the main client will connect back to. Last, we’ll get creative and I’ll show you some more complex and how to get creative with it. </br> </br> THIS REQUIRES YOU TO ALREADY KNOW THE CORE BASICS OF PYTHON. </br> </br> The main reason why this is going to be a 3 step process is because you will be learning stuff about software engineering as well, and I don’t want to overwhelm you with too much information at a time! That, and I want you to play around with all the stuff that is covered in the main video each time and ask me questions so that you MASTER it by the time the next video launches. </br> </br> Don’t focus on memorizing the code step by step, that will get you nowhere. Focus on UNDERSTANDING the theory and the science behind that I’m doing. IF YOU DO NOT UNDERSTAND SOMETHING SHOOT ME A MESSAGE IN THE “light mentorship channel” and I’ll answer any questions that are related to the post, as well as any and all content I’ve made thus far! </br> </br> Disclaimer </br> </br> As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let’s begin! </br> </br> - The Hacker Who Laughs 🕸🕸🎃🕸🕸 </p> <a href = "https://www.patreon.com/posts/how-to-botnet-2-103578847" style = "text-decoration: none;"> <div class="d-grid"> <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button> </div> </a>`;
+        
+    })
+
+      TCP2.addEventListener('hide.bs.modal', () => {
+        
+        document.getElementById("tcp22").innerHTML = '';
+
+      })
+
+
+const ArduinoLED1 = document.getElementById('ArduinoLED1')
+      
+      ArduinoLED1.addEventListener('show.bs.modal', () => {
+        
+        document.getElementById("ard").innerHTML = `<img class = "img-thumbnail mt-4 Modal_Pic_ArduinoLED1" src = "arduino1.jpg" style = "border-color: red; background-color: black;"> </h3> <p class = "pb-5 mt-4"> For today’s video, I will be going over how to write the beginner source code that you need to create your very own LED light bulb in conjunction with a switch module using Arduino. This is basically the “hello world” for Arduino. Step by step instructions should you need to read them over can be found below in the main video! </br> </br> This is going to be a 3 part process, where each step I want you to play around with the core basics of what I’m showing you so you understand what I’m doing and how everything works. </br> </br> The first part is this one, writing the main code and learning how to read the basic diagram chart for the Arduino UNO board. This is to get you into the habit of learning how to program any module first which is the first and hardest step. Step 2 will be us putting it all together so that you get a live visual on how to set it up. Step 3 will be me showing you around the Arduino IDE, so that you know how to configure boards and various libraries for it. Much like the python one, this first project of ours will be on easy mode, and progressively get harder as time goes on. THERE IS AN END GAME TO THIS! </br> </br> THIS REQUIRES YOU TO HAVE AN ARDUINO UNO BOARD. </br> </br> The main reason why this is going to be a 3 step process is because you will be learning stuff about software engineering as well, and I don’t want to overwhelm you with too much information at a time! That, and I want you to play around with all the stuff that is covered in the main video each time and ask me questions so that you MASTER it by the time the next video launches. </br> </br> Don’t focus on memorizing the code step by step, that will get you nowhere. Focus on UNDERSTANDING the theory and the science behind that I’m doing. IF YOU DO NOT UNDERSTAND SOMETHING SHOOT ME A MESSAGE IN THE “light mentorship channel” and I’ll answer any questions that are related to the post, as well as any and all content I’ve made thus far! </br> </br> Disclaimer </br> </br> As always, personal disclaimer, any and all information for this is strictly for educational purposes and I do not condone any form of illegal activity, nor am I responsible for anything you should use this information for. DO NOT pen-test on anyone's network unless it is your own, or you have permission to do so. Now, let’s begin! </br> </br> - The Hacker Who Laughs 🕸🕸🎃🕸🕸 </p> <a href = "https://www.patreon.com/posts/intro-to-arduino-103108062" style = "text-decoration: none;"> <div class="d-grid"> <button type = "button" class = "btn btn-block" style = "background-color: black; font-weight: bold; color: gray; border-color: red;" > Click to View More </button> </div> </a>`;
+        
+    })
+
+      moArduinoLED1dal.addEventListener('hide.bs.modal', () => {
+        
+        document.getElementById("ard").innerHTML = '';
+
+      })
+    
+</script>
 
 </body>
 </html>
